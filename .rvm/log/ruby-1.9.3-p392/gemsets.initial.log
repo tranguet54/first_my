@@ -1,0 +1,52 @@
+[2013-03-07 13:59:03] '/home/ilu/.rvm/scripts/gemsets' initial # under ruby-1.9.3-p392
+Importing initial gemsets for ruby-1.9.3-p392.
+paths: /home/ilu/.rvm/gemsets/ruby/1.9.3/p392 /home/ilu/.rvm/gemsets/ruby/1.9.3 /home/ilu/.rvm/gemsets/ruby /home/ilu/.rvm/gemsets
+
+Installing gems listed in /home/ilu/.rvm/gemsets/default.gems file...
+
+
+Processing of /home/ilu/.rvm/gemsets/default.gems is complete.
+
+
+Installing gems listed in /home/ilu/.rvm/gemsets/global.gems file...
+
+installing rubygems-bundler ...
+Error running 'env GEM_HOME=/home/ilu/.rvm/gems/ruby-1.9.3-p392@global GEM_PATH=/home/ilu/.rvm/gems/ruby-1.9.3-p392@global gem install --remote rubygems-bundler', please read /home/ilu/.rvm/log/ruby-1.9.3-p392/gem.install.log
+rubygems-bundler  failed to install ( output logged to: /home/ilu/.rvm/log/ruby-1.9.3-p392/gem.install.log )
+installing bundler ...
+Error running 'env GEM_HOME=/home/ilu/.rvm/gems/ruby-1.9.3-p392@global GEM_PATH=/home/ilu/.rvm/gems/ruby-1.9.3-p392@global gem install --remote bundler', please read /home/ilu/.rvm/log/ruby-1.9.3-p392/gem.install.log
+bundler  failed to install ( output logged to: /home/ilu/.rvm/log/ruby-1.9.3-p392/gem.install.log )
+installing rake ...
+Error running 'env GEM_HOME=/home/ilu/.rvm/gems/ruby-1.9.3-p392@global GEM_PATH=/home/ilu/.rvm/gems/ruby-1.9.3-p392@global gem install --remote rake', please read /home/ilu/.rvm/log/ruby-1.9.3-p392/gem.install.log
+rake  failed to install ( output logged to: /home/ilu/.rvm/log/ruby-1.9.3-p392/gem.install.log )
+installing rvm ...
+Error running 'env GEM_HOME=/home/ilu/.rvm/gems/ruby-1.9.3-p392@global GEM_PATH=/home/ilu/.rvm/gems/ruby-1.9.3-p392@global gem install --remote rvm', please read /home/ilu/.rvm/log/ruby-1.9.3-p392/gem.install.log
+rvm  failed to install ( output logged to: /home/ilu/.rvm/log/ruby-1.9.3-p392/gem.install.log )
+
+Processing of /home/ilu/.rvm/gemsets/global.gems is complete.
+
+Installation of gems for ruby-1.9.3-p392 is complete.
+[2013-03-08 09:33:07] '/home/ilu/.rvm/scripts/gemsets' initial # under ruby-1.9.3-p392
+Importing initial gemsets for ruby-1.9.3-p392.
+paths: /home/ilu/.rvm/gemsets/ruby/1.9.3/p392 /home/ilu/.rvm/gemsets/ruby/1.9.3 /home/ilu/.rvm/gemsets/ruby /home/ilu/.rvm/gemsets
+
+Installing gems listed in /home/ilu/.rvm/gemsets/default.gems file...
+
+
+Processing of /home/ilu/.rvm/gemsets/default.gems is complete.
+
+
+Installing gems listed in /home/ilu/.rvm/gemsets/global.gems file...
+
+installing rubygems-bundler ...
+rubygems-bundler  installed.
+installing bundler ...
+bundler  installed.
+installing rake ...
+rake  installed.
+installing rvm ...
+rvm  installed.
+
+Processing of /home/ilu/.rvm/gemsets/global.gems is complete.
+
+Installation of gems for ruby-1.9.3-p392 is complete.

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class Launchy::Detect::Runner::Jruby - launchy-2.2.0 Documentation</title>
+
+<link type="text/css" media="screen" href="../../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../../js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../../index.html">Home</a>
+    <a href="../../../table_of_contents.html#classes">Classes</a>
+    <a href="../../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/launchy/detect/runner.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="../Runner.html">Launchy::Detect::Runner</a>
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-i-wet_run">#wet_run</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    <nav id="fileindex-section" class="section project-section">
+  <h3 class="section-header">Pages</h3>
+
+  <ul>
+  
+    <li class="file"><a href="../../../HISTORY_rdoc.html">HISTORY</a>
+  
+    <li class="file"><a href="../../../Manifest_txt.html">Manifest</a>
+  
+    <li class="file"><a href="../../../README_rdoc.html">README</a>
+  
+  </ul>
+</nav>
+
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../../Launchy.html">Launchy</a>
+  
+    <li><a href="../../../Launchy/Application.html">Launchy::Application</a>
+  
+    <li><a href="../../../Launchy/Application/Browser.html">Launchy::Application::Browser</a>
+  
+    <li><a href="../../../Launchy/ApplicationNotFoundError.html">Launchy::ApplicationNotFoundError</a>
+  
+    <li><a href="../../../Launchy/ArgumentError.html">Launchy::ArgumentError</a>
+  
+    <li><a href="../../../Launchy/Browser.html">Launchy::Browser</a>
+  
+    <li><a href="../../../Launchy/Cli.html">Launchy::Cli</a>
+  
+    <li><a href="../../../Launchy/CommandNotFoundError.html">Launchy::CommandNotFoundError</a>
+  
+    <li><a href="../../../Launchy/DescendantTracker.html">Launchy::DescendantTracker</a>
+  
+    <li><a href="../../../Launchy/Detect.html">Launchy::Detect</a>
+  
+    <li><a href="../../../Launchy/Detect/HostOs.html">Launchy::Detect::HostOs</a>
+  
+    <li><a href="../../../Launchy/Detect/HostOsFamily.html">Launchy::Detect::HostOsFamily</a>
+  
+    <li><a href="../../../Launchy/Detect/HostOsFamily/Cygwin.html">Launchy::Detect::HostOsFamily::Cygwin</a>
+  
+    <li><a href="../../../Launchy/Detect/HostOsFamily/Darwin.html">Launchy::Detect::HostOsFamily::Darwin</a>
+  
+    <li><a href="../../../Launchy/Detect/HostOsFamily/Nix.html">Launchy::Detect::HostOsFamily::Nix</a>
+  
+    <li><a href="../../../Launchy/Detect/HostOsFamily/NotFoundError.html">Launchy::Detect::HostOsFamily::NotFoundError</a>
+  
+    <li><a href="../../../Launchy/Detect/HostOsFamily/Windows.html">Launchy::Detect::HostOsFamily::Windows</a>
+  
+    <li><a href="../../../Launchy/Detect/NixDesktopEnvironment.html">Launchy::Detect::NixDesktopEnvironment</a>
+  
+    <li><a href="../../../Launchy/Detect/NixDesktopEnvironment/Fluxbox.html">Launchy::Detect::NixDesktopEnvironment::Fluxbox</a>
+  
+    <li><a href="../../../Launchy/Detect/NixDesktopEnvironment/Gnome.html">Launchy::Detect::NixDesktopEnvironment::Gnome</a>
+  
+    <li><a href="../../../Launchy/Detect/NixDesktopEnvironment/Kde.html">Launchy::Detect::NixDesktopEnvironment::Kde</a>
+  
+    <li><a href="../../../Launchy/Detect/NixDesktopEnvironment/NotFoundError.html">Launchy::Detect::NixDesktopEnvironment::NotFoundError</a>
+  
+    <li><a href="../../../Launchy/Detect/NixDesktopEnvironment/Xfce.html">Launchy::Detect::NixDesktopEnvironment::Xfce</a>
+  
+    <li><a href="../../../Launchy/Detect/RubyEngine.html">Launchy::Detect::RubyEngine</a>
+  
+    <li><a href="../../../Launchy/Detect/RubyEngine/Jruby.html">Launchy::Detect::RubyEngine::Jruby</a>
+  
+    <li><a href="../../../Launchy/Detect/RubyEngine/MacRuby.html">Launchy::Detect::RubyEngine::MacRuby</a>
+  
+    <li><a href="../../../Launchy/Detect/RubyEngine/Mri.html">Launchy::Detect::RubyEngine::Mri</a>
+  
+    <li><a href="../../../Launchy/Detect/RubyEngine/NotFoundError.html">Launchy::Detect::RubyEngine::NotFoundError</a>
+  
+    <li><a href="../../../Launchy/Detect/RubyEngine/Rbx.html">Launchy::Detect::RubyEngine::Rbx</a>
+  
+    <li><a href="../../../Launchy/Detect/Runner.html">Launchy::Detect::Runner</a>
+  
+    <li><a href="../../../Launchy/Detect/Runner/Forkable.html">Launchy::Detect::Runner::Forkable</a>
+  
+    <li><a href="../../../Launchy/Detect/Runner/Jruby.html">Launchy::Detect::Runner::Jruby</a>
+  
+    <li><a href="../../../Launchy/Detect/Runner/NotFoundError.html">Launchy::Detect::Runner::NotFoundError</a>
+  
+    <li><a href="../../../Launchy/Detect/Runner/Windows.html">Launchy::Detect::Runner::Windows</a>
+  
+    <li><a href="../../../Launchy/Error.html">Launchy::Error</a>
+  
+    <li><a href="../../../Launchy/OSFamily.html">Launchy::OSFamily</a>
+  
+    <li><a href="../../../Launchy/Version.html">Launchy::Version</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class Launchy::Detect::Runner::Jruby</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-wet_run" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">wet_run</span><span
+            class="method-args">( cmd, *args )</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="wet_run-source">
+            <pre><span class="ruby-comment"># File lib/launchy/detect/runner.rb, line 96</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">wet_run</span>( <span class="ruby-identifier">cmd</span>, *<span class="ruby-identifier">args</span> )
+  <span class="ruby-identifier">require</span> <span class="ruby-string">'spoon'</span>
+  <span class="ruby-constant">Spoon</span>.<span class="ruby-identifier">spawnp</span>( *<span class="ruby-identifier">shell_commands</span>( <span class="ruby-identifier">cmd</span>, *<span class="ruby-identifier">args</span> ) )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- wet_run-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- wet_run-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

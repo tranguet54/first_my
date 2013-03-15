@@ -1,0 +1,22 @@
+# GIMP sessionrc
+# 
+# This file takes session-specific info (that is info, you want to keep
+# between two GIMP sessions).  You are not supposed to edit it manually, but
+# of course you can do.  The sessionrc will be entirely rewritten every time
+# you quit GIMP.  If this file isn't found, defaults are used.
+
+(session-info "toplevel"
+    (factory-entry "gimp-empty-image-window")
+    (position 0 0)
+    (size 620 200)
+    (open-on-exit))
+(session-info "toplevel"
+    (factory-entry "gimp-single-image-window")
+    (position 160 70)
+    (size 1140 780))
+
+(hide-docks no)
+(single-window-mode no)
+(last-tip-shown 0)
+
+# end of sessionrc

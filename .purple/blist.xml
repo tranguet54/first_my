@@ -1,0 +1,583 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<purple version='1.0'>
+	<blist>
+		<group name='love'>
+			<setting name='collapsed' type='bool'>0</setting>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>a1_nhomaimotthoi91</name>
+					<setting name='last_seen' type='int'>1362928863</setting>
+					<setting name='buddy_icon' type='string'>eede45d68353d08b491d46ccf59364c504963c44.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>anhchangdemen46</name>
+					<setting name='last_seen' type='int'>1362124492</setting>
+					<setting name='buddy_icon' type='string'>32e3c0c346c97fc54bf8ede6ecc9b76fd368da2d.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>anhsang_thienduong199x</name>
+					<setting name='last_seen' type='int'>1362928863</setting>
+					<setting name='buddy_icon' type='string'>d7b9661cfd295bafd26f21857e7f6a764a946dee.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>anhtuan105_se</name>
+					<setting name='last_seen' type='int'>1363268275</setting>
+					<setting name='buddy_icon' type='string'>6254ff1e98678ef74273962ef79f853a2af74188.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>banlv_54it</name>
+					<setting name='last_seen' type='int'>1363156938</setting>
+					<setting name='buddy_icon' type='string'>76a9c278a9440d1fec3bf99fa19a756110fda956.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>chi_audi</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>chu_cho_bac_nhomai_0506</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>doremon_90203</name>
+					<setting name='last_seen' type='int'>1363268275</setting>
+					<setting name='buddy_icon' type='string'>50a079e7a849f157a78a12c55a210b08e647183d.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>duongkhoi1404</name>
+					<setting name='last_seen' type='int'>1363105600</setting>
+					<setting name='buddy_icon' type='string'>e52ed738d911162995bd948f6e8694fd3d6fea0c.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>fly_with_me_71101</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>flyingwithoutwings_therose_2006</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>hackker_boy91</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>hn_love_story</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>hnip.zunzuzun</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>hoahuongduong_28590</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>hoang_tu_ut_016141</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>hoangminh_itvn</name>
+					<setting name='last_seen' type='int'>1362718928</setting>
+					<setting name='buddy_icon' type='string'>7a0c6ba7b7d25200abe1959aa46e08e6875d292e.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>horcrux_vs_horcrux</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>joni_1951989</name>
+					<setting name='last_seen' type='int'>1362928863</setting>
+					<setting name='buddy_icon' type='string'>cf044e61dedeba3e841dc6b08637c6d4db7cc181.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>kedanhmattraitim_2291</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>khaiphuong91</name>
+					<setting name='last_seen' type='int'>1363113400</setting>
+					<setting name='buddy_icon' type='string'>a7170f4b0972dca4a237a25cf38ce5b41f11cacf.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>khicon_lonton91</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>linhnv2801</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>luffy_pirates0811</name>
+					<setting name='last_seen' type='int'>1363268275</setting>
+					<setting name='buddy_icon' type='string'>d7c749637f741e5b7f7bc458a28d219da1c32177.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>maivandung_12</name>
+					<setting name='last_seen' type='int'>1363268275</setting>
+					<setting name='buddy_icon' type='string'>ca360aedb09192db03f0de40a2fd58af045a42e7.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+				<setting name='gtk-mute-sound' type='bool'>0</setting>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>manhtung27m</name>
+					<setting name='last_seen' type='int'>1363160603</setting>
+					<setting name='buddy_icon' type='string'>f6409349e5f4177d8eb979f873a3a8d06d7e78a5.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>michaellaata178</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>minhthuyet_241090</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>moicongchuachat_87</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>mr.tuannhu</name>
+					<setting name='last_seen' type='int'>1363085629</setting>
+					<setting name='buddy_icon' type='string'>8322ccdd475e7ccd3e56decd4ac53d5d6af8c635.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>ms.codai2810</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>ngocson_temple</name>
+					<setting name='last_seen' type='int'>1363154452</setting>
+					<setting name='buddy_icon' type='string'>41ddd8ec186d87999d365c820b74102daca69da9.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>nguoidanongtranthat_27</name>
+					<setting name='last_seen' type='int'>1363268275</setting>
+					<setting name='buddy_icon' type='string'>3d89cbfd69f17b29b8d91092483c0d7e77fafd97.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>nguoikhongquen_15</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>nguyenductu_86</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>oc_chot_hd</name>
+					<setting name='last_seen' type='int'>1363268275</setting>
+					<setting name='buddy_icon' type='string'>fbdf5ad453c19d24dbef916424856cf5e223cb15.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+				<setting name='gtk-mute-sound' type='bool'>0</setting>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>p9long</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>phuonglanlan2011</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>quyet_tan_do_em_vb_hn</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>quynhtrang2611989</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>se7en0p</name>
+					<setting name='last_seen' type='int'>1363268275</setting>
+					<setting name='buddy_icon' type='string'>b1157127be7b2a004d43007d72f9adacd268d3c5.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>stolen_heart_sky</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>super_xhunter</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>t_thjeugja</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>tell_me_1604</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>thatsthat_220_284</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>tomit_142</name>
+					<setting name='last_seen' type='int'>1363160603</setting>
+					<setting name='buddy_icon' type='string'>de39debf47577562f497b79dd7caca1eaa2fd3e3.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>trang_shm</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>tranhuong_9x</name>
+					<setting name='last_seen' type='int'>1363268275</setting>
+					<setting name='buddy_icon' type='string'>41418df69b46e4cb3c86bea40eb5c95e0aa55262.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>trung_hoan_ocean</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>tuthan_ditu</name>
+					<setting name='last_seen' type='int'>1363084675</setting>
+					<setting name='buddy_icon' type='string'>249571f6cdc886e9735ad377b0bfa2cc2013ce97.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>vandu_haui</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>xuanhuy_futaro</name>
+					<setting name='last_seen' type='int'>1363103535</setting>
+					<setting name='buddy_icon' type='string'>d9cd7f6b17e072211fb1e980d90c51fb2b55e3bf.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>you_and_i66</name>
+				</buddy>
+			</contact>
+		</group>
+		<group name='bạn'>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>danhquyen_6868</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>luutinhit_1412</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>sonthuy83</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>danhmat_199</name>
+				</buddy>
+			</contact>
+		</group>
+		<group name='214'>
+			<setting name='collapsed' type='bool'>0</setting>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>bigbosstb</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>btnvietnam5</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>buonmotchutthoi_dunglo</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>congpt.ict81</name>
+					<setting name='last_seen' type='int'>1363106439</setting>
+					<setting name='buddy_icon' type='string'>31e2ba33a7169c6bf4dfe64251bf40e746193731.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+				<setting name='gtk-mute-sound' type='bool'>0</setting>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>danthanh92</name>
+					<setting name='last_seen' type='int'>1363106439</setting>
+					<setting name='buddy_icon' type='string'>9541742375327abbd18e8f6c095562aa0a39970f.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>hann2404</name>
+					<setting name='last_seen' type='int'>1363268275</setting>
+					<setting name='buddy_icon' type='string'>fbdf5ad453c19d24dbef916424856cf5e223cb15.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+				<setting name='gtk-mute-sound' type='bool'>0</setting>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>hienmeo9x</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>hoahongden_pth</name>
+					<setting name='last_seen' type='int'>1362735062</setting>
+					<setting name='buddy_icon' type='string'>298a79f8889552e1ad656b18d2da2fcf897856b9.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>inloveandwar_190786</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>loan_lete</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>mr_nhi_nho</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>onlyu_and_onlylove</name>
+					<setting name='last_seen' type='int'>1362124492</setting>
+					<setting name='buddy_icon' type='string'>c8a104341af5dd9eb62d2b56e30283237c5842f4.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>quynh_chau_2012</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>thaonguyenk54cntt</name>
+					<setting name='last_seen' type='int'>1362734681</setting>
+					<setting name='buddy_icon' type='string'>9dd2dd7bfa2dead11671d223bf9fbda33991e263.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+				<setting name='gtk-mute-sound' type='bool'>0</setting>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>vimanhhiep</name>
+				</buddy>
+			</contact>
+		</group>
+		<group name='211'>
+			<setting name='collapsed' type='bool'>0</setting>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>anhthuson</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>cattompt</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>haiyen_kt0610</name>
+					<setting name='last_seen' type='int'>1362637870</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>kemlanhhp1107</name>
+					<setting name='last_seen' type='int'>1363163277</setting>
+					<setting name='buddy_icon' type='string'>93bf6d76531ca2201ded5dead7310af45b7fdc5b.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>khanhchi_1303</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>leson_dhxd123</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>lucct84</name>
+					<setting name='last_seen' type='int'>1363099493</setting>
+					<setting name='buddy_icon' type='string'>f7fdb75e225993fe53b9a72e041f816b4d8356a3.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>matnai_rangkhenh_87</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>phamvanthanh_tdh51</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>thanhhue1951986</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>thaonguyen_hg881</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>tronghoa_0511</name>
+					<setting name='last_seen' type='int'>1363160121</setting>
+					<setting name='buddy_icon' type='string'>86e9a67e64847363db035816dd2ca5ba79116248.png</setting>
+					<setting name='icon_checksum' type='string'>0</setting>
+				</buddy>
+			</contact>
+		</group>
+		<group name=' 211'>
+			<setting name='collapsed' type='bool'>0</setting>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>anbbvn</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>boy.co_don91</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>kdbsic</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>mandanbr862</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>niit_android_hanoi</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>thanh_nguyen3825</name>
+					<setting name='last_seen' type='int'>1362928863</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='doremon_90203' proto='prpl-yahoo'>
+					<name>girly_6xoxo156</name>
+				</buddy>
+			</contact>
+		</group>
+	</blist>
+	<privacy>
+		<account proto='prpl-yahoo' name='doremon_90203' mode='1'/>
+	</privacy>
+</purple>

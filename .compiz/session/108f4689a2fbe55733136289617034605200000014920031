@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<compiz_session id="108f4689a2fbe55733136289617034605200000014920031">
+  <window id="108f4689a2fbe55733136289621147180700000014920036" title="Terminal" class="Gnome-terminal" name="gnome-terminal" role="gnome-terminal-window-2450-126515263-1362896211" command="gnome-terminal">
+    <geometry x="114" y="24" width="722" height="434"/>
+    <minimized/>
+    <workspace index="0"/>
+  </window>
+  <window id="108f4689a2fbe5573313628969884080800000014920040" title="Addison.Wesley.Ruby.on.Rails.Tutorial.2nd.Edition.Jul.2012.pdf %G&#x2014;%@ Ruby on Rails$(C&quot;b(B Tutorial: Learn Web Developments with Rails" class="Evince" name="evince" command="evince">
+    <geometry x="293" y="132" width="600" height="600"/>
+    <minimized/>
+    <maximized vert="yes" horz="yes"/>
+    <workspace index="0"/>
+  </window>
+  <window id="108f4689a2fbe55733136289699099682500000014920041" title="StarDict" class="Stardict" name="stardict" command="stardict">
+    <geometry x="405" y="203" width="555" height="361"/>
+    <minimized/>
+    <workspace index="0"/>
+  </window>
+  <window id="108f4689a2fbe55733136289617780750400000014920033" title="Google D%G&#x1ECB;%@ch - Mozilla Firefox" class="Firefox" name="Navigator" role="browser" command="firefox">
+    <geometry x="65" y="24" width="1291" height="716"/>
+    <workspace index="0"/>
+  </window>
+</compiz_session>

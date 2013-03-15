@@ -1,0 +1,9 @@
+{:ancestors{I"
+Netrc:EF[I"Object;FI"Netrc::Error;F[I"StandardError;F:attributes{I"
+Netrc;F[I""attr_accessor new_item_prefix;F:class_methods{I"
+Netrc;F[I"check_permissions;FI"default_path;FI"lex;FI"new;FI"
+parse;FI"	read;FI"
+skip?;F:encodingIu:Encoding
+UTF-8;F:instance_methods{I"
+Netrc;F[I"[];FI"[]=;FI"delete;FI"	each;FI"length;FI"new_item;FI"new_item_prefix;FI"	save;FI"unparse;F:modules[I"
+Netrc;FI"Netrc::Error;F

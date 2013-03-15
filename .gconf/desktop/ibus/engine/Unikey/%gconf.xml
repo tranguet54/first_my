@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="spell_check" mtime="1362902170" type="bool" value="false"/>
+</gconf>

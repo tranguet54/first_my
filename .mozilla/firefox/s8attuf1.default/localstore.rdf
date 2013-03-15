@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="place:beginTime=1362070800000000&amp;endTime=1362848400000000&amp;sort=1"
+                   NC:open="true" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#nav-bar"
+                   currentset="unified-back-forward-button,urlbar-container,reload-button,stop-button,search-container,home-button,bookmarks-menu-button-container,window-controls,social-toolbar-item,firebug-button"
+                   collapsed="" />
+  <RDF:Description RDF:about="place:beginTime=1362243600000000&amp;endTime=1362934800000000&amp;sort=1"
+                   NC:open="true" />
+  <RDF:Description RDF:about="chrome://browser/content/sanitize.xul">
+    <NC:persist RDF:resource="chrome://browser/content/sanitize.xul#SanitizeDialog"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://browser/content/sanitize.xul#SanitizeDialog"
+                   screenX="445"
+                   screenY="303" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#sidebar-box"
+                   src="chrome://browser/content/history/history-panel.xul"
+                   sidebarcommand=""
+                   width="" />
+  <RDF:Description RDF:about="chrome://mozapps/content/downloads/downloads.xul">
+    <NC:persist RDF:resource="chrome://mozapps/content/downloads/downloads.xul#downloadManager"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="chrome://mozapps/content/downloads/downloads.xul#downloadManager"
+                   width="485"
+                   height="300"
+                   sizemode="normal"
+                   screenX="879"
+                   screenY="24" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul">
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#main-window"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#home-button"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#addon-bar"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#sidebar-box"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#sidebar-title"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#nav-bar"/>
+    <NC:persist RDF:resource="chrome://browser/content/browser.xul#PersonalToolbar"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="place:beginTime=1363021200000000&amp;endTime=1363107600000000&amp;sort=1"
+                   NC:open="true" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#PersonalToolbar"
+                   collapsed="false" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#main-window"
+                   height="734"
+                   width="1289"
+                   sizemode="normal"
+                   screenX="65"
+                   screenY="24" />
+  <RDF:Description RDF:about="chrome://mozapps/content/downloads/unknownContentType.xul#unknownContentType"
+                   screenX="396"
+                   screenY="195" />
+  <RDF:Description RDF:about="chrome://pippki/content/exceptionDialog.xul">
+    <NC:persist RDF:resource="chrome://pippki/content/exceptionDialog.xul#exceptiondialog"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="place:beginTime=1362675600000000&amp;endTime=1362762000000000&amp;sort=1"
+                   NC:open="true" />
+  <RDF:Description RDF:about="chrome://pippki/content/exceptionDialog.xul#exceptiondialog"
+                   screenX="246"
+                   screenY="113"
+                   width="501"
+                   height="480" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#home-button"
+                   class="toolbarbutton-1 chromeclass-toolbar-additional" />
+  <RDF:Description RDF:about="chrome://browser/content/browser.xul#addon-bar"
+                   collapsed="true" />
+  <RDF:Description RDF:about="chrome://mozapps/content/downloads/unknownContentType.xul">
+    <NC:persist RDF:resource="chrome://mozapps/content/downloads/unknownContentType.xul#unknownContentType"/>
+  </RDF:Description>
+</RDF:RDF>

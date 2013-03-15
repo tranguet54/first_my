@@ -1,0 +1,18 @@
+2013-03-12 10:25:14,338 - twisted - ERROR - Unhandled error in Deferred:
+2013-03-12 10:25:14,464 - twisted - ERROR - Unhandled Error
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 368, in callback
+    self._startRunCallbacks(result)
+  File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 464, in _startRunCallbacks
+    self._runCallbacks()
+  File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 551, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1101, in gotResult
+    _inlineCallbacks(r, g, deferred)
+--- <exception caught here> ---
+  File "/usr/lib/python2.7/dist-packages/twisted/internet/defer.py", line 1045, in _inlineCallbacks
+    result = g.send(result)
+  File "/usr/lib/python2.7/dist-packages/ubuntuone-client/ubuntuone/syncdaemon/interaction_interfaces.py", line 1266, in connect
+    raise NoAccessToken("got empty credentials.")
+ubuntuone.syncdaemon.interaction_interfaces.NoAccessToken: got empty credentials.
+

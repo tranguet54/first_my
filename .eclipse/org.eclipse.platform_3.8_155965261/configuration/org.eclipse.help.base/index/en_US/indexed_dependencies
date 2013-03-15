@@ -1,0 +1,4 @@
+#This is a generated file; do not edit.
+#Thu Mar 14 19:29:20 ICT 2013
+lucene=2.9.4
+analyzer=org.eclipse.help.base\#3.6.100.dist?locale\=en

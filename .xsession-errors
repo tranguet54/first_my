@@ -1,0 +1,114 @@
+compiz (core) - Info: Loading plugin: core
+compiz (core) - Info: Starting plugin: core
+compiz (core) - Info: Loading plugin: ccp
+compiz (core) - Info: Starting plugin: ccp
+compiz (core) - Info: Loading plugin: composite
+compiz (core) - Info: Starting plugin: composite
+compiz (core) - Info: Loading plugin: opengl
+compiz (core) - Info: Unity is fully supported by your hardware.
+compiz (core) - Info: Unity is fully supported by your hardware.
+compiz (core) - Info: Starting plugin: opengl
+compiz (core) - Info: Loading plugin: compiztoolbox
+compiz (core) - Info: Starting plugin: compiztoolbox
+compiz (core) - Info: Loading plugin: decor
+compiz (core) - Info: Starting plugin: decor
+compiz (core) - Info: Loading plugin: vpswitch
+compiz (core) - Info: Starting plugin: vpswitch
+compiz (core) - Info: Loading plugin: snap
+compiz (core) - Info: Starting plugin: snap
+compiz (core) - Info: Loading plugin: mousepoll
+compiz (core) - Info: Starting plugin: mousepoll
+compiz (core) - Info: Loading plugin: resize
+compiz (core) - Info: Starting plugin: resize
+compiz (core) - Info: Loading plugin: place
+compiz (core) - Info: Starting plugin: place
+compiz (core) - Info: Loading plugin: move
+compiz (core) - Info: Starting plugin: move
+compiz (core) - Info: Loading plugin: wall
+compiz (core) - Info: Starting plugin: wall
+compiz (core) - Info: Loading plugin: grid
+compiz (core) - Info: Starting plugin: grid
+compiz (core) - Info: Loading plugin: regex
+compiz (core) - Info: Starting plugin: regex
+compiz (core) - Info: Loading plugin: imgpng
+compiz (core) - Info: Starting plugin: imgpng
+compiz (core) - Info: Loading plugin: session
+compiz (core) - Info: Starting plugin: session
+I/O warning : failed to load external entity "/home/ilu/.compiz/session/104d762d6f9e7917b136331210171000700000014910031"
+compiz (core) - Info: Loading plugin: gnomecompat
+** Message: applet now removed from the notification area
+compiz (core) - Info: Starting plugin: gnomecompat
+compiz (core) - Info: Loading plugin: animation
+** Message: using fallback from indicator to GtkStatusIcon
+compiz (core) - Info: Starting plugin: animation
+compiz (core) - Info: Loading plugin: fade
+compiz (core) - Info: Starting plugin: fade
+compiz (core) - Info: Loading plugin: unitymtgrabhandles
+compiz (core) - Info: Starting plugin: unitymtgrabhandles
+compiz (core) - Info: Loading plugin: workarounds
+compiz (core) - Info: Starting plugin: workarounds
+compiz (core) - Info: Loading plugin: scale
+compiz (core) - Info: Starting plugin: scale
+compiz (core) - Info: Loading plugin: expo
+compiz (core) - Info: Starting plugin: expo
+compiz (expo) - Warn: failed to bind image to texture
+compiz (core) - Info: Loading plugin: ezoom
+compiz (core) - Info: Starting plugin: ezoom
+compiz (core) - Info: Loading plugin: unityshell
+compiz (core) - Info: Starting plugin: unityshell
+Nautilus-Share-Message: Called "net usershare info" but it failed: 'net usershare' returned error 255: net usershare: cannot open usershare directory /var/lib/samba/usershares. Error No such file or directory
+Please ask your system administrator to enable user sharing.
+
+compiz (decor) - Warn: failed to bind pixmap to texture
+compiz (decor) - Warn: failed to bind pixmap to texture
+compiz (decor) - Warn: failed to bind pixmap to texture
+compiz (decor) - Warn: failed to bind pixmap to texture
+** Message: moving back from GtkStatusIcon to indicator
+
+** (gnome-screensaver:2047): WARNING **: screensaver already running in this session
+
+** (zeitgeist-datahub:2048): WARNING **: recent-manager-provider.vala:133: Desktop file for "file:///home/ilu/Desktop/ROR/guestbook/app/views/entries/index.html.erb" was not found, exec: sublime_text, mime_type: application/octet-stream
+
+** (zeitgeist-datahub:2048): WARNING **: recent-manager-provider.vala:133: Desktop file for "file:///home/ilu/Downloads/talking.prc" was not found, exec: okular, mime_type: application/x-mobipocket-ebook
+Agent unregistration failed: GDBus.Error:org.freedesktop.DBus.Error.UnknownObject: Method "UnregisterAgent" with signature "o" on interface "org.bluez.Adapter" doesn't exist
+ 'g-io-error-quark'
+
+** (nautilus:1836): WARNING **: Error calling current_status: Method "current_status" with signature "" on interface "com.ubuntuone.SyncDaemon.Status" doesn't exist
+
+
+** (nautilus:1836): CRITICAL **: syncdaemon_status_info_get_online: assertion `SYNCDAEMON_IS_STATUS_INFO (sinfo)' failed
+
+** (firefox:2359): WARNING **: Failed to open webapp application path dir /usr/share/ubuntu/unity-webapps/userscripts: Error opening directory '/usr/share/ubuntu/unity-webapps/userscripts': No such file or directory
+
+** (firefox:2359): WARNING **: Failed to open webapp application path dir /usr/share/gnome/unity-webapps/userscripts: Error opening directory '/usr/share/gnome/unity-webapps/userscripts': No such file or directory
+
+** (firefox:2359): WARNING **: Failed to open webapp application path dir /usr/local/share/unity-webapps/userscripts: Error opening directory '/usr/local/share/unity-webapps/userscripts': No such file or directory
+** Message: No keyring secrets found for Framgia_WL5/802-11-wireless-security; asking user.
+
+(nm-applet:1834): GLib-GObject-CRITICAL **: g_object_unref: assertion `G_IS_OBJECT (object)' failed
+** Message: No keyring secrets found for Framgia_WL5/802-11-wireless-security; asking user.
+
+(nm-applet:1834): GLib-GObject-CRITICAL **: g_object_unref: assertion `G_IS_OBJECT (object)' failed
+Initialization file /usr/share/festival/init.scm not found
+
+(nautilus:1836): GdkPixbuf-CRITICAL **: gdk_pixbuf_loader_close: assertion `GDK_IS_PIXBUF_LOADER (loader)' failed
+
+(nautilus:1836): GdkPixbuf-CRITICAL **: gdk_pixbuf_loader_get_pixbuf: assertion `GDK_IS_PIXBUF_LOADER (loader)' failed
+
+(nautilus:1836): GLib-GObject-CRITICAL **: g_object_unref: assertion `G_IS_OBJECT (object)' failed
+
+** (zeitgeist-datahub:2048): WARNING **: recent-manager-provider.vala:133: Desktop file for "file:///home/ilu/Desktop/ROR/guestbook/app/views/entries/index.html.erb" was not found, exec: sublime_text, mime_type: application/octet-stream
+
+** (zeitgeist-datahub:2048): WARNING **: recent-manager-provider.vala:133: Desktop file for "file:///home/ilu/Downloads/talking.prc" was not found, exec: okular, mime_type: application/x-mobipocket-ebook
+
+** (zeitgeist-datahub:2048): WARNING **: recent-manager-provider.vala:133: Desktop file for "file:///home/ilu/Desktop/ROR/guestbook/app/views/entries/index.html.erb" was not found, exec: sublime_text, mime_type: application/octet-stream
+
+** (zeitgeist-datahub:2048): WARNING **: recent-manager-provider.vala:133: Desktop file for "file:///home/ilu/Downloads/talking.prc" was not found, exec: okular, mime_type: application/x-mobipocket-ebook
+
+** (zeitgeist-datahub:2048): WARNING **: recent-manager-provider.vala:133: Desktop file for "file:///home/ilu/Desktop/ROR/guestbook/app/views/entries/index.html.erb" was not found, exec: sublime_text, mime_type: application/octet-stream
+
+** (zeitgeist-datahub:2048): WARNING **: recent-manager-provider.vala:133: Desktop file for "file:///home/ilu/Downloads/talking.prc" was not found, exec: okular, mime_type: application/x-mobipocket-ebook
+
+** (zeitgeist-datahub:2048): WARNING **: recent-manager-provider.vala:133: Desktop file for "file:///home/ilu/Desktop/ROR/guestbook/app/views/entries/index.html.erb" was not found, exec: sublime_text, mime_type: application/octet-stream
+
+** (zeitgeist-datahub:2048): WARNING **: recent-manager-provider.vala:133: Desktop file for "file:///home/ilu/Downloads/talking.prc" was not found, exec: okular, mime_type: application/x-mobipocket-ebook

@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="scan_selection" mtime="1362897022" type="bool" value="true"/>
+</gconf>

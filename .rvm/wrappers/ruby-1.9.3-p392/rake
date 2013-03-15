@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+if [[ -s "/home/ilu/.rvm/environments/ruby-1.9.3-p392" ]]
+then
+  source "/home/ilu/.rvm/environments/ruby-1.9.3-p392"
+  exec rake "$@"
+else
+  echo "ERROR: Missing RVM environment file: '/home/ilu/.rvm/environments/ruby-1.9.3-p392'" >&2
+  exit 1
+fi

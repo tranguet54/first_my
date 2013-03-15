@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<compiz_session id="1013e6e2255146c50d136297651950091500000092290031">
+  <window id="1013e6e2255146c50d136297652930708800000092290035" title="Terminal" class="Gnome-terminal" name="gnome-terminal" role="gnome-terminal-window-9515-1610823012-1362977244" command="gnome-terminal">
+    <geometry x="65" y="24" width="722" height="434"/>
+    <workspace index="0"/>
+  </window>
+  <window id="1013e6e2255146c50d136297652930708800000092290035" title="Terminal" class="Gnome-terminal" name="gnome-terminal" role="gnome-terminal-window-9515-344092268-1362977378" command="gnome-terminal">
+    <geometry x="301" y="118" width="722" height="434"/>
+    <minimized/>
+    <workspace index="0"/>
+  </window>
+  <window id="1013e6e2255146c50d136297652930708800000092290035" title="Terminal" class="Gnome-terminal" name="gnome-terminal" role="gnome-terminal-window-9515-1927259467-1362976529" command="gnome-terminal">
+    <geometry x="433" y="70" width="722" height="434"/>
+    <workspace index="0"/>
+  </window>
+  <window id="1013e6e2255146c50d13629775979511800000092290038" title="StarDict" class="Stardict" name="stardict" command="stardict">
+    <geometry x="405" y="203" width="555" height="361"/>
+    <workspace index="0"/>
+  </window>
+  <window id="1013e6e2255146c50d136297654077885200000092290037" title="Ruby on Rails Guides: Getting Started with Rails - Mozilla Firefox" class="Firefox" name="Navigator" role="browser" command="firefox">
+    <geometry x="114" y="24" width="1291" height="715"/>
+    <maximized vert="yes" horz="yes"/>
+    <workspace index="0"/>
+  </window>
+</compiz_session>

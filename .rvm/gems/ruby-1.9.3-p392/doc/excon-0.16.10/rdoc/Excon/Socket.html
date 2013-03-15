@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class Excon::Socket - excon-0.16.10 Documentation</title>
+
+<link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../index.html">Home</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/excon/socket.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">Object
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-new">::new</a>
+    
+    <li><a href="#method-i-connect">#connect</a>
+    
+    <li><a href="#method-i-read">#read</a>
+    
+    <li><a href="#method-i-write">#write</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../Excon.html">Excon</a>
+  
+    <li><a href="../Excon/Connection.html">Excon::Connection</a>
+  
+    <li><a href="../Excon/Errors.html">Excon::Errors</a>
+  
+    <li><a href="../Excon/Errors/Accepted.html">Excon::Errors::Accepted</a>
+  
+    <li><a href="../Excon/Errors/BadGateway.html">Excon::Errors::BadGateway</a>
+  
+    <li><a href="../Excon/Errors/BadRequest.html">Excon::Errors::BadRequest</a>
+  
+    <li><a href="../Excon/Errors/Conflict.html">Excon::Errors::Conflict</a>
+  
+    <li><a href="../Excon/Errors/Continue.html">Excon::Errors::Continue</a>
+  
+    <li><a href="../Excon/Errors/Created.html">Excon::Errors::Created</a>
+  
+    <li><a href="../Excon/Errors/Error.html">Excon::Errors::Error</a>
+  
+    <li><a href="../Excon/Errors/ExpectationFailed.html">Excon::Errors::ExpectationFailed</a>
+  
+    <li><a href="../Excon/Errors/Forbidden.html">Excon::Errors::Forbidden</a>
+  
+    <li><a href="../Excon/Errors/Found.html">Excon::Errors::Found</a>
+  
+    <li><a href="../Excon/Errors/GatewayTimeout.html">Excon::Errors::GatewayTimeout</a>
+  
+    <li><a href="../Excon/Errors/Gone.html">Excon::Errors::Gone</a>
+  
+    <li><a href="../Excon/Errors/HTTPStatusError.html">Excon::Errors::HTTPStatusError</a>
+  
+    <li><a href="../Excon/Errors/InternalServerError.html">Excon::Errors::InternalServerError</a>
+  
+    <li><a href="../Excon/Errors/LengthRequired.html">Excon::Errors::LengthRequired</a>
+  
+    <li><a href="../Excon/Errors/MethodNotAllowed.html">Excon::Errors::MethodNotAllowed</a>
+  
+    <li><a href="../Excon/Errors/MovedPermanently.html">Excon::Errors::MovedPermanently</a>
+  
+    <li><a href="../Excon/Errors/MultipleChoices.html">Excon::Errors::MultipleChoices</a>
+  
+    <li><a href="../Excon/Errors/NoContent.html">Excon::Errors::NoContent</a>
+  
+    <li><a href="../Excon/Errors/NonAuthoritativeInformation.html">Excon::Errors::NonAuthoritativeInformation</a>
+  
+    <li><a href="../Excon/Errors/NotAcceptable.html">Excon::Errors::NotAcceptable</a>
+  
+    <li><a href="../Excon/Errors/NotFound.html">Excon::Errors::NotFound</a>
+  
+    <li><a href="../Excon/Errors/NotImplemented.html">Excon::Errors::NotImplemented</a>
+  
+    <li><a href="../Excon/Errors/NotModified.html">Excon::Errors::NotModified</a>
+  
+    <li><a href="../Excon/Errors/OK.html">Excon::Errors::OK</a>
+  
+    <li><a href="../Excon/Errors/PartialContent.html">Excon::Errors::PartialContent</a>
+  
+    <li><a href="../Excon/Errors/PaymentRequired.html">Excon::Errors::PaymentRequired</a>
+  
+    <li><a href="../Excon/Errors/PreconditionFailed.html">Excon::Errors::PreconditionFailed</a>
+  
+    <li><a href="../Excon/Errors/ProxyAuthenticationRequired.html">Excon::Errors::ProxyAuthenticationRequired</a>
+  
+    <li><a href="../Excon/Errors/ProxyConnectionError.html">Excon::Errors::ProxyConnectionError</a>
+  
+    <li><a href="../Excon/Errors/ProxyParseError.html">Excon::Errors::ProxyParseError</a>
+  
+    <li><a href="../Excon/Errors/RequestEntityTooLarge.html">Excon::Errors::RequestEntityTooLarge</a>
+  
+    <li><a href="../Excon/Errors/RequestTimeout.html">Excon::Errors::RequestTimeout</a>
+  
+    <li><a href="../Excon/Errors/RequestURITooLong.html">Excon::Errors::RequestURITooLong</a>
+  
+    <li><a href="../Excon/Errors/RequestedRangeNotSatisfiable.html">Excon::Errors::RequestedRangeNotSatisfiable</a>
+  
+    <li><a href="../Excon/Errors/ResetContent.html">Excon::Errors::ResetContent</a>
+  
+    <li><a href="../Excon/Errors/SeeOther.html">Excon::Errors::SeeOther</a>
+  
+    <li><a href="../Excon/Errors/ServiceUnavailable.html">Excon::Errors::ServiceUnavailable</a>
+  
+    <li><a href="../Excon/Errors/SocketError.html">Excon::Errors::SocketError</a>
+  
+    <li><a href="../Excon/Errors/StubNotFound.html">Excon::Errors::StubNotFound</a>
+  
+    <li><a href="../Excon/Errors/SwitchingProtocols.html">Excon::Errors::SwitchingProtocols</a>
+  
+    <li><a href="../Excon/Errors/TemporaryRedirect.html">Excon::Errors::TemporaryRedirect</a>
+  
+    <li><a href="../Excon/Errors/Timeout.html">Excon::Errors::Timeout</a>
+  
+    <li><a href="../Excon/Errors/Unauthorized.html">Excon::Errors::Unauthorized</a>
+  
+    <li><a href="../Excon/Errors/UnprocessableEntity.html">Excon::Errors::UnprocessableEntity</a>
+  
+    <li><a href="../Excon/Errors/UnsupportedMediaType.html">Excon::Errors::UnsupportedMediaType</a>
+  
+    <li><a href="../Excon/Errors/UseProxy.html">Excon::Errors::UseProxy</a>
+  
+    <li><a href="../Excon/Response.html">Excon::Response</a>
+  
+    <li><a href="../Excon/SSLSocket.html">Excon::SSLSocket</a>
+  
+    <li><a href="../Excon/Socket.html">Excon::Socket</a>
+  
+    <li><a href="../Excon/StandardInstrumentor.html">Excon::StandardInstrumentor</a>
+  
+    <li><a href="../IO.html">IO</a>
+  
+    <li><a href="../IO/WaitReadable.html">IO::WaitReadable</a>
+  
+    <li><a href="../IO/WaitWritable.html">IO::WaitWritable</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class Excon::Socket</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+    <!-- Attributes -->
+    <section id="attribute-method-details" class="method-section section">
+      <h3 class="section-header">Attributes</h3>
+
+      
+      <div id="attribute-i-params" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">params</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+    </section><!-- attribute-method-details -->
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(params = {}, proxy = nil)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File lib/excon/socket.rb, line 11</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">params</span> = {}, <span class="ruby-identifier">proxy</span> = <span class="ruby-keyword">nil</span>)
+  <span class="ruby-ivar">@params</span>, <span class="ruby-ivar">@proxy</span> = <span class="ruby-identifier">params</span>, <span class="ruby-identifier">proxy</span>
+  <span class="ruby-ivar">@read_buffer</span> = <span class="ruby-string">''</span>
+  <span class="ruby-ivar">@eof</span> = <span class="ruby-keyword">false</span>
+
+  <span class="ruby-identifier">connect</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-connect" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">connect</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="connect-source">
+            <pre><span class="ruby-comment"># File lib/excon/socket.rb, line 19</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">connect</span>
+  <span class="ruby-ivar">@socket</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-identifier">exception</span> = <span class="ruby-keyword">nil</span>
+
+  <span class="ruby-identifier">addrinfo</span> = <span class="ruby-keyword">if</span> <span class="ruby-ivar">@proxy</span>
+    <span class="ruby-operator">::</span><span class="ruby-constant">Socket</span>.<span class="ruby-identifier">getaddrinfo</span>(<span class="ruby-ivar">@proxy</span>[<span class="ruby-value">:host</span>], <span class="ruby-ivar">@proxy</span>[<span class="ruby-value">:port</span>].<span class="ruby-identifier">to_i</span>, <span class="ruby-operator">::</span><span class="ruby-constant">Socket</span><span class="ruby-operator">::</span><span class="ruby-constant">Constants</span><span class="ruby-operator">::</span><span class="ruby-constant">AF_UNSPEC</span>, <span class="ruby-operator">::</span><span class="ruby-constant">Socket</span><span class="ruby-operator">::</span><span class="ruby-constant">Constants</span><span class="ruby-operator">::</span><span class="ruby-constant">SOCK_STREAM</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-operator">::</span><span class="ruby-constant">Socket</span>.<span class="ruby-identifier">getaddrinfo</span>(<span class="ruby-ivar">@params</span>[<span class="ruby-value">:host</span>], <span class="ruby-ivar">@params</span>[<span class="ruby-value">:port</span>].<span class="ruby-identifier">to_i</span>, <span class="ruby-operator">::</span><span class="ruby-constant">Socket</span><span class="ruby-operator">::</span><span class="ruby-constant">Constants</span><span class="ruby-operator">::</span><span class="ruby-constant">AF_UNSPEC</span>, <span class="ruby-operator">::</span><span class="ruby-constant">Socket</span><span class="ruby-operator">::</span><span class="ruby-constant">Constants</span><span class="ruby-operator">::</span><span class="ruby-constant">SOCK_STREAM</span>)
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">addrinfo</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">_</span>, <span class="ruby-identifier">port</span>, <span class="ruby-identifier">_</span>, <span class="ruby-identifier">ip</span>, <span class="ruby-identifier">a_family</span>, <span class="ruby-identifier">s_type</span><span class="ruby-operator">|</span>
+    <span class="ruby-comment"># nonblocking connect</span>
+    <span class="ruby-keyword">begin</span>
+      <span class="ruby-identifier">sockaddr</span> = <span class="ruby-operator">::</span><span class="ruby-constant">Socket</span>.<span class="ruby-identifier">sockaddr_in</span>(<span class="ruby-identifier">port</span>, <span class="ruby-identifier">ip</span>)
+
+      <span class="ruby-identifier">socket</span> = <span class="ruby-operator">::</span><span class="ruby-constant">Socket</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">a_family</span>, <span class="ruby-identifier">s_type</span>, <span class="ruby-value">0</span>)
+
+      <span class="ruby-keyword">if</span> <span class="ruby-ivar">@params</span>[<span class="ruby-value">:nonblock</span>]
+        <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">connect_nonblock</span>(<span class="ruby-identifier">sockaddr</span>)
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-keyword">begin</span>
+          <span class="ruby-constant">Timeout</span>.<span class="ruby-identifier">timeout</span>(<span class="ruby-ivar">@params</span>[<span class="ruby-value">:connect_timeout</span>]) <span class="ruby-keyword">do</span>
+            <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">connect</span>(<span class="ruby-identifier">sockaddr</span>)
+          <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">rescue</span> <span class="ruby-constant">Timeout</span><span class="ruby-operator">::</span><span class="ruby-constant">Error</span>
+          <span class="ruby-identifier">raise</span> <span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">Timeout</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">'connect timeout reached'</span>)
+        <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">end</span>
+
+      <span class="ruby-ivar">@socket</span> = <span class="ruby-identifier">socket</span>
+      <span class="ruby-keyword">break</span>
+    <span class="ruby-keyword">rescue</span> <span class="ruby-constant">Errno</span><span class="ruby-operator">::</span><span class="ruby-constant">EINPROGRESS</span>
+      <span class="ruby-keyword">unless</span> <span class="ruby-constant">IO</span>.<span class="ruby-identifier">select</span>(<span class="ruby-keyword">nil</span>, [<span class="ruby-identifier">socket</span>], <span class="ruby-keyword">nil</span>, <span class="ruby-ivar">@params</span>[<span class="ruby-value">:connect_timeout</span>])
+        <span class="ruby-identifier">raise</span>(<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">Timeout</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;connect timeout reached&quot;</span>))
+      <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">begin</span>
+        <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">connect_nonblock</span>(<span class="ruby-identifier">sockaddr</span>)
+
+        <span class="ruby-ivar">@socket</span> = <span class="ruby-identifier">socket</span>
+        <span class="ruby-keyword">break</span>
+      <span class="ruby-keyword">rescue</span> <span class="ruby-constant">Errno</span><span class="ruby-operator">::</span><span class="ruby-constant">EISCONN</span>
+        <span class="ruby-ivar">@socket</span> = <span class="ruby-identifier">socket</span>
+        <span class="ruby-keyword">break</span>
+      <span class="ruby-keyword">rescue</span> <span class="ruby-constant">SystemCallError</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">exception</span>
+        <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">close</span>
+        <span class="ruby-keyword">next</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">rescue</span> <span class="ruby-constant">SystemCallError</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">exception</span>
+      <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">close</span>
+      <span class="ruby-keyword">next</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-keyword">unless</span> <span class="ruby-ivar">@socket</span>
+    <span class="ruby-comment"># this will be our last encountered exception</span>
+    <span class="ruby-identifier">raise</span> <span class="ruby-identifier">exception</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- connect-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- connect-method -->
+
+    
+      <div id="method-i-read" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">read</span><span
+            class="method-args">(max_length=nil)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="read-source">
+            <pre><span class="ruby-comment"># File lib/excon/socket.rb, line 78</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">read</span>(<span class="ruby-identifier">max_length</span>=<span class="ruby-keyword">nil</span>)
+  <span class="ruby-keyword">return</span> <span class="ruby-keyword">nil</span> <span class="ruby-keyword">if</span> <span class="ruby-ivar">@eof</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@eof</span>
+    <span class="ruby-string">''</span>
+  <span class="ruby-keyword">elsif</span> <span class="ruby-ivar">@params</span>[<span class="ruby-value">:nonblock</span>]
+    <span class="ruby-keyword">begin</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">max_length</span>
+        <span class="ruby-keyword">until</span> <span class="ruby-ivar">@read_buffer</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-identifier">max_length</span>
+          <span class="ruby-ivar">@read_buffer</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-ivar">@socket</span>.<span class="ruby-identifier">read_nonblock</span>(<span class="ruby-identifier">max_length</span> <span class="ruby-operator">-</span> <span class="ruby-ivar">@read_buffer</span>.<span class="ruby-identifier">length</span>)
+        <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-keyword">while</span> <span class="ruby-keyword">true</span>
+          <span class="ruby-ivar">@read_buffer</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-ivar">@socket</span>.<span class="ruby-identifier">read_nonblock</span>(<span class="ruby-ivar">@params</span>[<span class="ruby-value">:chunk_size</span>])
+        <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">rescue</span> <span class="ruby-constant">OpenSSL</span><span class="ruby-operator">::</span><span class="ruby-constant">SSL</span><span class="ruby-operator">::</span><span class="ruby-constant">SSLError</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">error</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">error</span>.<span class="ruby-identifier">message</span> <span class="ruby-operator">==</span> <span class="ruby-string">'read would block'</span>
+        <span class="ruby-keyword">if</span> <span class="ruby-constant">IO</span>.<span class="ruby-identifier">select</span>([<span class="ruby-ivar">@socket</span>], <span class="ruby-keyword">nil</span>, <span class="ruby-keyword">nil</span>, <span class="ruby-ivar">@params</span>[<span class="ruby-value">:read_timeout</span>])
+          <span class="ruby-keyword">retry</span>
+        <span class="ruby-keyword">else</span>
+          <span class="ruby-identifier">raise</span>(<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">Timeout</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;read timeout reached&quot;</span>))
+        <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-identifier">raise</span>(<span class="ruby-identifier">error</span>)
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">rescue</span> <span class="ruby-constant">Errno</span><span class="ruby-operator">::</span><span class="ruby-constant">EAGAIN</span>, <span class="ruby-constant">Errno</span><span class="ruby-operator">::</span><span class="ruby-constant">EWOULDBLOCK</span>, <span class="ruby-constant">IO</span><span class="ruby-operator">::</span><span class="ruby-constant">WaitReadable</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-constant">IO</span>.<span class="ruby-identifier">select</span>([<span class="ruby-ivar">@socket</span>], <span class="ruby-keyword">nil</span>, <span class="ruby-keyword">nil</span>, <span class="ruby-ivar">@params</span>[<span class="ruby-value">:read_timeout</span>])
+        <span class="ruby-keyword">retry</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-identifier">raise</span>(<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">Timeout</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;read timeout reached&quot;</span>))
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">rescue</span> <span class="ruby-constant">EOFError</span>
+      <span class="ruby-ivar">@eof</span> = <span class="ruby-keyword">true</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">max_length</span>
+      <span class="ruby-ivar">@read_buffer</span>.<span class="ruby-identifier">slice!</span>(<span class="ruby-value">0</span>, <span class="ruby-identifier">max_length</span>)
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-comment"># read until EOFError, so return everything</span>
+      <span class="ruby-ivar">@read_buffer</span>.<span class="ruby-identifier">slice!</span>(<span class="ruby-value">0</span>, <span class="ruby-ivar">@read_buffer</span>.<span class="ruby-identifier">length</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-keyword">begin</span>
+      <span class="ruby-constant">Timeout</span>.<span class="ruby-identifier">timeout</span>(<span class="ruby-ivar">@params</span>[<span class="ruby-value">:read_timeout</span>]) <span class="ruby-keyword">do</span>
+        <span class="ruby-ivar">@socket</span>.<span class="ruby-identifier">read</span>(<span class="ruby-identifier">max_length</span>)
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">rescue</span> <span class="ruby-constant">Timeout</span><span class="ruby-operator">::</span><span class="ruby-constant">Error</span>
+      <span class="ruby-identifier">raise</span> <span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">Timeout</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">'read timeout reached'</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- read-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- read-method -->
+
+    
+      <div id="method-i-write" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">write</span><span
+            class="method-args">(data)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="write-source">
+            <pre><span class="ruby-comment"># File lib/excon/socket.rb, line 129</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">write</span>(<span class="ruby-identifier">data</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@params</span>[<span class="ruby-value">:nonblock</span>]
+    <span class="ruby-comment"># We normally return from the return in the else block below, but</span>
+    <span class="ruby-comment"># we guard that data is still something in case we get weird</span>
+    <span class="ruby-comment"># values and String#[] returns nil. (This behavior has been observed</span>
+    <span class="ruby-comment"># in the wild, so this is a simple defensive mechanism)</span>
+    <span class="ruby-keyword">while</span> <span class="ruby-identifier">data</span>
+      <span class="ruby-keyword">begin</span>
+        <span class="ruby-comment"># I wish that this API accepted a start position, then we wouldn't</span>
+        <span class="ruby-comment"># have to slice data when there is a short write.</span>
+        <span class="ruby-identifier">written</span> = <span class="ruby-ivar">@socket</span>.<span class="ruby-identifier">write_nonblock</span>(<span class="ruby-identifier">data</span>)
+      <span class="ruby-keyword">rescue</span> <span class="ruby-constant">OpenSSL</span><span class="ruby-operator">::</span><span class="ruby-constant">SSL</span><span class="ruby-operator">::</span><span class="ruby-constant">SSLError</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">error</span>
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">error</span>.<span class="ruby-identifier">message</span> <span class="ruby-operator">==</span> <span class="ruby-string">'write would block'</span>
+          <span class="ruby-keyword">if</span> <span class="ruby-constant">IO</span>.<span class="ruby-identifier">select</span>(<span class="ruby-keyword">nil</span>, [<span class="ruby-ivar">@socket</span>], <span class="ruby-keyword">nil</span>, <span class="ruby-ivar">@params</span>[<span class="ruby-value">:write_timeout</span>])
+            <span class="ruby-keyword">retry</span>
+          <span class="ruby-keyword">else</span>
+            <span class="ruby-identifier">raise</span>(<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">Timeout</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;write timeout reached&quot;</span>))
+          <span class="ruby-keyword">end</span>
+        <span class="ruby-keyword">else</span>
+          <span class="ruby-identifier">raise</span>(<span class="ruby-identifier">error</span>)
+        <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">rescue</span> <span class="ruby-constant">Errno</span><span class="ruby-operator">::</span><span class="ruby-constant">EAGAIN</span>, <span class="ruby-constant">Errno</span><span class="ruby-operator">::</span><span class="ruby-constant">EWOULDBLOCK</span>, <span class="ruby-constant">IO</span><span class="ruby-operator">::</span><span class="ruby-constant">WaitWritable</span>
+        <span class="ruby-keyword">if</span> <span class="ruby-constant">IO</span>.<span class="ruby-identifier">select</span>(<span class="ruby-keyword">nil</span>, [<span class="ruby-ivar">@socket</span>], <span class="ruby-keyword">nil</span>, <span class="ruby-ivar">@params</span>[<span class="ruby-value">:write_timeout</span>])
+          <span class="ruby-keyword">retry</span>
+        <span class="ruby-keyword">else</span>
+          <span class="ruby-identifier">raise</span>(<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">Timeout</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">&quot;write timeout reached&quot;</span>))
+        <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-comment"># Fast, common case.</span>
+        <span class="ruby-comment"># The &gt;= seems weird, why would it have written MORE than we</span>
+        <span class="ruby-comment"># requested. But we're getting some weird behavior when @socket</span>
+        <span class="ruby-comment"># is an OpenSSL socket, where it seems like it's saying it wrote</span>
+        <span class="ruby-comment"># more (perhaps due to SSL packet overhead?).</span>
+        <span class="ruby-comment">#</span>
+        <span class="ruby-comment"># Pretty weird, but this is a simple defensive mechanism.</span>
+        <span class="ruby-keyword">return</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">written</span> <span class="ruby-operator">&gt;=</span> <span class="ruby-identifier">data</span>.<span class="ruby-identifier">size</span>
+
+        <span class="ruby-comment"># This takes advantage of the fact that most ruby implementations</span>
+        <span class="ruby-comment"># have Copy-On-Write strings. Thusly why requesting a subrange</span>
+        <span class="ruby-comment"># of data, we actually don't copy data because the new string</span>
+        <span class="ruby-comment"># simply references a subrange of the original.</span>
+        <span class="ruby-identifier">data</span> = <span class="ruby-identifier">data</span>[<span class="ruby-identifier">written</span>, <span class="ruby-identifier">data</span>.<span class="ruby-identifier">size</span>]
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-keyword">begin</span>
+      <span class="ruby-constant">Timeout</span>.<span class="ruby-identifier">timeout</span>(<span class="ruby-ivar">@params</span>[<span class="ruby-value">:write_timeout</span>]) <span class="ruby-keyword">do</span>
+        <span class="ruby-ivar">@socket</span>.<span class="ruby-identifier">write</span>(<span class="ruby-identifier">data</span>)
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">rescue</span> <span class="ruby-constant">Timeout</span><span class="ruby-operator">::</span><span class="ruby-constant">Error</span>
+      <span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">Timeout</span>.<span class="ruby-identifier">new</span>(<span class="ruby-string">'write timeout reached'</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- write-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- write-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

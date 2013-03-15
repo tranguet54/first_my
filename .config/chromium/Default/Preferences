@@ -1,0 +1,248 @@
+{
+   "backup": {
+      "_signature": "zuN12TeucLTQ8B2lWnoFuoVGNVZWBNhZQwaZXjVh8rA=",
+      "_version": 4,
+      "extensions": {
+         "ids": [ "ahfgeienlihckogmohjhadlkjgocpleb", "eemcgdkfndhakfknompkggombfjjjeno", "mfehgcgbbipciphmccgaenjidiccnmng" ]
+      }
+   },
+   "browser": {
+      "last_known_google_url": "http://www.google.com.vn/",
+      "last_prompted_google_url": "http://www.google.com.vn/",
+      "window_placement": {
+         "bottom": 1096,
+         "left": 76,
+         "maximized": false,
+         "right": 1126,
+         "top": 372,
+         "work_area_bottom": 768,
+         "work_area_left": 65,
+         "work_area_right": 1366,
+         "work_area_top": 24
+      }
+   },
+   "countryid_at_install": 21843,
+   "default_apps_install_state": 3,
+   "default_search_provider": {
+      "alternate_urls": [ "{google:baseURL}#q={searchTerms}", "{google:baseURL}search#q={searchTerms}", "{google:baseURL}webhp#q={searchTerms}" ],
+      "enabled": true,
+      "encodings": "UTF-8",
+      "icon_url": "http://www.google.com/favicon.ico",
+      "id": "2",
+      "instant_url": "{google:baseURL}webhp?sourceid=chrome-instant&{google:RLZ}{google:instantEnabledParameter}ie={inputEncoding}",
+      "keyword": "google.com.vn",
+      "name": "Google",
+      "prepopulate_id": "1",
+      "search_url": "{google:baseURL}search?q={searchTerms}&{google:RLZ}{google:acceptedSuggestion}{google:originalQueryForSuggestion}{google:assistedQueryStats}{google:searchFieldtrialParameter}sourceid=chrome&client=ubuntu&channel=cs&ie={inputEncoding}",
+      "suggest_url": "{google:baseSuggestURL}search?{google:searchFieldtrialParameter}client=chrome&hl={language}&q={searchTerms}&sugkey={google:suggestAPIKeyParameter}"
+   },
+   "dns_prefetching": {
+      "host_referral_list": [ 2, [ "https://2542116.fls.doubleclick.net/", [ "https://ad.yieldmanager.com/", 3.924981199999999, "https://cookex.amp.yahoo.com/", 2.6037003999999997, "https://googleads.g.doubleclick.net/", 3.2643407999999994, "https://segment-pixel.invitemedia.com/", 2.6037003999999997, "https://www.google.com.vn/", 2.6037003999999997, "https://www.google.com/", 2.6037003999999997, "https://www.googleadservices.com/", 3.5946609999999994 ] ], [ "https://plusone.google.com/", [ "https://plusone.google.com/", 2.6037003999999997 ] ], [ "https://www.google.com/", [ "https://2542116.fls.doubleclick.net/", 2.6037003999999997, "https://apis.google.com/", 2.6037003999999997, "https://fls.doubleclick.net/", 3.2643407999999994, "https://fonts.googleapis.com/", 2.2733802, "https://plusone.google.com/", 2.6037003999999997, "https://ssl.google-analytics.com/", 2.6037003999999997, "https://ssl.gstatic.com/", 2.6037003999999997, "https://themes.googleusercontent.com/", 3.2643407999999994, "https://www.google.com/", 5.576582199999999 ] ] ],
+      "startup_list": [ 1, "http://tools.google.com/", "https://2542116.fls.doubleclick.net/", "https://apis.google.com/", "https://fls.doubleclick.net/", "https://fonts.googleapis.com/", "https://plusone.google.com/", "https://ssl.google-analytics.com/", "https://ssl.gstatic.com/", "https://themes.googleusercontent.com/", "https://www.google.com/" ]
+   },
+   "download": {
+      "directory_upgrade": true
+   },
+   "extensions": {
+      "autoupdate": {
+         "next_check": "13007469260922419"
+      },
+      "chrome_url_overrides": {
+         "bookmarks": [ "chrome-extension://eemcgdkfndhakfknompkggombfjjjeno/main.html" ]
+      },
+      "last_chrome_version": "24.0.1312.56",
+      "settings": {
+         "ahfgeienlihckogmohjhadlkjgocpleb": {
+            "app_launcher_ordinal": "n",
+            "page_ordinal": "n"
+         }
+      },
+      "theme": {
+         "id": ""
+      }
+   },
+   "net": {
+      "http_server_properties": {
+         "servers": {
+            "apis.google.com:443": {
+               "settings": {
+                  "4": 100,
+                  "5": 23,
+                  "6": 0
+               },
+               "supports_spdy": true
+            },
+            "fls.doubleclick.net:443": {
+               "settings": {
+                  "4": 100,
+                  "5": 32,
+                  "6": 0
+               },
+               "supports_spdy": true
+            },
+            "fonts.googleapis.com:443": {
+               "settings": {
+                  "4": 100,
+                  "5": 32,
+                  "6": 0
+               },
+               "supports_spdy": true
+            },
+            "googleads.g.doubleclick.net:443": {
+               "settings": {
+                  "4": 100,
+                  "5": 32,
+                  "6": 0
+               },
+               "supports_spdy": true
+            },
+            "ssl.google-analytics.com:443": {
+               "settings": {
+                  "4": 100,
+                  "5": 32,
+                  "6": 0
+               },
+               "supports_spdy": true
+            },
+            "ssl.gstatic.com:443": {
+               "settings": {
+                  "4": 100,
+                  "5": 32,
+                  "6": 0
+               },
+               "supports_spdy": true
+            },
+            "themes.googleusercontent.com:443": {
+               "settings": {
+                  "4": 100,
+                  "5": 7,
+                  "6": 4
+               },
+               "supports_spdy": true
+            },
+            "www.google.com.vn:443": {
+               "settings": {
+                  "4": 100,
+                  "5": 32,
+                  "6": 0
+               },
+               "supports_spdy": true
+            },
+            "www.google.com:443": {
+               "settings": {
+                  "4": 100,
+                  "5": 21,
+                  "6": 0
+               },
+               "supports_spdy": true
+            },
+            "www.googleadservices.com:443": {
+               "settings": {
+                  "4": 100,
+                  "5": 32,
+                  "6": 0
+               },
+               "supports_spdy": true
+            }
+         },
+         "version": 1
+      }
+   },
+   "ntp": {
+      "app_page_names": [ "Apps" ],
+      "promo_resource_cache_update": "1362976960.298272"
+   },
+   "plugins": {
+      "enabled_internal_pdf3": true,
+      "enabled_nacl": true,
+      "last_internal_directory": "/usr/lib/chromium-browser",
+      "plugins_list": [ {
+         "enabled": true,
+         "name": "Chromoting Viewer",
+         "path": "internal-remoting-viewer",
+         "version": ""
+      }, {
+         "enabled": true,
+         "name": "Shockwave Flash",
+         "path": "/usr/lib/flashplugin-installer/libflashplayer.so",
+         "version": "11.2 r202"
+      }, {
+         "enabled": true,
+         "name": "iTunes Application Detector",
+         "path": "/usr/lib/mozilla/plugins/librhythmbox-itms-detection-plugin.so",
+         "version": ""
+      }, {
+         "enabled": true,
+         "name": "VLC Multimedia Plugin (compatible Totem 3.4.3)",
+         "path": "/usr/lib/mozilla/plugins/libtotem-cone-plugin.so",
+         "version": ""
+      }, {
+         "enabled": true,
+         "name": "Windows Media Player Plug-in 10 (compatible; Totem)",
+         "path": "/usr/lib/mozilla/plugins/libtotem-gmp-plugin.so",
+         "version": ""
+      }, {
+         "enabled": true,
+         "name": "DivX\u00AE Web Player",
+         "path": "/usr/lib/mozilla/plugins/libtotem-mully-plugin.so",
+         "version": ""
+      }, {
+         "enabled": true,
+         "name": "QuickTime Plug-in 7.6.6",
+         "path": "/usr/lib/mozilla/plugins/libtotem-narrowspace-plugin.so",
+         "version": ""
+      }, {
+         "enabled": true,
+         "name": "Adobe Flash Player"
+      }, {
+         "enabled": true,
+         "name": "Chromoting Viewer"
+      }, {
+         "enabled": true,
+         "name": "DivX\u00AE Web Player"
+      }, {
+         "enabled": true,
+         "name": "QuickTime Plug-in 7.6.6"
+      }, {
+         "enabled": true,
+         "name": "VLC Multimedia Plugin (compatible Totem 3.4.3)"
+      }, {
+         "enabled": true,
+         "name": "Windows Media Player Plug-in 10 (compatible; Totem)"
+      }, {
+         "enabled": true,
+         "name": "iTunes Application Detector"
+      } ]
+   },
+   "profile": {
+      "avatar_index": 0,
+      "content_settings": {
+         "clear_on_exit_migrated": true,
+         "pref_version": 1
+      },
+      "created_by_version": "24.0.1312.56",
+      "exit_type": "SessionEnded",
+      "exited_cleanly": true,
+      "name": "First user"
+   },
+   "promo": {
+      "ntp_notification_promo": [ {
+         "closed": true,
+         "end": 0.0,
+         "gplus_required": false,
+         "group": 0,
+         "increment": 1,
+         "increment_frequency": 0,
+         "increment_max": 0,
+         "max_views": 0,
+         "num_groups": 100,
+         "segment": 0,
+         "start": 0.0,
+         "text": "",
+         "views": 0
+      } ]
+   },
+   "session": {
+      "restore_on_startup_migrated": true
+   }
+}

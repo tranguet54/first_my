@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<compiz_session id="1037c86b2cbd885a1f136296558527390500000014860031">
+  <window id="1037c86b2cbd885a1f136296652793589200000014860036" title="StarDict" class="Stardict" name="stardict" command="stardict">
+    <geometry x="405" y="203" width="555" height="361"/>
+    <workspace index="0"/>
+  </window>
+  <window id="1037c86b2cbd885a1f136297437540070700000014860045" title="Buddy List" class="Pidgin" name="Pidgin" role="buddy_list" command="Pidgin">
+    <geometry x="588" y="24" width="250" height="637"/>
+    <minimized/>
+    <workspace index="0"/>
+  </window>
+  <window id="1037c86b2cbd885a1f136297584813726400000014860047" title="Terminal" class="Gnome-terminal" name="gnome-terminal" role="gnome-terminal-window-8277--1481097696-1362976022" command="gnome-terminal">
+    <geometry x="642" y="24" width="722" height="434"/>
+    <workspace index="0"/>
+  </window>
+  <window id="1037c86b2cbd885a1f136297584813726400000014860047" title="Terminal" class="Gnome-terminal" name="gnome-terminal" role="gnome-terminal-window-8277-1262903999-1362975990" command="gnome-terminal">
+    <geometry x="413" y="304" width="722" height="434"/>
+    <minimized/>
+    <workspace index="0"/>
+  </window>
+  <window id="1037c86b2cbd885a1f136297584813726400000014860047" title="Terminal" class="Gnome-terminal" name="gnome-terminal" role="gnome-terminal-window-8277-1450841231-1362976365" command="gnome-terminal">
+    <geometry x="479" y="305" width="722" height="434"/>
+    <workspace index="0"/>
+  </window>
+  <window id="1037c86b2cbd885a1f136297584813726400000014860047" title="Terminal" class="Gnome-terminal" name="gnome-terminal" role="gnome-terminal-window-8277-2128733075-1362975848" command="gnome-terminal">
+    <geometry x="642" y="24" width="722" height="434"/>
+    <workspace index="0"/>
+  </window>
+  <window id="1037c86b2cbd885a1f136297646794351000000014860050" title="Mozilla Firefox" class="Firefox" name="Navigator" role="browser" command="firefox">
+    <geometry x="101" y="104" width="1291" height="716"/>
+    <workspace index="0"/>
+  </window>
+</compiz_session>

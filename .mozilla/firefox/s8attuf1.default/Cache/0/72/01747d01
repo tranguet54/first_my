@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>jou lập trình - Cách tốt nhất để học Ruby on Rails</title><meta name='author' content='tumivn'/><meta name='keywords' content='djou, rails, ruby, ruby-on-rails'/><meta name='description' content='Trong thời gian qua, tôi muốn chọn một ngôn ngữ để học và làm mới mình vì bấy lâu nay tôi chỉ dùng .NET và C#, những ngôn ngữ khác mà tôi đã từng học qua thì nay đã ít sử dụng và thật ra nó không khác với C# bao nhiêu (VB6, VB.NET, Delphi, C++, AS3, Java và một chút PHP) và vì vậy tôi chọn thử sức với Ruby và Ruby on Rails (RoR). Bài viết này là bản lược dịch có điều chỉnh ngữ cảnh từ NetTuts+.'/>
+
+    <link href="/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="/Content/Styles/dropdown_one/dropdown_one.css" rel="stylesheet" type="text/css"/>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.8.0.min.js" type="text/javascript"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.23/jquery-ui.min.js"></script>
+    <script src="/Scripts/modernizr-1.7.min.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery.tools.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        // Edit to suit your needs.
+        var ADAPT_CONFIG = {
+            // Where is your CSS?
+            path: '/Scripts/960/assets/css/',
+
+            // false = Only run once, when page first loads.
+            // true = Change on window resize and page tilt.
+            dynamic: true,
+
+            // First range entry is the minimum.
+            // Last range entry is the maximum.
+            // Separate ranges by "to" keyword.
+            range: [
+                '0px    to 760px  = mobile.min.css',
+                '760px  to 980px  = 720.min.css',
+                '980px  to 1280px = 960.min.css',
+                '1280px to 1600px = 1200.min.css',
+                '1600px to 1920px = 1560.min.css',
+                '1920px           = fluid.min.css'
+            ]
+        };
+    </script>
+    <script src="/Scripts/960/assets/js/adapt.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18110685-6']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+</head>
+<body>
+    <div class="container_12">
+        <div id="top-bar" class="grid_12 align-right">
+                [ <a href="/Account/Logon">Đăng nhập</a> | <a href="http://id.jou.vn/Account/Register">Ghi danh</a> ]
+
+        </div>
+        <div id="head-bar">
+            <div id="logo-container" class="grid_6">
+                <a href="/">
+                    <img src="/Content/Images/logo.png" alt="Cộng đồng Jou Lập trình"/></a>
+            </div>
+            <div class="grid_6">
+                
+            </div>
+        </div>
+        <div id="main-menu">
+            <ul id="menu">
+    <li><a href="/"><b>Trang chủ</b></a></li>
+    
+    <li><a href="/Articles"><b>B&#224;i viết</b></a></li>
+    <li><a href="/News/Tutorial/Index"><b>Khóa học</b></a></li>
+    <li><a href="/Tags/Popular"><b>Chủ đề</b></a></li>
+    <li><a href="/Author/List"><b>Tác giả</b></a></li>
+    <!--<li ><a  href="#"><b>Hỏi / Đ&#225;p</b></a> </li>
+    <li><a  href="#"><b>Thảo luận</b></a> </li>
+    <li><a  href="#"><b>Trợ gi&#250;p</b></a> </li>-->
+    <li><a href="/Help">Trợ gi&#250;p</a></li>
+    <li><a href="#">Về ch&#250;ng t&#244;i</a></li>
+    <li><a href="#">Li&#234;n hệ</a></li>
+</ul>
+
+        </div>
+    </div>
+    <div class="container_12 main-container">
+    <div class="grid_8">
+        <h2>C&#225;ch tốt nhất để học Ruby on Rails</h2>
+        B&#224;i viết được cập nhật từ 1:21:26 CH, 30 Tháng Tám 2012  bởi 
+        <a href="/Author/tumivn/1">tumivn</a>
+        <div>
+        </div>
+        <p>
+            <span style="font-style: inherit;">
+                Trong thời gian qua, t&#244;i muốn chọn một ng&#244;n ngữ để học v&#224; l&#224;m mới m&#236;nh v&#236; bấy l&#226;u nay t&#244;i chỉ d&#249;ng .NET v&#224; C#, những ng&#244;n ngữ kh&#225;c m&#224; t&#244;i đ&#227; từng học qua th&#236; nay đ&#227; &#237;t sử dụng v&#224; thật ra n&#243; kh&#244;ng kh&#225;c với C# bao nhi&#234;u (VB6, VB.NET, Delphi, C++, AS3, Java v&#224; một ch&#250;t PHP) v&#224; v&#236; vậy t&#244;i chọn thử sức với Ruby v&#224; Ruby on Rails (RoR). B&#224;i viết n&#224;y l&#224; bản lược dịch c&#243; điều chỉnh ngữ cảnh từ NetTuts+.
+            </span>
+        </p>
+        <p>
+                Để học Ruby on Rails ch&#250;ng ta sẽ l&#224;m một số nhiệm vụ:<br />
+<h1>Nhiệm vụ 1 – L&#224;m qua c&#225;c b&#224;i tập “Try Ruby”</h1>
+Đầu ti&#234;n bạn phải thử học Ruby, bạn đừng sợ phải học Ruby hay bất kỳ ng&#244;n ngữ n&#224;o. Ruby l&#224; một ng&#244;n ngữ th&#250; vị, đẹp v&#224; dễ học. V&#224; bạn cũng kh&#244;ng cần phải l&#224;m chủ Ruby 100% để c&#243; thể bắt đầu với Rails. Bạn chỉ cần biết những phần cơ bản nhất của Ruby để bắt đầu với Rails.<br /><br />Bạn n&#234;n v&#224;o website <a href="http://tryruby.org/" class="externalLink">Try Ruby<span class="externalLinkIcon"></span></a> để thử l&#224;m c&#225;c b&#224;i tập v&#224; tương t&#225;c với ng&#244;n ngữ Ruby. Khi bạn l&#224;m qua c&#225;c b&#224;i tập n&#224;y một v&#224;i lần, bạn sẽ c&#243; một nền tảng kh&#225; tốt để bắt đầu với Rails. Phần c&#242;n lại ch&#250;ng ta sẽ học c&#225;ch tạo website với Rails.<br />
+<h1>Nhiệm vụ thứ 2 – C&#224;i đặt Ruby v&#224; Ruby on Rails</h1>
+Nếu bạn muốn học Rails, bạn sẽ phải c&#224;i đặt ch&#250;ng tr&#234;n m&#225;y t&#237;nh của bạn. C&#243; nhiều c&#225;ch để l&#224;m điều đ&#243;, v&#224; phụ thuộc v&#224;o nền tảng m&#224; bạn sử dụng. Nếu bạn sử dụng ứng dụng mac v&#224; m&#225;y t&#237;nh nền Linux, bạn n&#234;n sử dụng <a href="http://beginrescueend.com/" class="externalLink">RVM<span class="externalLinkIcon"></span></a>, đ&#243; l&#224; một c&#244;ng cụ tốt để c&#224;i Ruby. Nếu bạn muốn c&#224;i Ruby tr&#234;n Windows bạn c&#243; thể sử dụng <a href="http://rubyinstaller.org/" class="externalLink">RubyInstaller for Windows<span class="externalLinkIcon"></span></a>. <br />
+<h1>Nhiệm vụ thứ 3 – Xem screencast giới thiệu về Rails của Jeffrey</h1>
+<br />Với một video d&#224;i 40 ph&#250;t, Jeffray Way, một t&#225;c giả của Nettuts+ sẽ hướng dẫn bạn nhứng điều cơ bản nhất để c&#243; thể bắt đầu với Rails.<br />Khi xem screencast n&#224;y, bạn sẽ học được nhiều thứ, bao gồm:<br />
+<ul><li>Models v&#224; c&#225;c bộ tạo model tự động</li>
+<li>Test-driven development</li>
+<li>ActiveRecord</li>
+<li>Rspec v&#224; Capybara</li>
+<li>Partials </li>
+<li>V&#224; nhiều hơn thế nữa…</li></ul>
+<br />Test-driven development (TDD) l&#224; phương thức ph&#225;t triển phần mềm dựa v&#224;o quy tắc tập trung viết test trước, t&#244;i sẽ c&#243; b&#224;i giới thiệu về TDD cho c&#225;c bạn.<br /><br />ActiveRecord l&#224; một design pattern (mẫu thiết kế) nhằm gi&#250;p &#225;nh xạ 1-1 giữa c&#225;c table trong database v&#224; c&#225;c lớp model b&#234;n trong m&#227; ứng dụng.<br /><br />RSpec l&#224; c&#244;ng cụ kiểm thử cho ng&#244;n ngữ lập tr&#236;nh Ruby. RSpec tu&#226;n thủ theo m&#244; h&#236;nh ph&#225;t triển ứng dụng Behaviour-Driven Development (ph&#225;t triển hướng h&#224;nh vi), v&#224; n&#243; được thiết kế để gi&#250;p cho việc &#225;p dụng m&#244; h&#236;nh Test-Driven Development một c&#225;ch hiệu quả hơn.<br /><br />Capybara l&#224; một thư viện c&#243; mục đ&#237;ch đơn giản h&#243;a việc kiểm thử t&#237;ch hợp (intergration testing) cho ứng dụng Rails, Sinatra hoặc Merb. Capybara được d&#249;ng m&#244; phỏng c&#225;ch người d&#249;ng tương t&#225;c ứng dụng với ứng dụng web.<br /><br />Partials l&#224; một th&#224;nh phần của Rails nhằm gi&#250;p lập tr&#236;nh vi&#234;n dễ d&#224;ng tạo giao diện cho ứng dụng bằng c&#225;ch gh&#233;p c&#225;c phần kh&#225;c nhau lại với nhau để tạo th&#224;nh view trả về cho tr&#236;nh duyệt.<br />
+<h1>Nhiệm vụ thứ 4 – Học kh&#243;a học Rails For Zombies</h1>
+<img src="http://dstatic.jou.vn/Content/Upload/Press/2012/113/Images/temp.png" alt="imagetitle" title="imagetitle" /><br /><br />Học bằng c&#225;c v&#237; dụ l&#224; một c&#225;ch học hay để học một ng&#244;n ngữ lập tr&#236;nh v&#224; một framework. C&#243; một kh&#243;a học miễn ph&#237; rất tuyệt vời m&#224; bạn cần phải học đ&#243; l&#224; <a href="http://zfer.us/MuU7d" class="externalLink">Rails For Zombies<span class="externalLinkIcon"></span></a> của EnvyLabs. Đ&#226;y l&#224; kh&#243;a học c&#243; t&#237;nh tương t&#225;c cao, nghĩa l&#224; sau mỗi khi bạn xem một video, bạn sẽ l&#224;m một loạt c&#225;c v&#237; dụ.<br />
+<h1>Nhiệm vụ thứ 5 – Đọc s&#225;ch</h1>
+Bạn n&#234; nt&#236;m đọc cuốn s&#225;ch <a href="http://www.amazon.com/gp/product/1934356549/ref=as_li_ss_tl?ie=UTF8&amp;tag=nett02-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399369&amp;creativeASIN=1934356549" class="externalLink">Agile Web Development with Rails<span class="externalLinkIcon"></span></a>. N&#243; sẽ dạy bạn Rails bằng c&#225;ch hướng dẫn bạn học c&#225;ch x&#226;y dựng một ứng dụng từ đầu. N&#243; sẽ đi qua những phần cơ bản nhất, như tạo controllers, model, sử dụng scaffolding, unit testing v&#224; functional testing, cộng th&#234;m một ch&#250;t AJAX. Bạn nhớ mua bản ph&#225;t h&#224;nh mới nhất nh&#233;.<br /><br />Ngo&#224;i ra, bạn c&#243; thể chọn để đọc một số s&#225;ch về Rails kh&#225; phổ biến như sau:<br />
+<ul><li><a href="http://www.amazon.com/gp/product/0321743121/ref=as_li_ss_tl?ie=UTF8&amp;tag=nett02-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399369&amp;creativeASIN=0321743121" class="externalLink">Ruby on Rails 3 Tutorial<span class="externalLinkIcon"></span></a>: Learn Rails by Example: Dạy bạn từng bước một, cũng như cuốn s&#225;ch đề cập ở ph&#237;a tr&#234;n.</li>
+<li><a href="http://www.amazon.com/gp/product/1430224339/ref=as_li_ss_tl?ie=UTF8&amp;tag=nett02-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399377&amp;creativeASIN=1430224339" class="externalLink">Beginning Rails 3<span class="externalLinkIcon"></span></a>: Cũng l&#224; một cuốn s&#225;ch tương tự theo dạng tutorial.</li>
+<li><a href="http://www.amazon.com/gp/product/0321601661/ref=as_li_ss_tl?ie=UTF8&amp;tag=nett02-20&amp;linkCode=as2&amp;camp=217145&amp;creative=399369&amp;creativeASIN=0321601661" class="externalLink">The Rails 3 Way<span class="externalLinkIcon"></span></a>: L&#224; một cuốn s&#225;ch để tham khảo nhiều hơn l&#224; để học từ đầu, tuy nhi&#234;n n&#243; cũng đ&#225;ng để bạn đọc.</li></ul>
+
+<h1>Nhiệm vụ thứ 6 – X&#226;y dựng một ứng dụng Blog đơn giản</h1>
+X&#226;y dựng blog l&#224; một nhiệm vụ kh&#225; nh&#224;m ch&#225;n đối với một lập tr&#236;nh vi&#234;n chuy&#234;n nghiệp, t&#244;i đ&#227; tự x&#226;y dựng cho m&#236;nh ba đến bốn ứng dụng blog kh&#225;c nhau nhưng x&#226;y dựng blog l&#224; một c&#225;ch luyện tập Rails để quen thuộc v&#224; l&#224;m chủ được n&#243;. B&#226;y giờ bạn đ&#227; c&#243; đủ kinh nghiệm nhờ đọc s&#225;ch, n&#234;n bạn sẽ đ&#243;ng những cuốn s&#225;ch lại v&#224; tự x&#226;y dựng một ứng dụng bằng ch&#237;nh tay của m&#236;nh, v&#224; kh&#244;ng cần phải tham khảo bất cứ chủ đề n&#224;o.<br /><br />Nhớ x&#226;y dựng blog hỗ trợ comment, tuy nhi&#234;n bạn kh&#244;ng cần phải c&#224;i đặt một hệ thống đăng nhập ho&#224;n chỉnh v&#236; đ&#226;y l&#224; một nhiệm vụ đơn giản để c&#243; thể bắt đầu.<br />
+<h1>Nhiệm vụ thứ 7 – Th&#234;m một số chức năng cho ứng dụng Blog</h1>
+Ở nhiệm vụ vừa rồi bạn đ&#227; x&#226;y dựng một ứng dụng blog đơn giản, v&#224; tất nhi&#234;n n&#243; thiếu một số chức năng cơ bản m&#224; một ứng dụng blog đ&#225;ng phải c&#243;.<br /><br />Bạn cần phải th&#234;m t&#237;nh năng đăng nhập v&#224;o ứng dụng của bạn, ph&#226;n trang, c&#244;ng cụ soạn thảo văn bản..<br />
+<h1>Nhiệm vụ thứ 8 – X&#226;y dựng một ứng dụng thực sự</h1>
+Với nhiệm vụ n&#224;y th&#236; bạn cần phải s&#225;ng tạo. Lần n&#224;y bạn c&#243; thể x&#226;y dựng ứng dụng chuy&#234;n về b&#225;n h&#224;ng hoặc xử l&#253; h&#243;a đơn. Bạn c&#243; thể t&#236;m kiếm một template đơn giản v&#224; x&#226;y dựng ứng dụng dựa tr&#234;n n&#243;. Nếu bạn y&#234;u th&#237;ch việc lập tr&#236;nh th&#236; c&#244;ng việc đ&#243; lu&#244;n sẽ mang lại cho bạn niềm vui.<br />
+<h1>Nhiệm vụ thứ 9 – Lu&#244;n cập nhật</h1>
+Học lập tr&#236;nh v&#224; lập t&#236;nh l&#224; một c&#244;ng việc kh&#244;ng bao giờ c&#243; hồi kết. V&#236; vậy bạn cần phải đăng k&#253; theo d&#245;i một số blog v&#224; c&#225;c twitter account về chủ đề Rails. <br /><br /><br />Một t&#224;i khoản twitter:
+<ul><li>@dhh: Người s&#225;ng tạo ra Ruby on Rails</li>
+<li>@rbates: Người sản xuất screencast cho Railcasts, đăng c&#225;c thủ thuật một c&#225;ch thường xuy&#234;n</li>
+<li>@rails: T&#224;i khoản ch&#237;nh thức của Ruby on Rails. H&#227;y theo đu&#244;i ch&#250;ng nếu bạn muốn biết về c&#225;c cập nhật v&#224; t&#236;nh h&#236;nh ph&#225;t triển của Rails.</li></ul>
+<br />Dưới đ&#226;y l&#224; một số website bạn cần thường xuy&#234;n theo d&#245;i:
+<ul><li><a href="http://railscasts.com/" class="externalLink">Railscasts<span class="externalLinkIcon"></span></a>: C&#225;c screencasts về Ruby on Rails, c&#225;c kinh nghiệm, thủ thuật..v.v</li>
+<li><a href="http://asciicasts.com/" class="externalLink">Asciicasts<span class="externalLinkIcon"></span></a>: Nếu bạn kh&#244;ng xem c&#225;c video, th&#236; bạn n&#234;n đọc c&#225;c b&#224;i viết, tuy rằng Asciicast kh&#244;ng cập nhật thường xuy&#234;n, nhưng chất lượng b&#224;i viết thật tuyệt vời.</li>
+<li><a href="http://net.tutsplus.com/" class="externalLink">Nettus+<span class="externalLinkIcon"></span></a>: Nettus+ cung cấp kh&#225; nhiều b&#224;i viết về screencast về Rails kh&#225; chất lượng.</li>
+<li><a href="http://weblog.rubyonrails.org/" class="externalLink">Riding Rails<span class="externalLinkIcon"></span></a>: đ&#226;y l&#224; blog ch&#237;nh thức của Ruby on Rails.</li>
+<li><a href="http://www.therailsway.com/" class="externalLink">The Rails Way<span class="externalLinkIcon"></span></a>: một blog tuyệt với với nhiều b&#224;i viết v&#224; tutorials</li>
+<li><a href="http://planetrubyonrails.com/" class="externalLink">Planet Ruby on Rails<span class="externalLinkIcon"></span></a>: đ&#226;y l&#224; một trang c&#243; nhiều tin tức th&#250; vị về Ruby On Rails</li></ul>
+
+<h1>Kết luận</h1>
+Kế hoạch c&#243; thể gi&#250;p t&#244;i v&#224; bạn trở th&#224;nh một lập tr&#236;nh vi&#234;n Rails. V&#224; như mọi người đều biết, Rails l&#224; một nền tảng th&#250; vị v&#224; c&#224;ng ng&#224;y c&#224;ng tốt l&#234;n. Ch&#250;ng ta c&#249;ng học Rails để n&#226;ng cao kỹ năng lập tr&#236;nh v&#224; học hỏi từ c&#225;c Frameworks kh&#225;c nhau. D&#249; chỉ mới bắt đầu, nhưng t&#244;i tin rằng Rails thật sự th&#250; vị.
+        </p>
+    </div>
+    <div class="grid_4">
+        
+        
+        <div class="announce">
+    <div class="announce-header">
+        Bài cùng tác giả
+    </div>
+    <div class="announce-content featured-content">
+            <a href="/Article/TFS----Unlock-tap-tin-bi-khoa-boi-nguoi-dung-khac/155" title="TFS  - Unlock tập tin bị kh&#243;a bởi người d&#249;ng kh&#225;c">TFS  - Unlock tập tin bị kh&#243;a bởi người d&#249;ng kh&#225;c</a>
+            <br />
+            <br />
+            <a href="/Article/Can-phai-la-gi-khi-chay-cac-tap-tin-SQL-Script-lon-tren-MS-SQL-Server-va-bi-loi-tran-bo-nho/153" title="Cần phải l&#224; g&#236; khi chạy c&#225;c tập tin SQL Script lớn tr&#234;n MS SQL Server v&#224; bị lỗi tr&#224;n bộ nhớ?">Cần phải l&#224; g&#236; khi chạy c&#225;c tập tin SQL Script lớn tr&#234;n MS SQL Server v&#224; bị lỗi tr&#224;n bộ nhớ?</a>
+            <br />
+            <br />
+            <a href="/Article/Khoi-dau-voi-lap-trinh-Android-va-IntelliJ-IDEA/152" title="Khởi đầu với lập tr&#236;nh Android v&#224; IntelliJ IDEA">Khởi đầu với lập tr&#236;nh Android v&#224; IntelliJ IDEA</a>
+            <br />
+            <br />
+            <a href="/Article/Huong-dan-nhap-mon-lap-trinh-Android-–-Bai-1/151" title="Hướng dẫn nhập m&#244;n lập tr&#236;nh Android – B&#224;i 1 ">Hướng dẫn nhập m&#244;n lập tr&#236;nh Android – B&#224;i 1 </a>
+            <br />
+            <br />
+            <a href="/Article/Ban-thich-djouvn-tap-trung-vao-cac-chu-de-nao/145" title="Bạn th&#237;ch d.jou.vn tập trung v&#224;o c&#225;c chủ đề n&#224;o?">Bạn th&#237;ch d.jou.vn tập trung v&#224;o c&#225;c chủ đề n&#224;o?</a>
+            <br />
+            <br />
+    </div>
+</div>
+
+    </div>
+    <div class="grid_12">
+        <div id="commentsContainer" class="comment-container">
+            <img alt="Update comment.." src="/Content/Images/largeindicator.gif" /></div>
+    </div>
+</div>
+<script src="/Scripts/Modules/Comment/comment.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        ReRenderComments();
+    });
+</script>
+
+    <div class="container_12">
+        <div id="footer">
+    <div class="fl alight-left">
+        
+    </div>
+    <div class="fr alight-right">
+        Copyright © <a href="mailto:webmaster@jou.vn">VietSpring.net</a>, 2011<br />
+        All Rights Reserved. <a href="#">Terms of Use</a>
+    </div>
+</div>
+
+    </div>
+</body>
+</html>

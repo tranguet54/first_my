@@ -1,0 +1,25 @@
+<h1>Listing secries</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Tuoi</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @secries.each do |secry| %>
+  <tr>
+    <td><%= secry.name %></td>
+    <td><%= secry.tuoi %></td>
+    <td><%= link_to 'Show', secry %></td>
+    <td><%= link_to 'Edit', edit_secry_path(secry) %></td>
+    <td><%= link_to 'Destroy', secry, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Secry', new_secry_path %>

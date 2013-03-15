@@ -1,0 +1,19 @@
+Fri, 08 Mar 2013 14:58:11 +0700
+lib/launchy.rb	Fri, 08 Mar 2013 14:58:00 +0700
+lib/launchy/application.rb	Fri, 08 Mar 2013 14:58:00 +0700
+lib/launchy/error.rb	Fri, 08 Mar 2013 14:58:00 +0700
+lib/launchy/os_family.rb	Fri, 08 Mar 2013 14:58:00 +0700
+lib/launchy/cli.rb	Fri, 08 Mar 2013 14:58:00 +0700
+lib/launchy/version.rb	Fri, 08 Mar 2013 14:58:00 +0700
+lib/launchy/detect/nix_desktop_environment.rb	Fri, 08 Mar 2013 14:58:00 +0700
+lib/launchy/detect/runner.rb	Fri, 08 Mar 2013 14:58:00 +0700
+lib/launchy/detect/host_os_family.rb	Fri, 08 Mar 2013 14:58:00 +0700
+lib/launchy/detect/host_os.rb	Fri, 08 Mar 2013 14:58:00 +0700
+lib/launchy/detect/ruby_engine.rb	Fri, 08 Mar 2013 14:58:00 +0700
+lib/launchy/applications/browser.rb	Fri, 08 Mar 2013 14:58:00 +0700
+lib/launchy/deprecated.rb	Fri, 08 Mar 2013 14:58:00 +0700
+lib/launchy/descendant_tracker.rb	Fri, 08 Mar 2013 14:58:00 +0700
+lib/launchy/detect.rb	Fri, 08 Mar 2013 14:58:00 +0700
+HISTORY.rdoc	Fri, 08 Mar 2013 14:58:00 +0700
+Manifest.txt	Fri, 08 Mar 2013 14:58:00 +0700
+README.rdoc	Fri, 08 Mar 2013 14:58:00 +0700

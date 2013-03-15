@@ -1,0 +1,483 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>
+	Vecto riêng - giá trị riêng của ma trận và của phép biến đổi tuyến tính - Chéo hóa - Miễn phí
+</title><meta name="description" content="ĐẠI SỐ CƠ BẢN (ÔN THI THẠC SĨ TOÁN HỌC) Bài 16. Vectơ riêng - Giá trị riêng của ma trận và của phép biến đổi tuyến tính - Chéo hóa PGS TS Mỵ Vinh Quang Ngày 28 tháng 2 năm 2006 1 Vectơ riêng - Giá trị riêng của ma trận 1.1 Các khái niệm cơ bản Cho A là ma trận vuông cấp n, (A ∈Mn(R)) a11 a12 . . . a1n a21 a22 . . . a2n ... ... . . . ... an1 an2 . . . ann  Khi đó • Đa thức bậc n của biến λ: PA(λ) = det(A− λI) = ∣∣∣∣∣∣∣∣∣ a11 − λ a12 . . . a1n a21 a22 − λ . . . a2n ... ... . . . ... an1 an2 . . . ann − λ ∣∣∣∣∣∣∣∣∣ = (−1)nλn + an−1λn−1 + · · ·+ a1λ1 + a0 gọi là đa thức đặc trưng của ma trận A. • Các nghiệm thực của đa thức đa thức đặc trưng PA(λ) gọi là giá trị riêng của ma trận A. • Nếu λ0 là một giá trị riêng của A thì det(A − λ0I) = 0. Do đó hệ phương trình thuần nhất: (A− λ0I)  x1... xn  =  0... 0  (1) 1 có vô số nghiệm. Không gian nghiệm của hệ (1) gọi là không gian con riêng của ma trận A ứng với giá trị riêng λ0. Các vectơ khác không là nghiệm của hệ (1) gọi l" /><meta name="keywords" content="miễn phí, sách, giáo trình, tài liệu, báo cáo, đồ án, luận văn, pdf, word, excel, powerpoint, tham khảo" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/styles/main.css" />
+    <script type="text/javascript" language="javascript" src="/scripts/adv.js"></script>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    
+    
+    <script type="text/javascript" src="/scripts/jquery-1.2.6.min.js"></script>
+    <script type="text/javascript" src="/scripts/jquery.jflip-0.4.js"></script>
+    <script type="text/javascript">
+        (function ($) {
+            $(function () {
+                $("#g1").jFlip(700, 800, { background: "green", cornersTop: false, scale: "fit" }).
+        bind("flip.jflip", function (event, index, total) {
+                $("#l1").html("Xem trước tài liệu - Trang " + (index + 1) + " / " + total);
+        });
+            });
+        })(jQuery);
+    </script>
+    <style type="text/css">
+        .flip_gallery
+        {
+            width:720px;
+            margin: 0 auto;
+        }
+        #l1
+        {
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div id="fb-root">
+    </div>
+
+    <div id="container">
+        <a name="top"></a>
+        
+<div id="header">
+    <div id="logoline">
+        <a id="logo" href="http://thamkhao.vn" title="Thamkhao.vn: Thư viện mở trực tuyến!">
+            <img src="/images/ThamKhaovn.png" 
+                title="Thamkhao.vn: Thư viện mở trực tuyến!"
+                alt="Thamkhao.vn: Thư viện mở trực tuyến!" align="left" /></a>
+        
+        <div id="schbox">
+            <form action="http://thamkhao.vn/search">
+                <input class="searchtext" type="text" name="q" size="70" onmouseover="this.focus()"
+                    onfocus="this.select()" value="" />
+                <button type="submit" value="Tìm kiếm">
+                    Tìm kiếm</button>
+            </form>
+        </div>
+    </div>
+    <!-- logoline -->
+    <div class="clearline">
+    </div>
+    <div id="nav">
+        <ul>
+            <li class="current"><a href="http://thamkhao.vn" title="Thamkhao.vn: Thư viện mở trực tuyến!">
+                Trang chủ</a></li>
+            <li><a href="http://thamkhao.vn/chuyen-doi-font-chu-vni-tcvn3-sang-unicode-online" title="Chuyển đổi FONT chữ VNI Windows, TCVN3 sang Unicode online">
+                Chuyển đổi FONT chữ VNI Windows, TCVN3 sang Unicode online</a></li>
+           
+            
+        </ul>
+    </div>
+    <!-- nav -->
+    
+    <!-- subnav -->
+    <div class="clearline">
+    </div>
+</div>
+<!-- header -->
+<div class="clearline">
+</div>
+
+        <div id="contents">
+            <div id="content">
+                
+    <form method="post" action="7212-vecto-rieng--gia-tri-rieng-cua-ma-tran-va-cua-phep-bien-doi-tuyen-tinh--cheo-hoa" id="Form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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LWRhby10YW8vMjA0Mi1zYXUtZGFpLWhvYy0tLW1iYS8yMDA2MDIyOF90aGF5cXVhbmdfYmFpMTZfMzY5Ni8wMDAzLmpwZycgYWx0PSdpbWFnZSBjb250ZW50IDMnIC8+PC9saT48L3VsPjxkaXYgaWQ9J2wxJz5YZW0gdHLGsOG7m2MgdMOgaSBsaeG7h3U8L2Rpdj48YnIvPmQCBg9kFgJmD2QWAgIBDxYCHgtfIUl0ZW1Db3VudAIBFgJmD2QWAmYPFQQhaHR0cDovL3RoYW1raGFvLnZuL2Rvd25sb2FkLzI2NjU4ITIwMDYwMjI4X3RoYXlxdWFuZ19iYWkxNl8zNjk2LnBkZg8vaW1hZ2VzLzEtMy5wbmchMjAwNjAyMjhfdGhheXF1YW5nX2JhaTE2XzM2OTYucGRmZAIIDxYCHwICChYUZg9kFgJmDxUDVGh0dHA6Ly90aGFta2hhby52bi90YWktbGlldS80Mjc3LWJhaS10aHV5ZXQtdHJpbmgtY2VyaWZpLWNhdGUtb2YtYnVzaW5lc3MtbWFuYWdlbWVudDhCw6BpIHRodXnhur90IHRyw6xuaDogQ2VyaWZpIGNhdGUgb2YgQnVzaW5lc3MgbWFuYWdlbWVudDhCw6BpIHRodXnhur90IHRyw6xuaDogQ2VyaWZpIGNhdGUgb2YgQnVzaW5lc3MgbWFuYWdlbWVudGQCAQ9kFgJmDxUDTWh0dHA6Ly90aGFta2hhby52bi90YWktbGlldS81MDUwLWh1b25nLWRhbi10aHVjLWhpZW4tbHVhbi12YW4tdGhhYy1zeS1raW5oLXRlPkjGsOG7m25nIGThuqtuIHRo4buxYyBoaeG7h24gbHXhuq1uIHbEg24gdGjhuqFjIHPhu7kga2luaCB04bq/PkjGsOG7m25nIGThuqtuIHRo4buxYyBoaeG7h24gbHXhuq1uIHbEg24gdGjhuqFjIHPhu7kga2luaCB04bq/ZAICD2QWAmYPFQNPaHR0cDovL3RoYW1raGFvLnZuL3RhaS1saWV1LzI5MTYtZGUtdGhpLXRpZW5nLWFuaC10cmluaC1kby1iLXR1eWVuLXNpbmgtY2FvLWhvYzzEkOG7gSB0aGkgdGnhur9uZyBBbmggdHLDrG5oIMSR4buZIEIsIHR1eeG6v24gc2luaCBjYW8gaOG7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" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=xkD2H87HFS51vm8zYyIYvXPTUz3b9Fl8XZ8E8Yb3fPFMg97Y-kaq5fdofSTd1EB_puCMlAzzl_kJa_o2gXgcRYBnqPtxkJIbyxPuLnO1obc1&amp;t=634946834911250000" type="text/javascript"></script>
+
+
+<script src="/ScriptResource.axd?d=qoGJxnMB152LxTzzw6AfWfvsi1vi_PhAAJ5sESN18m8Z9qj9wRg7Yo4FaZi5KIWXUYKNwZ1O5qN4Aov7mqp4AcYFnUvH9zqB0uHfItFwwQLGcJSxjJJGS9IGCy-vcyFC0&amp;t=ffffffff8a610ee0" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=DH1dlYJzxLqKFkj-6SlG2iIR16eqD69FEub6fjADT3oZ8F_qfiSdDwOG6Ysh57WlIGNiqIQIKNqHScvcS3g9pXxA4fR1FAoKrV8CLWl02nCn-8WeFJYpu-ieRk04j2xr86gaEW_azDx4FqAD-gwKZg2&amp;t=ffffffff8a610ee0" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBwLm0bjBCgLs9YXsBgKni+zNCAKCm9KICgKL363vBwKNvcnYCgLWpcTyAhJCsZoVXhCy5Gn7R6UG9ugjNbJQjiLMgHJqZtthbYuf" />
+</div>
+    <h1>
+        <a href="http://thamkhao.vn/tai-lieu/7212-vecto-rieng--gia-tri-rieng-cua-ma-tran-va-cua-phep-bien-doi-tuyen-tinh--cheo-hoa" title="Vecto riêng - giá trị riêng của ma trận và của phép biến đổi tuyến tính - Chéo hóa"
+            rel="bookmark">
+            Vecto riêng - giá trị riêng của ma trận và của phép biến đổi tuyến tính - Chéo hóa</a></h1>
+    <br />
+    <h4>
+        Danh mục: <a href="http://thamkhao.vn/danh-muc/2042-sau-dai-hoc---mba"
+            title=" ">
+            Sau đại học - MBA</a></h4>
+    
+    Đăng lúc:
+    22/11/2012. 
+    bởi:
+    Thiện Nguyễn.
+    <br />
+    
+
+    <div class="clearline">
+    </div>
+
+    <hr />
+    <a name="description"></a>
+    <div id="description" class="">
+        <h3><ul id='g1'><li><img src='/images/imagecontent/1020-giao-duc---dao-tao/2042-sau-dai-hoc---mba/20060228_thayquang_bai16_3696/0001.jpg' alt='image content 1' /></li><li><img src='/images/imagecontent/1020-giao-duc---dao-tao/2042-sau-dai-hoc---mba/20060228_thayquang_bai16_3696/0002.jpg' alt='image content 2' /></li><li><img src='/images/imagecontent/1020-giao-duc---dao-tao/2042-sau-dai-hoc---mba/20060228_thayquang_bai16_3696/0003.jpg' alt='image content 3' /></li></ul><div id='l1'>Xem trước tài liệu</div><br/></h3>
+        <span style="color:Red;font-weight:bold;">Phần nội dung có thể bị lỗi do sử dụng font VN. Vui lòng báo lỗi với quản trị Thamkhao.vn. Cảm ơn!</span>
+        <br />
+        
+        <br />
+        ĐẠI SỐ CƠ BẢN<br/>(ÔN THI THẠC SĨ TOÁN HỌC)<br/>Bài 16. Vectơ riêng - Giá trị riêng của ma trận<br/>và của phép biến đổi tuyến tính - Chéo hóa<br/>PGS TS Mỵ Vinh Quang<br/>Ngày 28 tháng 2 năm 2006<br/>1 Vectơ riêng - Giá trị riêng của ma trận<br/>1.1 Các khái niệm cơ bản<br/>Cho A là ma trận vuông cấp n, (A ∈Mn(R))<br/>a11 a12 . . . a1n<br/>a21 a22 . . . a2n<br/>...<br/>...<br/>. . .<br/>...<br/>an1 an2 . . . ann<br/><br/>Khi đó<br/>• Đa thức bậc n của biến λ:<br/>PA(λ) = det(A− λI) =<br/>∣∣∣∣∣∣∣∣∣<br/>a11 − λ a12 . . . a1n<br/>a21 a22 − λ . . . a2n<br/>...<br/>...<br/>. . .<br/>...<br/>an1 an2 . . . ann − λ<br/>∣∣∣∣∣∣∣∣∣<br/>= (−1)nλn + an−1λn−1 + · · ·+ a1λ1 + a0<br/>gọi là đa thức đặc trưng của ma trận A.<br/>• Các nghiệm thực của đa thức đa thức đặc trưng PA(λ) gọi là giá trị riêng của ma trận<br/>A.<br/>• Nếu λ0 là một giá trị riêng của A thì det(A − λ0I) = 0. Do đó hệ phương trình thuần<br/>nhất:<br/>(A− λ0I)<br/> x1...<br/>xn<br/> =<br/> 0...<br/>0<br/> (1)<br/>1<br/>có vô số nghiệm. Không gian nghiệm của hệ (1) gọi là không gian con riêng của ma trận<br/>A ứng với giá trị riêng λ0. Các vectơ khác không là nghiệm của hệ (1) gọi là các vectơ<br/>riêng của ma trận A ứng với giá trị riêng λ0. Các vectơ tạo thành một cơ sở của không<br/>gian riêng (tức là các vectơ tạo thành hệ nghiệm cơ bản của hệ (1)) gọi là các vectơ riêng<br/>độc lập tuyến tính ứng với giá trị riêng λ0.<br/>1.2 Ví dụ<br/>Tìm đa thức đặc trưng, vectơ riêng, giá trị riêng của ma trận:<br/>A =<br/> 0 1 11 0 1<br/>1 1 0<br/><br/>Giải<br/>• Ta có PAλ =<br/>∣∣∣∣∣∣<br/>−λ 1 1<br/>1 −λ 1<br/>1 1 −λ<br/>∣∣∣∣∣∣ = −λ3 + 3λ+ 2<br/>Vậy đa thức đặc trưng của ma trận A là PA(λ) = −λ3 + 3λ+ 2<br/>• PA(λ) = 0 ⇔ −λ3 + 3λ+ 2 = 0 ⇔ (λ+ 1)2(2− λ) = 0 ⇔ λ = −1 (kép) , λ = 2.<br/>Vậy ma trận A có 2 giá trị riêng là λ = −1, λ = 2.<br/>• Để tìm vectơ riêng của A, ta xét hai trường hợp:<br/>– Ứng với giá trị riêng λ = −1.<br/>Để tìm vectơ riêng ứng với giá trị riêng λ = −1, ta giải hệ: 1 1 11 1 1<br/>1 1 1<br/>∣∣∣∣∣∣<br/>0<br/>0<br/>0<br/><br/>Hệ có vô số nghiệm phụ thuộc hai tham số x2, x3. Nghiệm tổng quát của hệ là:<br/>x1 = −a− b, x2 = a, x3 = b. Do đó, không gian con riêng của A ứng với giá trị riêng<br/>λ = −1 là V−1 = {(−a− b, a, b) | a, b ∈ R}.<br/>Các vectơ riêng của A ứng với giá trị riêng λ = −1 là tất cả các vectơ có dạng:<br/>(−a− b, a, b) với a2 + b2 6= 0 (vì vectơ riêng phải khác không).<br/>Ta có dimV−1 = 2 và A có 2 vectơ riêng độc lập tuyến tính ứng với giá trị riêng<br/>λ = −1 là α1 = (−1, 1, 0), α2 = (−1, 0, 1).<br/>– Ứng với giá trị riêng λ = 2.<br/>Để tìm vectơ riêng ứng với giá trị riêng λ = 2, ta giải hệ: −2 1 11 −2 1<br/>1 1 −2<br/>∣∣∣∣∣∣<br/>0<br/>0<br/>0<br/> −→<br/> 1 1 −21 −2 1<br/>−2 1 1<br/>∣∣∣∣∣∣<br/>0<br/>0<br/>0<br/><br/>−→<br/> 1 1 −20 −3 3<br/>0 −3 3<br/>∣∣∣∣∣∣<br/>0<br/>0<br/>0<br/> −→<br/> 1 1 −20 −3 3<br/>0 0 0<br/>∣∣∣∣∣∣<br/>0<br/>0<br/>0<br/><br/>2<br/>Hệ có vô số nghiệm phụ thuộc tham số x3. Nghiệm tổng quát của hệ là: x1 = a,<br/>x2 = a, x3 = a. Do đó, không gian con riêng của A ứng với giá trị riêng λ = 2 là<br/>V2 = {(a, a, a) | a ∈ R}.<br/>Các vectơ riêng của A ứng với giá trị riêng λ = 2 là tất cả các vectơ có dạng:<br/>(a, a, a) với a 6= 0.<br/>Ta có dimV2 = 1 và A có 1 vectơ riêng độc lập tuyến tính ứng với giá trị riêng λ = 2<br/>là α3 = (1, 1, 1).<br/>Chú ý rằng, nếu xét cả hai trường hợp, A có tất cả 3 vectơ riêng độc lập tuyến tính là<br/>α1, α2, α3.<br/>2 Chéo hóa ma trận<br/>2.1 Ma trận đồng dạng<br/>• Cho A, B là các ma trận vuông cấp n. Ta nói A đồng dạng với B, ký hiệu A ∼ B, nếu<br/>tồn tại ma trận T vuông cấp n, không suy biến sao cho B = T−1AT . Bạn đọc có thể dễ<br/>dàng kiểm tra rằng quan hệ đồng dạng là một quan hệ tương đương.<br/>• Quan hệ đồng dạng bảo toàn khá nhiều các tính chất của ma trận, chẳng hạn nếu A ∼ B<br/>thì detA = detB, rankA = rankB, PA(λ) = PB(λ), giá trị riêng của A và B là như<br/>nhau...<br/>2.2 Chéo hóa ma trận<br/>• Định nghĩa. Cho A là ma trận vuông cấp n.<br/>Ta nói ma trận A chéo hóa được nếu A đồng dạng với một ma trận chéo. Như vậy ma<br/>trận A chéo hóa được nếu tồn tại ma trận T vuông cấp n không suy biến sao cho T−1AT<br/>là ma trận chéo.<br/>Chéo hóa ma trận A tức là tìm ma trận T vuông cấp n không suy biến sao cho T−1AT<br/>là ma trận chéo.<br/>• Ý nghĩa của việc chéo hóa ma trận<br/>Nếu ma trận A chéo hóa được thì việc nghiên cứu các tính chất (bảo toàn qua quan hệ<br/>đồng dạng) của ma trận A dẫn đến việc nghiên cứu các tính chất đó trên một ma trận<br/>chéo và như vậy vấn đề sẽ trở nên đơn giản hơn nhiều.<br/>Muốn biết ma trận A có chéo hóa được hay không, ta có định lý sau:<br/>• Định lý (Điều kiện cần và đủ để một ma trận vuông chéo hóa được)<br/>Ma trận A vuông cấp n chéo hóa được khi và chỉ khi A có đủ n vectơ riêng độc lập tuyến<br/>tính, khi và chỉ khi<br/>k∑<br/>i=1<br/>dimVλi = n, trong đó λ1, . . . , λk là tất cả các giá trị riêng của A.<br/>3<br/>2.3 Cách chéo hóa một ma trận<br/>Cho A là ma trận vuông cấp n. Để chéo hóa ma trận A, ta làm như sau:<br/>Tìm các giá trị riêng và các vectơ riêng độc lập tuyến tính của A. Khi đó xảy ra một trong<br/>hai khả năng sau:<br/>1. Nếu tổng số vectơ riêng độc lập tuyến tính của A bé hơn n (tức là<br/>k∑<br/>i=1<br/>dimVλi < n, trong<br/>đó Vλi là không gian con riêng ứng với giá trị riêng λi) thì kết luận ma trận A không chéo<br/>hóa được, tức là không tồn tại ma trận T để T−1AT là ma trận chéo.<br/>2. Nếu tổng số vectơ riêng độc lập tuyến tính của A bằng n (tức là<br/>k∑<br/>i=1<br/>dimVλi = n thì ma<br/>trận A chéo hóa được. Khi đó ma trận T cần tìm là ma trận mà các cột của nó chính là<br/>các vectơ riêng độc lập tuyến tính của A viết theo cột, và khi đó<br/>T−1AT =<br/><br/>λ1 0 . . . 0<br/>0 λ2 . . . 0<br/>...<br/>...<br/>. . .<br/>...<br/>0 0 . . . λn<br/><br/>là ma trận chéo, trong đó λi chính là giá trị riêng của A ứng với vectơ riêng là vectơ cột<br/>thứ i của ma trận T .<br/>2.4 Ví dụ<br/>Chéo hóa ma trận<br/>A =<br/> 0 1 11 0 1<br/>1 1 0<br/><br/>Giải<br/>Trước hết tìm vectơ riêng, giá trị riêng của A.<br/>Theo ví dụ b), mục 1, ma trận A có hai giá trị riêng là λ = −1, λ = 2 và A có ba vectơ<br/>riêng độc lập tuyến tính là α1 = (−1, 1, 0), λ = (−1, 0, 1) ứng với giá trị riêng λ = −1 và<br/>α3 = (1, 1, 1) ứng với giá trị riêng λ = 2.<br/>Do đó, ta kết luận:<br/>- Ma trận A chéo hóa được.<br/>- Ma trận cần tìm là:<br/>T =<br/> −1 −1 11 0 1<br/>0 1 1<br/><br/>và<br/>T−1AT =<br/> −1 0 00 −1 0<br/>0 0 2<br/><br/>4<br/>3 Vectơ riêng, giá trị riêng của phép biến đổi tuyến tính<br/>3.1 Các khái niệm cơ bản<br/>Cho V là không gian vectơ và f : V → V là phép biến đổi tuyến tính.<br/>Nếu U là không gian vectơ con bất biến của V sao cho f(U) ⊂ U thì U gọi là không gian<br/>con bất biến của V .<br/>Giả sử U là không gian con bất biến 1 chiều và α là một vectơ khác không, thuộc U (do<br/>đó α là cơ sở của U), khi đó vì f(U) ⊂ U nên f(α) ∈ U và f(α) = λα. Từ đó ta có định nghĩa<br/>sau:<br/>Định nghĩa. Cho V là không gian vectơ, f : V → V là phép biến đổi tuyến tính của V .<br/>Nếu ta có f(α) = λα trong đó α ∈ V là vectơ khác không và λ ∈ R thì α gọi là vectơ riêng của<br/>f ứng với giá trị riêng λ.<br/>3.2 Cách tìm giá trị riêng, vectơ riêng của phép biến đổi tuyến tính<br/>Các giá trị riêng, vectơ riêng của phép biến đổi tuyến tính có sự tương ứng chặt chẽ với các<br/>giá trị riêng, vectơ riêng của ma trận của nó. Ta sẽ thấy rõ điều đó qua phần trình bày dưới<br/>đây.<br/>Cho V là không gian vectơ n-chiều (dimV = n) và cho f : V → V là phép biến đổi tuyến<br/>tính. Giả sử (U) : u1, . . . , un là cơ sở của V và A = Af/(U) là ma trận của f trong cơ sở (U).<br/>Ta có biểu thức tọa độ của f như sau (xem bài 15):<br/>[f(α)]/(U) = A.[α]/(U) (∗)<br/>Nếu α là vectơ riêng của f ứng với giá trị riêng λ0 thì f(α) = λ0f . Thay vào vào (∗) ta có:<br/>λ0.[α]/(U) = A.[α]/(U)<br/>hay<br/>[A− λ0I][α]/(U) = 0 (∗∗)<br/>Vì vectơ α khác không nên hệ phương trình (∗∗) có nghiệm khác không ⇔ det[A−λ0I] = 0<br/>⇔ λ0 là giá trị riêng của A.<br/>Như vậy, λ0 là giá trị riêng của f ⇔ λ0 là giá trị riêng của ma trận A = Af/(U) và α ∈ V<br/>là vectơ riêng của f ứng với giá trị riêng λ0 ⇔ [α]/(U) là vectơ riêng của A ứng với giá trị riêng<br/>λ0.<br/>Từ đó ta có quy tắc tìm giá trị riêng và vectơ riêng của phép biến đổi tuyến tính f : V → V<br/>như sau:<br/>1. Bước 1. Tìm ma trận của f trong một cơ sở (U) : u1, . . . , un nào đó của V , nghĩa là tìm<br/>A = Af/(U) .<br/>2. Bước 2. Tìm các giá trị riêng và vectơ riêng của ma trận A.<br/>3. Bước 3. Kết luận<br/>• Các giá trị riêng của A cũng chính là giá trị riêng của f .<br/>• Nếu (a1, . . . , an) là vectơ riêng của A ứng với giá trị riêng λ0 thì a1u1 + · · · + anun<br/>là vectơ riêng của f ứng với giá trị riêng λ0.<br/>5<br/>3.3 Vấn đề tìm cơ sở của V để ma trận của f trong cơ sở là ma trận<br/>chéo<br/>Để nghiên cứu một phép biến đổi tuyến tính f : V → V , ta có thể qui về việc nghiên cứu<br/>ma trận của f . Từ đó dẫn đến việc cần tìm cơ sở để ma trận của f trong cơ sở đó là ma trận<br/>chéo (là ma trận khá đơn giản, dễ nghiên cứu). Sau đây là cách tìm cơ sở như vậy:<br/>Đầu tiên ta tìm các vectơ riêng độc lập tuyến tính của f . Nếu f có ít hơn n vectơ riêng<br/>độc lập tuyến tính (n = dimV ) thì không có cơ sở nào của f để ma trận của f trong cơ sở đó<br/>là ma trận chéo. Nếu f có n vectơ riêng độc lập tuyến tính là (α) : α1, . . . , αn thì n vectơ riêng<br/>độc lập tuyến tính đó làm thành cơ sở (α) của V và ma trận của f trong cơ sở (α) đó là ma<br/>trận chéo. Cụ thể:<br/>Af/(U) =<br/><br/>λ1 0 . . . 0<br/>0 λ2 . . . 0<br/>...<br/>...<br/>. . .<br/>...<br/>0 0 . . . λn<br/><br/>trong đó λi là giá trị riêng ứng với vectơ riêng αi (các λi có thể bằng nhau).<br/>3.4 Ví dụ<br/>Trong R3 cho cơ sở:<br/>u1 = (1, 1, 1), u2 = (1, 1, 0), u3 = (1, 0, 0)<br/>và cho phép biến đổi tuyến tính f : R3 → R3 xác định bởi:<br/>f(u1) = (4, 3, 2)<br/>f(u2) = (4, 3, 1)<br/>f(u3) = (1, 0, 0)<br/>Tìm cơ sở để ma trận f trong cơ sở đó là ma trận chéo.<br/>Giải<br/>Đầu tiên ta tìm vectơ riêng, giá trị riêng của f . Để tìm vectơ riêng, giá trị riêng của f , ta<br/>tìm ma trận của f trong một cơ sở nào đó của R3. Trong bài toán cụ thể này, tìm ma trận của<br/>f trong cơ sở (U) : u1, u2, u3 là dễ nhất. Vậy:<br/>1. Bước 1. Tìm ma trận của f trong cơ sở (U)<br/>Ta phải giải 3 hệ phương trình sau:<br/>• Hệ 1 1 1 11 1 0<br/>1 0 0<br/>∣∣∣∣∣∣<br/>4<br/>3<br/>2<br/><br/>a1 = 2,<br/>a2 = 3− a1 = 1,<br/>a3 = 4− a1 − a2 = 1<br/>6<br/>• Hệ 2 1 1 11 1 0<br/>1 0 0<br/>∣∣∣∣∣∣<br/>4<br/>3<br/>1<br/><br/>b1 = 1,<br/>b2 = 3− b1 = 2,<br/>b3 = 4− b1 − b2 = 1<br/>• Hệ 3 1 1 11 1 0<br/>1 0 0<br/>∣∣∣∣∣∣<br/>1<br/>0<br/>0<br/><br/>c1 = 0,<br/>c2 = −c1 = 0,<br/>c3 = 1− c1 − c2 = 1<br/>Vậy Af/(U) =<br/> 2 1 01 2 0<br/>1 1 1<br/><br/>2. Bước 2. Tìm giá trị riêng, vectơ riêng của A và của f<br/>PA(λ) =<br/>∣∣∣∣∣∣<br/>2− λ 1 0<br/>1 2− λ 0<br/>1 1 1− λ<br/>∣∣∣∣∣∣ = (1− λ)<br/>∣∣∣∣ 2− λ 11 2− λ<br/>∣∣∣∣<br/>PA(λ) = (1− λ)[(2− λ)2 − 1] = (1− λ)2(3− λ)<br/>PA(λ) = 0 ⇔ λ = 1, λ = 3<br/>Vậy A có hai giá trị riêng là λ = 1, λ = 3.<br/>Suy ra f có hai giá trị riêng là λ = 1, λ = 3.<br/>• Các vectơ riêng của A ứng với giá trị riêng λ = 1 là nghiệm của hệ 1 1 01 1 0<br/>1 1 0<br/>∣∣∣∣∣∣<br/>0<br/>0<br/>0<br/> −→<br/> 1 1 00 0 0<br/>0 0 0<br/>∣∣∣∣∣∣<br/>0<br/>0<br/>0<br/><br/>Hệ có vô số nghiệm phụ thuộc hai tham số x2, x3.<br/>Nghiệm tổng quát của hệ là: x1 = −a, x2 = a, x3 = b.<br/>Vectơ riêng của A, ứng với giá trị riêng λ = 1, là (−a, a, b), a2 + b2 6= 0.<br/>Trong trường hợp này, A có hai vectơ riêng độc lập tuyến tính là α1 = (−1, 1, 0) và<br/>α2 = (0, 0, 1).<br/>Do đó, ứng với giá trị riêng λ = 1, vectơ riêng của f là các vectơ có dạng<br/>−au1 + au2 + bu3 = (b, 0,−a)<br/>với a2 + b2 6= 0.<br/>Trong trường hợp này, f có hai vectơ riêng độc lập tuyến tính là:<br/>β1 = −u1 + u2 + 0u3 = (0, 0,−1)<br/>β2 = 0u1 + 0u2 + u3 = (1, 0, 0)<br/>7<br/>• Các vectơ riêng của A ứng với giá trị riêng λ = 3 là nghiệm của hệ −1 1 01 −1 0<br/>1 1 −2<br/>∣∣∣∣∣∣<br/>0<br/>0<br/>0<br/> −→<br/> −1 1 00 0 −2<br/>0 0 0<br/>∣∣∣∣∣∣<br/>0<br/>0<br/>0<br/><br/>Hệ có vô số nghiệm phụ thuộc một tham số x2.<br/>Ta có: x2 = a, x3 = 0, x1 = a<br/>Nghiệm tổng quát của hệ là: x1 = a, x2 = a, x3 = 0.<br/>Vectơ riêng của A, ứng với giá trị riêng λ = 3, là (a, a, 0), a 6= 0.<br/>Trong trường hợp này, A có một vectơ riêng độc lập tuyến tính là α3 = (1, 1, 0).<br/>Do đó, ứng với giá trị riêng λ = 3, vectơ riêng của f là các vectơ có dạng<br/>au1 + au2 + 0u3 = (2a, 2a, a), a 6= 0<br/>Trong trường hợp này, f có một vectơ riêng độc lập tuyến tính là:<br/>β3 = 1u1 + 1u2 + 0u3 = (2, 2, 1)<br/>3. Bước 3. Kết luận<br/>f có ba vectơ riêng độc lập tuyến tính là các vectơ β1, β2 (ứng với λ = 1) và β3 (ứng với<br/>λ = 3). Do đó, β1, β2, β3 làm thành cơ sở của R3 mà ma trận của f trong cơ sở β1, β2,<br/>β3 là ma trận chéo. Cụ thể:<br/>Af/(β) =<br/> 1 0 00 1 0<br/>0 0 3<br/><br/>8<br/>Bài tập<br/>1. (a) Cho f : Rn → R. Chứng minh f là ánh xạ tuyến tính ⇔ tồn tại các số a1, . . . , an ∈ R<br/>để f(x1, x2, . . . , xn) = a1x1 + a2x2 + · · ·+ anxn.<br/>(b) Cho f : Rn → Rm. Chứng minh f là ánh xạ tuyến tính ⇔ tồn tại các số aij ∈ R để<br/>f(x1, x2, . . . , xn) = (a11x1 + a12x2 + · · ·+ a1nxn, . . . , am1x1 + am2x2 + · · ·+ amnxn).<br/>2. Tìm công thức của ánh xạ tuyến tính f : R3 → R3 (tìm f(x1, x2, x3)) biết:<br/>(a) f(1, 1, 2) = (1, 0, 0)<br/>f(2, 1, 1) = (0, 1, 1)<br/>f(2, 2, 3) = (0,−1, 0)<br/>(b) f(1, 2, 3) = (−1, 0, 1)<br/>f(−1, 1, 1) = (0, 1, 0)<br/>f(1, 3, 4) = (1, 0, 2)<br/>3. Trong R3 cho 2 cơ sở<br/>u1 = (1, 0, 0), u2 = (0, 1, 1), u3 = (1, 0, 1) (U)<br/>v1 = (1,−1, 0), v2 = (0, 1,−1), v3 = (1, 0, 1) (V )<br/>và cho ánh xạ tuyến tính f : R3 → R3, f(ui) = vi, i = 1, 2, 3.<br/>(a) Tìm công thức của f .<br/>(b) Tìm các ma trận sau: Af/(U) , Af/(U),(V ) , Af/(V ) , Af/(V ),(U) , Af/(ε3)<br/>4. Cho ánh xạ tuyến tính Θ : Rn[x] → Rn[x], p(x) 7→ p′(x).<br/>Tìm ma trận của Θ trong cơ sở:<br/>(a) 1, x, x2, . . . , xn<br/>(b) 1, (x− a), (x− a)<br/>2<br/>2!<br/>, . . . ,<br/>(x− a)n<br/>n!<br/>5. Cho ánh xạ tuyến tính f : R4 → R3<br/>f(x1, x2, x3, x4) = (x1 − x2 + x3, 2x1 + x4, 2x2 + x3 + x4)<br/>Tìm cơ sở, số chiều của Ker f , Im f .<br/>6. Tìm vectơ riêng, giá trị riêng chéo hóa các ma trận sau:<br/>(a)<br/> 1 0 10 0 0<br/>1 0 1<br/><br/>(b)<br/> 5 −1 1−1 2 −2<br/>1 −2 2<br/><br/>9<br/>(c)<br/> 1 2 12 4 2<br/>1 2 1<br/><br/>(d)<br/><br/>1 0 0 0<br/>0 0 0 0<br/>0 0 0 0<br/>1 0 0 1<br/><br/>(e)<br/><br/>1 3 1 2<br/>0 −1 1 3<br/>0 0 2 5<br/>0 0 0 −2<br/><br/>7. Trong R3 cho cơ sở:<br/>u1 = (1, 1, 1), u2 = (−1, 2, 1), u3 = (1, 3, 2)<br/>và cho ánh xạ tuyến tính f : R3 → R3 xác định bởi<br/>f(u1) = (0, 5, 3)<br/>f(u2) = (2, 4, 3)<br/>f(u3) = (0, 3, 2)<br/>Tìm một cơ sở để ma trận f trong cơ sở đó là ma trận chéo.<br/>8. Cho phép biến đổi tuyến tính ϕ : V → V thỏa ϕ2 = ϕ. Chứng minh:<br/>Imϕ+ Kerϕ = V<br/>Imϕ ∩Kerϕ = {0}<br/>9. Cho f : V → V là phép biến đổi tuyến tính, L là không gian vectơ con của V . Chứng<br/>minh:<br/>(a) dimL− dimKer f ≤ dim f(L) ≤ dimL<br/>(b) dimL ≤ dim f−1(L) ≤ dimL+ dimKer f<br/>10. Cho ϕ : V → W , ψ : W → U là ánh xạ tuyến tính. Chứng minh:<br/>(a) rank(ψϕ) ≤ min{rankψ, rankϕ}<br/>(b) rank(ψϕ) = rankϕ− dim(Kerψ ∩ Imϕ)<br/>(c) rank(ψϕ) ≥ rankϕ+ rankψ − dimW<br/>10<br/>
+        <div style="clear:both;"></div>
+    </div>
+    <!-- description -->
+    <!--INFOLINKS_OFF-->
+    <br />
+    <br />
+    <hr />
+    
+<h3>
+    Download</h3>
+<div class="font-bold codetop">
+    Hướng dẫn download</div>
+<div class="codemain">
+    <ol>
+        <li>Mỗi lượt download tài liệu cách nhau 10 phút.</li>
+        <li>Vui lòng chọn biểu tượng tương ứng với loại file cần download.</li>
+    </ol>
+    <br />
+    
+            <a href="http://thamkhao.vn/download/26658"
+                title="Download 20060228_thayquang_bai16_3696.pdf" rel="nofollow">
+                <img src="/images/1-3.png"
+                    alt="Download 20060228_thayquang_bai16_3696.pdf" align="left" /></a>
+        
+    
+    <div class="clearline"></div>
+</div>
+<br />
+<hr class="clearline" />
+
+    <a name="related" id="related"></a>
+    <h3>Tài liệu tương tự</h3>
+    <div id="booklist">
+        <ol>
+            
+                    <li><a href='http://thamkhao.vn/tai-lieu/4277-bai-thuyet-trinh-cerifi-cate-of-business-management'
+                        title='Bài thuyết trình: Cerifi cate of Business management'>
+                        Bài thuyết trình: Cerifi cate of Business management</a></li>
+                
+                    <li><a href='http://thamkhao.vn/tai-lieu/5050-huong-dan-thuc-hien-luan-van-thac-sy-kinh-te'
+                        title='Hướng dẫn thực hiện luận văn thạc sỹ kinh tế'>
+                        Hướng dẫn thực hiện luận văn thạc sỹ kinh tế</a></li>
+                
+                    <li><a href='http://thamkhao.vn/tai-lieu/2916-de-thi-tieng-anh-trinh-do-b-tuyen-sinh-cao-hoc'
+                        title='Đề thi tiếng Anh trình độ B, tuyến sinh cao học'>
+                        Đề thi tiếng Anh trình độ B, tuyến sinh cao học</a></li>
+                
+                    <li><a href='http://thamkhao.vn/tai-lieu/2343-mot-so-kinh-nghiem-ca-nhan-ve-thi-hoc-bong-vef'
+                        title='Một số kinh nghiệm cá nhân về thi học bổng VEF'>
+                        Một số kinh nghiệm cá nhân về thi học bổng VEF</a></li>
+                
+                    <li><a href='http://thamkhao.vn/tai-lieu/1262-de-an--dao-tao-theo-chuong-trinh-tien-tien-tai-mot-so-truong-dai-hoc-cua-viet-nam'
+                        title='Đề án: ' Đào tạo theo chương trình tiên tiến tại một số trường đại học của Việt Nam...'>
+                        Đề án: ' Đào tạo theo chương trình tiên tiến tại một số trường đại học của Việt Nam...</a></li>
+                
+                    <li><a href='http://thamkhao.vn/tai-lieu/3193-thong-bao-chuong-trinh-hoc-gia-vsp-2009--2010'
+                        title='Thông báo Chương trình Học giả (VSP) 2009 - 2010'>
+                        Thông báo Chương trình Học giả (VSP) 2009 - 2010</a></li>
+                
+                    <li><a href='http://thamkhao.vn/tai-lieu/1445-khoa-hoc-cao-hoc-chuyen-nganh-ky-thuat-det-may--vien-ky-thuat-det-may--dai-hoc-ky'
+                        title='Khóa học Cao học chuyên ngành Kỹ Thuật Dệt May - Viện Kỹ thuật dệt may - Đại học Kỹ...'>
+                        Khóa học Cao học chuyên ngành Kỹ Thuật Dệt May - Viện Kỹ thuật dệt may - Đại học Kỹ...</a></li>
+                
+                    <li><a href='http://thamkhao.vn/tai-lieu/9067-huong-dan-viet-luan-van-va-bao-cao-nghien-cuu'
+                        title='HƯỚNG DẪN VIẾT LUẬN VĂN VÀ BÁO CÁO NGHIÊN CỨU'>
+                        HƯỚNG DẪN VIẾT LUẬN VĂN VÀ BÁO CÁO NGHIÊN CỨU</a></li>
+                
+                    <li><a href='http://thamkhao.vn/tai-lieu/9194-quy-che-tuyen-sinh-sau-dai-hoc'
+                        title='QUY CHẾ TUYỂN SINH SAU ĐẠI HỌC'>
+                        QUY CHẾ TUYỂN SINH SAU ĐẠI HỌC</a></li>
+                
+                    <li><a href='http://thamkhao.vn/tai-lieu/8910-quy-dinh-ve-hinh-thuc-doi-voi-luan-van-thac-si'
+                        title='QUY ĐỊNH VỀ HÌNH THỨC ĐỐI VỚI LUẬN VĂN THẠC SĨ'>
+                        QUY ĐỊNH VỀ HÌNH THỨC ĐỐI VỚI LUẬN VĂN THẠC SĨ</a></li>
+                
+        </ol>
+    </div>
+    <br />
+    <a name="comments" id="comments"></a>
+    <!--INFOLINKS_ON-->
+    <h3>Ý kiến bạn đọc (<span id="mainContent_lblCommentStatus">0</span>)</h3>
+    <hr />
+    <div class="bq">
+        <b></b></div>
+    <br />
+    <ol>
+        
+    </ol>
+    <hr />
+    <h3>Ý kiến của bạn</h3>
+    <div class="error">
+        <ol>
+            <li>Vui lòng đọc kỹ hướng dẫn: thông tin, download,... tài liệu trước khi để lại ý kiến
+                của bạn!</li>
+            <li>Nếu muốn tìm kiếm tài liệu vui lòng vào đây: <a href="http://thamkhao.vn/search"
+                title="Search">Tìm tài liệu!</a> hoặc liên hệ trực tiếp với Quản trị website.</li>
+        </ol>
+    </div>
+    <div id="frmInputComment" class="cssform" method="post" name="fcomment">
+        <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$mainContent$ScriptManager1', 'Form1', ['tctl00$mainContent$udpComments','mainContent_udpComments'], ['ctl00$mainContent$btnSubmit','mainContent_btnSubmit'], [], 90, 'ctl00');
+//]]>
+</script>
+
+        <div id="mainContent_udpComments">
+	
+                
+                <p>
+                    <label for="username">
+                        Tên bạn:</label>
+                    <input name="ctl00$mainContent$txtUsername" type="text" maxlength="64" id="mainContent_txtUsername" name="username" style="width: 400px;" />
+                    yêu cầu
+                </p>
+                <p>
+                    <label for="email">
+                        Email của bạn:</label>
+                    <input name="ctl00$mainContent$txtEmail" type="text" maxlength="64" id="mainContent_txtEmail" name="email" value="" style="width: 400px;" />
+                    yêu cầu
+                </p>
+                <p>
+                    <label for="comment">
+                        Nội dung:</label>
+                    <textarea name="ctl00$mainContent$txtComment" id="mainContent_txtComment" rows="5" style="width: 400px;"></textarea>
+                    yêu cầu
+                </p>
+                <p>
+                    <label for="captcha">
+                        Nhập mã bên cạnh:</label>
+                    <img src="/MyCaptchaHandler.ashx" alt="captcha" style="float: left; padding-right: 10px;" />
+                    <input name="ctl00$mainContent$txtMyCaptcha" type="text" maxlength="64" id="mainContent_txtMyCaptcha" value="" style="width: 100px;" />
+                    <br />
+                    <a id="mainContent_likResetCaptcha" href="javascript:__doPostBack(&#39;ctl00$mainContent$likResetCaptcha&#39;,&#39;&#39;)">Chọn mã xác nhận khác</a>
+                </p>
+            
+</div>
+        <p>
+            <label for="Submit">
+                &nbsp;</label>
+            <input type="submit" name="ctl00$mainContent$btnSubmit" value="Đăng ý kiến của bạn" id="mainContent_btnSubmit" type="submit" name="" />
+        </p>
+        <div class="clearline">
+        </div>
+    </div>
+    </form>
+    
+
+                <hr />
+            </div>
+            <!-- main content -->
+            
+<div id="secondNav-wrapper">
+    <style type="text/css">
+        .fixed
+        {
+            position: fixed;
+            top: 10px;
+        }
+    </style>
+    <div id="secondNav">
+        <div class="navbar">Thư viện tài liệu</div>
+        <ul id="more-category">
+            
+            
+                    <li id="RightPanel_rptCatParent_liRightItem_0"><a href="http://thamkhao.vn/danh-muc/1020-luan-van---bao-cao"
+                        title="Luận Văn - Báo Cáo">Luận Văn - Báo Cáo</a></li>
+                
+                    <li id="RightPanel_rptCatParent_liRightItem_1"><a href="http://thamkhao.vn/danh-muc/1020-kinh-doanh---tiep-thi"
+                        title="Kinh Doanh - Tiếp Thị">Kinh Doanh - Tiếp Thị</a></li>
+                
+                    <li id="RightPanel_rptCatParent_liRightItem_2"><a href="http://thamkhao.vn/danh-muc/1020-kinh-te---quan-ly"
+                        title="Kinh Tế - Quản Lý">Kinh Tế - Quản Lý</a></li>
+                
+                    <li id="RightPanel_rptCatParent_liRightItem_3"><a href="http://thamkhao.vn/danh-muc/1020-bieu-mau---van-ban"
+                        title="Biểu mẫu - Văn bản">Biểu mẫu - Văn bản</a></li>
+                
+                    <li id="RightPanel_rptCatParent_liRightItem_4"><a href="http://thamkhao.vn/danh-muc/1020-tai-chinh---ngan-hang"
+                        title="Tài Chính - Ngân Hàng">Tài Chính - Ngân Hàng</a></li>
+                
+                    <li id="RightPanel_rptCatParent_liRightItem_5"><a href="http://thamkhao.vn/danh-muc/1020-cong-nghe-thong-tin"
+                        title="Công Nghệ Thông Tin">Công Nghệ Thông Tin</a></li>
+                
+                    <li id="RightPanel_rptCatParent_liRightItem_6"><a href="http://thamkhao.vn/danh-muc/1020-ngoai-ngu"
+                        title="Ngoại Ngữ">Ngoại Ngữ</a></li>
+                
+                    <li id="RightPanel_rptCatParent_liRightItem_7"><a href="http://thamkhao.vn/danh-muc/1020-ky-thuat---cong-nghe"
+                        title="Kỹ Thuật - Công Nghệ">Kỹ Thuật - Công Nghệ</a></li>
+                
+                    <li id="RightPanel_rptCatParent_liRightItem_8"><a href="http://thamkhao.vn/danh-muc/1020-khoa-hoc-tu-nhien"
+                        title="Khoa Học Tự Nhiên">Khoa Học Tự Nhiên</a></li>
+                
+                    <li id="RightPanel_rptCatParent_liRightItem_9"><a href="http://thamkhao.vn/danh-muc/1020-giao-duc---dao-tao"
+                        title="Giáo Dục - Đào Tạo">Giáo Dục - Đào Tạo</a></li>
+                
+                    <li id="RightPanel_rptCatParent_liRightItem_10"><a href="http://thamkhao.vn/danh-muc/1020-van-hoa---nghe-thuat"
+                        title="Văn Hoá - Nghệ Thuật">Văn Hoá - Nghệ Thuật</a></li>
+                
+                    <li id="RightPanel_rptCatParent_liRightItem_11"><a href="http://thamkhao.vn/danh-muc/1020-giai-tri---thu-gian"
+                        title="Giải Trí - Thư Giãn">Giải Trí - Thư Giãn</a></li>
+                
+                    <li id="RightPanel_rptCatParent_liRightItem_12"><a href="http://thamkhao.vn/danh-muc/1020-y-te---suc-khoe"
+                        title="Y Tế - Sức Khoẻ">Y Tế - Sức Khoẻ</a></li>
+                
+                    <li id="RightPanel_rptCatParent_liRightItem_13"><a href="http://thamkhao.vn/danh-muc/1020-van-ban-luat"
+                        title="Văn Bản Luật">Văn Bản Luật</a></li>
+                
+                    <li id="RightPanel_rptCatParent_liRightItem_14"><a href="http://thamkhao.vn/danh-muc/1020-ky-nang-mem"
+                        title="Kỹ Năng Mềm">Kỹ Năng Mềm</a></li>
+                
+                    <li id="RightPanel_rptCatParent_liRightItem_15"><a href="http://thamkhao.vn/danh-muc/1020-nong---lam---ngu"
+                        title="Nông - Lâm - Ngư">Nông - Lâm - Ngư</a></li>
+                
+                    <li id="RightPanel_rptCatParent_liRightItem_16"><a href="http://thamkhao.vn/danh-muc/1020-the-loai-khac"
+                        title="Thể loại khác">Thể loại khác</a></li>
+                
+        </ul>
+        
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                var msie6 = $.browser == 'msie' && $.browser.version < 7;
+
+                if (!msie6) {
+                    var adcontainerHeight;
+                    adcontainerHeight = $('#content').height() - $('#adcontainer').offset().top;
+                    if (adcontainerHeight < 200)
+                        adcontainerHeight = 200;
+                    $('#adcontainer').height(adcontainerHeight);
+
+                    var top = $('#advs').offset().top - parseFloat($('#advs').css('margin-top').replace(/auto/, 0));
+                    $(window).scroll(function (event) {
+                        // what the y position of the scroll is
+                        var y = $(this).scrollTop();
+
+                        // whether that's below the form
+                        if (y >= top && y <= $('#content').height()) {
+                            // if so, ad the fixed class
+                            $('#advs').addClass('fixed');
+                        } else {
+                            // otherwise remove it
+                            $('#advs').removeClass('fixed');
+                        }
+                    });
+                }
+            });
+        </script>
+        <div id="adcontainer">
+            <div id="advs">
+                <div class="navbar">
+                    Cộng đồng</div>
+                <ul>
+                    
+                    <li>
+                        
+                        <div class="fb-like-box" data-href="http://www.facebook.com/Thamkhaovn" data-width="180" data-show-faces="true" data-stream="false" data-border-color="red" data-header="false"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
+    <!-- secondNav -->
+</div>
+<!-- second-wrapper -->
+<div class="clearline">
+</div>
+
+        </div>
+        <!-- contents -->
+        <div class="clearline">
+        </div>
+        <div align="center">
+            <a href="#top" title="Lên đầu trang" style="display: block;">
+                <img src="/images/gotop.gif" alt="Lên đầu trang" title="Lên đầu trang" /></a></div>
+        
+<div id="footer">
+    <div class="footer-contents">
+        
+        <p>
+            ©2012, Copyright <a href="http://thamkhao.vn/" title="ThamKhao.vn: Thư viện mở trực tuyến!">
+                THAMKHAO.VN BETA</a>
+            
+        </p>
+    </div>
+    <!-- footer-contents -->
+</div>
+<!-- footer -->
+
+    </div>
+    <!-- end container -->
+
+    <!-- TET banners -->
+    
+<div id="divAdLeft"> 
+	<a href="http://thamkhao.vn">
+		
+        <img alt="TET Left Banner" src="https://lh5.googleusercontent.com/-f6KRQZggwXE/UPRZJPtwXBI/AAAAAAAADL4/juEQYb6Tgco/s470/TET_Left_2.png" />
+	</a>
+</div>
+    
+<div id="divAdRight"> 
+	<a href="http://thamkhao.vn">
+		
+        <img alt="TET Right Banner" src="https://lh5.googleusercontent.com/-ytf00_Ry7fY/UPRfI3FZgZI/AAAAAAAADMQ/oM2WeOMz1yw/s470/TET_Right_2.png" />
+	</a>
+</div>
+    <script type="text/javascript">
+       document.write("<script type='text/javascript' language='javascript'>MainContentW = 980;LeftBannerW = 150;RightBannerW = 150;LeftAdjust = 5;RightAdjust = 5;TopAdjust = 130;ShowAdDiv();window.onresize=ShowAdDiv;<\/script>");
+	</script>
+    <!-- END TET banners -->
+
+    <script type="text/javascript">
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/vi_VN/all.js#xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+        } (document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-29407624-1']);
+        _gaq.push(['_setDomainName', 'thamkhao.vn']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+</html>

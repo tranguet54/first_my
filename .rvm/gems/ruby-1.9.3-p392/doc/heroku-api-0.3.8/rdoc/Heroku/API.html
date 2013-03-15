@@ -1,0 +1,2213 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class Heroku::API - heroku-api-0.3.8 Documentation</title>
+
+<link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../index.html">Home</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/heroku/api/logs.rb
+    <li>lib/heroku/api/collaborators.rb
+    <li>lib/heroku/api/domains.rb
+    <li>lib/heroku/api/ssl_endpoints.rb
+    <li>lib/heroku/api/apps.rb
+    <li>lib/heroku/api/releases.rb
+    <li>lib/heroku/api/features.rb
+    <li>lib/heroku/api/addons.rb
+    <li>lib/heroku/api/stacks.rb
+    <li>lib/heroku/api/attachments.rb
+    <li>lib/heroku/api/config_vars.rb
+    <li>lib/heroku/api/version.rb
+    <li>lib/heroku/api/keys.rb
+    <li>lib/heroku/api/login.rb
+    <li>lib/heroku/api/mock.rb
+    <li>lib/heroku/api/user.rb
+    <li>lib/heroku/api/mock/logs.rb
+    <li>lib/heroku/api/mock/collaborators.rb
+    <li>lib/heroku/api/mock/domains.rb
+    <li>lib/heroku/api/mock/apps.rb
+    <li>lib/heroku/api/mock/releases.rb
+    <li>lib/heroku/api/mock/features.rb
+    <li>lib/heroku/api/mock/addons.rb
+    <li>lib/heroku/api/mock/stacks.rb
+    <li>lib/heroku/api/mock/attachments.rb
+    <li>lib/heroku/api/mock/config_vars.rb
+    <li>lib/heroku/api/mock/keys.rb
+    <li>lib/heroku/api/mock/login.rb
+    <li>lib/heroku/api/mock/user.rb
+    <li>lib/heroku/api/mock/processes.rb
+    <li>lib/heroku/api/vendor/okjson.rb
+    <li>lib/heroku/api/errors.rb
+    <li>lib/heroku/api/processes.rb
+    <li>lib/heroku/api.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">Object
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-new">::new</a>
+    
+    <li><a href="#method-i-delete_addon">#delete_addon</a>
+    
+    <li><a href="#method-i-delete_app">#delete_app</a>
+    
+    <li><a href="#method-i-delete_collaborator">#delete_collaborator</a>
+    
+    <li><a href="#method-i-delete_config_var">#delete_config_var</a>
+    
+    <li><a href="#method-i-delete_domain">#delete_domain</a>
+    
+    <li><a href="#method-i-delete_domains">#delete_domains</a>
+    
+    <li><a href="#method-i-delete_feature">#delete_feature</a>
+    
+    <li><a href="#method-i-delete_key">#delete_key</a>
+    
+    <li><a href="#method-i-delete_keys">#delete_keys</a>
+    
+    <li><a href="#method-i-delete_ssl_endpoint">#delete_ssl_endpoint</a>
+    
+    <li><a href="#method-i-get_addons">#get_addons</a>
+    
+    <li><a href="#method-i-get_app">#get_app</a>
+    
+    <li><a href="#method-i-get_app_maintenance">#get_app_maintenance</a>
+    
+    <li><a href="#method-i-get_apps">#get_apps</a>
+    
+    <li><a href="#method-i-get_attachments">#get_attachments</a>
+    
+    <li><a href="#method-i-get_collaborators">#get_collaborators</a>
+    
+    <li><a href="#method-i-get_config_vars">#get_config_vars</a>
+    
+    <li><a href="#method-i-get_domains">#get_domains</a>
+    
+    <li><a href="#method-i-get_feature">#get_feature</a>
+    
+    <li><a href="#method-i-get_features">#get_features</a>
+    
+    <li><a href="#method-i-get_keys">#get_keys</a>
+    
+    <li><a href="#method-i-get_logs">#get_logs</a>
+    
+    <li><a href="#method-i-get_ps">#get_ps</a>
+    
+    <li><a href="#method-i-get_release">#get_release</a>
+    
+    <li><a href="#method-i-get_releases">#get_releases</a>
+    
+    <li><a href="#method-i-get_ssl_endpoint">#get_ssl_endpoint</a>
+    
+    <li><a href="#method-i-get_ssl_endpoints">#get_ssl_endpoints</a>
+    
+    <li><a href="#method-i-get_stack">#get_stack</a>
+    
+    <li><a href="#method-i-get_user">#get_user</a>
+    
+    <li><a href="#method-i-post_addon">#post_addon</a>
+    
+    <li><a href="#method-i-post_app">#post_app</a>
+    
+    <li><a href="#method-i-post_app_maintenance">#post_app_maintenance</a>
+    
+    <li><a href="#method-i-post_collaborator">#post_collaborator</a>
+    
+    <li><a href="#method-i-post_domain">#post_domain</a>
+    
+    <li><a href="#method-i-post_feature">#post_feature</a>
+    
+    <li><a href="#method-i-post_key">#post_key</a>
+    
+    <li><a href="#method-i-post_login">#post_login</a>
+    
+    <li><a href="#method-i-post_ps">#post_ps</a>
+    
+    <li><a href="#method-i-post_ps_restart">#post_ps_restart</a>
+    
+    <li><a href="#method-i-post_ps_scale">#post_ps_scale</a>
+    
+    <li><a href="#method-i-post_ps_stop">#post_ps_stop</a>
+    
+    <li><a href="#method-i-post_release">#post_release</a>
+    
+    <li><a href="#method-i-post_ssl_endpoint">#post_ssl_endpoint</a>
+    
+    <li><a href="#method-i-post_ssl_endpoint_rollback">#post_ssl_endpoint_rollback</a>
+    
+    <li><a href="#method-i-put_addon">#put_addon</a>
+    
+    <li><a href="#method-i-put_app">#put_app</a>
+    
+    <li><a href="#method-i-put_config_vars">#put_config_vars</a>
+    
+    <li><a href="#method-i-put_dynos">#put_dynos</a>
+    
+    <li><a href="#method-i-put_ssl_endpoint">#put_ssl_endpoint</a>
+    
+    <li><a href="#method-i-put_stack">#put_stack</a>
+    
+    <li><a href="#method-i-put_workers">#put_workers</a>
+    
+    <li><a href="#method-i-request">#request</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../Heroku.html">Heroku</a>
+  
+    <li><a href="../Heroku/API.html">Heroku::API</a>
+  
+    <li><a href="../Heroku/API/Errors.html">Heroku::API::Errors</a>
+  
+    <li><a href="../Heroku/API/Errors/Error.html">Heroku::API::Errors::Error</a>
+  
+    <li><a href="../Heroku/API/Errors/ErrorWithResponse.html">Heroku::API::Errors::ErrorWithResponse</a>
+  
+    <li><a href="../Heroku/API/Errors/Forbidden.html">Heroku::API::Errors::Forbidden</a>
+  
+    <li><a href="../Heroku/API/Errors/Locked.html">Heroku::API::Errors::Locked</a>
+  
+    <li><a href="../Heroku/API/Errors/NilApp.html">Heroku::API::Errors::NilApp</a>
+  
+    <li><a href="../Heroku/API/Errors/NotFound.html">Heroku::API::Errors::NotFound</a>
+  
+    <li><a href="../Heroku/API/Errors/RequestFailed.html">Heroku::API::Errors::RequestFailed</a>
+  
+    <li><a href="../Heroku/API/Errors/Timeout.html">Heroku::API::Errors::Timeout</a>
+  
+    <li><a href="../Heroku/API/Errors/Unauthorized.html">Heroku::API::Errors::Unauthorized</a>
+  
+    <li><a href="../Heroku/API/Errors/VerificationRequired.html">Heroku::API::Errors::VerificationRequired</a>
+  
+    <li><a href="../Heroku/API/Mock.html">Heroku::API::Mock</a>
+  
+    <li><a href="../Heroku/API/OkJson.html">Heroku::API::OkJson</a>
+  
+    <li><a href="../Heroku/API/OkJson/Error.html">Heroku::API::OkJson::Error</a>
+  
+    <li><a href="../Heroku/API/OkJson/Utf8Error.html">Heroku::API::OkJson::Utf8Error</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class Heroku::API</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <!-- Constants -->
+    <section id="constants-list" class="section">
+      <h3 class="section-header">Constants</h3>
+      <dl>
+      
+        <dt id="HEADERS">HEADERS
+        
+        <dd class="description">
+        
+      
+        <dt id="OPTIONS">OPTIONS
+        
+        <dd class="description">
+        
+      
+        <dt id="VERSION">VERSION
+        
+        <dd class="description">
+        
+      
+      </dl>
+    </section>
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(options={})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api.rb, line 55</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">options</span>={})
+  <span class="ruby-identifier">options</span> = <span class="ruby-constant">OPTIONS</span>.<span class="ruby-identifier">merge</span>(<span class="ruby-identifier">options</span>)
+
+  <span class="ruby-ivar">@api_key</span> = <span class="ruby-identifier">options</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-value">:api_key</span>) <span class="ruby-operator">||</span> <span class="ruby-constant">ENV</span>[<span class="ruby-string">'HEROKU_API_KEY'</span>]
+  <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@api_key</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">options</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:username</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">options</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:password</span>)
+    <span class="ruby-ivar">@connection</span> = <span class="ruby-constant">Excon</span>.<span class="ruby-identifier">new</span>(<span class="ruby-node">&quot;#{options[:scheme]}://#{options[:host]}&quot;</span>, <span class="ruby-identifier">options</span>.<span class="ruby-identifier">merge</span>(<span class="ruby-value">:headers</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">HEADERS</span>))
+    <span class="ruby-ivar">@api_key</span> = <span class="ruby-keyword">self</span>.<span class="ruby-identifier">post_login</span>(<span class="ruby-identifier">options</span>[<span class="ruby-value">:username</span>], <span class="ruby-identifier">options</span>[<span class="ruby-value">:password</span>]).<span class="ruby-identifier">body</span>[<span class="ruby-string">&quot;api_key&quot;</span>]
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">user_pass</span> = <span class="ruby-node">&quot;:#{@api_key}&quot;</span>
+  <span class="ruby-identifier">options</span>[<span class="ruby-value">:headers</span>] = <span class="ruby-constant">HEADERS</span>.<span class="ruby-identifier">merge</span>({
+    <span class="ruby-string">'Authorization'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;Basic #{Base64.encode64(user_pass).gsub(&quot;\n&quot;, '')}&quot;</span>,
+  }).<span class="ruby-identifier">merge</span>(<span class="ruby-identifier">options</span>[<span class="ruby-value">:headers</span>])
+
+  <span class="ruby-ivar">@connection</span> = <span class="ruby-constant">Excon</span>.<span class="ruby-identifier">new</span>(<span class="ruby-node">&quot;#{options[:scheme]}://#{options[:host]}&quot;</span>, <span class="ruby-identifier">options</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-delete_addon" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">delete_addon</span><span
+            class="method-args">(app, addon)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>DELETE /apps/:app/addons/:addon</p>
+          
+
+          
+          <div class="method-source-code" id="delete_addon-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/addons.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">delete_addon</span>(<span class="ruby-identifier">app</span>, <span class="ruby-identifier">addon</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:delete</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/addons/#{addon}&quot;</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- delete_addon-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- delete_addon-method -->
+
+    
+      <div id="method-i-delete_app" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">delete_app</span><span
+            class="method-args">(app)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>DELETE /apps/:app</p>
+          
+
+          
+          <div class="method-source-code" id="delete_app-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/apps.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">delete_app</span>(<span class="ruby-identifier">app</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:delete</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}&quot;</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- delete_app-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- delete_app-method -->
+
+    
+      <div id="method-i-delete_collaborator" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">delete_collaborator</span><span
+            class="method-args">(app, email)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>DELETE /apps/:app/collaborators/:email</p>
+          
+
+          
+          <div class="method-source-code" id="delete_collaborator-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/collaborators.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">delete_collaborator</span>(<span class="ruby-identifier">app</span>, <span class="ruby-identifier">email</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:delete</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/collaborators/#{email}&quot;</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- delete_collaborator-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- delete_collaborator-method -->
+
+    
+      <div id="method-i-delete_config_var" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">delete_config_var</span><span
+            class="method-args">(app, key)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>DELETE /apps/:app/config_vars/:key</p>
+          
+
+          
+          <div class="method-source-code" id="delete_config_var-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/config_vars.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">delete_config_var</span>(<span class="ruby-identifier">app</span>, <span class="ruby-identifier">key</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:delete</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/config_vars/#{escape(key)}&quot;</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- delete_config_var-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- delete_config_var-method -->
+
+    
+      <div id="method-i-delete_domain" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">delete_domain</span><span
+            class="method-args">(app, domain)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>DELETE /apps/:app/domains/:domain</p>
+          
+
+          
+          <div class="method-source-code" id="delete_domain-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/domains.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">delete_domain</span>(<span class="ruby-identifier">app</span>, <span class="ruby-identifier">domain</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:delete</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/domains/#{escape(domain)}&quot;</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- delete_domain-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- delete_domain-method -->
+
+    
+      <div id="method-i-delete_domains" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">delete_domains</span><span
+            class="method-args">(app)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>DELETE /apps/:app/domains</p>
+          
+
+          
+          <div class="method-source-code" id="delete_domains-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/domains.rb, line 14</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">delete_domains</span>(<span class="ruby-identifier">app</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:delete</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/domains&quot;</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- delete_domains-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- delete_domains-method -->
+
+    
+      <div id="method-i-delete_feature" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">delete_feature</span><span
+            class="method-args">(feature, app = nil)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>DELETE /features/:feature</p>
+          
+
+          
+          <div class="method-source-code" id="delete_feature-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/features.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">delete_feature</span>(<span class="ruby-identifier">feature</span>, <span class="ruby-identifier">app</span> = <span class="ruby-keyword">nil</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:delete</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/features/#{feature}&quot;</span>,
+    <span class="ruby-value">:query</span>    =<span class="ruby-operator">&gt;</span> { <span class="ruby-string">'app'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">app</span> }
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- delete_feature-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- delete_feature-method -->
+
+    
+      <div id="method-i-delete_key" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">delete_key</span><span
+            class="method-args">(key)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>DELETE /user/keys/:key</p>
+          
+
+          
+          <div class="method-source-code" id="delete_key-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/keys.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">delete_key</span>(<span class="ruby-identifier">key</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:delete</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/user/keys/#{escape(key)}&quot;</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- delete_key-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- delete_key-method -->
+
+    
+      <div id="method-i-delete_keys" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">delete_keys</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>DELETE /user/keys</p>
+          
+
+          
+          <div class="method-source-code" id="delete_keys-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/keys.rb, line 14</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">delete_keys</span>
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:delete</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;/user/keys&quot;</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- delete_keys-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- delete_keys-method -->
+
+    
+      <div id="method-i-delete_ssl_endpoint" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">delete_ssl_endpoint</span><span
+            class="method-args">(app, cname)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>DELETE /apps/:app/ssl-endpoint/:cname</p>
+          
+
+          
+          <div class="method-source-code" id="delete_ssl_endpoint-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/ssl_endpoints.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">delete_ssl_endpoint</span>(<span class="ruby-identifier">app</span>, <span class="ruby-identifier">cname</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:delete</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/ssl-endpoints/#{escape(cname)}&quot;</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- delete_ssl_endpoint-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- delete_ssl_endpoint-method -->
+
+    
+      <div id="method-i-get_addons" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_addons</span><span
+            class="method-args">(app=nil)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>GET /addons GET /apps/:app/addons</p>
+          
+
+          
+          <div class="method-source-code" id="get_addons-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/addons.rb, line 15</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_addons</span>(<span class="ruby-identifier">app</span>=<span class="ruby-keyword">nil</span>)
+  <span class="ruby-identifier">path</span> = <span class="ruby-keyword">if</span> <span class="ruby-identifier">app</span>
+    <span class="ruby-node">&quot;/apps/#{app}/addons&quot;</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-string">&quot;/addons&quot;</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:get</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">path</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_addons-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_addons-method -->
+
+    
+      <div id="method-i-get_app" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_app</span><span
+            class="method-args">(app)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>GET /apps/:app</p>
+          
+
+          
+          <div class="method-source-code" id="get_app-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/apps.rb, line 23</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_app</span>(<span class="ruby-identifier">app</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:get</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}&quot;</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_app-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_app-method -->
+
+    
+      <div id="method-i-get_app_maintenance" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_app_maintenance</span><span
+            class="method-args">(app)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>GET /apps/:app/server/maintenance</p>
+          
+
+          
+          <div class="method-source-code" id="get_app_maintenance-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/apps.rb, line 32</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_app_maintenance</span>(<span class="ruby-identifier">app</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:get</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/server/maintenance&quot;</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_app_maintenance-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_app_maintenance-method -->
+
+    
+      <div id="method-i-get_apps" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_apps</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>GET /apps</p>
+          
+
+          
+          <div class="method-source-code" id="get_apps-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/apps.rb, line 14</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_apps</span>
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:get</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;/apps&quot;</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_apps-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_apps-method -->
+
+    
+      <div id="method-i-get_attachments" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_attachments</span><span
+            class="method-args">(app)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>GET /apps/:app/attachments</p>
+          
+
+          
+          <div class="method-source-code" id="get_attachments-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/attachments.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_attachments</span>(<span class="ruby-identifier">app</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:get</span>,
+    <span class="ruby-value">:path</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/attachments&quot;</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_attachments-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_attachments-method -->
+
+    
+      <div id="method-i-get_collaborators" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_collaborators</span><span
+            class="method-args">(app)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>GET /apps/:app/collaborators</p>
+          
+
+          
+          <div class="method-source-code" id="get_collaborators-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/collaborators.rb, line 14</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_collaborators</span>(<span class="ruby-identifier">app</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:get</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/collaborators&quot;</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_collaborators-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_collaborators-method -->
+
+    
+      <div id="method-i-get_config_vars" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_config_vars</span><span
+            class="method-args">(app)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>GET /apps/:app/config_vars</p>
+          
+
+          
+          <div class="method-source-code" id="get_config_vars-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/config_vars.rb, line 14</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_config_vars</span>(<span class="ruby-identifier">app</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:get</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/config_vars&quot;</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_config_vars-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_config_vars-method -->
+
+    
+      <div id="method-i-get_domains" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_domains</span><span
+            class="method-args">(app)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>GET /apps/:app/domains</p>
+          
+
+          
+          <div class="method-source-code" id="get_domains-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/domains.rb, line 23</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_domains</span>(<span class="ruby-identifier">app</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:get</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/domains&quot;</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_domains-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_domains-method -->
+
+    
+      <div id="method-i-get_feature" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_feature</span><span
+            class="method-args">(feature, app = nil)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>GET /features/:feature</p>
+          
+
+          
+          <div class="method-source-code" id="get_feature-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/features.rb, line 25</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_feature</span>(<span class="ruby-identifier">feature</span>, <span class="ruby-identifier">app</span> = <span class="ruby-keyword">nil</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:get</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/features/#{feature}&quot;</span>,
+    <span class="ruby-value">:query</span>    =<span class="ruby-operator">&gt;</span> { <span class="ruby-string">'app'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">app</span> }
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_feature-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_feature-method -->
+
+    
+      <div id="method-i-get_features" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_features</span><span
+            class="method-args">(app = nil)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>GET /features</p>
+          
+
+          
+          <div class="method-source-code" id="get_features-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/features.rb, line 15</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_features</span>(<span class="ruby-identifier">app</span> = <span class="ruby-keyword">nil</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:get</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;/features&quot;</span>,
+    <span class="ruby-value">:query</span>    =<span class="ruby-operator">&gt;</span> { <span class="ruby-string">'app'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">app</span> }
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_features-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_features-method -->
+
+    
+      <div id="method-i-get_keys" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_keys</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>GET /user/keys</p>
+          
+
+          
+          <div class="method-source-code" id="get_keys-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/keys.rb, line 23</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_keys</span>
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:get</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;/user/keys&quot;</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_keys-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_keys-method -->
+
+    
+      <div id="method-i-get_logs" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_logs</span><span
+            class="method-args">(app, options = {})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>GET /apps/:app/logs</p>
+          
+
+          
+          <div class="method-source-code" id="get_logs-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/logs.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_logs</span>(<span class="ruby-identifier">app</span>, <span class="ruby-identifier">options</span> = {})
+  <span class="ruby-identifier">options</span> = {
+    <span class="ruby-string">'logplex'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'true'</span>
+  }.<span class="ruby-identifier">merge</span>(<span class="ruby-identifier">options</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:get</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/logs&quot;</span>,
+    <span class="ruby-value">:query</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">options</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_logs-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_logs-method -->
+
+    
+      <div id="method-i-get_ps" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_ps</span><span
+            class="method-args">(app)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>GET /apps/:app/ps</p>
+          
+
+          
+          <div class="method-source-code" id="get_ps-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/processes.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_ps</span>(<span class="ruby-identifier">app</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:get</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/ps&quot;</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_ps-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_ps-method -->
+
+    
+      <div id="method-i-get_release" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_release</span><span
+            class="method-args">(app, release)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>GET /apps/:app/releases/:release</p>
+          
+
+          
+          <div class="method-source-code" id="get_release-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/releases.rb, line 14</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_release</span>(<span class="ruby-identifier">app</span>, <span class="ruby-identifier">release</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:get</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/releases/#{release}&quot;</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_release-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_release-method -->
+
+    
+      <div id="method-i-get_releases" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_releases</span><span
+            class="method-args">(app)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>GET /apps/:app/releases</p>
+          
+
+          
+          <div class="method-source-code" id="get_releases-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/releases.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_releases</span>(<span class="ruby-identifier">app</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:get</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/releases&quot;</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_releases-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_releases-method -->
+
+    
+      <div id="method-i-get_ssl_endpoint" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_ssl_endpoint</span><span
+            class="method-args">(app, cname)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>GET /apps/:app/ssl-endpoint/:cname</p>
+          
+
+          
+          <div class="method-source-code" id="get_ssl_endpoint-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/ssl_endpoints.rb, line 14</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_ssl_endpoint</span>(<span class="ruby-identifier">app</span>, <span class="ruby-identifier">cname</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:get</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/ssl-endpoints/#{escape(cname)}&quot;</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_ssl_endpoint-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_ssl_endpoint-method -->
+
+    
+      <div id="method-i-get_ssl_endpoints" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_ssl_endpoints</span><span
+            class="method-args">(app)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>GET /apps/:app/ssl-endpoints</p>
+          
+
+          
+          <div class="method-source-code" id="get_ssl_endpoints-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/ssl_endpoints.rb, line 23</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_ssl_endpoints</span>(<span class="ruby-identifier">app</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:get</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/ssl-endpoints&quot;</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_ssl_endpoints-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_ssl_endpoints-method -->
+
+    
+      <div id="method-i-get_stack" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_stack</span><span
+            class="method-args">(app)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="get_stack-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/stacks.rb, line 4</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_stack</span>(<span class="ruby-identifier">app</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:get</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/stack&quot;</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_stack-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_stack-method -->
+
+    
+      <div id="method-i-get_user" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_user</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>GET /user</p>
+          
+
+          
+          <div class="method-source-code" id="get_user-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/user.rb, line 5</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_user</span>
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:get</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;/user&quot;</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_user-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_user-method -->
+
+    
+      <div id="method-i-post_addon" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">post_addon</span><span
+            class="method-args">(app, addon, config = {})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>POST /apps/:app/addons/:addon</p>
+          
+
+          
+          <div class="method-source-code" id="post_addon-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/addons.rb, line 29</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">post_addon</span>(<span class="ruby-identifier">app</span>, <span class="ruby-identifier">addon</span>, <span class="ruby-identifier">config</span> = {})
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:post</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/addons/#{addon}&quot;</span>,
+    <span class="ruby-value">:query</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">addon_params</span>(<span class="ruby-identifier">config</span>)
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- post_addon-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- post_addon-method -->
+
+    
+      <div id="method-i-post_app" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">post_app</span><span
+            class="method-args">(params={})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>POST /apps</p>
+          
+
+          
+          <div class="method-source-code" id="post_app-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/apps.rb, line 41</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">post_app</span>(<span class="ruby-identifier">params</span>={})
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">202</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:post</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'/apps'</span>,
+    <span class="ruby-value">:query</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">app_params</span>(<span class="ruby-identifier">params</span>)
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- post_app-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- post_app-method -->
+
+    
+      <div id="method-i-post_app_maintenance" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">post_app_maintenance</span><span
+            class="method-args">(app, maintenance_mode)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>POST /apps/:app/server/maintenance</p>
+          
+
+          
+          <div class="method-source-code" id="post_app_maintenance-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/apps.rb, line 51</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">post_app_maintenance</span>(<span class="ruby-identifier">app</span>, <span class="ruby-identifier">maintenance_mode</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:post</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/server/maintenance&quot;</span>,
+    <span class="ruby-value">:query</span>    =<span class="ruby-operator">&gt;</span> {<span class="ruby-string">'maintenance_mode'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">maintenance_mode</span>}
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- post_app_maintenance-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- post_app_maintenance-method -->
+
+    
+      <div id="method-i-post_collaborator" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">post_collaborator</span><span
+            class="method-args">(app, email)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>POST /apps/:app/collaborators</p>
+          
+
+          
+          <div class="method-source-code" id="post_collaborator-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/collaborators.rb, line 23</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">post_collaborator</span>(<span class="ruby-identifier">app</span>, <span class="ruby-identifier">email</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">200</span>, <span class="ruby-value">201</span>],
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:post</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/collaborators&quot;</span>,
+    <span class="ruby-value">:query</span>    =<span class="ruby-operator">&gt;</span> {<span class="ruby-string">'collaborator[email]'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">email</span>}
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- post_collaborator-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- post_collaborator-method -->
+
+    
+      <div id="method-i-post_domain" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">post_domain</span><span
+            class="method-args">(app, domain)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>POST /apps/:app/domains</p>
+          
+
+          
+          <div class="method-source-code" id="post_domain-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/domains.rb, line 32</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">post_domain</span>(<span class="ruby-identifier">app</span>, <span class="ruby-identifier">domain</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">201</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:post</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/domains&quot;</span>,
+    <span class="ruby-value">:query</span>    =<span class="ruby-operator">&gt;</span> {<span class="ruby-string">'domain_name[domain]'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">domain</span>}
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- post_domain-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- post_domain-method -->
+
+    
+      <div id="method-i-post_feature" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">post_feature</span><span
+            class="method-args">(feature, app = nil)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>POST /features/:feature</p>
+          
+
+          
+          <div class="method-source-code" id="post_feature-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/features.rb, line 35</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">post_feature</span>(<span class="ruby-identifier">feature</span>, <span class="ruby-identifier">app</span> = <span class="ruby-keyword">nil</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> [<span class="ruby-value">200</span>, <span class="ruby-value">201</span>],
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:post</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/features/#{feature}&quot;</span>,
+    <span class="ruby-value">:query</span>    =<span class="ruby-operator">&gt;</span> { <span class="ruby-string">'app'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">app</span> }
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- post_feature-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- post_feature-method -->
+
+    
+      <div id="method-i-post_key" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">post_key</span><span
+            class="method-args">(key)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>POST /user/keys</p>
+          
+
+          
+          <div class="method-source-code" id="post_key-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/keys.rb, line 32</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">post_key</span>(<span class="ruby-identifier">key</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:body</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">key</span>,
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:post</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;/user/keys&quot;</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- post_key-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- post_key-method -->
+
+    
+      <div id="method-i-post_login" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">post_login</span><span
+            class="method-args">(username, password)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="post_login-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/login.rb, line 4</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">post_login</span>(<span class="ruby-identifier">username</span>, <span class="ruby-identifier">password</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:post</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'/login'</span>,
+    <span class="ruby-value">:query</span>    =<span class="ruby-operator">&gt;</span> { <span class="ruby-string">'username'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">username</span>, <span class="ruby-string">'password'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">password</span> }
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- post_login-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- post_login-method -->
+
+    
+      <div id="method-i-post_ps" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">post_ps</span><span
+            class="method-args">(app, command, options={})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>POST /apps/:app/ps</p>
+          
+
+          
+          <div class="method-source-code" id="post_ps-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/processes.rb, line 14</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">post_ps</span>(<span class="ruby-identifier">app</span>, <span class="ruby-identifier">command</span>, <span class="ruby-identifier">options</span>={})
+  <span class="ruby-identifier">options</span> = { <span class="ruby-string">'command'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">command</span> }.<span class="ruby-identifier">merge</span>(<span class="ruby-identifier">options</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:post</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/ps&quot;</span>,
+    <span class="ruby-value">:query</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">ps_options</span>(<span class="ruby-identifier">options</span>)
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- post_ps-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- post_ps-method -->
+
+    
+      <div id="method-i-post_ps_restart" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">post_ps_restart</span><span
+            class="method-args">(app, options={})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>POST /apps/:app/ps/restart</p>
+          
+
+          
+          <div class="method-source-code" id="post_ps_restart-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/processes.rb, line 25</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">post_ps_restart</span>(<span class="ruby-identifier">app</span>, <span class="ruby-identifier">options</span>={})
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:post</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/ps/restart&quot;</span>,
+    <span class="ruby-value">:query</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">options</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- post_ps_restart-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- post_ps_restart-method -->
+
+    
+      <div id="method-i-post_ps_scale" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">post_ps_scale</span><span
+            class="method-args">(app, type, quantity)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>POST /apps/:app/ps/scale</p>
+          
+
+          
+          <div class="method-source-code" id="post_ps_scale-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/processes.rb, line 35</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">post_ps_scale</span>(<span class="ruby-identifier">app</span>, <span class="ruby-identifier">type</span>, <span class="ruby-identifier">quantity</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:post</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/ps/scale&quot;</span>,
+    <span class="ruby-value">:query</span>    =<span class="ruby-operator">&gt;</span> {
+      <span class="ruby-string">'type'</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">type</span>,
+      <span class="ruby-string">'qty'</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">quantity</span>
+    }
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- post_ps_scale-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- post_ps_scale-method -->
+
+    
+      <div id="method-i-post_ps_stop" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">post_ps_stop</span><span
+            class="method-args">(app, options)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>POST /apps/:app/ps/stop</p>
+          
+
+          
+          <div class="method-source-code" id="post_ps_stop-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/processes.rb, line 48</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">post_ps_stop</span>(<span class="ruby-identifier">app</span>, <span class="ruby-identifier">options</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:post</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/ps/stop&quot;</span>,
+    <span class="ruby-value">:query</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">options</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- post_ps_stop-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- post_ps_stop-method -->
+
+    
+      <div id="method-i-post_release" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">post_release</span><span
+            class="method-args">(app, release=nil)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>POST /apps/:app/releases/:release</p>
+          
+
+          
+          <div class="method-source-code" id="post_release-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/releases.rb, line 23</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">post_release</span>(<span class="ruby-identifier">app</span>, <span class="ruby-identifier">release</span>=<span class="ruby-keyword">nil</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:post</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/releases&quot;</span>,
+    <span class="ruby-value">:query</span>    =<span class="ruby-operator">&gt;</span> {<span class="ruby-string">'rollback'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">release</span>}
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- post_release-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- post_release-method -->
+
+    
+      <div id="method-i-post_ssl_endpoint" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">post_ssl_endpoint</span><span
+            class="method-args">(app, pem, key)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>POST /apps/:app/ssl-endpoints</p>
+          
+
+          
+          <div class="method-source-code" id="post_ssl_endpoint-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/ssl_endpoints.rb, line 32</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">post_ssl_endpoint</span>(<span class="ruby-identifier">app</span>, <span class="ruby-identifier">pem</span>, <span class="ruby-identifier">key</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:post</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/ssl-endpoints&quot;</span>,
+    <span class="ruby-value">:query</span>     =<span class="ruby-operator">&gt;</span> { <span class="ruby-string">'key'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">key</span>, <span class="ruby-string">'pem'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">pem</span> }
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- post_ssl_endpoint-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- post_ssl_endpoint-method -->
+
+    
+      <div id="method-i-post_ssl_endpoint_rollback" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">post_ssl_endpoint_rollback</span><span
+            class="method-args">(app, cname)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>POST /apps/:app/ssl-endpoints/:cname/rollback</p>
+          
+
+          
+          <div class="method-source-code" id="post_ssl_endpoint_rollback-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/ssl_endpoints.rb, line 42</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">post_ssl_endpoint_rollback</span>(<span class="ruby-identifier">app</span>, <span class="ruby-identifier">cname</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:post</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/ssl-endpoints/#{escape(cname)}/rollback&quot;</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- post_ssl_endpoint_rollback-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- post_ssl_endpoint_rollback-method -->
+
+    
+      <div id="method-i-put_addon" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">put_addon</span><span
+            class="method-args">(app, addon, config = {})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>PUT /apps/:app/addons/:addon</p>
+          
+
+          
+          <div class="method-source-code" id="put_addon-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/addons.rb, line 39</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">put_addon</span>(<span class="ruby-identifier">app</span>, <span class="ruby-identifier">addon</span>, <span class="ruby-identifier">config</span> = {})
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:put</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/addons/#{addon}&quot;</span>,
+    <span class="ruby-value">:query</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">addon_params</span>(<span class="ruby-identifier">config</span>)
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- put_addon-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- put_addon-method -->
+
+    
+      <div id="method-i-put_app" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">put_app</span><span
+            class="method-args">(app, params)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>PUT /apps/:app</p>
+          
+
+          
+          <div class="method-source-code" id="put_app-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/apps.rb, line 61</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">put_app</span>(<span class="ruby-identifier">app</span>, <span class="ruby-identifier">params</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:put</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}&quot;</span>,
+    <span class="ruby-value">:query</span>    =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">app_params</span>(<span class="ruby-identifier">params</span>)
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- put_app-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- put_app-method -->
+
+    
+      <div id="method-i-put_config_vars" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">put_config_vars</span><span
+            class="method-args">(app, vars)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>PUT /apps/:app/config_vars</p>
+          
+
+          
+          <div class="method-source-code" id="put_config_vars-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/config_vars.rb, line 23</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">put_config_vars</span>(<span class="ruby-identifier">app</span>, <span class="ruby-identifier">vars</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:body</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-constant">Heroku</span><span class="ruby-operator">::</span><span class="ruby-constant">API</span><span class="ruby-operator">::</span><span class="ruby-constant">OkJson</span>.<span class="ruby-identifier">encode</span>(<span class="ruby-identifier">vars</span>),
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:put</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/config_vars&quot;</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- put_config_vars-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- put_config_vars-method -->
+
+    
+      <div id="method-i-put_dynos" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">put_dynos</span><span
+            class="method-args">(app, dynos)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>PUT /apps/:app/dynos</p>
+          
+
+          
+          <div class="method-source-code" id="put_dynos-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/processes.rb, line 58</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">put_dynos</span>(<span class="ruby-identifier">app</span>, <span class="ruby-identifier">dynos</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:put</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/dynos&quot;</span>,
+    <span class="ruby-value">:query</span>    =<span class="ruby-operator">&gt;</span> {<span class="ruby-string">'dynos'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">dynos</span>}
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- put_dynos-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- put_dynos-method -->
+
+    
+      <div id="method-i-put_ssl_endpoint" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">put_ssl_endpoint</span><span
+            class="method-args">(app, cname, pem, key)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>PUT /apps/:app/ssl-endpoints/:cname</p>
+          
+
+          
+          <div class="method-source-code" id="put_ssl_endpoint-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/ssl_endpoints.rb, line 51</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">put_ssl_endpoint</span>(<span class="ruby-identifier">app</span>, <span class="ruby-identifier">cname</span>, <span class="ruby-identifier">pem</span>, <span class="ruby-identifier">key</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:put</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/ssl-endpoints/#{escape(cname)}&quot;</span>,
+    <span class="ruby-value">:query</span>     =<span class="ruby-operator">&gt;</span> { <span class="ruby-string">'key'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">key</span>, <span class="ruby-string">'pem'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">pem</span> }
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- put_ssl_endpoint-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- put_ssl_endpoint-method -->
+
+    
+      <div id="method-i-put_stack" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">put_stack</span><span
+            class="method-args">(app, stack)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="put_stack-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/stacks.rb, line 12</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">put_stack</span>(<span class="ruby-identifier">app</span>, <span class="ruby-identifier">stack</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:body</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">stack</span>,
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:put</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/stack&quot;</span>
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- put_stack-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- put_stack-method -->
+
+    
+      <div id="method-i-put_workers" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">put_workers</span><span
+            class="method-args">(app, workers)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>PUT /apps/:app/workers</p>
+          
+
+          
+          <div class="method-source-code" id="put_workers-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/processes.rb, line 68</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">put_workers</span>(<span class="ruby-identifier">app</span>, <span class="ruby-identifier">workers</span>)
+  <span class="ruby-identifier">request</span>(
+    <span class="ruby-value">:expects</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-value">200</span>,
+    <span class="ruby-value">:method</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-value">:put</span>,
+    <span class="ruby-value">:path</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;/apps/#{app}/workers&quot;</span>,
+    <span class="ruby-value">:query</span>    =<span class="ruby-operator">&gt;</span> {<span class="ruby-string">'workers'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">workers</span>}
+  )
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- put_workers-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- put_workers-method -->
+
+    
+      <div id="method-i-request" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">request</span><span
+            class="method-args">(params, &block)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="request-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api.rb, line 72</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">request</span>(<span class="ruby-identifier">params</span>, &amp;<span class="ruby-identifier">block</span>)
+  <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">response</span> = <span class="ruby-ivar">@connection</span>.<span class="ruby-identifier">request</span>(<span class="ruby-identifier">params</span>, &amp;<span class="ruby-identifier">block</span>)
+  <span class="ruby-keyword">rescue</span> <span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">HTTPStatusError</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">error</span>
+    <span class="ruby-identifier">klass</span> = <span class="ruby-keyword">case</span> <span class="ruby-identifier">error</span>.<span class="ruby-identifier">response</span>.<span class="ruby-identifier">status</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">401</span> <span class="ruby-keyword">then</span> <span class="ruby-constant">Heroku</span><span class="ruby-operator">::</span><span class="ruby-constant">API</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">Unauthorized</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">402</span> <span class="ruby-keyword">then</span> <span class="ruby-constant">Heroku</span><span class="ruby-operator">::</span><span class="ruby-constant">API</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">VerificationRequired</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">403</span> <span class="ruby-keyword">then</span> <span class="ruby-constant">Heroku</span><span class="ruby-operator">::</span><span class="ruby-constant">API</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">Forbidden</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">404</span>
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">error</span>.<span class="ruby-identifier">request</span>[<span class="ruby-value">:path</span>].<span class="ruby-identifier">match</span> <span class="ruby-regexp">/\/apps\/\/.*/</span>
+          <span class="ruby-constant">Heroku</span><span class="ruby-operator">::</span><span class="ruby-constant">API</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">NilApp</span>
+        <span class="ruby-keyword">else</span>
+          <span class="ruby-constant">Heroku</span><span class="ruby-operator">::</span><span class="ruby-constant">API</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">NotFound</span>
+        <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">408</span> <span class="ruby-keyword">then</span> <span class="ruby-constant">Heroku</span><span class="ruby-operator">::</span><span class="ruby-constant">API</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">Timeout</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">422</span> <span class="ruby-keyword">then</span> <span class="ruby-constant">Heroku</span><span class="ruby-operator">::</span><span class="ruby-constant">API</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">RequestFailed</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-value">423</span> <span class="ruby-keyword">then</span> <span class="ruby-constant">Heroku</span><span class="ruby-operator">::</span><span class="ruby-constant">API</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">Locked</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-regexp">/50./</span> <span class="ruby-keyword">then</span> <span class="ruby-constant">Heroku</span><span class="ruby-operator">::</span><span class="ruby-constant">API</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">RequestFailed</span>
+      <span class="ruby-keyword">else</span> <span class="ruby-constant">Heroku</span><span class="ruby-operator">::</span><span class="ruby-constant">API</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">ErrorWithResponse</span>
+    <span class="ruby-keyword">end</span>
+
+    <span class="ruby-identifier">reerror</span> = <span class="ruby-identifier">klass</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">error</span>.<span class="ruby-identifier">message</span>, <span class="ruby-identifier">error</span>.<span class="ruby-identifier">response</span>)
+    <span class="ruby-identifier">reerror</span>.<span class="ruby-identifier">set_backtrace</span>(<span class="ruby-identifier">error</span>.<span class="ruby-identifier">backtrace</span>)
+    <span class="ruby-identifier">raise</span>(<span class="ruby-identifier">reerror</span>)
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">response</span>.<span class="ruby-identifier">body</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-identifier">response</span>.<span class="ruby-identifier">body</span>.<span class="ruby-identifier">empty?</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">response</span>.<span class="ruby-identifier">headers</span>[<span class="ruby-string">'Content-Encoding'</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'gzip'</span>
+      <span class="ruby-identifier">response</span>.<span class="ruby-identifier">body</span> = <span class="ruby-constant">Zlib</span><span class="ruby-operator">::</span><span class="ruby-constant">GzipReader</span>.<span class="ruby-identifier">new</span>(<span class="ruby-constant">StringIO</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">response</span>.<span class="ruby-identifier">body</span>)).<span class="ruby-identifier">read</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">begin</span>
+      <span class="ruby-identifier">response</span>.<span class="ruby-identifier">body</span> = <span class="ruby-constant">Heroku</span><span class="ruby-operator">::</span><span class="ruby-constant">API</span><span class="ruby-operator">::</span><span class="ruby-constant">OkJson</span>.<span class="ruby-identifier">decode</span>(<span class="ruby-identifier">response</span>.<span class="ruby-identifier">body</span>)
+    <span class="ruby-keyword">rescue</span>
+      <span class="ruby-comment"># leave non-JSON body as is</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-comment"># reset (non-persistent) connection</span>
+  <span class="ruby-ivar">@connection</span>.<span class="ruby-identifier">reset</span>
+
+  <span class="ruby-identifier">response</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- request-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- request-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>module Heroku::API::Mock - heroku-api-0.3.8 Documentation</title>
+
+<link type="text/css" media="screen" href="../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/darkfish.js"></script>
+
+
+<body id="top" class="module">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../index.html">Home</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/heroku/api/mock.rb
+    <li>lib/heroku/api/mock/logs.rb
+    <li>lib/heroku/api/mock/collaborators.rb
+    <li>lib/heroku/api/mock/domains.rb
+    <li>lib/heroku/api/mock/apps.rb
+    <li>lib/heroku/api/mock/releases.rb
+    <li>lib/heroku/api/mock/features.rb
+    <li>lib/heroku/api/mock/addons.rb
+    <li>lib/heroku/api/mock/stacks.rb
+    <li>lib/heroku/api/mock/attachments.rb
+    <li>lib/heroku/api/mock/config_vars.rb
+    <li>lib/heroku/api/mock/keys.rb
+    <li>lib/heroku/api/mock/login.rb
+    <li>lib/heroku/api/mock/user.rb
+    <li>lib/heroku/api/mock/processes.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-add_mock_app_addon">::add_mock_app_addon</a>
+    
+    <li><a href="#method-c-add_mock_release">::add_mock_release</a>
+    
+    <li><a href="#method-c-get_mock_addon">::get_mock_addon</a>
+    
+    <li><a href="#method-c-get_mock_addon_price">::get_mock_addon_price</a>
+    
+    <li><a href="#method-c-get_mock_app">::get_mock_app</a>
+    
+    <li><a href="#method-c-get_mock_app_addon">::get_mock_app_addon</a>
+    
+    <li><a href="#method-c-get_mock_app_domain">::get_mock_app_domain</a>
+    
+    <li><a href="#method-c-get_mock_collaborator">::get_mock_collaborator</a>
+    
+    <li><a href="#method-c-get_mock_feature">::get_mock_feature</a>
+    
+    <li><a href="#method-c-get_mock_key">::get_mock_key</a>
+    
+    <li><a href="#method-c-get_mock_processes">::get_mock_processes</a>
+    
+    <li><a href="#method-c-parse_stub_params">::parse_stub_params</a>
+    
+    <li><a href="#method-c-remove_mock_app_addon">::remove_mock_app_addon</a>
+    
+    <li><a href="#method-c-timestamp">::timestamp</a>
+    
+    <li><a href="#method-c-unescape">::unescape</a>
+    
+    <li><a href="#method-c-with_mock_app">::with_mock_app</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../Heroku.html">Heroku</a>
+  
+    <li><a href="../../Heroku/API.html">Heroku::API</a>
+  
+    <li><a href="../../Heroku/API/Errors.html">Heroku::API::Errors</a>
+  
+    <li><a href="../../Heroku/API/Errors/Error.html">Heroku::API::Errors::Error</a>
+  
+    <li><a href="../../Heroku/API/Errors/ErrorWithResponse.html">Heroku::API::Errors::ErrorWithResponse</a>
+  
+    <li><a href="../../Heroku/API/Errors/Forbidden.html">Heroku::API::Errors::Forbidden</a>
+  
+    <li><a href="../../Heroku/API/Errors/Locked.html">Heroku::API::Errors::Locked</a>
+  
+    <li><a href="../../Heroku/API/Errors/NilApp.html">Heroku::API::Errors::NilApp</a>
+  
+    <li><a href="../../Heroku/API/Errors/NotFound.html">Heroku::API::Errors::NotFound</a>
+  
+    <li><a href="../../Heroku/API/Errors/RequestFailed.html">Heroku::API::Errors::RequestFailed</a>
+  
+    <li><a href="../../Heroku/API/Errors/Timeout.html">Heroku::API::Errors::Timeout</a>
+  
+    <li><a href="../../Heroku/API/Errors/Unauthorized.html">Heroku::API::Errors::Unauthorized</a>
+  
+    <li><a href="../../Heroku/API/Errors/VerificationRequired.html">Heroku::API::Errors::VerificationRequired</a>
+  
+    <li><a href="../../Heroku/API/Mock.html">Heroku::API::Mock</a>
+  
+    <li><a href="../../Heroku/API/OkJson.html">Heroku::API::OkJson</a>
+  
+    <li><a href="../../Heroku/API/OkJson/Error.html">Heroku::API::OkJson::Error</a>
+  
+    <li><a href="../../Heroku/API/OkJson/Utf8Error.html">Heroku::API::OkJson::Utf8Error</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="module">module Heroku::API::Mock</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <!-- Constants -->
+    <section id="constants-list" class="section">
+      <h3 class="section-header">Constants</h3>
+      <dl>
+      
+        <dt id="APP_NOT_FOUND">APP_NOT_FOUND
+        
+        <dd class="description">
+        
+      
+        <dt id="STACKS">STACKS
+        
+        <dd class="description">
+        
+      
+        <dt id="USER_NOT_FOUND">USER_NOT_FOUND
+        
+        <dd class="description">
+        
+      
+      </dl>
+    </section>
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-add_mock_app_addon" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">add_mock_app_addon</span><span
+            class="method-args">(mock_data, app, addon)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="add_mock_app_addon-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/mock.rb, line 43</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">add_mock_app_addon</span>(<span class="ruby-identifier">mock_data</span>, <span class="ruby-identifier">app</span>, <span class="ruby-identifier">addon</span>)
+  <span class="ruby-identifier">addon_data</span> = <span class="ruby-identifier">get_mock_addon</span>(<span class="ruby-identifier">mock_data</span>, <span class="ruby-identifier">addon</span>)
+  <span class="ruby-identifier">mock_data</span>[<span class="ruby-value">:addons</span>][<span class="ruby-identifier">app</span>] <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">addon_data</span>.<span class="ruby-identifier">reject</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span><span class="ruby-operator">|</span> <span class="ruby-operator">!</span>[<span class="ruby-string">'attachable'</span>, <span class="ruby-string">'beta'</span>, <span class="ruby-string">'configured'</span>, <span class="ruby-string">'consumes_dyno_hours'</span>, <span class="ruby-string">'description'</span>, <span class="ruby-string">'group_description'</span>, <span class="ruby-string">'name'</span>, <span class="ruby-string">'plan_description'</span>, <span class="ruby-string">'price'</span>, <span class="ruby-string">'slug'</span>, <span class="ruby-string">'state'</span>, <span class="ruby-string">'terms_of_service'</span>, <span class="ruby-string">'url'</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">key</span>)}
+  <span class="ruby-identifier">add_mock_release</span>(<span class="ruby-identifier">mock_data</span>, <span class="ruby-identifier">app</span>, {<span class="ruby-string">'descr'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;Add-on add #{addon_data['name']}&quot;</span>})
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- add_mock_app_addon-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- add_mock_app_addon-method -->
+
+    
+      <div id="method-c-add_mock_release" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">add_mock_release</span><span
+            class="method-args">(mock_data, app, release_data)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="add_mock_release-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/mock.rb, line 49</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">add_mock_release</span>(<span class="ruby-identifier">mock_data</span>, <span class="ruby-identifier">app</span>, <span class="ruby-identifier">release_data</span>)
+  <span class="ruby-identifier">env</span> = <span class="ruby-keyword">if</span> <span class="ruby-identifier">get_mock_app</span>(<span class="ruby-identifier">mock_data</span>, <span class="ruby-identifier">app</span>)[<span class="ruby-string">'stack'</span>] <span class="ruby-operator">==</span> <span class="ruby-string">'cedar'</span>
+    {
+      <span class="ruby-string">'BUNDLE_WITHOUT'</span>      =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'development:test'</span>,
+      <span class="ruby-string">'DATABASE_URL'</span>        =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'postgres://username:password@ec2-123-123-123-123.compute-1.amazonaws.com/username'</span>,
+      <span class="ruby-string">'LANG'</span>                =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'en_US.UTF-8'</span>,
+      <span class="ruby-string">'RACK_ENV'</span>            =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'production'</span>
+    }
+  <span class="ruby-keyword">else</span>
+    {}
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">version</span> = <span class="ruby-identifier">mock_data</span>[<span class="ruby-value">:releases</span>][<span class="ruby-identifier">app</span>].<span class="ruby-identifier">map</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">release</span><span class="ruby-operator">|</span> <span class="ruby-identifier">release</span>[<span class="ruby-string">'name'</span>][<span class="ruby-value">1</span><span class="ruby-operator">..</span><span class="ruby-value">-1</span>].<span class="ruby-identifier">to_i</span>}.<span class="ruby-identifier">max</span> <span class="ruby-operator">||</span> <span class="ruby-value">0</span>
+  <span class="ruby-identifier">mock_data</span>[<span class="ruby-value">:releases</span>][<span class="ruby-identifier">app</span>] <span class="ruby-operator">&lt;&lt;</span> {
+    <span class="ruby-string">'addons'</span>      =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">mock_data</span>[<span class="ruby-value">:addons</span>][<span class="ruby-identifier">app</span>].<span class="ruby-identifier">map</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">addon</span><span class="ruby-operator">|</span> <span class="ruby-identifier">addon</span>[<span class="ruby-string">'name'</span>]},
+    <span class="ruby-string">'commit'</span>      =<span class="ruby-operator">&gt;</span> <span class="ruby-keyword">nil</span>,
+    <span class="ruby-string">'created_at'</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">timestamp</span>,
+    <span class="ruby-string">'descr'</span>       =<span class="ruby-operator">&gt;</span> <span class="ruby-string">&quot;&quot;</span>,
+    <span class="ruby-string">'env'</span>         =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">env</span>,
+    <span class="ruby-string">'name'</span>        =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;v#{version + 1}&quot;</span>,
+    <span class="ruby-string">'pstable'</span>     =<span class="ruby-operator">&gt;</span> { <span class="ruby-string">'web'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-string">''</span> },
+    <span class="ruby-string">'user'</span>        =<span class="ruby-operator">&gt;</span> <span class="ruby-string">'email@example.com'</span>
+  }.<span class="ruby-identifier">merge</span>(<span class="ruby-identifier">release_data</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- add_mock_release-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- add_mock_release-method -->
+
+    
+      <div id="method-c-get_mock_addon" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_mock_addon</span><span
+            class="method-args">(mock_data, addon)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="get_mock_addon-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/mock.rb, line 73</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_mock_addon</span>(<span class="ruby-identifier">mock_data</span>, <span class="ruby-identifier">addon</span>)
+  <span class="ruby-ivar">@addons</span> <span class="ruby-operator">||=</span> <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">data</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">read</span>(<span class="ruby-node">&quot;#{File.dirname(__FILE__)}/mock/cache/get_addons.json&quot;</span>)
+    <span class="ruby-constant">Heroku</span><span class="ruby-operator">::</span><span class="ruby-constant">API</span><span class="ruby-operator">::</span><span class="ruby-constant">OkJson</span>.<span class="ruby-identifier">decode</span>(<span class="ruby-identifier">data</span>)
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-ivar">@addons</span>.<span class="ruby-identifier">detect</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">addon_data</span><span class="ruby-operator">|</span> <span class="ruby-identifier">addon_data</span>[<span class="ruby-string">'name'</span>] <span class="ruby-operator">==</span> <span class="ruby-identifier">addon</span>}
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_mock_addon-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_mock_addon-method -->
+
+    
+      <div id="method-c-get_mock_addon_price" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_mock_addon_price</span><span
+            class="method-args">(mock_data, addon)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="get_mock_addon_price-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/mock.rb, line 81</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_mock_addon_price</span>(<span class="ruby-identifier">mock_data</span>, <span class="ruby-identifier">addon</span>)
+  <span class="ruby-identifier">addon_data</span> = <span class="ruby-identifier">get_mock_addon</span>(<span class="ruby-identifier">mock_data</span>, <span class="ruby-identifier">addon</span>)
+  <span class="ruby-identifier">price_cents</span> = <span class="ruby-identifier">addon_data</span>[<span class="ruby-string">'price_cents'</span>] <span class="ruby-operator">||</span> <span class="ruby-value">0</span>
+  <span class="ruby-identifier">price</span> = <span class="ruby-identifier">format</span>(<span class="ruby-string">&quot;$%d/mo&quot;</span>, <span class="ruby-identifier">price_cents</span> <span class="ruby-operator">/</span> <span class="ruby-value">100</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">price</span> <span class="ruby-operator">==</span> <span class="ruby-string">'$0/mo'</span>
+    <span class="ruby-identifier">price</span> = <span class="ruby-string">'free'</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">price</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_mock_addon_price-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_mock_addon_price-method -->
+
+    
+      <div id="method-c-get_mock_app" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_mock_app</span><span
+            class="method-args">(mock_data, app)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="get_mock_app-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/mock.rb, line 91</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_mock_app</span>(<span class="ruby-identifier">mock_data</span>, <span class="ruby-identifier">app</span>)
+  <span class="ruby-identifier">mock_data</span>[<span class="ruby-value">:apps</span>].<span class="ruby-identifier">detect</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">app_data</span><span class="ruby-operator">|</span> <span class="ruby-identifier">app_data</span>[<span class="ruby-string">'name'</span>] <span class="ruby-operator">==</span> <span class="ruby-identifier">app</span>}
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_mock_app-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_mock_app-method -->
+
+    
+      <div id="method-c-get_mock_app_addon" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_mock_app_addon</span><span
+            class="method-args">(mock_data, app, addon)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="get_mock_app_addon-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/mock.rb, line 95</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_mock_app_addon</span>(<span class="ruby-identifier">mock_data</span>, <span class="ruby-identifier">app</span>, <span class="ruby-identifier">addon</span>)
+  <span class="ruby-identifier">mock_data</span>[<span class="ruby-value">:addons</span>][<span class="ruby-identifier">app</span>].<span class="ruby-identifier">detect</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">addon_data</span><span class="ruby-operator">|</span> <span class="ruby-identifier">addon_data</span>[<span class="ruby-string">'name'</span>] <span class="ruby-operator">==</span> <span class="ruby-identifier">addon</span>}
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_mock_app_addon-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_mock_app_addon-method -->
+
+    
+      <div id="method-c-get_mock_app_domain" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_mock_app_domain</span><span
+            class="method-args">(mock_data, app, domain)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="get_mock_app_domain-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/mock.rb, line 99</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_mock_app_domain</span>(<span class="ruby-identifier">mock_data</span>, <span class="ruby-identifier">app</span>, <span class="ruby-identifier">domain</span>)
+  <span class="ruby-identifier">mock_data</span>[<span class="ruby-value">:domains</span>][<span class="ruby-identifier">app</span>].<span class="ruby-identifier">detect</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">domain_data</span><span class="ruby-operator">|</span> <span class="ruby-identifier">domain_data</span>[<span class="ruby-string">'domain'</span>] <span class="ruby-operator">==</span> <span class="ruby-identifier">domain</span>}
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_mock_app_domain-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_mock_app_domain-method -->
+
+    
+      <div id="method-c-get_mock_collaborator" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_mock_collaborator</span><span
+            class="method-args">(mock_data, app, email)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="get_mock_collaborator-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/mock.rb, line 103</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_mock_collaborator</span>(<span class="ruby-identifier">mock_data</span>, <span class="ruby-identifier">app</span>, <span class="ruby-identifier">email</span>)
+  <span class="ruby-identifier">mock_data</span>[<span class="ruby-value">:collaborators</span>][<span class="ruby-identifier">app</span>].<span class="ruby-identifier">detect</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">collaborator_data</span><span class="ruby-operator">|</span> <span class="ruby-identifier">collaborator_data</span>[<span class="ruby-string">'email'</span>] <span class="ruby-operator">==</span> <span class="ruby-identifier">email</span>}
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_mock_collaborator-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_mock_collaborator-method -->
+
+    
+      <div id="method-c-get_mock_feature" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_mock_feature</span><span
+            class="method-args">(mock_data, feature)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="get_mock_feature-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/mock.rb, line 107</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_mock_feature</span>(<span class="ruby-identifier">mock_data</span>, <span class="ruby-identifier">feature</span>)
+  <span class="ruby-ivar">@features</span> <span class="ruby-operator">||=</span> <span class="ruby-keyword">begin</span>
+    <span class="ruby-identifier">data</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">read</span>(<span class="ruby-node">&quot;#{File.dirname(__FILE__)}/mock/cache/get_features.json&quot;</span>)
+    <span class="ruby-constant">Heroku</span><span class="ruby-operator">::</span><span class="ruby-constant">API</span><span class="ruby-operator">::</span><span class="ruby-constant">OkJson</span>.<span class="ruby-identifier">decode</span>(<span class="ruby-identifier">data</span>)
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-ivar">@features</span>.<span class="ruby-identifier">detect</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">feature_data</span><span class="ruby-operator">|</span> <span class="ruby-identifier">feature_data</span>[<span class="ruby-string">'name'</span>] <span class="ruby-operator">==</span> <span class="ruby-identifier">feature</span>}
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_mock_feature-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_mock_feature-method -->
+
+    
+      <div id="method-c-get_mock_key" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_mock_key</span><span
+            class="method-args">(mock_data, key)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="get_mock_key-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/mock.rb, line 115</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_mock_key</span>(<span class="ruby-identifier">mock_data</span>, <span class="ruby-identifier">key</span>)
+  <span class="ruby-identifier">mock_data</span>[<span class="ruby-value">:keys</span>].<span class="ruby-identifier">detect</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">key_data</span><span class="ruby-operator">|</span> <span class="ruby-node">%r{ #{Regexp.escape(key)}$}</span>.<span class="ruby-identifier">match</span>(<span class="ruby-identifier">key_data</span>[<span class="ruby-string">'contents'</span>])}
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_mock_key-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_mock_key-method -->
+
+    
+      <div id="method-c-get_mock_processes" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_mock_processes</span><span
+            class="method-args">(mock_data, app)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="get_mock_processes-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/mock.rb, line 119</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">get_mock_processes</span>(<span class="ruby-identifier">mock_data</span>, <span class="ruby-identifier">app</span>)
+  <span class="ruby-identifier">mock_data</span>[<span class="ruby-value">:ps</span>][<span class="ruby-identifier">app</span>].<span class="ruby-identifier">map</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">ps</span><span class="ruby-operator">|</span>
+
+    <span class="ruby-identifier">elapsed</span> = <span class="ruby-constant">Time</span>.<span class="ruby-identifier">now</span>.<span class="ruby-identifier">to_i</span> <span class="ruby-operator">-</span> <span class="ruby-constant">Time</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-identifier">ps</span>[<span class="ruby-string">'transitioned_at'</span>]).<span class="ruby-identifier">to_i</span>
+    <span class="ruby-identifier">ps</span>[<span class="ruby-string">'elapsed'</span>] = <span class="ruby-identifier">elapsed</span>
+
+    <span class="ruby-identifier">pretty_elapsed</span> = <span class="ruby-keyword">if</span> <span class="ruby-identifier">elapsed</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">60</span>
+      <span class="ruby-node">&quot;#{elapsed}s&quot;</span>
+    <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">elapsed</span> <span class="ruby-operator">&lt;</span> (<span class="ruby-value">60</span> * <span class="ruby-value">60</span>)
+      <span class="ruby-node">&quot;#{elapsed / 60}m&quot;</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-node">&quot;#{elapsed / 60 / 60}h&quot;</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">ps</span>[<span class="ruby-string">'pretty_state'</span>] = <span class="ruby-node">&quot;#{ps['state']} for #{pretty_elapsed}&quot;</span>
+
+    <span class="ruby-identifier">ps</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_mock_processes-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_mock_processes-method -->
+
+    
+      <div id="method-c-parse_stub_params" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">parse_stub_params</span><span
+            class="method-args">(params)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="parse_stub_params-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/mock.rb, line 138</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">parse_stub_params</span>(<span class="ruby-identifier">params</span>)
+  <span class="ruby-identifier">mock_data</span> = <span class="ruby-keyword">nil</span>
+
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:headers</span>].<span class="ruby-identifier">has_key?</span>(<span class="ruby-string">'Authorization'</span>)
+    <span class="ruby-identifier">api_key</span> = <span class="ruby-constant">Base64</span>.<span class="ruby-identifier">decode64</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:headers</span>][<span class="ruby-string">'Authorization'</span>]).<span class="ruby-identifier">split</span>(<span class="ruby-string">':'</span>).<span class="ruby-identifier">last</span>
+
+    <span class="ruby-identifier">parsed</span> = <span class="ruby-identifier">params</span>.<span class="ruby-identifier">dup</span>
+    <span class="ruby-keyword">begin</span> <span class="ruby-comment"># try to JSON decode</span>
+      <span class="ruby-identifier">parsed</span>[<span class="ruby-value">:body</span>] <span class="ruby-operator">&amp;&amp;=</span> <span class="ruby-constant">Heroku</span><span class="ruby-operator">::</span><span class="ruby-constant">API</span><span class="ruby-operator">::</span><span class="ruby-constant">OkJson</span>.<span class="ruby-identifier">decode</span>(<span class="ruby-identifier">parsed</span>[<span class="ruby-value">:body</span>])
+    <span class="ruby-keyword">rescue</span> <span class="ruby-comment"># else leave as is</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">mock_data</span> = <span class="ruby-ivar">@mock_data</span>[<span class="ruby-identifier">api_key</span>]
+  <span class="ruby-keyword">end</span>
+
+  [<span class="ruby-identifier">parsed</span>, <span class="ruby-identifier">mock_data</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- parse_stub_params-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- parse_stub_params-method -->
+
+    
+      <div id="method-c-remove_mock_app_addon" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">remove_mock_app_addon</span><span
+            class="method-args">(mock_data, app, addon)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="remove_mock_app_addon-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/mock.rb, line 155</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">remove_mock_app_addon</span>(<span class="ruby-identifier">mock_data</span>, <span class="ruby-identifier">app</span>, <span class="ruby-identifier">addon</span>)
+  <span class="ruby-identifier">addon_data</span> = <span class="ruby-identifier">mock_data</span>[<span class="ruby-value">:addons</span>][<span class="ruby-identifier">app</span>].<span class="ruby-identifier">detect</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">addon_data</span><span class="ruby-operator">|</span> <span class="ruby-identifier">addon_data</span>[<span class="ruby-string">'name'</span>] <span class="ruby-operator">==</span> <span class="ruby-identifier">addon</span>}
+  <span class="ruby-identifier">mock_data</span>[<span class="ruby-value">:addons</span>][<span class="ruby-identifier">app</span>].<span class="ruby-identifier">delete</span>(<span class="ruby-identifier">addon_data</span>)
+  <span class="ruby-identifier">add_mock_release</span>(<span class="ruby-identifier">mock_data</span>, <span class="ruby-identifier">app</span>, {<span class="ruby-string">'descr'</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-node">&quot;Add-on remove #{addon_data['name']}&quot;</span>})
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- remove_mock_app_addon-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- remove_mock_app_addon-method -->
+
+    
+      <div id="method-c-timestamp" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">timestamp</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="timestamp-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/mock.rb, line 173</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">timestamp</span>
+  <span class="ruby-constant">Time</span>.<span class="ruby-identifier">now</span>.<span class="ruby-identifier">strftime</span>(<span class="ruby-string">&quot;%G/%m/%d %H:%M:%S %z&quot;</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- timestamp-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- timestamp-method -->
+
+    
+      <div id="method-c-unescape" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">unescape</span><span
+            class="method-args">(string)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="unescape-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/mock.rb, line 161</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">unescape</span>(<span class="ruby-identifier">string</span>)
+  <span class="ruby-constant">CGI</span>.<span class="ruby-identifier">unescape</span>(<span class="ruby-identifier">string</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- unescape-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- unescape-method -->
+
+    
+      <div id="method-c-with_mock_app" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">with_mock_app</span><span
+            class="method-args">(mock_data, app) { |app_data| ... }</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="with_mock_app-source">
+            <pre><span class="ruby-comment"># File lib/heroku/api/mock.rb, line 165</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">with_mock_app</span>(<span class="ruby-identifier">mock_data</span>, <span class="ruby-identifier">app</span>, &amp;<span class="ruby-identifier">block</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">app_data</span> = <span class="ruby-identifier">get_mock_app</span>(<span class="ruby-identifier">mock_data</span>, <span class="ruby-identifier">app</span>)
+    <span class="ruby-keyword">yield</span>(<span class="ruby-identifier">app_data</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-constant">APP_NOT_FOUND</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- with_mock_app-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- with_mock_app-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

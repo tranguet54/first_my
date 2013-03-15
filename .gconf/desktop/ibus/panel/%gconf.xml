@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="y" mtime="1363114636" type="int" value="728"/>
+	<entry name="x" mtime="1363114636" type="int" value="1346"/>
+	<entry name="show_im_name" mtime="1362914721" type="bool" value="true"/>
+	<entry name="show" mtime="1362635884" type="int" value="2"/>
+	<entry name="custom_font" mtime="1363263221" type="string">
+		<stringvalue>Sans 10</stringvalue>
+	</entry>
+</gconf>

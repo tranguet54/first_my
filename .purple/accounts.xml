@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<account version='1.0'>
+	<account>
+		<protocol>prpl-yahoo</protocol>
+		<name>doremon_90203</name>
+		<password>matkhau20390</password>
+		<alias>Layzy Learner</alias>
+		<statuses>
+			<status type='available' name='Available' active='true'>
+				<attributes>
+					<attribute id='message' value='super lag'/>
+				</attributes>
+			</status>
+			<status type='away' name='Away' active='false'>
+				<attributes/>
+			</status>
+			<status type='brb' name='Be Right Back' active='false'>
+				<attributes/>
+			</status>
+			<status type='busy' name='Busy' active='false'>
+				<attributes/>
+			</status>
+			<status type='notathome' name='Not at Home' active='false'>
+				<attributes/>
+			</status>
+			<status type='notatdesk' name='Not at Desk' active='false'>
+				<attributes/>
+			</status>
+			<status type='notinoffice' name='Not in Office' active='false'>
+				<attributes/>
+			</status>
+			<status type='onphone' name='On the Phone' active='false'>
+				<attributes/>
+			</status>
+			<status type='onvacation' name='On Vacation' active='false'>
+				<attributes/>
+			</status>
+			<status type='outtolunch' name='Out to Lunch' active='false'>
+				<attributes/>
+			</status>
+			<status type='steppedout' name='Stepped Out' active='false'>
+				<attributes/>
+			</status>
+			<status type='invisible' name='Invisible' active='false'>
+				<attributes/>
+			</status>
+			<status type='offline' name='Offline' active='false'>
+				<attributes/>
+			</status>
+		</statuses>
+		<settings>
+			<setting name='buddy_icon_timestamp' type='int'>1363266241</setting>
+			<setting name='picture_expire' type='int'>0</setting>
+			<setting name='local_charset' type='string'>UTF-8</setting>
+			<setting name='xfer_host' type='string'>filetransfer.msg.yahoo.com</setting>
+			<setting name='xfer_port' type='int'>80</setting>
+			<setting name='proxy_ssl' type='bool'>0</setting>
+			<setting name='port' type='int'>5050</setting>
+			<setting name='check-mail' type='bool'>0</setting>
+			<setting name='buddy_icon' type='string'>bb3d055fed30c99811791661641f8febd4e01b68.png</setting>
+			<setting name='ignore_invites' type='bool'>0</setting>
+			<setting name='picture_url'/>
+			<setting name='room_list_locale' type='string'>us</setting>
+			<setting name='use-global-buddyicon' type='bool'>1</setting>
+			<setting name='picture_checksum' type='int'>0</setting>
+		</settings>
+		<settings ui='gtk-gaim'>
+			<setting name='auto-login' type='bool'>1</setting>
+		</settings>
+		<current_error/>
+	</account>
+</account>

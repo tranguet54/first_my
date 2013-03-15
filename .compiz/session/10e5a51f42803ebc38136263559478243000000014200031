@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<compiz_session id="10e5a51f42803ebc38136263559478243000000014200031">
+  <window id="10e5a51f42803ebc38136263649611677400000014200038" title="root@ilu: /home/ilu" class="Gnome-terminal" name="gnome-terminal" role="gnome-terminal-window-2769--1826259285-1362636834" command="gnome-terminal">
+    <geometry x="552" y="90" width="722" height="434"/>
+    <workspace index="0"/>
+  </window>
+  <window id="10e5a51f42803ebc38136263649611677400000014200038" title="" class="Gnome-terminal" name="gnome-terminal" command="gnome-terminal">
+    <geometry x="617" y="271" width="594" height="127"/>
+    <workspace index="0"/>
+  </window>
+  <window id="10e5a51f42803ebc38136263649611677400000014200038" title="root@ilu: /" class="Gnome-terminal" name="gnome-terminal" role="gnome-terminal-window-2769-983989211-1362636496" command="gnome-terminal">
+    <geometry x="551" y="24" width="722" height="434"/>
+    <workspace index="0"/>
+  </window>
+</compiz_session>

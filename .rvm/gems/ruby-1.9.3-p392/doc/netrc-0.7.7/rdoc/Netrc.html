@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class Netrc - netrc-0.7.7 Documentation</title>
+
+<link type="text/css" media="screen" href="./rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "./";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="./js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="./js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="./index.html">Home</a>
+    <a href="./table_of_contents.html#classes">Classes</a>
+    <a href="./table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/netrc.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">Object
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-check_permissions">::check_permissions</a>
+    
+    <li><a href="#method-c-default_path">::default_path</a>
+    
+    <li><a href="#method-c-lex">::lex</a>
+    
+    <li><a href="#method-c-new">::new</a>
+    
+    <li><a href="#method-c-parse">::parse</a>
+    
+    <li><a href="#method-c-read">::read</a>
+    
+    <li><a href="#method-c-skip-3F">::skip?</a>
+    
+    <li><a href="#method-i-5B-5D">#[]</a>
+    
+    <li><a href="#method-i-5B-5D-3D">#[]=</a>
+    
+    <li><a href="#method-i-delete">#delete</a>
+    
+    <li><a href="#method-i-each">#each</a>
+    
+    <li><a href="#method-i-length">#length</a>
+    
+    <li><a href="#method-i-new_item">#new_item</a>
+    
+    <li><a href="#method-i-save">#save</a>
+    
+    <li><a href="#method-i-unparse">#unparse</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="./Netrc.html">Netrc</a>
+  
+    <li><a href="./Netrc/Error.html">Netrc::Error</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class Netrc</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+    <!-- Constants -->
+    <section id="constants-list" class="section">
+      <h3 class="section-header">Constants</h3>
+      <dl>
+      
+        <dt id="CYGWIN">CYGWIN
+        
+        <dd class="description">
+        
+      
+        <dt id="VERSION">VERSION
+        
+        <dd class="description">
+        
+      
+        <dt id="WINDOWS">WINDOWS
+        
+        <dd class="description"><p>see <a
+href="http://stackoverflow.com/questions/4871309/what-is-the-correct-way-to-detect-if-ruby-is-running-on-windows">stackoverflow.com/questions/4871309/what-is-the-correct-way-to-detect-if-ruby-is-running-on-windows</a></p>
+        
+      
+      </dl>
+    </section>
+    
+
+    
+    <!-- Attributes -->
+    <section id="attribute-method-details" class="method-section section">
+      <h3 class="section-header">Attributes</h3>
+
+      
+      <div id="attribute-i-new_item_prefix" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">new_item_prefix</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+    </section><!-- attribute-method-details -->
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-check_permissions" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">check_permissions</span><span
+            class="method-args">(path)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="check_permissions-source">
+            <pre><span class="ruby-comment"># File lib/netrc.rb, line 18</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">check_permissions</span>(<span class="ruby-identifier">path</span>)
+  <span class="ruby-identifier">perm</span> = <span class="ruby-constant">File</span>.<span class="ruby-identifier">stat</span>(<span class="ruby-identifier">path</span>).<span class="ruby-identifier">mode</span> &amp; <span class="ruby-value">0777</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">perm</span> <span class="ruby-operator">!=</span> <span class="ruby-value">0600</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span>(<span class="ruby-constant">WINDOWS</span>)
+    <span class="ruby-identifier">raise</span> <span class="ruby-constant">Error</span>, <span class="ruby-node">&quot;Permission bits for '#{path}' should be 0600, but are &quot;</span><span class="ruby-operator">+</span><span class="ruby-identifier">perm</span>.<span class="ruby-identifier">to_s</span>(<span class="ruby-value">8</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- check_permissions-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- check_permissions-method -->
+
+    
+      <div id="method-c-default_path" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">default_path</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="default_path-source">
+            <pre><span class="ruby-comment"># File lib/netrc.rb, line 10</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">default_path</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-constant">WINDOWS</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span><span class="ruby-constant">CYGWIN</span>
+    <span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>(<span class="ruby-constant">ENV</span>[<span class="ruby-string">'USERPROFILE'</span>].<span class="ruby-identifier">gsub</span>(<span class="ruby-string">&quot;\\&quot;</span>,<span class="ruby-string">&quot;/&quot;</span>), <span class="ruby-string">&quot;_netrc&quot;</span>)
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-constant">File</span>.<span class="ruby-identifier">join</span>((<span class="ruby-constant">ENV</span>[<span class="ruby-string">&quot;HOME&quot;</span>] <span class="ruby-operator">||</span> <span class="ruby-string">&quot;./&quot;</span>), <span class="ruby-string">&quot;.netrc&quot;</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- default_path-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- default_path-method -->
+
+    
+      <div id="method-c-lex" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">lex</span><span
+            class="method-args">(lines)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="lex-source">
+            <pre><span class="ruby-comment"># File lib/netrc.rb, line 44</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">lex</span>(<span class="ruby-identifier">lines</span>)
+  <span class="ruby-identifier">tokens</span> = []
+  <span class="ruby-keyword">for</span> <span class="ruby-identifier">line</span> <span class="ruby-keyword">in</span> <span class="ruby-identifier">lines</span>
+    <span class="ruby-identifier">content</span>, <span class="ruby-identifier">comment</span> = <span class="ruby-identifier">line</span>.<span class="ruby-identifier">split</span>(<span class="ruby-node">/(\s*#.*)/</span>)
+    <span class="ruby-identifier">content</span>.<span class="ruby-identifier">each_char</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">char</span><span class="ruby-operator">|</span>
+      <span class="ruby-keyword">case</span> <span class="ruby-identifier">char</span>
+      <span class="ruby-keyword">when</span> <span class="ruby-regexp">/\s/</span>
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">tokens</span>.<span class="ruby-identifier">last</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">tokens</span>.<span class="ruby-identifier">last</span>[<span class="ruby-value">-1</span><span class="ruby-operator">..</span><span class="ruby-value">-1</span>] <span class="ruby-operator">=~</span> <span class="ruby-regexp">/\s/</span>
+          <span class="ruby-identifier">tokens</span>.<span class="ruby-identifier">last</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">char</span>
+        <span class="ruby-keyword">else</span>
+          <span class="ruby-identifier">tokens</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">char</span>
+        <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-keyword">if</span> <span class="ruby-identifier">tokens</span>.<span class="ruby-identifier">last</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">tokens</span>.<span class="ruby-identifier">last</span>[<span class="ruby-value">-1</span><span class="ruby-operator">..</span><span class="ruby-value">-1</span>] <span class="ruby-operator">=~</span> <span class="ruby-regexp">/\S/</span>
+          <span class="ruby-identifier">tokens</span>.<span class="ruby-identifier">last</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">char</span>
+        <span class="ruby-keyword">else</span>
+          <span class="ruby-identifier">tokens</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">char</span>
+        <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">comment</span>
+      <span class="ruby-identifier">tokens</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">comment</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">tokens</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- lex-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- lex-method -->
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(path, data)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File lib/netrc.rb, line 124</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">path</span>, <span class="ruby-identifier">data</span>)
+  <span class="ruby-ivar">@new_item_prefix</span> = <span class="ruby-string">''</span>
+  <span class="ruby-ivar">@path</span> = <span class="ruby-identifier">path</span>
+  <span class="ruby-ivar">@pre</span>, <span class="ruby-ivar">@data</span> = <span class="ruby-identifier">data</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+      <div id="method-c-parse" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">parse</span><span
+            class="method-args">(ts)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Returns two values, a header and a list of items. Each item is a tuple,
+containing some or all of:</p>
+<ul><li>
+<p>machine keyword (including trailing whitespace+comments)</p>
+</li><li>
+<p>machine name</p>
+</li><li>
+<p>login keyword (including surrounding whitespace+comments)</p>
+</li><li>
+<p>login</p>
+</li><li>
+<p>password keyword (including surrounding whitespace+comments)</p>
+</li><li>
+<p>password</p>
+</li><li>
+<p>trailing chars</p>
+</li></ul>
+
+<p>This lets us change individual fields, then write out the file with all its
+original formatting.</p>
+          
+
+          
+          <div class="method-source-code" id="parse-source">
+            <pre><span class="ruby-comment"># File lib/netrc.rb, line 86</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-identifier">ts</span>)
+  <span class="ruby-identifier">cur</span>, <span class="ruby-identifier">item</span> = [], []
+
+  <span class="ruby-keyword">def</span> <span class="ruby-identifier">ts</span>.<span class="ruby-identifier">take</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">length</span> <span class="ruby-operator">&lt;</span> <span class="ruby-value">1</span>
+      <span class="ruby-identifier">raise</span> <span class="ruby-constant">Error</span>, <span class="ruby-string">&quot;unexpected EOF&quot;</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">shift</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-keyword">def</span> <span class="ruby-identifier">ts</span>.<span class="ruby-identifier">readto</span>
+    <span class="ruby-identifier">l</span> = []
+    <span class="ruby-keyword">while</span> <span class="ruby-identifier">length</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-operator">!</span> <span class="ruby-keyword">yield</span>(<span class="ruby-keyword">self</span>[<span class="ruby-value">0</span>])
+      <span class="ruby-identifier">l</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">shift</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">return</span> <span class="ruby-identifier">l</span>.<span class="ruby-identifier">join</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">pre</span> = <span class="ruby-identifier">ts</span>.<span class="ruby-identifier">readto</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">t</span><span class="ruby-operator">|</span> <span class="ruby-identifier">t</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;machine&quot;</span>}
+  <span class="ruby-keyword">while</span> <span class="ruby-identifier">ts</span>.<span class="ruby-identifier">length</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+    <span class="ruby-identifier">cur</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">ts</span>.<span class="ruby-identifier">take</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">ts</span>.<span class="ruby-identifier">readto</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">t</span><span class="ruby-operator">|</span> <span class="ruby-operator">!</span> <span class="ruby-identifier">skip?</span>(<span class="ruby-identifier">t</span>)}
+    <span class="ruby-identifier">cur</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">ts</span>.<span class="ruby-identifier">take</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">ts</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-string">'login'</span>)
+      <span class="ruby-identifier">cur</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">ts</span>.<span class="ruby-identifier">readto</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">t</span><span class="ruby-operator">|</span> <span class="ruby-identifier">t</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;login&quot;</span>} <span class="ruby-operator">+</span> <span class="ruby-identifier">ts</span>.<span class="ruby-identifier">take</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">ts</span>.<span class="ruby-identifier">readto</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">t</span><span class="ruby-operator">|</span> <span class="ruby-operator">!</span> <span class="ruby-identifier">skip?</span>(<span class="ruby-identifier">t</span>)}
+      <span class="ruby-identifier">cur</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">ts</span>.<span class="ruby-identifier">take</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">ts</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-string">'password'</span>)
+      <span class="ruby-identifier">cur</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">ts</span>.<span class="ruby-identifier">readto</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">t</span><span class="ruby-operator">|</span> <span class="ruby-identifier">t</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;password&quot;</span>} <span class="ruby-operator">+</span> <span class="ruby-identifier">ts</span>.<span class="ruby-identifier">take</span> <span class="ruby-operator">+</span> <span class="ruby-identifier">ts</span>.<span class="ruby-identifier">readto</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">t</span><span class="ruby-operator">|</span> <span class="ruby-operator">!</span> <span class="ruby-identifier">skip?</span>(<span class="ruby-identifier">t</span>)}
+      <span class="ruby-identifier">cur</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">ts</span>.<span class="ruby-identifier">take</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">cur</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">ts</span>.<span class="ruby-identifier">readto</span>{<span class="ruby-operator">|</span><span class="ruby-identifier">t</span><span class="ruby-operator">|</span> <span class="ruby-identifier">t</span> <span class="ruby-operator">==</span> <span class="ruby-string">&quot;machine&quot;</span>}
+    <span class="ruby-identifier">item</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">cur</span>
+    <span class="ruby-identifier">cur</span> = []
+  <span class="ruby-keyword">end</span>
+
+  [<span class="ruby-identifier">pre</span>, <span class="ruby-identifier">item</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- parse-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- parse-method -->
+
+    
+      <div id="method-c-read" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">read</span><span
+            class="method-args">(path=default_path)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Reads path and parses it as a .netrc file. If path doesn’t exist, returns
+an empty object. Decrypt paths ending in .gpg.</p>
+          
+
+          
+          <div class="method-source-code" id="read-source">
+            <pre><span class="ruby-comment"># File lib/netrc.rb, line 27</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">read</span>(<span class="ruby-identifier">path</span>=<span class="ruby-identifier">default_path</span>)
+  <span class="ruby-identifier">check_permissions</span>(<span class="ruby-identifier">path</span>)
+  <span class="ruby-identifier">data</span> = <span class="ruby-keyword">if</span> <span class="ruby-identifier">path</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp">/\.gpg$/</span>
+    <span class="ruby-identifier">decrypted</span> = <span class="ruby-node">%xgpg --batch --quiet --decrypt #{path}`</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">$?</span>.<span class="ruby-identifier">success?</span>
+      <span class="ruby-identifier">decrypted</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">raise</span> <span class="ruby-constant">Error</span>.<span class="ruby-identifier">new</span>(<span class="ruby-node">&quot;Decrypting #{path} failed.&quot;</span>) <span class="ruby-keyword">unless</span> <span class="ruby-identifier">$?</span>.<span class="ruby-identifier">success?</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-constant">File</span>.<span class="ruby-identifier">read</span>(<span class="ruby-identifier">path</span>)
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-identifier">new</span>(<span class="ruby-identifier">path</span>, <span class="ruby-identifier">parse</span>(<span class="ruby-identifier">lex</span>(<span class="ruby-identifier">data</span>.<span class="ruby-identifier">lines</span>.<span class="ruby-identifier">to_a</span>)))
+<span class="ruby-keyword">rescue</span> <span class="ruby-constant">Errno</span><span class="ruby-operator">::</span><span class="ruby-constant">ENOENT</span>
+  <span class="ruby-identifier">new</span>(<span class="ruby-identifier">path</span>, <span class="ruby-identifier">parse</span>(<span class="ruby-identifier">lex</span>([])))
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- read-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- read-method -->
+
+    
+      <div id="method-c-skip-3F" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">skip?</span><span
+            class="method-args">(s)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="skip-3F-source">
+            <pre><span class="ruby-comment"># File lib/netrc.rb, line 71</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">skip?</span>(<span class="ruby-identifier">s</span>)
+  <span class="ruby-identifier">s</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp">/^\s/</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- skip-3F-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- skip-3F-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-5B-5D" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">[]</span><span
+            class="method-args">(k)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="5B-5D-source">
+            <pre><span class="ruby-comment"># File lib/netrc.rb, line 132</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">[]</span>(<span class="ruby-identifier">k</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">item</span> = <span class="ruby-ivar">@data</span>.<span class="ruby-identifier">detect</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">datum</span><span class="ruby-operator">|</span> <span class="ruby-identifier">datum</span>[<span class="ruby-value">1</span>] <span class="ruby-operator">==</span> <span class="ruby-identifier">k</span>}
+    [<span class="ruby-identifier">item</span>[<span class="ruby-value">3</span>], <span class="ruby-identifier">item</span>[<span class="ruby-value">5</span>]]
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- 5B-5D-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- 5B-5D-method -->
+
+    
+      <div id="method-i-5B-5D-3D" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">[]=</span><span
+            class="method-args">(k, info)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="5B-5D-3D-source">
+            <pre><span class="ruby-comment"># File lib/netrc.rb, line 138</span>
+<span class="ruby-keyword">def</span> <span class="ruby-operator">[]=</span>(<span class="ruby-identifier">k</span>, <span class="ruby-identifier">info</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">item</span> = <span class="ruby-ivar">@data</span>.<span class="ruby-identifier">detect</span> {<span class="ruby-operator">|</span><span class="ruby-identifier">datum</span><span class="ruby-operator">|</span> <span class="ruby-identifier">datum</span>[<span class="ruby-value">1</span>] <span class="ruby-operator">==</span> <span class="ruby-identifier">k</span>}
+    <span class="ruby-identifier">item</span>[<span class="ruby-value">3</span>], <span class="ruby-identifier">item</span>[<span class="ruby-value">5</span>] = <span class="ruby-identifier">info</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-ivar">@data</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">new_item</span>(<span class="ruby-identifier">k</span>, <span class="ruby-identifier">info</span>[<span class="ruby-value">0</span>], <span class="ruby-identifier">info</span>[<span class="ruby-value">1</span>])
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- 5B-5D-3D-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- 5B-5D-3D-method -->
+
+    
+      <div id="method-i-delete" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">delete</span><span
+            class="method-args">(key)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="delete-source">
+            <pre><span class="ruby-comment"># File lib/netrc.rb, line 150</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">delete</span>(<span class="ruby-identifier">key</span>)
+  <span class="ruby-identifier">datum</span> = <span class="ruby-keyword">nil</span>
+  <span class="ruby-keyword">for</span> <span class="ruby-identifier">value</span> <span class="ruby-keyword">in</span> <span class="ruby-ivar">@data</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">value</span>[<span class="ruby-value">1</span>] <span class="ruby-operator">==</span> <span class="ruby-identifier">key</span>
+      <span class="ruby-identifier">datum</span> = <span class="ruby-identifier">value</span>
+      <span class="ruby-keyword">break</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-ivar">@data</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-identifier">datum</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- delete-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- delete-method -->
+
+    
+      <div id="method-i-each" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">each</span><span
+            class="method-args">(&block)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="each-source">
+            <pre><span class="ruby-comment"># File lib/netrc.rb, line 161</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">each</span>(&amp;<span class="ruby-identifier">block</span>)
+  <span class="ruby-ivar">@data</span>.<span class="ruby-identifier">each</span>(&amp;<span class="ruby-identifier">block</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- each-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- each-method -->
+
+    
+      <div id="method-i-length" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">length</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="length-source">
+            <pre><span class="ruby-comment"># File lib/netrc.rb, line 146</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">length</span>
+  <span class="ruby-ivar">@data</span>.<span class="ruby-identifier">length</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- length-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- length-method -->
+
+    
+      <div id="method-i-new_item" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new_item</span><span
+            class="method-args">(m, l, p)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="new_item-source">
+            <pre><span class="ruby-comment"># File lib/netrc.rb, line 165</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">new_item</span>(<span class="ruby-identifier">m</span>, <span class="ruby-identifier">l</span>, <span class="ruby-identifier">p</span>)
+  [<span class="ruby-identifier">new_item_prefix</span><span class="ruby-operator">+</span><span class="ruby-string">&quot;machine &quot;</span>, <span class="ruby-identifier">m</span>, <span class="ruby-string">&quot;\n  login &quot;</span>, <span class="ruby-identifier">l</span>, <span class="ruby-string">&quot;\n  password &quot;</span>, <span class="ruby-identifier">p</span>, <span class="ruby-string">&quot;\n&quot;</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new_item-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new_item-method -->
+
+    
+      <div id="method-i-save" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">save</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="save-source">
+            <pre><span class="ruby-comment"># File lib/netrc.rb, line 169</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">save</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-ivar">@path</span> <span class="ruby-operator">=~</span> <span class="ruby-regexp">/\.gpg$/</span>
+    <span class="ruby-identifier">e</span> = <span class="ruby-constant">IO</span>.<span class="ruby-identifier">popen</span>(<span class="ruby-string">&quot;gpg -a --batch --default-recipient-self -e&quot;</span>, <span class="ruby-string">&quot;r+&quot;</span>) <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">gpg</span><span class="ruby-operator">|</span>
+      <span class="ruby-identifier">gpg</span>.<span class="ruby-identifier">puts</span>(<span class="ruby-identifier">unparse</span>)
+      <span class="ruby-identifier">gpg</span>.<span class="ruby-identifier">close_write</span>
+      <span class="ruby-identifier">gpg</span>.<span class="ruby-identifier">read</span>
+    <span class="ruby-keyword">end</span>
+    <span class="ruby-identifier">raise</span> <span class="ruby-constant">Error</span>.<span class="ruby-identifier">new</span>(<span class="ruby-node">&quot;Encrypting #{path} failed.&quot;</span>) <span class="ruby-keyword">unless</span> <span class="ruby-identifier">$?</span>.<span class="ruby-identifier">success?</span>
+    <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-ivar">@path</span>, <span class="ruby-string">'w'</span>, <span class="ruby-value">0600</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">file</span><span class="ruby-operator">|</span> <span class="ruby-identifier">file</span>.<span class="ruby-identifier">print</span>(<span class="ruby-identifier">e</span>)}
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-constant">File</span>.<span class="ruby-identifier">open</span>(<span class="ruby-ivar">@path</span>, <span class="ruby-string">'w'</span>, <span class="ruby-value">0600</span>) {<span class="ruby-operator">|</span><span class="ruby-identifier">file</span><span class="ruby-operator">|</span> <span class="ruby-identifier">file</span>.<span class="ruby-identifier">print</span>(<span class="ruby-identifier">unparse</span>)}
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- save-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- save-method -->
+
+    
+      <div id="method-i-unparse" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">unparse</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="unparse-source">
+            <pre><span class="ruby-comment"># File lib/netrc.rb, line 183</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">unparse</span>
+  <span class="ruby-ivar">@pre</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@data</span>.<span class="ruby-identifier">map</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">datum</span><span class="ruby-operator">|</span>
+    <span class="ruby-identifier">datum</span> = <span class="ruby-identifier">datum</span>.<span class="ruby-identifier">join</span>
+    <span class="ruby-keyword">unless</span> <span class="ruby-identifier">datum</span>[<span class="ruby-value">-1</span><span class="ruby-operator">..</span><span class="ruby-value">-1</span>] <span class="ruby-operator">==</span> <span class="ruby-string">&quot;\n&quot;</span>
+      <span class="ruby-identifier">datum</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-string">&quot;\n&quot;</span>
+    <span class="ruby-keyword">else</span>
+      <span class="ruby-identifier">datum</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>.<span class="ruby-identifier">join</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- unparse-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- unparse-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

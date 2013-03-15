@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>module Excon::Errors - excon-0.16.10 Documentation</title>
+
+<link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/darkfish.js"></script>
+
+
+<body id="top" class="module">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../index.html">Home</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/excon/errors.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-status_error">::status_error</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../Excon.html">Excon</a>
+  
+    <li><a href="../Excon/Connection.html">Excon::Connection</a>
+  
+    <li><a href="../Excon/Errors.html">Excon::Errors</a>
+  
+    <li><a href="../Excon/Errors/Accepted.html">Excon::Errors::Accepted</a>
+  
+    <li><a href="../Excon/Errors/BadGateway.html">Excon::Errors::BadGateway</a>
+  
+    <li><a href="../Excon/Errors/BadRequest.html">Excon::Errors::BadRequest</a>
+  
+    <li><a href="../Excon/Errors/Conflict.html">Excon::Errors::Conflict</a>
+  
+    <li><a href="../Excon/Errors/Continue.html">Excon::Errors::Continue</a>
+  
+    <li><a href="../Excon/Errors/Created.html">Excon::Errors::Created</a>
+  
+    <li><a href="../Excon/Errors/Error.html">Excon::Errors::Error</a>
+  
+    <li><a href="../Excon/Errors/ExpectationFailed.html">Excon::Errors::ExpectationFailed</a>
+  
+    <li><a href="../Excon/Errors/Forbidden.html">Excon::Errors::Forbidden</a>
+  
+    <li><a href="../Excon/Errors/Found.html">Excon::Errors::Found</a>
+  
+    <li><a href="../Excon/Errors/GatewayTimeout.html">Excon::Errors::GatewayTimeout</a>
+  
+    <li><a href="../Excon/Errors/Gone.html">Excon::Errors::Gone</a>
+  
+    <li><a href="../Excon/Errors/HTTPStatusError.html">Excon::Errors::HTTPStatusError</a>
+  
+    <li><a href="../Excon/Errors/InternalServerError.html">Excon::Errors::InternalServerError</a>
+  
+    <li><a href="../Excon/Errors/LengthRequired.html">Excon::Errors::LengthRequired</a>
+  
+    <li><a href="../Excon/Errors/MethodNotAllowed.html">Excon::Errors::MethodNotAllowed</a>
+  
+    <li><a href="../Excon/Errors/MovedPermanently.html">Excon::Errors::MovedPermanently</a>
+  
+    <li><a href="../Excon/Errors/MultipleChoices.html">Excon::Errors::MultipleChoices</a>
+  
+    <li><a href="../Excon/Errors/NoContent.html">Excon::Errors::NoContent</a>
+  
+    <li><a href="../Excon/Errors/NonAuthoritativeInformation.html">Excon::Errors::NonAuthoritativeInformation</a>
+  
+    <li><a href="../Excon/Errors/NotAcceptable.html">Excon::Errors::NotAcceptable</a>
+  
+    <li><a href="../Excon/Errors/NotFound.html">Excon::Errors::NotFound</a>
+  
+    <li><a href="../Excon/Errors/NotImplemented.html">Excon::Errors::NotImplemented</a>
+  
+    <li><a href="../Excon/Errors/NotModified.html">Excon::Errors::NotModified</a>
+  
+    <li><a href="../Excon/Errors/OK.html">Excon::Errors::OK</a>
+  
+    <li><a href="../Excon/Errors/PartialContent.html">Excon::Errors::PartialContent</a>
+  
+    <li><a href="../Excon/Errors/PaymentRequired.html">Excon::Errors::PaymentRequired</a>
+  
+    <li><a href="../Excon/Errors/PreconditionFailed.html">Excon::Errors::PreconditionFailed</a>
+  
+    <li><a href="../Excon/Errors/ProxyAuthenticationRequired.html">Excon::Errors::ProxyAuthenticationRequired</a>
+  
+    <li><a href="../Excon/Errors/ProxyConnectionError.html">Excon::Errors::ProxyConnectionError</a>
+  
+    <li><a href="../Excon/Errors/ProxyParseError.html">Excon::Errors::ProxyParseError</a>
+  
+    <li><a href="../Excon/Errors/RequestEntityTooLarge.html">Excon::Errors::RequestEntityTooLarge</a>
+  
+    <li><a href="../Excon/Errors/RequestTimeout.html">Excon::Errors::RequestTimeout</a>
+  
+    <li><a href="../Excon/Errors/RequestURITooLong.html">Excon::Errors::RequestURITooLong</a>
+  
+    <li><a href="../Excon/Errors/RequestedRangeNotSatisfiable.html">Excon::Errors::RequestedRangeNotSatisfiable</a>
+  
+    <li><a href="../Excon/Errors/ResetContent.html">Excon::Errors::ResetContent</a>
+  
+    <li><a href="../Excon/Errors/SeeOther.html">Excon::Errors::SeeOther</a>
+  
+    <li><a href="../Excon/Errors/ServiceUnavailable.html">Excon::Errors::ServiceUnavailable</a>
+  
+    <li><a href="../Excon/Errors/SocketError.html">Excon::Errors::SocketError</a>
+  
+    <li><a href="../Excon/Errors/StubNotFound.html">Excon::Errors::StubNotFound</a>
+  
+    <li><a href="../Excon/Errors/SwitchingProtocols.html">Excon::Errors::SwitchingProtocols</a>
+  
+    <li><a href="../Excon/Errors/TemporaryRedirect.html">Excon::Errors::TemporaryRedirect</a>
+  
+    <li><a href="../Excon/Errors/Timeout.html">Excon::Errors::Timeout</a>
+  
+    <li><a href="../Excon/Errors/Unauthorized.html">Excon::Errors::Unauthorized</a>
+  
+    <li><a href="../Excon/Errors/UnprocessableEntity.html">Excon::Errors::UnprocessableEntity</a>
+  
+    <li><a href="../Excon/Errors/UnsupportedMediaType.html">Excon::Errors::UnsupportedMediaType</a>
+  
+    <li><a href="../Excon/Errors/UseProxy.html">Excon::Errors::UseProxy</a>
+  
+    <li><a href="../Excon/Response.html">Excon::Response</a>
+  
+    <li><a href="../Excon/SSLSocket.html">Excon::SSLSocket</a>
+  
+    <li><a href="../Excon/Socket.html">Excon::Socket</a>
+  
+    <li><a href="../Excon/StandardInstrumentor.html">Excon::StandardInstrumentor</a>
+  
+    <li><a href="../IO.html">IO</a>
+  
+    <li><a href="../IO/WaitReadable.html">IO::WaitReadable</a>
+  
+    <li><a href="../IO/WaitWritable.html">IO::WaitWritable</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="module">module Excon::Errors</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-status_error" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">status_error</span><span
+            class="method-args">(request, response)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Messages for nicer exceptions, from rfc2616</p>
+          
+
+          
+          <div class="method-source-code" id="status_error-source">
+            <pre><span class="ruby-comment"># File lib/excon/errors.rb, line 80</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">status_error</span>(<span class="ruby-identifier">request</span>, <span class="ruby-identifier">response</span>)
+  <span class="ruby-ivar">@errors</span> <span class="ruby-operator">||=</span> {
+    <span class="ruby-value">100</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">Continue</span>, <span class="ruby-string">'Continue'</span>],
+    <span class="ruby-value">101</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">SwitchingProtocols</span>, <span class="ruby-string">'Switching Protocols'</span>],
+    <span class="ruby-value">200</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">OK</span>, <span class="ruby-string">'OK'</span>],
+    <span class="ruby-value">201</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">Created</span>, <span class="ruby-string">'Created'</span>],
+    <span class="ruby-value">202</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">Accepted</span>, <span class="ruby-string">'Accepted'</span>],
+    <span class="ruby-value">203</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">NonAuthoritativeInformation</span>, <span class="ruby-string">'Non-Authoritative Information'</span>],
+    <span class="ruby-value">204</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">NoContent</span>, <span class="ruby-string">'No Content'</span>],
+    <span class="ruby-value">205</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">ResetContent</span>, <span class="ruby-string">'Reset Content'</span>],
+    <span class="ruby-value">206</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">PartialContent</span>, <span class="ruby-string">'Partial Content'</span>],
+    <span class="ruby-value">300</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">MultipleChoices</span>, <span class="ruby-string">'Multiple Choices'</span>],
+    <span class="ruby-value">301</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">MovedPermanently</span>, <span class="ruby-string">'Moved Permanently'</span>],
+    <span class="ruby-value">302</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">Found</span>, <span class="ruby-string">'Found'</span>],
+    <span class="ruby-value">303</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">SeeOther</span>, <span class="ruby-string">'See Other'</span>],
+    <span class="ruby-value">304</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">NotModified</span>, <span class="ruby-string">'Not Modified'</span>],
+    <span class="ruby-value">305</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">UseProxy</span>, <span class="ruby-string">'Use Proxy'</span>],
+    <span class="ruby-value">307</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">TemporaryRedirect</span>, <span class="ruby-string">'Temporary Redirect'</span>],
+    <span class="ruby-value">400</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">BadRequest</span>, <span class="ruby-string">'Bad Request'</span>],
+    <span class="ruby-value">401</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">Unauthorized</span>, <span class="ruby-string">'Unauthorized'</span>],
+    <span class="ruby-value">402</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">PaymentRequired</span>, <span class="ruby-string">'Payment Required'</span>],
+    <span class="ruby-value">403</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">Forbidden</span>, <span class="ruby-string">'Forbidden'</span>],
+    <span class="ruby-value">404</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">NotFound</span>, <span class="ruby-string">'Not Found'</span>],
+    <span class="ruby-value">405</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">MethodNotAllowed</span>, <span class="ruby-string">'Method Not Allowed'</span>],
+    <span class="ruby-value">406</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">NotAcceptable</span>, <span class="ruby-string">'Not Acceptable'</span>],
+    <span class="ruby-value">407</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">ProxyAuthenticationRequired</span>, <span class="ruby-string">'Proxy Authentication Required'</span>],
+    <span class="ruby-value">408</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">RequestTimeout</span>, <span class="ruby-string">'Request Timeout'</span>],
+    <span class="ruby-value">409</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">Conflict</span>, <span class="ruby-string">'Conflict'</span>],
+    <span class="ruby-value">410</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">Gone</span>, <span class="ruby-string">'Gone'</span>],
+    <span class="ruby-value">411</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">LengthRequired</span>, <span class="ruby-string">'Length Required'</span>],
+    <span class="ruby-value">412</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">PreconditionFailed</span>, <span class="ruby-string">'Precondition Failed'</span>],
+    <span class="ruby-value">413</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">RequestEntityTooLarge</span>, <span class="ruby-string">'Request Entity Too Large'</span>],
+    <span class="ruby-value">414</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">RequestURITooLong</span>, <span class="ruby-string">'Request-URI Too Long'</span>],
+    <span class="ruby-value">415</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">UnsupportedMediaType</span>, <span class="ruby-string">'Unsupported Media Type'</span>],
+    <span class="ruby-value">416</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">RequestedRangeNotSatisfiable</span>, <span class="ruby-string">'Request Range Not Satisfiable'</span>],
+    <span class="ruby-value">417</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">ExpectationFailed</span>, <span class="ruby-string">'Expectation Failed'</span>],
+    <span class="ruby-value">422</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">UnprocessableEntity</span>, <span class="ruby-string">'Unprocessable Entity'</span>],
+    <span class="ruby-value">500</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">InternalServerError</span>, <span class="ruby-string">'InternalServerError'</span>],
+    <span class="ruby-value">501</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">NotImplemented</span>, <span class="ruby-string">'Not Implemented'</span>],
+    <span class="ruby-value">502</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">BadGateway</span>, <span class="ruby-string">'Bad Gateway'</span>],
+    <span class="ruby-value">503</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">ServiceUnavailable</span>, <span class="ruby-string">'Service Unavailable'</span>],
+    <span class="ruby-value">504</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">GatewayTimeout</span>, <span class="ruby-string">'Gateway Timeout'</span>]
+  }
+  <span class="ruby-identifier">error</span>, <span class="ruby-identifier">message</span> = <span class="ruby-ivar">@errors</span>[<span class="ruby-identifier">response</span>.<span class="ruby-identifier">status</span>] <span class="ruby-operator">||</span> [<span class="ruby-constant">Excon</span><span class="ruby-operator">::</span><span class="ruby-constant">Errors</span><span class="ruby-operator">::</span><span class="ruby-constant">HTTPStatusError</span>, <span class="ruby-string">'Unknown'</span>]
+  <span class="ruby-identifier">error</span>.<span class="ruby-identifier">new</span>(<span class="ruby-node">&quot;Expected(#{request[:expects].inspect}) &lt;=&gt; Actual(#{response.status} #{message})\n  request =&gt; #{request.inspect}\n  response =&gt; #{response.inspect}&quot;</span>, <span class="ruby-identifier">request</span>, <span class="ruby-identifier">response</span>)
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- status_error-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- status_error-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

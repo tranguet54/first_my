@@ -1,0 +1,18 @@
+[2013-03-07 17:21:05] '/home/ilu/.rvm/scripts/gemsets' initial # under ruby-2.0.0-p0
+Importing initial gemsets for ruby-2.0.0-p0.
+paths: /home/ilu/.rvm/gemsets/ruby/2.0.0/p0 /home/ilu/.rvm/gemsets/ruby/2.0.0 /home/ilu/.rvm/gemsets/ruby /home/ilu/.rvm/gemsets
+
+Installing gems listed in /home/ilu/.rvm/gemsets/ruby/2.0.0/global.gems file...
+
+installing rubygems-bundler ...
+rubygems-bundler  installed.
+installing bundler ">=1.3.0.pre.8"...
+bundler ">=1.3.0.pre.8" installed.
+installing rake ...
+rake  installed.
+installing rvm ...
+rvm  installed.
+
+Processing of /home/ilu/.rvm/gemsets/ruby/2.0.0/global.gems is complete.
+
+Installation of gems for ruby-2.0.0-p0 is complete.

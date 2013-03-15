@@ -1,0 +1,25 @@
+<%= form_for(@secryty) do |f| %>
+  <% if @secryty.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@secryty.errors.count, "error") %> prohibited this secryty from being saved:</h2>
+
+      <ul>
+      <% @secryty.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :cmt %><br />
+    <%= f.text_field :cmt %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

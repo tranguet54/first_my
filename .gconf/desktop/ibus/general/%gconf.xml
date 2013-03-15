@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="embed_preedit_text" mtime="1362927043" type="bool" value="true"/>
+	<entry name="preload_engines" mtime="1362121309" type="list" ltype="string">
+		<li type="string">
+			<stringvalue>Unikey</stringvalue>
+		</li>
+	</entry>
+	<entry name="preload_engine_mode" mtime="1362121300" type="int" value="0"/>
+</gconf>

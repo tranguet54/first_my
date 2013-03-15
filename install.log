@@ -1,0 +1,565 @@
+Ign http://vn.archive.ubuntu.com quantal InRelease
+Ign http://vn.archive.ubuntu.com quantal-updates InRelease
+Ign http://security.ubuntu.com quantal-security InRelease
+Ign http://ppa.launchpad.net quantal InRelease
+Ign http://ppa.launchpad.net quantal InRelease
+Get:1 http://ppa.launchpad.net quantal Release.gpg [316 B]
+Get:2 http://ppa.launchpad.net quantal Release.gpg [316 B]
+Get:3 http://ppa.launchpad.net quantal Release [11.9 kB]
+Get:4 http://ppa.launchpad.net quantal Release [11.9 kB]
+Get:5 http://ppa.launchpad.net quantal/main Sources [1,150 B]
+Get:6 http://ppa.launchpad.net quantal/main i386 Packages [1,522 B]
+Ign http://extras.ubuntu.com quantal InRelease
+Err http://extras.ubuntu.com quantal Release.gpg
+  Unable to connect to extras.ubuntu.com:http:
+Ign http://extras.ubuntu.com quantal Release
+Ign http://extras.ubuntu.com quantal/main Sources/DiffIndex
+Ign http://extras.ubuntu.com quantal/main i386 Packages/DiffIndex
+Err http://extras.ubuntu.com quantal/main Translation-en_US
+  Unable to connect to extras.ubuntu.com:http:
+Err http://extras.ubuntu.com quantal/main Translation-en
+  Unable to connect to extras.ubuntu.com:http:
+Err http://extras.ubuntu.com quantal/main Sources
+  Unable to connect to extras.ubuntu.com:http:
+Err http://extras.ubuntu.com quantal/main i386 Packages
+  Unable to connect to extras.ubuntu.com:http:
+Ign http://vn.archive.ubuntu.com quantal-backports InRelease
+Hit http://vn.archive.ubuntu.com quantal Release.gpg
+Get:7 http://vn.archive.ubuntu.com quantal-updates Release.gpg [933 B]
+Hit http://vn.archive.ubuntu.com quantal-backports Release.gpg
+Hit http://vn.archive.ubuntu.com quantal Release
+Get:8 http://vn.archive.ubuntu.com quantal-updates Release [49.6 kB]
+Hit http://vn.archive.ubuntu.com quantal-backports Release
+Get:9 http://security.ubuntu.com quantal-security Release.gpg [933 B]
+Hit http://vn.archive.ubuntu.com quantal/main Sources
+Hit http://vn.archive.ubuntu.com quantal/restricted Sources
+Hit http://vn.archive.ubuntu.com quantal/universe Sources
+Hit http://vn.archive.ubuntu.com quantal/multiverse Sources
+Hit http://vn.archive.ubuntu.com quantal/main i386 Packages
+Hit http://vn.archive.ubuntu.com quantal/restricted i386 Packages
+Hit http://vn.archive.ubuntu.com quantal/universe i386 Packages
+Hit http://vn.archive.ubuntu.com quantal/multiverse i386 Packages
+Err http://ppa.launchpad.net quantal/main Sources
+  Unable to connect to ppa.launchpad.net:http:
+Err http://ppa.launchpad.net quantal/main i386 Packages
+  Unable to connect to ppa.launchpad.net:http:
+Err http://ppa.launchpad.net quantal/main Translation-en_US
+  Unable to connect to ppa.launchpad.net:http:
+Err http://ppa.launchpad.net quantal/main Translation-en
+  Unable to connect to ppa.launchpad.net:http:
+Err http://ppa.launchpad.net quantal/main Translation-en_US
+  Unable to connect to ppa.launchpad.net:http:
+Err http://ppa.launchpad.net quantal/main Translation-en
+  Unable to connect to ppa.launchpad.net:http:
+Hit http://vn.archive.ubuntu.com quantal/main Translation-en
+Hit http://vn.archive.ubuntu.com quantal/multiverse Translation-en
+Hit http://vn.archive.ubuntu.com quantal/restricted Translation-en
+Hit http://vn.archive.ubuntu.com quantal/universe Translation-en
+Ign http://security.ubuntu.com quantal-security Release
+Ign http://security.ubuntu.com quantal-security/main Sources/DiffIndex
+Ign http://security.ubuntu.com quantal-security/restricted Sources/DiffIndex
+Ign http://security.ubuntu.com quantal-security/universe Sources/DiffIndex
+Ign http://security.ubuntu.com quantal-security/multiverse Sources/DiffIndex
+Ign http://security.ubuntu.com quantal-security/main i386 Packages/DiffIndex
+Ign http://security.ubuntu.com quantal-security/restricted i386 Packages/DiffIndex
+Ign http://security.ubuntu.com quantal-security/universe i386 Packages/DiffIndex
+Ign http://security.ubuntu.com quantal-security/multiverse i386 Packages/DiffIndex
+Err http://security.ubuntu.com quantal-security/main Translation-en_US
+  Unable to connect to security.ubuntu.com:http: [IP: 91.189.92.200 80]
+Err http://security.ubuntu.com quantal-security/main Translation-en
+  Unable to connect to security.ubuntu.com:http: [IP: 91.189.92.200 80]
+Err http://security.ubuntu.com quantal-security/multiverse Translation-en_US
+  Unable to connect to security.ubuntu.com:http: [IP: 91.189.92.200 80]
+Err http://security.ubuntu.com quantal-security/multiverse Translation-en
+  Unable to connect to security.ubuntu.com:http: [IP: 91.189.92.200 80]
+Err http://security.ubuntu.com quantal-security/restricted Translation-en_US
+  Unable to connect to security.ubuntu.com:http: [IP: 91.189.92.200 80]
+Err http://security.ubuntu.com quantal-security/restricted Translation-en
+  Unable to connect to security.ubuntu.com:http: [IP: 91.189.92.200 80]
+Err http://security.ubuntu.com quantal-security/universe Translation-en_US
+  Unable to connect to security.ubuntu.com:http: [IP: 91.189.92.200 80]
+Err http://security.ubuntu.com quantal-security/universe Translation-en
+  Unable to connect to security.ubuntu.com:http: [IP: 91.189.92.200 80]
+Err http://security.ubuntu.com quantal-security/main Sources
+  Unable to connect to security.ubuntu.com:http: [IP: 91.189.92.200 80]
+Err http://security.ubuntu.com quantal-security/restricted Sources
+  Unable to connect to security.ubuntu.com:http: [IP: 91.189.92.200 80]
+Err http://security.ubuntu.com quantal-security/universe Sources
+  Unable to connect to security.ubuntu.com:http: [IP: 91.189.92.200 80]
+Err http://security.ubuntu.com quantal-security/multiverse Sources
+  Unable to connect to security.ubuntu.com:http: [IP: 91.189.92.200 80]
+Err http://security.ubuntu.com quantal-security/main i386 Packages
+  Unable to connect to security.ubuntu.com:http: [IP: 91.189.92.200 80]
+Err http://security.ubuntu.com quantal-security/restricted i386 Packages
+  Unable to connect to security.ubuntu.com:http: [IP: 91.189.92.200 80]
+Err http://security.ubuntu.com quantal-security/universe i386 Packages
+  Unable to connect to security.ubuntu.com:http: [IP: 91.189.92.200 80]
+Err http://security.ubuntu.com quantal-security/multiverse i386 Packages
+  Unable to connect to security.ubuntu.com:http: [IP: 91.189.92.200 80]
+Get:10 http://vn.archive.ubuntu.com quantal-updates/main Sources [81.0 kB]
+Get:11 http://vn.archive.ubuntu.com quantal-updates/restricted Sources [1,302 B]
+Get:12 http://vn.archive.ubuntu.com quantal-updates/universe Sources [79.7 kB]
+Get:13 http://vn.archive.ubuntu.com quantal-updates/multiverse Sources [2,932 B]
+Get:14 http://vn.archive.ubuntu.com quantal-updates/main i386 Packages [210 kB]
+Get:15 http://vn.archive.ubuntu.com quantal-updates/restricted i386 Packages [3,067 B]
+Err http://vn.archive.ubuntu.com quantal-updates/universe i386 Packages
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Err http://vn.archive.ubuntu.com quantal-updates/multiverse i386 Packages
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Err http://vn.archive.ubuntu.com quantal-backports/main Sources
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Err http://vn.archive.ubuntu.com quantal-backports/restricted Sources
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Err http://vn.archive.ubuntu.com quantal-backports/universe Sources
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Err http://vn.archive.ubuntu.com quantal-backports/multiverse Sources
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Err http://vn.archive.ubuntu.com quantal-backports/main i386 Packages
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Err http://vn.archive.ubuntu.com quantal-backports/restricted i386 Packages
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Err http://vn.archive.ubuntu.com quantal-backports/universe i386 Packages
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Err http://vn.archive.ubuntu.com quantal-backports/multiverse i386 Packages
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Err http://vn.archive.ubuntu.com quantal/main Translation-en_US
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Err http://vn.archive.ubuntu.com quantal/multiverse Translation-en_US
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Err http://vn.archive.ubuntu.com quantal/restricted Translation-en_US
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Err http://vn.archive.ubuntu.com quantal/universe Translation-en_US
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Err http://vn.archive.ubuntu.com quantal-updates/main Translation-en_US
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Err http://vn.archive.ubuntu.com quantal-updates/main Translation-en
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Err http://vn.archive.ubuntu.com quantal-updates/multiverse Translation-en_US
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Err http://vn.archive.ubuntu.com quantal-updates/multiverse Translation-en
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Err http://vn.archive.ubuntu.com quantal-updates/restricted Translation-en_US
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Err http://vn.archive.ubuntu.com quantal-updates/restricted Translation-en
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Err http://vn.archive.ubuntu.com quantal-updates/universe Translation-en_US
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Err http://vn.archive.ubuntu.com quantal-updates/universe Translation-en
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Err http://vn.archive.ubuntu.com quantal-backports/main Translation-en_US
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Err http://vn.archive.ubuntu.com quantal-backports/main Translation-en
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Err http://vn.archive.ubuntu.com quantal-backports/multiverse Translation-en_US
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Err http://vn.archive.ubuntu.com quantal-backports/multiverse Translation-en
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Err http://vn.archive.ubuntu.com quantal-backports/restricted Translation-en_US
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Err http://vn.archive.ubuntu.com quantal-backports/restricted Translation-en
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Err http://vn.archive.ubuntu.com quantal-backports/universe Translation-en_US
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Err http://vn.archive.ubuntu.com quantal-backports/universe Translation-en
+  Unable to connect to vn.archive.ubuntu.com:http: [IP: 91.189.92.202 80]
+Fetched 456 kB in 4min 11s (1,814 B/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  linux-headers-3.5.0-17 linux-headers-3.5.0-17-generic
+Use 'apt-get autoremove' to remove them.
+The following extra packages will be installed:
+  git-man liberror-perl
+Suggested packages:
+  git-daemon-run git-daemon-sysvinit git-doc git-el git-arch git-cvs git-svn
+  git-email git-gui gitk gitweb
+The following NEW packages will be installed:
+  git git-man liberror-perl
+0 upgraded, 3 newly installed, 0 to remove and 0 not upgraded.
+Need to get 6,703 kB of archives.
+After this operation, 15.4 MB of additional disk space will be used.
+Get:1 http://vn.archive.ubuntu.com/ubuntu/ quantal/main liberror-perl all 0.17-1 [23.8 kB]
+Get:2 http://vn.archive.ubuntu.com/ubuntu/ quantal/main git-man all 1:1.7.10.4-1ubuntu1 [634 kB]
+Get:3 http://vn.archive.ubuntu.com/ubuntu/ quantal/main git i386 1:1.7.10.4-1ubuntu1 [6,045 kB]
+Fetched 6,703 kB in 60s (111 kB/s)
+Selecting previously unselected package liberror-perl.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 183418 files and directories currently installed.)
+Unpacking liberror-perl (from .../liberror-perl_0.17-1_all.deb) ...
+Selecting previously unselected package git-man.
+Unpacking git-man (from .../git-man_1%3a1.7.10.4-1ubuntu1_all.deb) ...
+Selecting previously unselected package git.
+Unpacking git (from .../git_1%3a1.7.10.4-1ubuntu1_i386.deb) ...
+Processing triggers for man-db ...
+Setting up liberror-perl (0.17-1) ...
+Setting up git-man (1:1.7.10.4-1ubuntu1) ...
+Setting up git (1:1.7.10.4-1ubuntu1) ...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  linux-headers-3.5.0-17 linux-headers-3.5.0-17-generic
+Use 'apt-get autoremove' to remove them.
+The following NEW packages will be installed:
+  curl
+0 upgraded, 1 newly installed, 0 to remove and 0 not upgraded.
+Need to get 147 kB of archives.
+After this operation, 374 kB of additional disk space will be used.
+Get:1 http://vn.archive.ubuntu.com/ubuntu/ quantal-updates/main curl i386 7.27.0-1ubuntu1.1 [147 kB]
+Fetched 147 kB in 7s (18.7 kB/s)
+Selecting previously unselected package curl.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 184080 files and directories currently installed.)
+Unpacking curl (from .../curl_7.27.0-1ubuntu1.1_i386.deb) ...
+Processing triggers for man-db ...
+Setting up curl (7.27.0-1ubuntu1.1) ...
+Downloading RVM from wayneeseguin branch stable
+
+Installing RVM to /home/ilu/.rvm/
+    Adding rvm PATH line to /home/ilu/.bashrc /home/ilu/.zshrc.
+    Adding rvm loading line to /home/ilu/.bash_profile /home/ilu/.zprofile.
+
+# RVM:  Shell scripts enabling management of multiple ruby environments.
+# RTFM: https://rvm.io/
+# HELP: http://webchat.freenode.net/?channels=rvm (#rvm on irc.freenode.net)
+# Cheatsheet: http://cheat.errtheblog.com/s/rvm/
+# Screencast: http://screencasts.org/episodes/how-to-use-rvm
+
+# In case of any issues read output of 'rvm requirements' and/or 'rvm notes'
+
+Installation of RVM in /home/ilu/.rvm/ is almost complete:
+
+  * To start using RVM you need to run `source /home/ilu/.rvm/scripts/rvm`
+    in all your open shell windows, in rare cases you need to reopen all shell windows.
+
+# ilu,
+#
+#   Thank you for using RVM!
+#   I sincerely hope that RVM helps to make your life easier and
+#   more enjoyable!!!
+#
+# ~Wayne
+
+Searching for binary rubies, this might take some time.
+No binary rubies available for: ubuntu/12.10/i386/ruby-1.9.3-p392.
+Continuing with compilation. Please read 'rvm mount' to get more information on binary rubies.
+Fetching yaml-0.1.4.tar.gz to /home/ilu/.rvm/archives
+Extracting yaml to /home/ilu/.rvm/src/yaml-0.1.4
+Configuring yaml in /home/ilu/.rvm/src/yaml-0.1.4.
+Compiling yaml in /home/ilu/.rvm/src/yaml-0.1.4.
+Installing yaml to /home/ilu/.rvm/usr
+Installing Ruby from source to: /home/ilu/.rvm/rubies/ruby-1.9.3-p392, this may take a while depending on your cpu(s)...
+ruby-1.9.3-p392 - #downloading ruby-1.9.3-p392, this may take a while depending on your connection...
+ruby-1.9.3-p392 - #extracting ruby-1.9.3-p392 to /home/ilu/.rvm/src/ruby-1.9.3-p392
+ruby-1.9.3-p392 - #extracted to /home/ilu/.rvm/src/ruby-1.9.3-p392
+ruby-1.9.3-p392 - #configuring
+ruby-1.9.3-p392 - #compiling
+ruby-1.9.3-p392 - #installing 
+Retrieving rubygems-1.8.25
+Extracting rubygems-1.8.25 ...
+Removing old Rubygems files...
+Installing rubygems-1.8.25 for ruby-1.9.3-p392 ...
+Installation of rubygems completed successfully.
+Saving wrappers to '/home/ilu/.rvm/bin'.
+ruby-1.9.3-p392 - #adjusting #shebangs for (gem irb erb ri rdoc testrb rake).
+ruby-1.9.3-p392 - #importing default gemsets, this may take time ...
+Install of ruby-1.9.3-p392 - #complete 
+
+Using /home/ilu/.rvm/gems/ruby-1.9.3-p392
+Ign http://security.ubuntu.com quantal-security InRelease
+Ign http://ppa.launchpad.net quantal InRelease
+Ign http://vn.archive.ubuntu.com quantal InRelease
+Ign http://extras.ubuntu.com quantal InRelease
+Get:1 http://security.ubuntu.com quantal-security Release.gpg [933 B]
+Ign http://ppa.launchpad.net quantal InRelease
+Get:2 http://security.ubuntu.com quantal-security Release [49.6 kB]
+Ign http://vn.archive.ubuntu.com quantal-updates InRelease
+Get:3 http://extras.ubuntu.com quantal Release.gpg [72 B]
+Get:4 http://ppa.launchpad.net quantal Release.gpg [316 B]
+Ign http://vn.archive.ubuntu.com quantal-backports InRelease
+Hit http://extras.ubuntu.com quantal Release
+Get:5 http://ppa.launchpad.net quantal Release.gpg [316 B]
+Hit http://ppa.launchpad.net quantal Release
+Get:6 http://security.ubuntu.com quantal-security/main Sources [34.7 kB]
+Hit http://vn.archive.ubuntu.com quantal Release.gpg
+Hit http://extras.ubuntu.com quantal/main Sources
+Hit http://ppa.launchpad.net quantal Release
+Get:7 http://vn.archive.ubuntu.com quantal-updates Release.gpg [933 B]
+Hit http://extras.ubuntu.com quantal/main i386 Packages
+Get:8 http://security.ubuntu.com quantal-security/restricted Sources [14 B]
+Hit http://ppa.launchpad.net quantal/main Sources
+Get:9 http://security.ubuntu.com quantal-security/universe Sources [15.4 kB]
+Hit http://vn.archive.ubuntu.com quantal-backports Release.gpg
+Hit http://ppa.launchpad.net quantal/main i386 Packages
+Hit http://vn.archive.ubuntu.com quantal Release
+Get:10 http://security.ubuntu.com quantal-security/multiverse Sources [700 B]
+Get:11 http://vn.archive.ubuntu.com quantal-updates Release [49.6 kB]
+Hit http://ppa.launchpad.net quantal/main Sources
+Get:12 http://security.ubuntu.com quantal-security/main i386 Packages [92.6 kB]
+Hit http://ppa.launchpad.net quantal/main i386 Packages
+Hit http://vn.archive.ubuntu.com quantal-backports Release
+Hit http://vn.archive.ubuntu.com quantal/main Sources
+Hit http://vn.archive.ubuntu.com quantal/restricted Sources
+Hit http://vn.archive.ubuntu.com quantal/universe Sources
+Ign http://extras.ubuntu.com quantal/main Translation-en_US
+Hit http://vn.archive.ubuntu.com quantal/multiverse Sources
+Ign http://extras.ubuntu.com quantal/main Translation-en
+Hit http://vn.archive.ubuntu.com quantal/main i386 Packages
+Get:13 http://security.ubuntu.com quantal-security/restricted i386 Packages [14 B]
+Get:14 http://security.ubuntu.com quantal-security/universe i386 Packages [42.4 kB]
+Hit http://vn.archive.ubuntu.com quantal/restricted i386 Packages
+Hit http://vn.archive.ubuntu.com quantal/universe i386 Packages
+Get:15 http://security.ubuntu.com quantal-security/multiverse i386 Packages [1,397 B]
+Hit http://vn.archive.ubuntu.com quantal/multiverse i386 Packages
+Hit http://security.ubuntu.com quantal-security/main Translation-en
+Hit http://security.ubuntu.com quantal-security/multiverse Translation-en
+Hit http://vn.archive.ubuntu.com quantal/main Translation-en
+Ign http://ppa.launchpad.net quantal/main Translation-en_US
+Ign http://ppa.launchpad.net quantal/main Translation-en
+Hit http://security.ubuntu.com quantal-security/restricted Translation-en
+Ign http://ppa.launchpad.net quantal/main Translation-en_US
+Hit http://vn.archive.ubuntu.com quantal/multiverse Translation-en
+Ign http://ppa.launchpad.net quantal/main Translation-en
+Hit http://security.ubuntu.com quantal-security/universe Translation-en
+Hit http://vn.archive.ubuntu.com quantal/restricted Translation-en
+Hit http://vn.archive.ubuntu.com quantal/universe Translation-en
+Get:16 http://vn.archive.ubuntu.com quantal-updates/main Sources [81.0 kB]
+Get:17 http://vn.archive.ubuntu.com quantal-updates/restricted Sources [1,302 B]
+Ign http://security.ubuntu.com quantal-security/main Translation-en_US
+Get:18 http://vn.archive.ubuntu.com quantal-updates/universe Sources [79.7 kB]
+Ign http://security.ubuntu.com quantal-security/multiverse Translation-en_US
+Ign http://security.ubuntu.com quantal-security/restricted Translation-en_US
+Ign http://security.ubuntu.com quantal-security/universe Translation-en_US
+Get:19 http://vn.archive.ubuntu.com quantal-updates/multiverse Sources [2,932 B]
+Get:20 http://vn.archive.ubuntu.com quantal-updates/main i386 Packages [210 kB]
+Get:21 http://vn.archive.ubuntu.com quantal-updates/restricted i386 Packages [3,067 B]
+Get:22 http://vn.archive.ubuntu.com quantal-updates/universe i386 Packages [171 kB]
+Get:23 http://vn.archive.ubuntu.com quantal-updates/multiverse i386 Packages [8,109 B]
+Hit http://vn.archive.ubuntu.com quantal-updates/main Translation-en
+Hit http://vn.archive.ubuntu.com quantal-updates/multiverse Translation-en
+Hit http://vn.archive.ubuntu.com quantal-updates/restricted Translation-en
+Get:24 http://vn.archive.ubuntu.com quantal-updates/universe Translation-en [90.8 kB]
+Hit http://vn.archive.ubuntu.com quantal-backports/main Sources
+Hit http://vn.archive.ubuntu.com quantal-backports/restricted Sources
+Hit http://vn.archive.ubuntu.com quantal-backports/universe Sources
+Hit http://vn.archive.ubuntu.com quantal-backports/multiverse Sources
+Hit http://vn.archive.ubuntu.com quantal-backports/main i386 Packages
+Hit http://vn.archive.ubuntu.com quantal-backports/restricted i386 Packages
+Hit http://vn.archive.ubuntu.com quantal-backports/universe i386 Packages
+Hit http://vn.archive.ubuntu.com quantal-backports/multiverse i386 Packages
+Hit http://vn.archive.ubuntu.com quantal-backports/main Translation-en
+Hit http://vn.archive.ubuntu.com quantal-backports/multiverse Translation-en
+Hit http://vn.archive.ubuntu.com quantal-backports/restricted Translation-en
+Hit http://vn.archive.ubuntu.com quantal-backports/universe Translation-en
+Ign http://vn.archive.ubuntu.com quantal/main Translation-en_US
+Ign http://vn.archive.ubuntu.com quantal/multiverse Translation-en_US
+Ign http://vn.archive.ubuntu.com quantal/restricted Translation-en_US
+Ign http://vn.archive.ubuntu.com quantal/universe Translation-en_US
+Ign http://vn.archive.ubuntu.com quantal-updates/main Translation-en_US
+Ign http://vn.archive.ubuntu.com quantal-updates/multiverse Translation-en_US
+Ign http://vn.archive.ubuntu.com quantal-updates/restricted Translation-en_US
+Ign http://vn.archive.ubuntu.com quantal-updates/universe Translation-en_US
+Ign http://vn.archive.ubuntu.com quantal-backports/main Translation-en_US
+Ign http://vn.archive.ubuntu.com quantal-backports/multiverse Translation-en_US
+Ign http://vn.archive.ubuntu.com quantal-backports/restricted Translation-en_US
+Ign http://vn.archive.ubuntu.com quantal-backports/universe Translation-en_US
+Fetched 936 kB in 58s (16.0 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+git is already the newest version.
+The following packages were automatically installed and are no longer required:
+  linux-headers-3.5.0-17 linux-headers-3.5.0-17-generic
+Use 'apt-get autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version.
+The following packages were automatically installed and are no longer required:
+  linux-headers-3.5.0-17 linux-headers-3.5.0-17-generic
+Use 'apt-get autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+Downloading RVM from wayneeseguin branch stable
+
+Upgrading the RVM installation in /home/ilu/.rvm/
+    RVM PATH line found in /home/ilu/.bashrc /home/ilu/.zshrc.
+    RVM sourcing line found in /home/ilu/.bash_profile /home/ilu/.zprofile.
+    Installing rvm gem in 1 gemsets 
+
+Upgrade Notes:
+
+
+# RVM:  Shell scripts enabling management of multiple ruby environments.
+# RTFM: https://rvm.io/
+# HELP: http://webchat.freenode.net/?channels=rvm (#rvm on irc.freenode.net)
+# Cheatsheet: http://cheat.errtheblog.com/s/rvm/
+# Screencast: http://screencasts.org/episodes/how-to-use-rvm
+
+# In case of any issues read output of 'rvm requirements' and/or 'rvm notes'
+
+Upgrade of RVM in /home/ilu/.rvm/ is complete.
+
+# ilu,
+#
+#   Thank you for using RVM!
+#   I sincerely hope that RVM helps to make your life easier and
+#   more enjoyable!!!
+#
+# ~Wayne
+
+Already installed ruby-1.9.3-p392.
+To reinstall use:
+
+    rvm reinstall 1.9.3
+
+Using /home/ilu/.rvm/gems/ruby-1.9.3-p392
+Ign http://security.ubuntu.com quantal-security InRelease
+Ign http://extras.ubuntu.com quantal InRelease
+Ign http://vn.archive.ubuntu.com quantal InRelease
+Ign http://ppa.launchpad.net quantal InRelease
+Get:1 http://security.ubuntu.com quantal-security Release.gpg [933 B]
+Get:2 http://extras.ubuntu.com quantal Release.gpg [72 B]
+Ign http://vn.archive.ubuntu.com quantal-updates InRelease
+Ign http://ppa.launchpad.net quantal InRelease
+Get:3 http://security.ubuntu.com quantal-security Release [49.6 kB]
+Hit http://extras.ubuntu.com quantal Release
+Ign http://vn.archive.ubuntu.com quantal-backports InRelease
+Hit http://ppa.launchpad.net quantal Release.gpg
+Hit http://vn.archive.ubuntu.com quantal Release.gpg
+Hit http://extras.ubuntu.com quantal/main Sources
+Hit http://ppa.launchpad.net quantal Release.gpg
+Get:4 http://vn.archive.ubuntu.com quantal-updates Release.gpg [933 B]
+Hit http://extras.ubuntu.com quantal/main i386 Packages
+Hit http://ppa.launchpad.net quantal Release
+Get:5 http://security.ubuntu.com quantal-security/main Sources [34.9 kB]
+Hit http://vn.archive.ubuntu.com quantal-backports Release.gpg
+Hit http://vn.archive.ubuntu.com quantal Release
+Hit http://ppa.launchpad.net quantal Release
+Get:6 http://security.ubuntu.com quantal-security/restricted Sources [14 B]
+Get:7 http://vn.archive.ubuntu.com quantal-updates Release [49.6 kB]
+Get:8 http://security.ubuntu.com quantal-security/universe Sources [15.4 kB]
+Hit http://ppa.launchpad.net quantal/main Sources
+Get:9 http://security.ubuntu.com quantal-security/multiverse Sources [700 B]
+Hit http://ppa.launchpad.net quantal/main i386 Packages
+Get:10 http://security.ubuntu.com quantal-security/main i386 Packages [92.9 kB]
+Hit http://vn.archive.ubuntu.com quantal-backports Release
+Hit http://vn.archive.ubuntu.com quantal/main Sources
+Hit http://ppa.launchpad.net quantal/main Sources
+Get:11 http://security.ubuntu.com quantal-security/restricted i386 Packages [14 B]
+Hit http://vn.archive.ubuntu.com quantal/restricted Sources
+Hit http://ppa.launchpad.net quantal/main i386 Packages
+Get:12 http://security.ubuntu.com quantal-security/universe i386 Packages [42.5 kB]
+Ign http://extras.ubuntu.com quantal/main Translation-en_US
+Hit http://vn.archive.ubuntu.com quantal/universe Sources
+Ign http://extras.ubuntu.com quantal/main Translation-en
+Hit http://vn.archive.ubuntu.com quantal/multiverse Sources
+Get:13 http://security.ubuntu.com quantal-security/multiverse i386 Packages [1,397 B]
+Hit http://vn.archive.ubuntu.com quantal/main i386 Packages
+Hit http://security.ubuntu.com quantal-security/main Translation-en
+Hit http://vn.archive.ubuntu.com quantal/restricted i386 Packages
+Hit http://vn.archive.ubuntu.com quantal/universe i386 Packages
+Hit http://security.ubuntu.com quantal-security/multiverse Translation-en
+Hit http://vn.archive.ubuntu.com quantal/multiverse i386 Packages
+Hit http://security.ubuntu.com quantal-security/restricted Translation-en
+Hit http://vn.archive.ubuntu.com quantal/main Translation-en
+Hit http://security.ubuntu.com quantal-security/universe Translation-en
+Hit http://vn.archive.ubuntu.com quantal/multiverse Translation-en
+Hit http://vn.archive.ubuntu.com quantal/restricted Translation-en
+Hit http://vn.archive.ubuntu.com quantal/universe Translation-en
+Get:14 http://vn.archive.ubuntu.com quantal-updates/main Sources [82.0 kB]
+Ign http://ppa.launchpad.net quantal/main Translation-en_US
+Ign http://ppa.launchpad.net quantal/main Translation-en
+Ign http://ppa.launchpad.net quantal/main Translation-en_US
+Get:15 http://vn.archive.ubuntu.com quantal-updates/restricted Sources [1,302 B]
+Ign http://ppa.launchpad.net quantal/main Translation-en
+Get:16 http://vn.archive.ubuntu.com quantal-updates/universe Sources [79.7 kB]
+Ign http://security.ubuntu.com quantal-security/main Translation-en_US
+Ign http://security.ubuntu.com quantal-security/multiverse Translation-en_US
+Ign http://security.ubuntu.com quantal-security/restricted Translation-en_US
+Get:17 http://vn.archive.ubuntu.com quantal-updates/multiverse Sources [2,932 B]
+Ign http://security.ubuntu.com quantal-security/universe Translation-en_US
+Get:18 http://vn.archive.ubuntu.com quantal-updates/main i386 Packages [211 kB]
+Get:19 http://vn.archive.ubuntu.com quantal-updates/restricted i386 Packages [3,067 B]
+Get:20 http://vn.archive.ubuntu.com quantal-updates/universe i386 Packages [171 kB]
+Get:21 http://vn.archive.ubuntu.com quantal-updates/multiverse i386 Packages [8,109 B]
+Get:22 http://vn.archive.ubuntu.com quantal-updates/main Translation-en [101 kB]
+Hit http://vn.archive.ubuntu.com quantal-updates/multiverse Translation-en
+Hit http://vn.archive.ubuntu.com quantal-updates/restricted Translation-en
+Get:23 http://vn.archive.ubuntu.com quantal-updates/universe Translation-en [91.0 kB]
+Hit http://vn.archive.ubuntu.com quantal-backports/main Sources
+Hit http://vn.archive.ubuntu.com quantal-backports/restricted Sources
+Hit http://vn.archive.ubuntu.com quantal-backports/universe Sources
+Hit http://vn.archive.ubuntu.com quantal-backports/multiverse Sources
+Hit http://vn.archive.ubuntu.com quantal-backports/main i386 Packages
+Hit http://vn.archive.ubuntu.com quantal-backports/restricted i386 Packages
+Hit http://vn.archive.ubuntu.com quantal-backports/universe i386 Packages
+Hit http://vn.archive.ubuntu.com quantal-backports/multiverse i386 Packages
+Hit http://vn.archive.ubuntu.com quantal-backports/main Translation-en
+Hit http://vn.archive.ubuntu.com quantal-backports/multiverse Translation-en
+Hit http://vn.archive.ubuntu.com quantal-backports/restricted Translation-en
+Hit http://vn.archive.ubuntu.com quantal-backports/universe Translation-en
+Ign http://vn.archive.ubuntu.com quantal/main Translation-en_US
+Ign http://vn.archive.ubuntu.com quantal/multiverse Translation-en_US
+Ign http://vn.archive.ubuntu.com quantal/restricted Translation-en_US
+Ign http://vn.archive.ubuntu.com quantal/universe Translation-en_US
+Ign http://vn.archive.ubuntu.com quantal-updates/main Translation-en_US
+Ign http://vn.archive.ubuntu.com quantal-updates/multiverse Translation-en_US
+Ign http://vn.archive.ubuntu.com quantal-updates/restricted Translation-en_US
+Ign http://vn.archive.ubuntu.com quantal-updates/universe Translation-en_US
+Ign http://vn.archive.ubuntu.com quantal-backports/main Translation-en_US
+Ign http://vn.archive.ubuntu.com quantal-backports/multiverse Translation-en_US
+Ign http://vn.archive.ubuntu.com quantal-backports/restricted Translation-en_US
+Ign http://vn.archive.ubuntu.com quantal-backports/universe Translation-en_US
+Fetched 1,041 kB in 43s (24.1 kB/s)
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+git is already the newest version.
+The following packages were automatically installed and are no longer required:
+  linux-headers-3.5.0-17 linux-headers-3.5.0-17-generic
+Use 'apt-get autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 13 not upgraded.
+Reading package lists...
+Building dependency tree...
+Reading state information...
+curl is already the newest version.
+The following packages were automatically installed and are no longer required:
+  linux-headers-3.5.0-17 linux-headers-3.5.0-17-generic
+Use 'apt-get autoremove' to remove them.
+0 upgraded, 0 newly installed, 0 to remove and 13 not upgraded.
+Downloading RVM from wayneeseguin branch stable
+
+Upgrading the RVM installation in /home/ilu/.rvm/
+    RVM PATH line found in /home/ilu/.bashrc /home/ilu/.zshrc.
+    RVM sourcing line found in /home/ilu/.bash_profile /home/ilu/.zprofile.
+    Installing rvm gem in 1 gemsets 
+
+Upgrade Notes:
+
+
+# RVM:  Shell scripts enabling management of multiple ruby environments.
+# RTFM: https://rvm.io/
+# HELP: http://webchat.freenode.net/?channels=rvm (#rvm on irc.freenode.net)
+# Cheatsheet: http://cheat.errtheblog.com/s/rvm/
+# Screencast: http://screencasts.org/episodes/how-to-use-rvm
+
+# In case of any issues read output of 'rvm requirements' and/or 'rvm notes'
+
+Upgrade of RVM in /home/ilu/.rvm/ is complete.
+
+# ilu,
+#
+#   Thank you for using RVM!
+#   I sincerely hope that RVM helps to make your life easier and
+#   more enjoyable!!!
+#
+# ~Wayne
+
+Already installed ruby-1.9.3-p392.
+To reinstall use:
+
+    rvm reinstall 1.9.3
+
+Using /home/ilu/.rvm/gems/ruby-1.9.3-p392

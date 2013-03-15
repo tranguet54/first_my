@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="lock_y" mtime="1362905714" type="int" value="368"/>
+	<entry name="lock_x" mtime="1362905714" type="int" value="0"/>
+	<entry name="lock" mtime="1362906948" type="bool" value="false"/>
+</gconf>

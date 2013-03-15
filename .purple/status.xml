@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<statuses version='1.0'>
+	<status name='Auto-Cached' transient='true' created='1362637857' lastused='1363163272' usage_count='6'>
+		<state>available</state>
+		<substatus>
+			<account protocol='prpl-yahoo'>doremon_90203</account>
+			<state>available</state>
+		</substatus>
+	</status>
+	<status name='Auto-Cached' transient='true' created='1363266300' lastused='1363266300' usage_count='1'>
+		<state>available</state>
+		<message>super lag</message>
+		<substatus>
+			<account protocol='prpl-yahoo'>doremon_90203</account>
+			<state>available</state>
+			<message>super lag</message>
+		</substatus>
+	</status>
+	<status name='Auto-Cached' transient='true' created='1363097291' lastused='1363163258' usage_count='2'>
+		<state>available</state>
+		<message>1 tuần đ&apos; có cái j ra cái đ&apos; j .;..&lt;a href=&quot;http://mp3.zing.vn/playlist/Dance-Quoc-Te/IW6BBI0D.html?st=3&quot;&gt;http://mp3.zing.vn/playlist/Dance-Quoc-Te/IW6BBI0D.html?st=3&lt;/a&gt;</message>
+		<substatus>
+			<account protocol='prpl-yahoo'>doremon_90203</account>
+			<state>available</state>
+			<message>1 tuần đ&apos; có cái j ra cái đ&apos; j .;..&lt;a href=&quot;http://mp3.zing.vn/playlist/Dance-Quoc-Te/IW6BBI0D.html?st=3&quot;&gt;http://mp3.zing.vn/playlist/Dance-Quoc-Te/IW6BBI0D.html?st=3&lt;/a&gt;</message>
+		</substatus>
+	</status>
+	<status name='Auto-Cached' transient='true' created='1363106439' lastused='1363113400' usage_count='2'>
+		<state>offline</state>
+		<substatus>
+			<account protocol='prpl-yahoo'>doremon_90203</account>
+			<state>offline</state>
+		</substatus>
+	</status>
+	<status name='Auto-Cached' transient='true' created='1363154329' lastused='1363154329' usage_count='1'>
+		<state>away</state>
+		<substatus>
+			<account protocol='prpl-yahoo'>doremon_90203</account>
+			<state>away</state>
+		</substatus>
+	</status>
+	<status name='lan dau tien di hoc som. Vi chang biet pai lam j' created='1362636089' lastused='1362636089' usage_count='1'>
+		<state>away</state>
+	</status>
+</statuses>

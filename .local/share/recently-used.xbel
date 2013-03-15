@@ -1,0 +1,1812 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xbel version="1.0"
+      xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks"
+      xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info"
+>
+  <bookmark href="file:///home/ilu/Downloads/rails-installer.sh" added="2013-03-07T06:10:34Z" modified="2013-03-07T06:10:36Z" visited="2013-03-07T06:10:36Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-07T06:10:36Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/rails-installer.sh" added="2013-03-07T06:13:43Z" modified="2013-03-07T10:08:45Z" visited="2013-03-07T06:13:45Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-07T07:30:50Z" count="4"/>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2013-03-07T10:08:42Z" count="4"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2013-03-07T10:08:45Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Pictures/1" added="2013-03-07T11:22:19Z" modified="2013-03-07T11:22:19Z" visited="2013-03-07T11:22:19Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNOME Screenshot" exec="&apos;eog %u&apos;" modified="2013-03-07T11:22:19Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Pictures/2" added="2013-03-07T11:22:58Z" modified="2013-03-07T11:22:58Z" visited="2013-03-07T11:22:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNOME Screenshot" exec="&apos;eog %u&apos;" modified="2013-03-07T11:22:58Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Pictures/3" added="2013-03-07T11:23:37Z" modified="2013-03-07T11:23:37Z" visited="2013-03-07T11:23:37Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNOME Screenshot" exec="&apos;eog %u&apos;" modified="2013-03-07T11:23:37Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Downloads/dinh-tuyen-do-thi-voi-he-toa-do-ao-trong-wsn.pdf" added="2013-03-07T11:36:20Z" modified="2013-03-10T06:44:12Z" visited="2013-03-07T11:36:21Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-07T11:36:20Z" count="1"/>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2013-03-10T06:44:12Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/thoike.jpg" added="2013-03-08T02:34:50Z" modified="2013-03-13T06:43:31Z" visited="2013-03-08T02:34:50Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Pidgin" exec="&apos;Pidgin %u&apos;" modified="2013-03-08T02:34:50Z" count="1"/>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-13T06:43:31Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Downloads/rails_tutorial_2nd_edition_sample.pdf" added="2013-03-08T02:52:28Z" modified="2013-03-09T16:58:02Z" visited="2013-03-08T02:52:28Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-08T02:52:28Z" count="1"/>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2013-03-09T16:58:02Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Downloads/Sublime%20Text%202.0.1.tar.bz2" added="2013-03-08T03:28:32Z" modified="2013-03-08T03:28:52Z" visited="2013-03-08T03:28:32Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-bzip-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-08T03:28:32Z" count="1"/>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2013-03-08T03:28:52Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/ROR/my_demo/Gemfile" added="2013-03-08T03:42:31Z" modified="2013-03-08T03:42:33Z" visited="2013-03-08T03:42:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2013-03-08T03:42:31Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2013-03-08T03:42:33Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/install-ubuntu.sh" added="2013-03-08T04:10:54Z" modified="2013-03-08T04:10:55Z" visited="2013-03-08T04:10:56Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-shellscript"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-08T04:10:55Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/ROR/my_demo/app/views/post/vd" added="2013-03-08T04:24:41Z" modified="2013-03-08T04:26:07Z" visited="2013-03-08T04:24:41Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2013-03-08T04:26:07Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/ROR/my_demo/app/views/post/vd.erb" added="2013-03-08T04:26:23Z" modified="2013-03-08T04:27:21Z" visited="2013-03-08T04:26:24Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2013-03-08T04:27:21Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/HOC%20TAP/NAM%204_____1/sonthuy.png" added="2013-03-08T04:33:39Z" modified="2013-03-08T04:33:41Z" visited="2013-03-08T04:33:39Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;eog %U&apos;" modified="2013-03-08T04:33:39Z" count="1"/>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2013-03-08T04:33:41Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/ROR/my_demo/app/controllers/home_controller.rb" added="2013-03-08T04:44:27Z" modified="2013-03-08T04:44:27Z" visited="2013-03-08T04:44:27Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2013-03-08T04:44:27Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/ROR/my_demo/app/views/home/index.html.erb" added="2013-03-08T04:45:24Z" modified="2013-03-08T06:21:56Z" visited="2013-03-08T04:45:25Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;firefox %u&apos;" modified="2013-03-08T06:21:56Z" count="2"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2013-03-08T04:45:48Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/ROR/my_demo/config/routes.rb" added="2013-03-08T04:47:44Z" modified="2013-03-08T06:18:44Z" visited="2013-03-08T04:47:44Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2013-03-08T06:18:44Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/44412599723ccfda82918280e8239a1f.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Ain&apos;t%20No%20Sunshine%20-%20Jimmy%20Lindsay.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Aint%20No%20Sunshine%20-%20Michael%20Jackson%20ft.%20Diana%20Ross%20_%20320%20lyrics.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Ain%E2%80%99t%20No%20Sunshine%20-%20Susan%20Wong%20_%20320%20lyrics.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/All%20Out%20Of%20Love%20-%20Air%20Supply.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Anh%20Se%20Nho%20Mai%20-%20Bang%20Kieu.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/A%20Time%20For%20Us%20-%20Andy%20Williams.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Ban%20Tinh%20Cuoi%20-%20Bang%20Kieu.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Bien%20Nho%20-%20Bang%20Kieu.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Buc%20Thu%20Tinh%20Dau%20Tien%20-%20Bang%20Kieu.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Chiec%20La%20Cuoi%20Cung%20-%20Bang%20Kieu.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Cho%20Em%20Mot%20Ngay%20-%20Hong%20Nhung.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Chuyen%20La%20-%20Bang%20Kieu.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Dau%20Co%20Loi%20Lam%20-%20Bang%20Kieu%20ft.%20Van%20Quynh.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/De%20Nho%20Mot%20Thoi%20Ta%20Da%20Yeu%20-%20Bang%20Kieu.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Em%20Oi%20Ha%20Noi%20Pho%20-%20Bang%20Kieu.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Forever%20And%20One%20-%20Helloween.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Giot%20Suong%20Tren%20Mi%20Mat%20-%20Bang%20Kieu.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/I%20Cry%20-%20Yao%20Si%20Ting.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/I%20hate%20myself%20for%20loving%20you%20-%20-%20%20Joan%20Jett.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Im%20Yours%20-%20Jason%20Mraz.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Invisible%20-%20Skylar%20Grey%20ft.%20Journey%20South.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/I%20Wanna%20Go%20-%20Britney%20Spears.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Kiep%20Dam%20Me%20-%20Bang%20Kieu.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Ki%20Uc%20Ngu%20Quen%20-%20Bich%20Phuong.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Loi%20Cua%20Gio%20-%20Bang%20Kieu.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Loi%20Cu%20Ta%20Ve%20-%20Bang%20Kieu.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Mat%20Buon%20-%20Bang%20Kieu.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Mot%20Ngay%20Mua%20Dong%20-%20Bang%20Kieu.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Mua%20-%20M4U%20ft.%20Thuy%20Chi.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Mua%20Roi%20Lang%20Tham%20-%20M4U.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Mua%20Tren%20Ngay%20Thang%20Do%20-%20Bang%20Kieu.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Neu%20Dieu%20Do%20Xay%20Ra%20-%20My%20Linh%20ft.%20Bang%20Kieu.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Nhu%20Canh%20Vac%20Bay%20-%20Bang%20Kieu.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Nhu%20Da%20Dau%20Yeu%20-%20Bang%20Kieu%20ft.%20Minh%20Tuyet.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/nhung%20ban%20nhac%20khong%20loi%20bat%20hu%20-%20tuthoan.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Nhung%20Ngay%20Dep%20Troi%20-%20Bang%20Kieu.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Noi%20Dau%20Xot%20Xa%20-%20Minh%20Vuong%20M4U.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Noi%20Nho%20Mang%20Ten%20Em%20-%20Minh%20Vuong%20M4U.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Oi%20Trai%20Tim%20Chi%20Biet%20Yeu%20Nguoi%20-%20Bang%20Kieu.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Phut%20Cuoi%20-%20Bang%20Kieu.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Talking%20back%20my%20love%20-%20%20Enrique%20iglesias%20f.t%20Tyssem.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Tinh%20Yeu%20Toi%20Hat%20-%20Thuy%20Chi%20-%20M4U.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Trai%20Tim%20Ben%20Le%20-%20Bang%20Kieu.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Trai%20Tim%20Khong%20Ngu%20Yen%20-%20My%20Linh%20ft.%20Bang%20Kieu.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/What%20Makes%20You%20Beautiful%20-%20One%20Direction.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/When%20You%20Say%20Nothing%20At%20All%20-%20Alison%20Krauss.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Wheres%20Mah%20Name%20-%20JutaTee%20_%20320%20lyric,%20upload%20b%E1%BB%9Fi%20ramb0nguyen.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Why%20Not%20Me%20-%20Enrique%20Iglesias.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Xe%20Dap%20-%20Thuy%20Chi%20ft.%20M4U.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Xe%20Dap%20-%20Thuy%20Chi%20ft.%20M4U%20(1).mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Xin%20Con%20Goi%20Ten%20Nhau%20-%20Bang%20Kieu.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Xin%20Loi%20Anh%20-%20Minh%20Tuyet%20ft.%20Bang%20Kieu.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Y%C3%AAu%20Anh%20-%20Ho%C3%A0ng%20Th%C3%B9y%20Linh%20_%20320%20lyrics.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Yeu%20Anh%20-%20Miu%20Le.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Yeu%20Thuong%20Mong%20Manh%20-%20Bang%20Kieu%20ft.%20Minh%20Tuyet.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/You%20Are%20Not%20Alone%20-%20Michael%20Jackson.mp3" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="audio/mpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;rhythmbox %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/AlbumArt_%7B66F03003-3319-473E-8C42-883053486408%7D_Large.jpg" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:42Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;eog %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2013-03-08T06:08:42Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/AlbumArt_%7B66F03003-3319-473E-8C42-883053486408%7D_Small.jpg" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:28Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;eog %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2013-03-08T06:08:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/AlbumArtSmall.jpg" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;eog %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/NHAC/NN/Folder.jpg" added="2013-03-08T05:39:19Z" modified="2013-03-08T06:08:26Z" visited="2013-03-08T05:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;eog %U&apos;" modified="2013-03-08T06:08:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/sieu-de-thuong-voi-chu-cho-doi-mu-bao-hiem.jpg" added="2013-03-08T05:45:57Z" modified="2013-03-08T05:46:12Z" visited="2013-03-08T05:45:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-08T05:45:58Z" count="2"/>
+          <bookmark:application name="Pidgin" exec="&apos;Pidgin %u&apos;" modified="2013-03-08T05:46:12Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/ROR/trang/app/controllers/posts_controller.rb" added="2013-03-08T06:50:02Z" modified="2013-03-08T06:50:02Z" visited="2013-03-08T06:50:03Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2013-03-08T06:50:02Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/vd/app/views/posts/index.html.erb" added="2013-03-08T07:02:45Z" modified="2013-03-08T07:26:31Z" visited="2013-03-08T07:02:45Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2013-03-08T07:03:33Z" count="2"/>
+          <bookmark:application name="nautilus" exec="&apos;firefox %u&apos;" modified="2013-03-08T07:26:31Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/vd2/app/views/abc/trang.html.erb" added="2013-03-08T07:21:38Z" modified="2013-03-08T07:21:38Z" visited="2013-03-08T07:21:39Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text 2" exec="&apos;sublime_text %u&apos;" modified="2013-03-08T07:21:38Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/vd/app/controllers/posts_controller.rb" added="2013-03-08T07:26:04Z" modified="2013-03-08T07:26:05Z" visited="2013-03-08T07:26:04Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2013-03-08T07:26:04Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2013-03-08T07:26:05Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/vd/config/routes.rb" added="2013-03-08T07:26:50Z" modified="2013-03-08T07:26:52Z" visited="2013-03-08T07:26:50Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2013-03-08T07:26:50Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2013-03-08T07:26:52Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/demo/app/views/posts/index.html.erb" added="2013-03-08T07:38:14Z" modified="2013-03-08T07:38:14Z" visited="2013-03-08T07:38:15Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text 2" exec="&apos;sublime_text %u&apos;" modified="2013-03-08T07:38:14Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/end/app/views/ppost/index.html.erb" added="2013-03-08T07:44:05Z" modified="2013-03-08T07:44:05Z" visited="2013-03-08T07:44:05Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text 2" exec="&apos;sublime_text %u&apos;" modified="2013-03-08T07:44:05Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/Addison.Wesley.Ruby.on.Rails.Tutorial.2nd.Edition.Jul.2012.pdf" added="2013-03-08T07:50:05Z" modified="2013-03-11T08:22:18Z" visited="2013-03-08T07:50:05Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;evince %U&apos;" modified="2013-03-11T01:48:28Z" count="4"/>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2013-03-11T08:22:18Z" count="7"/>
+          <bookmark:application name="bluetooth-sendto" exec="&apos;bluetooth-sendto %u&apos;" modified="2013-03-11T01:59:18Z" count="1"/>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-11T02:17:03Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///etc/host.conf" added="2013-03-08T08:17:20Z" modified="2013-03-08T08:17:20Z" visited="2013-03-08T08:17:21Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2013-03-08T08:17:20Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Downloads/nhom61.pdf" added="2013-03-08T09:11:01Z" modified="2013-03-10T15:44:18Z" visited="2013-03-08T09:11:02Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-08T09:11:01Z" count="1"/>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2013-03-10T15:44:18Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Downloads/talking.zip" added="2013-03-09T15:39:58Z" modified="2013-03-09T15:53:26Z" visited="2013-03-09T15:39:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-09T15:39:58Z" count="1"/>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2013-03-09T15:53:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Downloads/thuat-noi-chuyen-hang-ngay.zip" added="2013-03-09T15:48:58Z" modified="2013-03-09T15:49:01Z" visited="2013-03-09T15:48:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/zip"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-09T15:48:58Z" count="1"/>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2013-03-09T15:49:01Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Downloads/talking.prc" added="2013-03-09T16:15:59Z" modified="2013-03-09T16:15:59Z" visited="2013-03-09T16:15:59Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-mobipocket-ebook"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;okular %U %i -caption &quot;%c&quot;&apos;" modified="2013-03-09T16:15:59Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/seminar_ruby.ppt" added="2013-03-09T16:25:38Z" modified="2013-03-09T17:15:36Z" visited="2013-03-09T16:25:39Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.ms-powerpoint"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-09T16:25:38Z" count="1"/>
+          <bookmark:application name="LibreOffice 3.6" exec="&apos;soffice %u&apos;" modified="2013-03-09T17:15:36Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Downloads/TuanBM_DH.pdf" added="2013-03-09T16:26:03Z" modified="2013-03-11T08:03:15Z" visited="2013-03-09T16:26:03Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-09T16:26:03Z" count="1"/>
+          <bookmark:application name="nautilus" exec="&apos;evince %U&apos;" modified="2013-03-11T08:03:14Z" count="1"/>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2013-03-11T08:03:15Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Downloads/nhom61(1).pdf" added="2013-03-09T16:26:06Z" modified="2013-03-09T16:26:06Z" visited="2013-03-09T16:26:06Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-09T16:26:06Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Downloads/stardict-dictd_anh-viet-2.4.2.tar.bz2" added="2013-03-10T06:19:54Z" modified="2013-03-10T06:24:38Z" visited="2013-03-10T06:19:54Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-bzip-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-10T06:19:54Z" count="1"/>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2013-03-10T06:24:38Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///usr/share/stardict/dic/stardict-dictd_anh-viet-2.4.2/dictd_anh-viet.dict.dz" added="2013-03-10T06:29:08Z" modified="2013-03-10T06:29:08Z" visited="2013-03-10T06:29:08Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-gzip"/>
+        <bookmark:applications>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2013-03-10T06:29:08Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///usr/share/stardict/dic/stardict-dictd_anh-viet-2.4.2" added="2013-03-10T06:29:14Z" modified="2013-03-10T06:29:14Z" visited="2013-03-10T06:29:14Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="inode/directory"/>
+        <bookmark:applications>
+          <bookmark:application name="Archive Manager" exec="&apos;file-roller %u&apos;" modified="2013-03-10T06:29:14Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/BC3/ICC_2011_dd.pdf" added="2013-03-10T06:39:20Z" modified="2013-03-12T08:13:17Z" visited="2013-03-10T06:39:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;evince %U&apos;" modified="2013-03-12T08:13:17Z" count="2"/>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2013-03-12T07:30:27Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/BC3/Presentation1.pptx" added="2013-03-10T06:41:29Z" modified="2013-03-10T06:41:44Z" visited="2013-03-10T06:41:29Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;libreoffice --impress %U&apos;" modified="2013-03-10T06:41:29Z" count="1"/>
+          <bookmark:application name="LibreOffice 3.6" exec="&apos;soffice %u&apos;" modified="2013-03-10T06:41:44Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Downloads/seminar-p2p-ws1112.pdf" added="2013-03-10T07:19:30Z" modified="2013-03-10T07:19:30Z" visited="2013-03-10T07:19:30Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-10T07:19:30Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/BC3/2011%20-%20On%20Boundary%20Detection%20of%202-D%20and%203-D.pdf" added="2013-03-10T08:34:45Z" modified="2013-03-14T02:49:35Z" visited="2013-03-10T08:34:45Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2013-03-14T02:49:35Z" count="4"/>
+          <bookmark:application name="nautilus" exec="&apos;evince %U&apos;" modified="2013-03-12T07:29:51Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Downloads/0605089.pdf" added="2013-03-10T08:54:36Z" modified="2013-03-12T19:18:20Z" visited="2013-03-10T08:54:36Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-10T08:54:36Z" count="1"/>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2013-03-12T19:18:20Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Downloads/LCN_2011_dd.pdf" added="2013-03-10T09:14:09Z" modified="2013-03-10T15:47:15Z" visited="2013-03-10T09:14:09Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-10T09:14:09Z" count="1"/>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2013-03-10T15:47:15Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/Untitled%201" added="2013-03-10T11:35:01Z" modified="2013-03-10T11:35:01Z" visited="2013-03-10T11:35:01Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 3.6" exec="&apos;soffice %u&apos;" modified="2013-03-10T11:35:01Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/BC3/2011%20-%20Perimeter%20detection%20in%20wireless%20sensor%20networks.pdf" added="2013-03-10T14:18:45Z" modified="2013-03-10T14:18:46Z" visited="2013-03-10T14:18:45Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;evince %U&apos;" modified="2013-03-10T14:18:45Z" count="1"/>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2013-03-10T14:18:46Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/BC3/VCS.pdf" added="2013-03-10T14:33:37Z" modified="2013-03-13T08:30:32Z" visited="2013-03-10T14:33:37Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2013-03-13T08:30:32Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/Untitled%201.odp" added="2013-03-10T14:49:08Z" modified="2013-03-13T18:16:34Z" visited="2013-03-10T14:49:08Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.presentation"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;libreoffice --impress %U&apos;" modified="2013-03-13T08:30:40Z" count="3"/>
+          <bookmark:application name="LibreOffice 3.6" exec="&apos;soffice %u&apos;" modified="2013-03-13T18:16:34Z" count="32"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Downloads/2012%20-%20Optimal%20Self%20Boundary%20Recognition%20with%20Two-Hop.pdf" added="2013-03-10T14:57:24Z" modified="2013-03-10T14:57:24Z" visited="2013-03-10T14:57:24Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-10T14:57:24Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Downloads/2011%20-%20Coordinate-free%20Distributed%20Algorithm%20for%20Boundary%20Detection.pdf" added="2013-03-10T14:57:44Z" modified="2013-03-10T14:57:44Z" visited="2013-03-10T14:57:45Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-10T14:57:44Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///tmp/node-v0.8.22.tar.gz" added="2013-03-11T07:32:48Z" modified="2013-03-11T07:32:48Z" visited="2013-03-11T07:32:48Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-compressed-tar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-11T07:32:48Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/again/tmp/pids/server.pid" added="2013-03-11T08:12:24Z" modified="2013-03-11T08:13:26Z" visited="2013-03-11T08:12:24Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;gedit %U&apos;" modified="2013-03-11T08:12:24Z" count="1"/>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2013-03-11T08:13:26Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Downloads/Oreilly.Learning.Rails.3.Jul.rar" added="2013-03-11T08:33:55Z" modified="2013-03-11T08:37:32Z" visited="2013-03-11T08:33:56Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-rar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-11T08:33:55Z" count="1"/>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2013-03-11T08:37:32Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/Oreilly.Learning.Rails.3.Jul.2012.pdf" added="2013-03-11T08:38:16Z" modified="2013-03-11T08:38:16Z" visited="2013-03-11T08:38:17Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2013-03-11T08:38:16Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/ROR/guestbook/app/views/entries/sign_in.html.erb" added="2013-03-11T09:25:44Z" modified="2013-03-11T09:25:44Z" visited="2013-03-11T09:25:45Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text 2" exec="&apos;sublime_text %u&apos;" modified="2013-03-11T09:25:44Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/Untitled%20Document" added="2013-03-11T09:35:49Z" modified="2013-03-11T09:36:55Z" visited="2013-03-11T09:35:49Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2013-03-11T09:36:55Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/again/app/controllers/posts_controller.rb" added="2013-03-11T09:39:55Z" modified="2013-03-11T09:39:55Z" visited="2013-03-11T09:39:55Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-ruby"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2013-03-11T09:39:55Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/ROR/guestbook/app/views/entries/index.html.erb" added="2013-03-11T09:48:02Z" modified="2013-03-11T09:48:02Z" visited="2013-03-11T09:48:02Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Sublime Text 2" exec="&apos;sublime_text %u&apos;" modified="2013-03-11T09:48:02Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/again/app/views/posts/_form.html.erb" added="2013-03-11T09:51:09Z" modified="2013-03-11T09:51:09Z" visited="2013-03-11T09:51:10Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/plain"/>
+        <bookmark:groups>
+          <bookmark:group>gedit</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="gedit" exec="&apos;gedit %u&apos;" modified="2013-03-11T09:51:09Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/again/app/views/posts/index.html.erb" added="2013-03-11T09:51:30Z" modified="2013-03-11T09:52:07Z" visited="2013-03-11T09:51:31Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;/usr/bin/sublime-text-2 %F&apos;" modified="2013-03-11T09:52:07Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/BC3/LCN_2011_dd.pdf" added="2013-03-12T07:30:58Z" modified="2013-03-14T01:40:44Z" visited="2013-03-12T07:30:58Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2013-03-14T01:40:44Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/IMG0312A.jpg" added="2013-03-12T10:29:47Z" modified="2013-03-12T13:58:05Z" visited="2013-03-12T10:29:47Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Pidgin" exec="&apos;Pidgin %u&apos;" modified="2013-03-12T10:38:36Z" count="3"/>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2013-03-12T13:58:05Z" count="3"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/dont%20belive" added="2013-03-12T19:01:07Z" modified="2013-03-12T19:01:07Z" visited="2013-03-12T19:01:08Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 3.6" exec="&apos;soffice %u&apos;" modified="2013-03-12T19:01:07Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/dont%20belive.odt" added="2013-03-12T19:01:07Z" modified="2013-03-14T13:26:04Z" visited="2013-03-12T19:01:08Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.text"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 3.6" exec="&apos;soffice %u&apos;" modified="2013-03-14T13:26:04Z" count="7"/>
+          <bookmark:application name="nautilus" exec="&apos;libreoffice --writer %U&apos;" modified="2013-03-14T13:25:25Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/HOC%20TAP/NAM%204_____1/THM/tailieu/Tuan%202%20-%20Huong%20dan%20su%20dung%20lenh.pdf" added="2013-03-13T03:58:26Z" modified="2013-03-13T03:58:27Z" visited="2013-03-13T03:58:26Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;evince %U&apos;" modified="2013-03-13T03:58:26Z" count="1"/>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2013-03-13T03:58:27Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/HOC%20TAP/NAM%204_____1/THM/tailieu/01%20-%20vmware.doc" added="2013-03-13T03:59:40Z" modified="2013-03-13T04:01:36Z" visited="2013-03-13T03:59:40Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/msword"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;libreoffice --writer %U&apos;" modified="2013-03-13T03:59:40Z" count="1"/>
+          <bookmark:application name="LibreOffice 3.6" exec="&apos;soffice %u&apos;" modified="2013-03-13T04:01:36Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/HOC%20TAP/NAM%204_____1/THM/tailieu/tailieu/LPI-101-0.0.pdf" added="2013-03-13T04:01:39Z" modified="2013-03-13T04:01:39Z" visited="2013-03-13T04:01:40Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2013-03-13T04:01:39Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Downloads/CNTT(1).rar" added="2013-03-13T04:03:17Z" modified="2013-03-13T04:03:20Z" visited="2013-03-13T04:03:18Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-rar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-13T04:03:17Z" count="1"/>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2013-03-13T04:03:20Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/.cache/.fr-qh5czA/CNTT/INT3301%203_Thuc%20hanh%20he%20dieu%20hanh%20mang_DLMinh.xls" added="2013-03-13T04:03:57Z" modified="2013-03-13T04:03:57Z" visited="2013-03-13T04:03:57Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.ms-excel"/>
+        <bookmark:applications>
+          <bookmark:application name="LibreOffice 3.6" exec="&apos;soffice %u&apos;" modified="2013-03-13T04:03:57Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/HOC%20TAP/NAM%204_____1/THM/tailieu/tailieu/LPI-101-2.0.pdf" added="2013-03-13T04:34:39Z" modified="2013-03-13T04:34:39Z" visited="2013-03-13T04:34:39Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2013-03-13T04:34:39Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/ANH%20KN/aodai/trang.rar" added="2013-03-13T05:48:07Z" modified="2013-03-13T05:48:07Z" visited="2013-03-13T05:48:07Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-rar"/>
+        <bookmark:applications>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2013-03-13T05:48:07Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/.cache/.fr-hvKoJY/trang/SAM_7703.jpg" added="2013-03-13T05:48:11Z" modified="2013-03-13T05:48:11Z" visited="2013-03-13T05:48:11Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2013-03-13T05:48:11Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/ANH%20KN/aodai/ok/33.jpg" added="2013-03-13T05:48:20Z" modified="2013-03-13T05:48:20Z" visited="2013-03-13T05:48:20Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2013-03-13T05:48:20Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/ANH%20KN/cafe%20me3o/IMG0036A.jpg" added="2013-03-13T05:49:04Z" modified="2013-03-13T05:49:04Z" visited="2013-03-13T05:49:05Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2013-03-13T05:49:04Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/IMG0036A.jpg" added="2013-03-13T05:49:39Z" modified="2013-03-13T05:49:39Z" visited="2013-03-13T05:49:39Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-13T05:49:39Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/ANH%20KN/cafe%20me3o/IMG0029A.jpg" added="2013-03-13T06:53:23Z" modified="2013-03-13T06:53:23Z" visited="2013-03-13T06:53:24Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2013-03-13T06:53:23Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/IMG0029A.jpg" added="2013-03-13T06:54:16Z" modified="2013-03-13T06:54:16Z" visited="2013-03-13T06:54:16Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-13T06:54:16Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/ANH%20KN/P1010857.JPG" added="2013-03-13T06:56:37Z" modified="2013-03-13T06:56:37Z" visited="2013-03-13T06:56:38Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2013-03-13T06:56:37Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/ANH%20KN/aodai/hehe/SAM_7733.JPG" added="2013-03-13T06:57:48Z" modified="2013-03-13T06:57:48Z" visited="2013-03-13T06:57:49Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2013-03-13T06:57:48Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Downloads/P1020198.jpg" added="2013-03-13T06:59:53Z" modified="2013-03-13T06:59:53Z" visited="2013-03-13T06:59:53Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-13T06:59:53Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/P1020198.jpg" added="2013-03-13T07:00:23Z" modified="2013-03-13T07:00:23Z" visited="2013-03-13T07:00:23Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-13T07:00:23Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/Screenshot%20from%202013-03-13%2015%3A35%3A52.png" added="2013-03-13T08:36:00Z" modified="2013-03-13T08:36:00Z" visited="2013-03-13T08:36:00Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNOME Screenshot" exec="&apos;eog %u&apos;" modified="2013-03-13T08:36:00Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/Screenshot%20from%202013-03-13%2015:35:52.png" added="2013-03-13T08:36:05Z" modified="2013-03-13T08:49:57Z" visited="2013-03-13T08:36:05Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2013-03-13T08:45:33Z" count="2"/>
+          <bookmark:application name="nautilus" exec="&apos;gimp-2.8 %U&apos;" modified="2013-03-13T08:49:51Z" count="1"/>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.8 %u&apos;" modified="2013-03-13T08:49:57Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/Screenshot%20from%202013-03-13%2015%3A40%3A41.png" added="2013-03-13T08:40:49Z" modified="2013-03-13T08:40:49Z" visited="2013-03-13T08:40:49Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNOME Screenshot" exec="&apos;eog %u&apos;" modified="2013-03-13T08:40:49Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/Screenshot%20from%202013-03-13%2015:40:41.png" added="2013-03-13T08:40:54Z" modified="2013-03-13T08:42:13Z" visited="2013-03-13T08:40:54Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2013-03-13T08:40:54Z" count="1"/>
+          <bookmark:application name="nautilus" exec="&apos;gthumb %U&apos;" modified="2013-03-13T08:42:13Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Downloads/Vecto%20rieng%20.rar" added="2013-03-13T10:02:36Z" modified="2013-03-13T10:02:47Z" visited="2013-03-13T10:02:36Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/x-rar"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-13T10:02:36Z" count="1"/>
+          <bookmark:application name="File Roller" exec="&apos;file-roller&apos;" modified="2013-03-13T10:02:47Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Downloads/Vecto%20rieng%20/Vecto%20rieng%20.pdf" added="2013-03-13T10:02:52Z" modified="2013-03-13T10:02:52Z" visited="2013-03-13T10:02:52Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2013-03-13T10:02:52Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Downloads/M33A-SingularValueDecompositionExample.pdf" added="2013-03-13T17:03:20Z" modified="2013-03-14T02:36:57Z" visited="2013-03-13T17:03:21Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="Firefox" exec="&apos;firefox %u&apos;" modified="2013-03-13T17:03:20Z" count="1"/>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2013-03-14T02:28:23Z" count="1"/>
+          <bookmark:application name="nautilus" exec="&apos;evince %U&apos;" modified="2013-03-14T02:36:57Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/Screenshot%20from%202013-03-14%2000%3A06%3A10.png" added="2013-03-13T17:06:14Z" modified="2013-03-13T17:06:14Z" visited="2013-03-13T17:06:14Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNOME Screenshot" exec="&apos;eog %u&apos;" modified="2013-03-13T17:06:14Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/Screenshot%20from%202013-03-14%2000:06:10.png" added="2013-03-13T17:06:22Z" modified="2013-03-13T17:07:07Z" visited="2013-03-13T17:06:22Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2013-03-13T17:06:22Z" count="1"/>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.8 %u&apos;" modified="2013-03-13T17:07:07Z" count="2"/>
+          <bookmark:application name="nautilus" exec="&apos;gimp-2.8 %U&apos;" modified="2013-03-13T17:07:05Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/neo" added="2013-03-13T17:15:47Z" modified="2013-03-13T17:16:22Z" visited="2013-03-13T17:15:47Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNOME Screenshot" exec="&apos;eog %u&apos;" modified="2013-03-13T17:15:47Z" count="1"/>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.8 %u&apos;" modified="2013-03-13T17:16:22Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/anchor" added="2013-03-13T17:35:16Z" modified="2013-03-13T17:35:28Z" visited="2013-03-13T17:35:16Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNOME Screenshot" exec="&apos;eog %u&apos;" modified="2013-03-13T17:35:16Z" count="1"/>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2013-03-13T17:35:23Z" count="1"/>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.8 %u&apos;" modified="2013-03-13T17:35:28Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/thuat%20toan" added="2013-03-13T17:36:27Z" modified="2013-03-13T17:36:46Z" visited="2013-03-13T17:36:27Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNOME Screenshot" exec="&apos;eog %u&apos;" modified="2013-03-13T17:36:27Z" count="1"/>
+          <bookmark:application name="Image Viewer" exec="&apos;eog %u&apos;" modified="2013-03-13T17:36:40Z" count="1"/>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.8 %u&apos;" modified="2013-03-13T17:36:46Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/tinh" added="2013-03-13T17:41:45Z" modified="2013-03-13T17:41:52Z" visited="2013-03-13T17:41:45Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNOME Screenshot" exec="&apos;eog %u&apos;" modified="2013-03-13T17:41:45Z" count="1"/>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.8 %u&apos;" modified="2013-03-13T17:41:52Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/bien" added="2013-03-13T17:43:42Z" modified="2013-03-13T17:43:54Z" visited="2013-03-13T17:43:42Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNOME Screenshot" exec="&apos;eog %u&apos;" modified="2013-03-13T17:43:42Z" count="1"/>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.8 %u&apos;" modified="2013-03-13T17:43:54Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/tt" added="2013-03-13T17:44:44Z" modified="2013-03-13T17:44:51Z" visited="2013-03-13T17:44:44Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/png"/>
+        <bookmark:groups>
+          <bookmark:group>Graphics</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="GNOME Screenshot" exec="&apos;eog %u&apos;" modified="2013-03-13T17:44:44Z" count="1"/>
+          <bookmark:application name="GNU Image Manipulation Program" exec="&apos;gimp-2.8 %u&apos;" modified="2013-03-13T17:44:51Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/BC3/BC3.pptx" added="2013-03-14T01:51:32Z" modified="2013-03-14T02:20:48Z" visited="2013-03-14T01:51:32Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;libreoffice --impress %U&apos;" modified="2013-03-14T01:51:32Z" count="1"/>
+          <bookmark:application name="LibreOffice 3.6" exec="&apos;soffice %u&apos;" modified="2013-03-14T02:20:48Z" count="4"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/BC3/BC3.odp" added="2013-03-14T01:52:13Z" modified="2013-03-14T03:19:58Z" visited="2013-03-14T01:52:13Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/vnd.oasis.opendocument.presentation"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;libreoffice --impress %U&apos;" modified="2013-03-14T01:52:13Z" count="1"/>
+          <bookmark:application name="LibreOffice 3.6" exec="&apos;soffice %u&apos;" modified="2013-03-14T03:19:58Z" count="7"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/ruby%20on%20rails/Addison.Wesley.Ruby.on.Rails.Tutorial.2nd.Edition.Jul.2012.pdf" added="2013-03-14T12:46:43Z" modified="2013-03-15T02:29:30Z" visited="2013-03-14T12:46:43Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/pdf"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;evince %U&apos;" modified="2013-03-15T02:29:29Z" count="2"/>
+          <bookmark:application name="Document Viewer" exec="&apos;evince %u&apos;" modified="2013-03-15T02:29:30Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/ANH%20KN/avta/531643_151330905028066_1495363753_n.jpg" added="2013-03-14T13:04:01Z" modified="2013-03-14T13:04:01Z" visited="2013-03-14T13:04:01Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="image/jpeg"/>
+        <bookmark:applications>
+          <bookmark:application name="Pidgin" exec="&apos;Pidgin %u&apos;" modified="2013-03-14T13:04:01Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///media/ilu/GIAI%20TRI/PHIM/%5BKST.VN%5DThe.Hobbit.An.Unexpected.Journey.2012.HD%5BKSTK%5D.mkv" added="2013-03-14T13:12:15Z" modified="2013-03-14T13:12:16Z" visited="2013-03-14T13:12:15Z">
+    <title>[KST.VN]The.Hobbit.An.Unexpected.Journey.2012.HD[KSTK].mkv</title>
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="video/x-matroska"/>
+        <bookmark:groups>
+          <bookmark:group>Totem</bookmark:group>
+        </bookmark:groups>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;totem %U&apos;" modified="2013-03-14T13:12:15Z" count="1"/>
+          <bookmark:application name="Totem Movie Player" exec="&apos;totem %u&apos;" modified="2013-03-14T13:12:16Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///home/ilu/Desktop/ROR/hello/public/500.html" added="2013-03-15T02:12:04Z" modified="2013-03-15T02:12:04Z" visited="2013-03-15T02:12:05Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="text/html"/>
+        <bookmark:applications>
+          <bookmark:application name="nautilus" exec="&apos;firefox %u&apos;" modified="2013-03-15T02:12:04Z" count="1"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+</xbel>

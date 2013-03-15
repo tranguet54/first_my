@@ -1,0 +1,25 @@
+<h1>Listing secryties</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Cmt</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @secryties.each do |secryty| %>
+  <tr>
+    <td><%= secryty.name %></td>
+    <td><%= secryty.cmt %></td>
+    <td><%= link_to 'Show', secryty %></td>
+    <td><%= link_to 'Edit', edit_secryty_path(secryty) %></td>
+    <td><%= link_to 'Destroy', secryty, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Secryty', new_secryty_path %>

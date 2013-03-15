@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class Excon::Errors::ProxyParseError - excon-0.16.10 Documentation</title>
+
+<link type="text/css" media="screen" href="../../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../../js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../../index.html">Home</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/excon/errors.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link"><a href="Error.html">Excon::Errors::Error</a>
+  
+</nav>
+
+    
+    
+  </div>
+
+  <div id="project-metadata">
+    
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../Excon.html">Excon</a>
+  
+    <li><a href="../../Excon/Connection.html">Excon::Connection</a>
+  
+    <li><a href="../../Excon/Errors.html">Excon::Errors</a>
+  
+    <li><a href="../../Excon/Errors/Accepted.html">Excon::Errors::Accepted</a>
+  
+    <li><a href="../../Excon/Errors/BadGateway.html">Excon::Errors::BadGateway</a>
+  
+    <li><a href="../../Excon/Errors/BadRequest.html">Excon::Errors::BadRequest</a>
+  
+    <li><a href="../../Excon/Errors/Conflict.html">Excon::Errors::Conflict</a>
+  
+    <li><a href="../../Excon/Errors/Continue.html">Excon::Errors::Continue</a>
+  
+    <li><a href="../../Excon/Errors/Created.html">Excon::Errors::Created</a>
+  
+    <li><a href="../../Excon/Errors/Error.html">Excon::Errors::Error</a>
+  
+    <li><a href="../../Excon/Errors/ExpectationFailed.html">Excon::Errors::ExpectationFailed</a>
+  
+    <li><a href="../../Excon/Errors/Forbidden.html">Excon::Errors::Forbidden</a>
+  
+    <li><a href="../../Excon/Errors/Found.html">Excon::Errors::Found</a>
+  
+    <li><a href="../../Excon/Errors/GatewayTimeout.html">Excon::Errors::GatewayTimeout</a>
+  
+    <li><a href="../../Excon/Errors/Gone.html">Excon::Errors::Gone</a>
+  
+    <li><a href="../../Excon/Errors/HTTPStatusError.html">Excon::Errors::HTTPStatusError</a>
+  
+    <li><a href="../../Excon/Errors/InternalServerError.html">Excon::Errors::InternalServerError</a>
+  
+    <li><a href="../../Excon/Errors/LengthRequired.html">Excon::Errors::LengthRequired</a>
+  
+    <li><a href="../../Excon/Errors/MethodNotAllowed.html">Excon::Errors::MethodNotAllowed</a>
+  
+    <li><a href="../../Excon/Errors/MovedPermanently.html">Excon::Errors::MovedPermanently</a>
+  
+    <li><a href="../../Excon/Errors/MultipleChoices.html">Excon::Errors::MultipleChoices</a>
+  
+    <li><a href="../../Excon/Errors/NoContent.html">Excon::Errors::NoContent</a>
+  
+    <li><a href="../../Excon/Errors/NonAuthoritativeInformation.html">Excon::Errors::NonAuthoritativeInformation</a>
+  
+    <li><a href="../../Excon/Errors/NotAcceptable.html">Excon::Errors::NotAcceptable</a>
+  
+    <li><a href="../../Excon/Errors/NotFound.html">Excon::Errors::NotFound</a>
+  
+    <li><a href="../../Excon/Errors/NotImplemented.html">Excon::Errors::NotImplemented</a>
+  
+    <li><a href="../../Excon/Errors/NotModified.html">Excon::Errors::NotModified</a>
+  
+    <li><a href="../../Excon/Errors/OK.html">Excon::Errors::OK</a>
+  
+    <li><a href="../../Excon/Errors/PartialContent.html">Excon::Errors::PartialContent</a>
+  
+    <li><a href="../../Excon/Errors/PaymentRequired.html">Excon::Errors::PaymentRequired</a>
+  
+    <li><a href="../../Excon/Errors/PreconditionFailed.html">Excon::Errors::PreconditionFailed</a>
+  
+    <li><a href="../../Excon/Errors/ProxyAuthenticationRequired.html">Excon::Errors::ProxyAuthenticationRequired</a>
+  
+    <li><a href="../../Excon/Errors/ProxyConnectionError.html">Excon::Errors::ProxyConnectionError</a>
+  
+    <li><a href="../../Excon/Errors/ProxyParseError.html">Excon::Errors::ProxyParseError</a>
+  
+    <li><a href="../../Excon/Errors/RequestEntityTooLarge.html">Excon::Errors::RequestEntityTooLarge</a>
+  
+    <li><a href="../../Excon/Errors/RequestTimeout.html">Excon::Errors::RequestTimeout</a>
+  
+    <li><a href="../../Excon/Errors/RequestURITooLong.html">Excon::Errors::RequestURITooLong</a>
+  
+    <li><a href="../../Excon/Errors/RequestedRangeNotSatisfiable.html">Excon::Errors::RequestedRangeNotSatisfiable</a>
+  
+    <li><a href="../../Excon/Errors/ResetContent.html">Excon::Errors::ResetContent</a>
+  
+    <li><a href="../../Excon/Errors/SeeOther.html">Excon::Errors::SeeOther</a>
+  
+    <li><a href="../../Excon/Errors/ServiceUnavailable.html">Excon::Errors::ServiceUnavailable</a>
+  
+    <li><a href="../../Excon/Errors/SocketError.html">Excon::Errors::SocketError</a>
+  
+    <li><a href="../../Excon/Errors/StubNotFound.html">Excon::Errors::StubNotFound</a>
+  
+    <li><a href="../../Excon/Errors/SwitchingProtocols.html">Excon::Errors::SwitchingProtocols</a>
+  
+    <li><a href="../../Excon/Errors/TemporaryRedirect.html">Excon::Errors::TemporaryRedirect</a>
+  
+    <li><a href="../../Excon/Errors/Timeout.html">Excon::Errors::Timeout</a>
+  
+    <li><a href="../../Excon/Errors/Unauthorized.html">Excon::Errors::Unauthorized</a>
+  
+    <li><a href="../../Excon/Errors/UnprocessableEntity.html">Excon::Errors::UnprocessableEntity</a>
+  
+    <li><a href="../../Excon/Errors/UnsupportedMediaType.html">Excon::Errors::UnsupportedMediaType</a>
+  
+    <li><a href="../../Excon/Errors/UseProxy.html">Excon::Errors::UseProxy</a>
+  
+    <li><a href="../../Excon/Response.html">Excon::Response</a>
+  
+    <li><a href="../../Excon/SSLSocket.html">Excon::SSLSocket</a>
+  
+    <li><a href="../../Excon/Socket.html">Excon::Socket</a>
+  
+    <li><a href="../../Excon/StandardInstrumentor.html">Excon::StandardInstrumentor</a>
+  
+    <li><a href="../../IO.html">IO</a>
+  
+    <li><a href="../../IO/WaitReadable.html">IO::WaitReadable</a>
+  
+    <li><a href="../../IO/WaitWritable.html">IO::WaitWritable</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class Excon::Errors::ProxyParseError</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+
+    <!-- Methods -->
+    
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

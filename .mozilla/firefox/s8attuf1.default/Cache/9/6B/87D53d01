@@ -1,0 +1,934 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head profile="http://gmpg.org/xfn/11">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="description" content="Vài vấn đề trong Machine Learning và Computer Vision" />
+		<title>SVD | IPhVu::iResearch</title>
+		<link rel="stylesheet" href="https://phvuresearch.wordpress.com/?css=css" type="text/css" media="screen"/>
+		<link rel="pingback" href="http://phvuresearch.wordpress.com/xmlrpc.php" />
+		<link rel="shortcut icon" href="https://s2.wp.com/wp-content/themes/pub/under-the-influence/images/favicon.ico" />
+		<link rel="apple-touch-icon" href="https://s2.wp.com/wp-content/themes/pub/under-the-influence/images/iphone.png" />
+		<!--[if IE 8]>
+		<style type="text/css">
+			.entry img.size-full,
+			.entry img.size-large,
+			.entry img.size-medium {
+				width: auto;
+			}
+		</style>
+		<![endif]-->
+		<!--[if lte IE 7]>
+		<style type="text/css">
+			/* these had been applied using CSS hacks in the main stylesheet. I moved them
+			to this conditional comment - kjacobson */
+			.alignleft img, .alignright img {
+				min-width: 150px;
+			}
+			.gallery-item {
+				min-width: 150px;
+			}
+		</style>
+		<![endif]-->
+		<!--[if lte IE 6]>
+		<style type="text/css">
+			/* box-model fix. side bar is floated right and this was falling below it, not beside it, in IE6 */
+			.singlepage .page {
+				width: 768px;
+			}
+			/* IE6 can't handle the transparency in these PNGs (and filter: wasn't effective), so load GIFs instead and suffer
+			slight jaggies */
+			.corner_tr { right: -7px; }
+			.corner_tl, .corner_tr {
+				background-image: url(https://s2.wp.com/wp-content/themes/pub/under-the-influence/images/kreis_voll.gif);
+			}
+			.corner_br { right: -1px; }
+			.corner_br, .corner_bl {
+				background-image: url(https://s2.wp.com/wp-content/themes/pub/under-the-influence/images/kreis.gif);
+				bottom: -2px;
+			}
+			/* trigger hasLayout on decorative lines */
+			#footer .line {
+				height: 1%;
+			}
+		</style>
+		<![endif]-->
+				<meta name="google-site-verification" content="z82SPvcm4rlTsTu75pPzpZ0ZgQtPcsv30Qcl6jwqo7g" />
+<link rel="alternate" type="application/rss+xml" title="IPhVu::iResearch &raquo; Feed" href="https://phvuresearch.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="IPhVu::iResearch &raquo; Comments Feed" href="https://phvuresearch.wordpress.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="IPhVu::iResearch &raquo; SVD Tag Feed" href="https://phvuresearch.wordpress.com/tag/svd/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel='stylesheet' id='all-css-0' href='https://s0.wp.com/_static/??/wp-content/mu-plugins/likes/jetpack-likes.css,/wp-content/blog-plugins/loggedout-follow/widget.css?m=1361831305j' type='text/css' media='all' />
+<link rel='stylesheet' id='demosites-open-sans-css'  href='https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='all-css-2' href='https://s0.wp.com/_static/??-eJx9jcEOwjAMQ3+IEAHVOCG+pVuzLijLpibVxN9TJJC4jJMt69nGbYVhUSd1nCusUjOr4bqYwyiRC5o/hY6D2QF/WJ9opsbVHqsmKtACYB2lkg60U9o5mGJhzV/du5oCZln6KP9mN06Z3LAhHw+5cIKoCYTN3937fDtdunMIobt2jxfn518H' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var LoggedOutFollow = {"invalid_email":"Your subscription did not succeed, please try again with a valid email address."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s0.wp.com/_static/??-eJxtju0KwjAMRV/Imoqff8RncWssLW1TTbPi269zQ3AIgVy455BAzcqlPohBBt/mKfh6L2vreQMN6CkVTGXqM3GJyHy3+Kf9tV0aHNY11gWyKgexLjG0bNGQFPWgEKhCdcZiWTtRvsYMfH6do+okZrVcusXrbn+8HLQ+nbUfAV2pUiU='></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://phvuresearch.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://phvuresearch.wordpress.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress.com" />
+<link rel="shortcut icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48" />
+<link rel="icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48" />
+<link rel="apple-touch-icon-precomposed" href="https://s0.wp.com/i/webclip.png" />
+<link rel='openid.server' href='http://phvuresearch.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='http://phvuresearch.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="https://phvuresearch.wordpress.com/osd.xml" title="IPhVu::iResearch" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://wordpress.com/opensearch.xml" title="WordPress.com" />
+		<style>
+		/* <![CDATA[ */
+		/* Block: reblog */
+		
+		.reblog-from img                   { margin: 0 10px 0 0; vertical-align: middle; padding: 0; border: 0; }
+		.reblogger-note img.avatar         { float: left; padding: 0; border: 0; }
+		.reblogger-note-content            { margin: 0 0 20px; }
+		.reblog-post .wpcom-enhanced-excerpt-content { border-left: 3px solid #eee; padding-left: 15px; }
+		.reblog-post ul.thumb-list         { display: block; list-style: none; margin: 2px 0; padding: 0; clear: both; }
+		.reblog-post ul.thumb-list li      { display: inline; margin: 0; padding: 0 1px; border: 0; }
+		.reblog-post ul.thumb-list li a    { margin: 0; padding: 0; border: 0; }
+		.reblog-post ul.thumb-list li img  { margin: 0; padding: 0; border: 0; }
+		
+		.reblog-post .wpcom-enhanced-excerpt { clear: both; }
+		
+		.reblog-post .wpcom-enhanced-excerpt address,
+		.reblog-post .wpcom-enhanced-excerpt li,
+		.reblog-post .wpcom-enhanced-excerpt h1,
+		.reblog-post .wpcom-enhanced-excerpt h2,
+		.reblog-post .wpcom-enhanced-excerpt h3,
+		.reblog-post .wpcom-enhanced-excerpt h4,
+		.reblog-post .wpcom-enhanced-excerpt h5,
+		.reblog-post .wpcom-enhanced-excerpt h6,
+		.reblog-post .wpcom-enhanced-excerpt p { font-size: 100% !important; }
+		
+		.reblog-post .wpcom-enhanced-excerpt blockquote,
+		.reblog-post .wpcom-enhanced-excerpt pre,
+		.reblog-post .wpcom-enhanced-excerpt code,
+		.reblog-post .wpcom-enhanced-excerpt q { font-size: 98% !important; }
+		
+
+		/* ]]> */
+		</style>
+		<script type="text/javascript" src="//use.typekit.net/fyd0vgg.js"></script><script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none !important;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<meta name="application-name" content="IPhVu::iResearch" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Vài vấn đề trong Machine Learning và Computer Vision" /><meta name="msapplication-task" content="name=Subscribe;action-uri=https://phvuresearch.wordpress.com/feed/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico" /><style type="text/css">
+			#header {
+		height: 105px;
+	}
+	#header h1,#header h1 a,#header h1 a:visited {
+		color: #ffffff;
+	}
+	#header h1 a:hover {
+		border-bottom: 2px dotted #ffffff;
+	}
+	#header .description {
+		color: #ffffff;
+	}
+		</style>	</head>
+	<body class="archive tag tag-svd tag-937285 typekit-enabled highlander-enabled highlander-light">
+		<div class="ornament"></div>
+		<div id="page">
+			<div id="header">
+								<div id="title_box">
+					<b class="corner_tl"></b><!-- presentational tag name for presentational tags - kjacobson -->
+					<b class="corner_tr"></b>
+					<h1>
+						<a href="https://phvuresearch.wordpress.com/">
+							IPhVu::iResearch						</a>
+					</h1>
+		   									<p class="description">
+							Vài vấn đề trong Machine Learning và Computer Vision						</p>
+										<b class="corner_bl"></b>
+					<b class="corner_br"></b>
+				</div><!--#title_box-->
+						</div><!--#header-->
+
+		<div id="navigation">
+			<ul id="menu-main-menu" class="menu"><li id="menu-item-516" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-516"><a href="https://phvuresearch.wordpress.com/category/1-mathematics/">Mathematics</a>
+<ul class="sub-menu">
+	<li id="menu-item-517" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-517"><a href="https://phvuresearch.wordpress.com/category/1-mathematics/linear-algebra/">Linear Algebra</a></li>
+	<li id="menu-item-518" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-518"><a href="https://phvuresearch.wordpress.com/category/1-mathematics/optimization-1-mathematics/">Optimization</a></li>
+	<li id="menu-item-519" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-519"><a href="https://phvuresearch.wordpress.com/category/1-mathematics/probability/">Probability</a></li>
+	<li id="menu-item-520" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-520"><a href="https://phvuresearch.wordpress.com/category/1-mathematics/statistics/">Statistics</a></li>
+	<li id="menu-item-730" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-730"><a href="https://phvuresearch.wordpress.com/category/1-mathematics/calculus/">Calculus</a></li>
+</ul>
+</li>
+<li id="menu-item-521" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-521"><a href="https://phvuresearch.wordpress.com/category/2-vision-learning/">Vision &amp; Learning</a>
+<ul class="sub-menu">
+	<li id="menu-item-522" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-522"><a href="https://phvuresearch.wordpress.com/category/2-vision-learning/computer-science/">Computer Science</a></li>
+	<li id="menu-item-523" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-523"><a href="https://phvuresearch.wordpress.com/category/2-vision-learning/computer-vision/">Computer Vision</a></li>
+	<li id="menu-item-524" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-524"><a href="https://phvuresearch.wordpress.com/category/2-vision-learning/machine-learning/">Machine Learning</a></li>
+</ul>
+</li>
+<li id="menu-item-525" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-525"><a href="https://phvuresearch.wordpress.com/category/3-implementation/">Implementation</a></li>
+<li id="menu-item-526" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-526"><a href="https://phvuresearch.wordpress.com/category/4-soft-skills/">Soft Skills</a>
+<ul class="sub-menu">
+	<li id="menu-item-527" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-527"><a href="https://phvuresearch.wordpress.com/category/4-soft-skills/reading/">Reading</a></li>
+</ul>
+</li>
+<li id="menu-item-572" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-572"><a href="https://phvuresearch.wordpress.com/selected-posts/">Tuyển tập</a></li>
+<li id="menu-item-528" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-528"><a href="https://phvuresearch.wordpress.com/category/about/">About</a></li>
+</ul>		</div><div id="content_container">
+	<div id="sidebar">
+	<ul>
+		<li id="gravatar-3" class="widget widget_gravatar"><p><a href="http://phvuresearch.wordpress.com"><img alt='' src='https://1.gravatar.com/avatar/13c9fd2b3fc44f21488ba3a7afce16b1?s=128&amp;d=identicon&amp;r=G' class='avatar avatar-128' height='128' width='128'  style="display: block; margin: 0 auto;" /></a></p>
+</li><li id="search-3" class="widget widget_search"><h2>Search</h2><form class="searchform" method="get" action="https://phvuresearch.wordpress.com/">
+	<input onfocus="if(this.value==this.defaultValue) this.value='';" class="search" name="s"
+		type="text" value="Search..." tabindex="1" />
+</form><!--END #searchform--></li><li id="nav_menu-3" class="widget widget_nav_menu"><h2>Posts by language</h2><div class="menu-languages-container"><ul id="menu-languages" class="menu"><li id="menu-item-854" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-854"><a href="http://phvuresearch.wordpress.com/tag/english/">English</a></li>
+<li id="menu-item-855" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-855"><a href="http://phvuresearch.wordpress.com/tag/vietnamese/">Vietnamese</a></li>
+</ul></div></li><li id="archives-3" class="widget widget_archive"><h2>Archives</h2>		<select name="archive-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'> <option value="">Select Month</option> 	<option value='https://phvuresearch.wordpress.com/2013/03/'> March 2013 &nbsp;(3)</option>
+	<option value='https://phvuresearch.wordpress.com/2012/11/'> November 2012 &nbsp;(1)</option>
+	<option value='https://phvuresearch.wordpress.com/2012/10/'> October 2012 &nbsp;(2)</option>
+	<option value='https://phvuresearch.wordpress.com/2012/07/'> July 2012 &nbsp;(2)</option>
+	<option value='https://phvuresearch.wordpress.com/2012/06/'> June 2012 &nbsp;(1)</option>
+	<option value='https://phvuresearch.wordpress.com/2012/05/'> May 2012 &nbsp;(2)</option>
+	<option value='https://phvuresearch.wordpress.com/2012/03/'> March 2012 &nbsp;(2)</option>
+	<option value='https://phvuresearch.wordpress.com/2012/02/'> February 2012 &nbsp;(2)</option>
+	<option value='https://phvuresearch.wordpress.com/2012/01/'> January 2012 &nbsp;(1)</option>
+	<option value='https://phvuresearch.wordpress.com/2011/11/'> November 2011 &nbsp;(5)</option>
+	<option value='https://phvuresearch.wordpress.com/2011/10/'> October 2011 &nbsp;(3)</option>
+	<option value='https://phvuresearch.wordpress.com/2011/09/'> September 2011 &nbsp;(2)</option>
+	<option value='https://phvuresearch.wordpress.com/2011/07/'> July 2011 &nbsp;(1)</option>
+	<option value='https://phvuresearch.wordpress.com/2011/06/'> June 2011 &nbsp;(2)</option>
+	<option value='https://phvuresearch.wordpress.com/2011/05/'> May 2011 &nbsp;(1)</option>
+	<option value='https://phvuresearch.wordpress.com/2011/04/'> April 2011 &nbsp;(3)</option>
+	<option value='https://phvuresearch.wordpress.com/2011/03/'> March 2011 &nbsp;(4)</option>
+	<option value='https://phvuresearch.wordpress.com/2011/02/'> February 2011 &nbsp;(3)</option>
+	<option value='https://phvuresearch.wordpress.com/2010/12/'> December 2010 &nbsp;(4)</option>
+	<option value='https://phvuresearch.wordpress.com/2010/11/'> November 2010 &nbsp;(1)</option>
+	<option value='https://phvuresearch.wordpress.com/2010/10/'> October 2010 &nbsp;(1)</option>
+	<option value='https://phvuresearch.wordpress.com/2010/08/'> August 2010 &nbsp;(2)</option>
+	<option value='https://phvuresearch.wordpress.com/2010/06/'> June 2010 &nbsp;(1)</option>
+	<option value='https://phvuresearch.wordpress.com/2010/04/'> April 2010 &nbsp;(2)</option>
+	<option value='https://phvuresearch.wordpress.com/2010/03/'> March 2010 &nbsp;(1)</option>
+	<option value='https://phvuresearch.wordpress.com/2010/02/'> February 2010 &nbsp;(1)</option>
+	<option value='https://phvuresearch.wordpress.com/2009/12/'> December 2009 &nbsp;(1)</option>
+ </select>
+</li><li id="rss_links-3" class="widget widget_rss_links"><h2>RSS Links</h2><p class="size-small"><a class="feed-image-link" href="https://phvuresearch.wordpress.com/feed/" title="Subscribe to Posts"><img src="https://phvuresearch.wordpress.com/i/rss/red-small.png?m=1273512554g" alt="RSS Feed" /></a>&nbsp;<a href="https://phvuresearch.wordpress.com/feed/" title="Subscribe to Posts">RSS - Posts</a></p><p class="size-small"><a class="feed-image-link" href="https://phvuresearch.wordpress.com/comments/feed/" title="Subscribe to Comments"><img src="https://phvuresearch.wordpress.com/i/rss/red-small.png?m=1273512554g" alt="RSS Feed" /></a>&nbsp;<a href="https://phvuresearch.wordpress.com/comments/feed/" title="Subscribe to Comments">RSS - Comments</a></p>
+</li><li id="blog_subscription-3" class="widget widget_blog_subscription"><h2><label for="subscribe-field">Email Subscription</label></h2>
+			<form action="https://subscribe.wordpress.com" method="post" accept-charset="utf-8" id="subscribe-blog">
+									<p>Enter your email address to subscribe to this blog and receive notifications of new posts by email.</p>
+<p>Join 19 other followers</p>
+					<p><input type="text" name="email" style="width: 95%; padding: 1px 2px" value="" id="subscribe-field"/></p>
+				
+				<p>
+					<input type="hidden" name="action" value="subscribe"/>
+					<input type="hidden" name="blog_id" value="11825841"/>
+					<input type="hidden" name="source" value="https://phvuresearch.wordpress.com/tag/svd/"/>
+					<input type="hidden" name="sub-type" value="widget"/>
+					<input type="hidden" name="redirect_fragment" value="blog_subscription-3" />
+					<input type="hidden" id="_wpnonce" name="_wpnonce" value="7be499e5c7" />					<input type="submit" value="Sign me up!" />
+				</p>
+			</form>
+			
+</li><li id="blog-stats-2" class="widget widget_blog-stats"><h2>Blog Stats</h2>		<ul>
+			<li>45,521 hits</li>
+		</ul>
+		</li><li id="top-posts-2" class="widget widget_top-posts"><h2>Top Posts</h2><ul><li><a href="https://phvuresearch.wordpress.com/2011/10/05/pca-principal-component-analysis/" class="bump-view" data-bump-view="tp">PCA - Principal Component Analysis</a></li>
+<li><a href="https://phvuresearch.wordpress.com/2010/08/21/beamer-powerpoint/" class="bump-view" data-bump-view="tp">Beamer-liked template for MS PowerPoint</a></li>
+<li><a href="https://phvuresearch.wordpress.com/2010/12/07/ph%c6%b0%c6%a1ng-phap-newton-raphson/" class="bump-view" data-bump-view="tp">Phương pháp Newton-Raphson</a></li>
+<li><a href="https://phvuresearch.wordpress.com/2010/12/07/matrix-norm/" class="bump-view" data-bump-view="tp">Chuẩn của vector và ma trận</a></li>
+<li><a href="https://phvuresearch.wordpress.com/2011/03/19/tr%e1%bb%8b-rieng-va-vector-rieng/" class="bump-view" data-bump-view="tp">Trị riêng và vector riêng</a></li>
+<li><a href="https://phvuresearch.wordpress.com/2011/11/15/pca-intuition-maths/" class="bump-view" data-bump-view="tp">PCA - Intuition and Maths</a></li>
+<li><a href="https://phvuresearch.wordpress.com/2010/10/10/k-means-em-and-mixture-models/" class="bump-view" data-bump-view="tp">K-means, EM and Mixture models</a></li>
+<li><a href="https://phvuresearch.wordpress.com/2011/04/29/thu%e1%ba%adt-toan-qr-tim-tr%e1%bb%8b-rieng/" class="bump-view" data-bump-view="tp">Thuật toán QR tìm trị riêng</a></li>
+<li><a href="https://phvuresearch.wordpress.com/2011/04/26/ma-tr%e1%ba%adn-chi%e1%ba%bfu-trong-dstt/" class="bump-view" data-bump-view="tp">Ma trận chiếu trong ĐSTT</a></li>
+<li><a href="https://phvuresearch.wordpress.com/2010/11/07/rivf-2010-first-day-2112010/" class="bump-view" data-bump-view="tp">RIVF 2010 - First day (2/11/2010)</a></li>
+</ul></li><li id="linkcat-1356" class="widget widget_links"><h2>Blogroll</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://denis.simakov.info/weizmann/teaching.php" target="_blank">Denis Simakov&#039;s Homepage</a></li>
+<li><a href="http://www.toad.net/~jkaplan2/statistics.htm" target="_blank">Interactive Statistical Inferences</a></li>
+<li><a href="http://www.mathworks.com/matlabcentral/fileexchange/10922">MatlabBGL &#8211; Graph algorithms for MATLAB</a></li>
+<li><a href="http://papersincomputerscience.org/" title="Discussion of computer science publications" target="_blank">Papers in CS</a></li>
+<li><a href="http://statpages.org/" target="_blank">Statistical Calculations</a></li>
+<li><a href="http://www.cs.cmu.edu/afs/cs/Web/People/awm/tutorials/" title="Some really good tutorials on Statistical Data Mining" target="_blank">Statistical Data Mining Tutorials</a></li>
+
+	</ul>
+</li>
+<li id="linkcat-677" class="widget widget_links"><h2>Friends</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://vodinhphong.wordpress.com/" target="_top">Vo Dinh Phong&#039;s weblog</a></li>
+
+	</ul>
+</li>
+<li id="recent-comments-2" class="widget widget_recent_comments"><h2>Recent Comments</h2>				<table class="recentcommentsavatar" cellspacing="0" cellpadding="0" border="0">
+					<tr><td title="Chris" class="recentcommentsavatartop" style="height:48px; width:48px;"><img alt='' src='https://0.gravatar.com/avatar/9b0d57e6f2404267a7d31ab5f4fdce60?s=48&amp;d=identicon&amp;r=G' class='avatar avatar-48' height='48' width='48' /></td><td class="recentcommentstexttop" style="">Chris on <a href="https://phvuresearch.wordpress.com/2010/08/21/beamer-powerpoint/#comment-562">Beamer-liked template for MS&hellip;</a></td></tr><tr><td title="Chí Trần Minh" class="recentcommentsavatarend" style="height:48px; width:48px;"><img alt='' src='https://1.gravatar.com/avatar/a98912c2aba21749a0b773f67aed04fb?s=48&amp;d=identicon&amp;r=G' class='avatar avatar-48' height='48' width='48' /></td><td class="recentcommentstextend" style="">Chí Trần Minh on <a href="https://phvuresearch.wordpress.com/2011/10/05/pca-principal-component-analysis/#comment-558">PCA &#8211; Principal Componen&hellip;</a></td></tr><tr><td title="PHAM Hoai Vu" class="recentcommentsavatarend" style="height:48px; width:48px;"><img alt='' src='https://1.gravatar.com/avatar/13c9fd2b3fc44f21488ba3a7afce16b1?s=48&amp;d=identicon&amp;r=G' class='avatar avatar-48' height='48' width='48' /></td><td class="recentcommentstextend" style="">PHAM Hoai Vu on <a href="https://phvuresearch.wordpress.com/2011/10/05/pca-principal-component-analysis/#comment-557">PCA &#8211; Principal Componen&hellip;</a></td></tr><tr><td title="Chí Trần Minh" class="recentcommentsavatarend" style="height:48px; width:48px;"><img alt='' src='https://1.gravatar.com/avatar/a98912c2aba21749a0b773f67aed04fb?s=48&amp;d=identicon&amp;r=G' class='avatar avatar-48' height='48' width='48' /></td><td class="recentcommentstextend" style="">Chí Trần Minh on <a href="https://phvuresearch.wordpress.com/2011/10/05/pca-principal-component-analysis/#comment-556">PCA &#8211; Principal Componen&hellip;</a></td></tr><tr><td title="Chí Trần Minh" class="recentcommentsavatarend" style="height:48px; width:48px;"><img alt='' src='https://1.gravatar.com/avatar/a98912c2aba21749a0b773f67aed04fb?s=48&amp;d=identicon&amp;r=G' class='avatar avatar-48' height='48' width='48' /></td><td class="recentcommentstextend" style="">Chí Trần Minh on <a href="https://phvuresearch.wordpress.com/2011/10/05/pca-principal-component-analysis/#comment-555">PCA &#8211; Principal Componen&hellip;</a></td></tr>				</table>
+				</li><li id="meta-3" class="widget widget_meta"><h2>Meta</h2>			<ul>
+			<li><a href="https://phvuresearch.wordpress.com/wp-login.php?action=register">Register</a></li>			<li><a href="https://phvuresearch.wordpress.com/wp-login.php">Log in</a></li>
+			<li><a href="https://phvuresearch.wordpress.com/feed/" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://phvuresearch.wordpress.com/comments/feed/" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://wordpress.com/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.com</a></li>
+						</ul>
+</li><li id="image-3" class="widget widget_image"><h2>QR Code</h2><div style="overflow:hidden;"><a href="http://phvuresearch.wordpress.com"><img src="http://lh3.googleusercontent.com/-xLX67qlhyVA/Tw2mocEAjHI/AAAAAAAAA3E/q9v-x4JerB8/s800/qrcode_phvuresearch.png" class="aligncenter" width="210" height="200" /></a></div>
+</li>	</ul>
+</div>								<h2 class="pagetitle">
+				Posts tagged &#8216;SVD&#8217;
+			</h2>
+ 		
+		<div class="navigation top">
+			&nbsp;&nbsp;&#124;&nbsp;&nbsp;
+					</div><!--.navigation-->
+
+		<div id="content" class="mainpage">
+							<div class="post-362 post type-post status-publish format-standard hentry category-1-mathematics category-2-vision-learning category-computer-vision category-linear-algebra tag-convolution tag-filter tag-qr tag-separable tag-svd tag-vietnamese" id="post-362">
+					<div class="date">July 30, 2011</div>
+					<h2>
+						<a href="https://phvuresearch.wordpress.com/2011/07/30/convolution-of-separable-filters/" rel="bookmark" title="Permalink to Convolution of separable&nbsp;filters">
+							Convolution of separable&nbsp;filters						</a>
+					</h2>
+										<div class="entry">
+						<p class="size-large wp-image-363 ">Đã gần hết tháng 7 và đây mới là bài đầu tiên của tháng. Bài này sẽ nói về một trường hợp đặc biệt của tích chập với các bộ lọc khả tách.</p>
+<h3 class="size-large wp-image-363 ">1. Convolution</h3>
+<p class="size-large wp-image-363 ">Tích chập (convolution) là một thao tác quen thuộc trong xử lí ảnh. Quá trình tính toán tích chập một ảnh với một bộ lọc bất kì được minh họa trong hình sau</p>
+<div id="attachment_373" class="wp-caption aligncenter" style="width: 610px"><a href="http://phvuresearch.files.wordpress.com/2011/07/convolution1.png"><img class="size-full wp-image-373" title="Convolution" src="http://phvuresearch.files.wordpress.com/2011/07/convolution1.png?w=780" alt="Minh họa các bước tính tích chập với bộ lọc Sobel."   /></a><p class="wp-caption-text">Minh họa các bước tính tích chập với bộ lọc Sobel.</p></div>
+<p>Với một bộ lọc bất kì, các thư viện xử lí ảnh hiện nay không tính tích chập một cách &#8220;ngây thơ&#8221; như trong hình, mà sử dụng biến đổi FFT để tính nhằm giảm chi phí tính toán. Tuy nhiên với một số loại bộ lọc nhất định, không nhất thiết phải dùng FFT mà vẫn có thể giảm chi phí tính toán một cách đáng kể, điển hình là các <em>bộ lọc khả tách</em> (<em>separable kernels/filters</em>) mà ta sẽ xét trong bài này.</p>
+<p> <a href="https://phvuresearch.wordpress.com/2011/07/30/convolution-of-separable-filters/#more-362" class="more-link">
+<div class="read_more">read more &raquo;</div>
+<p></a></p>
+<div id="jp-post-flair" class="sharedaddy sd-rating-enabled sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-facebook"><a rel="nofollow" class="share-facebook sd-button share-icon" href="https://phvuresearch.wordpress.com/2011/07/30/convolution-of-separable-filters/?share=facebook" title="Share on Facebook" id="sharing-facebook-362"><span>Facebook</span></a></li><li class="share-google-plus-1"><a rel="nofollow" class="share-google-plus-1 sd-button share-icon" href="https://phvuresearch.wordpress.com/2011/07/30/convolution-of-separable-filters/?share=google-plus-1" title="Click to share on Google+" id="sharing-google-362"><span>Google +1</span></a></li><li class="share-twitter"><a rel="nofollow" class="share-twitter sd-button share-icon" href="https://phvuresearch.wordpress.com/2011/07/30/convolution-of-separable-filters/?share=twitter" title="Click to share on Twitter" id="sharing-twitter-362"><span>Twitter</span></a></li><li class="share-tumblr"><a rel="nofollow" class="share-tumblr sd-button share-icon" href="https://phvuresearch.wordpress.com/2011/07/30/convolution-of-separable-filters/?share=tumblr" title="Click to share on Tumblr"><span>Tumblr</span></a></li><li class="share-pinterest"><a rel="nofollow" class="share-pinterest sd-button share-icon" href="https://phvuresearch.wordpress.com/2011/07/30/convolution-of-separable-filters/?share=pinterest" title="Click to share on Pinterest"><span>Pinterest</span></a></li><li><a href="#" class="sharing-anchor sd-button share-more"><span>More</span></a></li><li class="share-end"></li></ul><div class="sharing-hidden"><div class="inner" style="display: none;"><ul><li class="share-print"><a rel="nofollow" class="share-print sd-button share-icon" href="https://phvuresearch.wordpress.com/2011/07/30/convolution-of-separable-filters/" title="Click to print"><span>Print</span></a></li><li class="share-email"><a rel="nofollow" class="share-email sd-button share-icon" href="https://phvuresearch.wordpress.com/2011/07/30/convolution-of-separable-filters/?share=email" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-end"></li><li class="share-digg"><a rel="nofollow" class="share-digg sd-button share-icon" href="https://phvuresearch.wordpress.com/2011/07/30/convolution-of-separable-filters/?share=digg" title="Click to Digg this post"><span>Digg</span></a></li><li class="share-reddit"><a rel="nofollow" class="share-reddit sd-button share-icon" href="https://phvuresearch.wordpress.com/2011/07/30/convolution-of-separable-filters/?share=reddit" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-end"></li><li class="share-linkedin"><a rel="nofollow" class="share-linkedin sd-button share-icon" href="https://phvuresearch.wordpress.com/2011/07/30/convolution-of-separable-filters/?share=linkedin" title="Click to share on LinkedIn" id="sharing-linkedin-362"><span>LinkedIn</span></a></li><li class="share-stumbleupon"><a rel="nofollow" class="share-stumbleupon sd-button share-icon" href="https://phvuresearch.wordpress.com/2011/07/30/convolution-of-separable-filters/?share=stumbleupon" title="Click to share on StumbleUpon"><span>StumbleUpon</span></a></li><li class="share-end"></li><li class="share-end"></li></ul></div></div><div class="sharing-clear"></div></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-11825841-362' data-src='https://widgets.wp.com/likes/#blog_id=11825841&post_id=362&origin=https://phvuresearch.wordpress.com' data-name='like-post-frame-11825841-362'><h3 class='sd-title'>Like this:</h3><div class='post-likes-widget-placeholder' style='height:55px'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div></div>					</div>
+					<p class="postmetadata">
+						Posted in <a href="https://phvuresearch.wordpress.com/category/1-mathematics/" title="View all posts in 1. Mathematics" rel="category tag">1. Mathematics</a>, <a href="https://phvuresearch.wordpress.com/category/2-vision-learning/" title="View all posts in 2. Vision &amp; Learning" rel="category tag">2. Vision &amp; Learning</a>, <a href="https://phvuresearch.wordpress.com/category/2-vision-learning/computer-vision/" title="View all posts in Computer Vision" rel="category tag">Computer Vision</a>, <a href="https://phvuresearch.wordpress.com/category/1-mathematics/linear-algebra/" title="View all posts in Linear Algebra" rel="category tag">Linear Algebra</a> |
+												<a href="https://phvuresearch.wordpress.com/2011/07/30/convolution-of-separable-filters/#comments" title="Comment on Convolution of separable&nbsp;filters">4 Comments &#187;</a>					</p>
+					<div class="tags">
+						Tags: <a href="https://phvuresearch.wordpress.com/tag/convolution/" rel="tag">Convolution</a>, <a href="https://phvuresearch.wordpress.com/tag/filter/" rel="tag">filter</a>, <a href="https://phvuresearch.wordpress.com/tag/qr/" rel="tag">QR</a>, <a href="https://phvuresearch.wordpress.com/tag/separable/" rel="tag">separable</a>, <a href="https://phvuresearch.wordpress.com/tag/svd/" rel="tag">SVD</a>, <a href="https://phvuresearch.wordpress.com/tag/vietnamese/" rel="tag">vietnamese</a><br />					</div>
+				</div><!--.post-->
+							<div class="post-302 post type-post status-publish format-standard hentry category-1-mathematics category-linear-algebra tag-cholesky tag-least-square tag-projector tag-qr tag-svd tag-vietnamese" id="post-302">
+					<div class="date">April 26, 2011</div>
+					<h2>
+						<a href="https://phvuresearch.wordpress.com/2011/04/26/least-squares-problem/" rel="bookmark" title="Permalink to Bài toán Least&nbsp;Squares">
+							Bài toán Least&nbsp;Squares						</a>
+					</h2>
+										<div class="entry">
+						<p><a href="http://en.wikipedia.org/wiki/Least_squares" target="_blank">Least squares</a> (Bình phương tối thiểu) là phương pháp kinh điển dùng để giải xấp xỉ các hệ phương trình mà số ẩn nhiều hơn số phương trình. Ta gọi các hệ như vậy là <em>overdetermined</em> &#8211; dịch là <em>quá chặt</em>? Ứng dụng quan trọng nhất của phương pháp này là dùng để khớp dữ liệu (<em>data fitting)</em>, giống như trong ứng dụng ban đầu của nó được Gauss đề xuất vào khoảng năm 1800. Ý tưởng chính là tìm xấp xỉ nghiệm bằng cách tối thiểu hóa độ lỗi nào đó, thông thường độ lỗi này được tính bằng một hàm bậc 2, do đó phương pháp mới có tên là <em>bình phương tối thiểu</em>.</p>
+<p>Trong trường hợp phi tuyến, tức là độ lỗi không phải là hàm tuyến tính theo các ẩn, thì bài toán này có thể giải bằng phương pháp Newton-Rhapson (đã được đề cập trong một <a title="Phương pháp Newton-Raphson" href="http://phvuresearch.wordpress.com/2010/12/07/ph%c6%b0%c6%a1ng-phap-newton-raphson/" target="_blank">bài trước</a>), hoặc thuật toán <a href="http://en.wikipedia.org/wiki/Levenberg%E2%80%93Marquardt_algorithm" target="_blank">Levenberg-Marquardt</a>.</p>
+<p>Bài này chỉ xét đến trường hợp tuyến tính. Theo ngôn ngữ của Đại số tuyến tính, bài toán tìm nghiệm của một hệ <em>overdetermined</em> có thể xem là việc đi giải hệ phương trình tuyến tính <img src='https://s-ssl.wordpress.com/latex.php?latex=Ax%3Db&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='Ax=b' title='Ax=b' class='latex' /> mà ma trận A có số dòng nhiều hơn số cột.</p>
+<h2> <a href="https://phvuresearch.wordpress.com/2011/04/26/least-squares-problem/#more-302" class="more-link">
+<div class="read_more">read more &raquo;</div>
+<p></a></h2>
+<div id="jp-post-flair" class="sharedaddy sd-rating-enabled sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-facebook"><a rel="nofollow" class="share-facebook sd-button share-icon" href="https://phvuresearch.wordpress.com/2011/04/26/least-squares-problem/?share=facebook" title="Share on Facebook" id="sharing-facebook-302"><span>Facebook</span></a></li><li class="share-google-plus-1"><a rel="nofollow" class="share-google-plus-1 sd-button share-icon" href="https://phvuresearch.wordpress.com/2011/04/26/least-squares-problem/?share=google-plus-1" title="Click to share on Google+" id="sharing-google-302"><span>Google +1</span></a></li><li class="share-twitter"><a rel="nofollow" class="share-twitter sd-button share-icon" href="https://phvuresearch.wordpress.com/2011/04/26/least-squares-problem/?share=twitter" title="Click to share on Twitter" id="sharing-twitter-302"><span>Twitter</span></a></li><li class="share-tumblr"><a rel="nofollow" class="share-tumblr sd-button share-icon" href="https://phvuresearch.wordpress.com/2011/04/26/least-squares-problem/?share=tumblr" title="Click to share on Tumblr"><span>Tumblr</span></a></li><li class="share-pinterest"><a rel="nofollow" class="share-pinterest sd-button share-icon" href="https://phvuresearch.wordpress.com/2011/04/26/least-squares-problem/?share=pinterest" title="Click to share on Pinterest"><span>Pinterest</span></a></li><li><a href="#" class="sharing-anchor sd-button share-more"><span>More</span></a></li><li class="share-end"></li></ul><div class="sharing-hidden"><div class="inner" style="display: none;"><ul><li class="share-print"><a rel="nofollow" class="share-print sd-button share-icon" href="https://phvuresearch.wordpress.com/2011/04/26/least-squares-problem/" title="Click to print"><span>Print</span></a></li><li class="share-email"><a rel="nofollow" class="share-email sd-button share-icon" href="https://phvuresearch.wordpress.com/2011/04/26/least-squares-problem/?share=email" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-end"></li><li class="share-digg"><a rel="nofollow" class="share-digg sd-button share-icon" href="https://phvuresearch.wordpress.com/2011/04/26/least-squares-problem/?share=digg" title="Click to Digg this post"><span>Digg</span></a></li><li class="share-reddit"><a rel="nofollow" class="share-reddit sd-button share-icon" href="https://phvuresearch.wordpress.com/2011/04/26/least-squares-problem/?share=reddit" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-end"></li><li class="share-linkedin"><a rel="nofollow" class="share-linkedin sd-button share-icon" href="https://phvuresearch.wordpress.com/2011/04/26/least-squares-problem/?share=linkedin" title="Click to share on LinkedIn" id="sharing-linkedin-302"><span>LinkedIn</span></a></li><li class="share-stumbleupon"><a rel="nofollow" class="share-stumbleupon sd-button share-icon" href="https://phvuresearch.wordpress.com/2011/04/26/least-squares-problem/?share=stumbleupon" title="Click to share on StumbleUpon"><span>StumbleUpon</span></a></li><li class="share-end"></li><li class="share-end"></li></ul></div></div><div class="sharing-clear"></div></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-11825841-302' data-src='https://widgets.wp.com/likes/#blog_id=11825841&post_id=302&origin=https://phvuresearch.wordpress.com' data-name='like-post-frame-11825841-302'><h3 class='sd-title'>Like this:</h3><div class='post-likes-widget-placeholder' style='height:55px'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div></div>					</div>
+					<p class="postmetadata">
+						Posted in <a href="https://phvuresearch.wordpress.com/category/1-mathematics/" title="View all posts in 1. Mathematics" rel="category tag">1. Mathematics</a>, <a href="https://phvuresearch.wordpress.com/category/1-mathematics/linear-algebra/" title="View all posts in Linear Algebra" rel="category tag">Linear Algebra</a> |
+												<a href="https://phvuresearch.wordpress.com/2011/04/26/least-squares-problem/#comments" title="Comment on Bài toán Least&nbsp;Squares">3 Comments &#187;</a>					</p>
+					<div class="tags">
+						Tags: <a href="https://phvuresearch.wordpress.com/tag/cholesky/" rel="tag">cholesky</a>, <a href="https://phvuresearch.wordpress.com/tag/least-square/" rel="tag">least-square</a>, <a href="https://phvuresearch.wordpress.com/tag/projector/" rel="tag">projector</a>, <a href="https://phvuresearch.wordpress.com/tag/qr/" rel="tag">QR</a>, <a href="https://phvuresearch.wordpress.com/tag/svd/" rel="tag">SVD</a>, <a href="https://phvuresearch.wordpress.com/tag/vietnamese/" rel="tag">vietnamese</a><br />					</div>
+				</div><!--.post-->
+					</div><!--#content-->
+
+		<div class="navigation_box">
+	  		<div class="navigation bottom">
+				&nbsp;&nbsp;&#124;&nbsp;&nbsp;
+							</div><!--.navigation-->
+		</div><!--.navigation_box-->
+
+	</div><!--#content_container-->
+
+
+<div id="footer">
+	<div class="ornament"></div>
+	<div class="cell cell-1">
+				<div class="widget widget_tag_cloud">
+			<h2>Tags</h2>
+			<div class="line"></div>
+			<div>
+				<div style="overflow:hidden"><a href='https://phvuresearch.wordpress.com/tag/bayes/' class='tag-link-1625921' title='2 topics' style='font-size: 9.8947368421053pt;'>bayes</a>
+<a href='https://phvuresearch.wordpress.com/tag/bayes-ball/' class='tag-link-80984863' title='2 topics' style='font-size: 9.8947368421053pt;'>bayes ball</a>
+<a href='https://phvuresearch.wordpress.com/tag/bayes-net/' class='tag-link-13278945' title='2 topics' style='font-size: 9.8947368421053pt;'>Bayes net</a>
+<a href='https://phvuresearch.wordpress.com/tag/bugs/' class='tag-link-6354' title='2 topics' style='font-size: 9.8947368421053pt;'>bugs</a>
+<a href='https://phvuresearch.wordpress.com/tag/cholesky/' class='tag-link-8497251' title='2 topics' style='font-size: 9.8947368421053pt;'>cholesky</a>
+<a href='https://phvuresearch.wordpress.com/tag/constrained/' class='tag-link-1277548' title='2 topics' style='font-size: 9.8947368421053pt;'>constrained</a>
+<a href='https://phvuresearch.wordpress.com/tag/cross-entropy/' class='tag-link-53248303' title='2 topics' style='font-size: 9.8947368421053pt;'>cross-entropy</a>
+<a href='https://phvuresearch.wordpress.com/tag/deep-learning/' class='tag-link-1131271' title='2 topics' style='font-size: 9.8947368421053pt;'>deep learning</a>
+<a href='https://phvuresearch.wordpress.com/tag/eigenvalue/' class='tag-link-5601609' title='4 topics' style='font-size: 12.210526315789pt;'>eigenvalue</a>
+<a href='https://phvuresearch.wordpress.com/tag/eigenvector/' class='tag-link-5601610' title='3 topics' style='font-size: 11.157894736842pt;'>eigenvector</a>
+<a href='https://phvuresearch.wordpress.com/tag/english/' class='tag-link-3205' title='10 topics' style='font-size: 15.789473684211pt;'>english</a>
+<a href='https://phvuresearch.wordpress.com/tag/estimation/' class='tag-link-1008818' title='1 topic' style='font-size: 8pt;'>estimation</a>
+<a href='https://phvuresearch.wordpress.com/tag/estimator/' class='tag-link-1051310' title='1 topic' style='font-size: 8pt;'>estimator</a>
+<a href='https://phvuresearch.wordpress.com/tag/gradient-descent/' class='tag-link-6421838' title='2 topics' style='font-size: 9.8947368421053pt;'>gradient descent</a>
+<a href='https://phvuresearch.wordpress.com/tag/graphical-model/' class='tag-link-13075068' title='3 topics' style='font-size: 11.157894736842pt;'>graphical model</a>
+<a href='https://phvuresearch.wordpress.com/tag/hmm/' class='tag-link-54755' title='2 topics' style='font-size: 9.8947368421053pt;'>HMM</a>
+<a href='https://phvuresearch.wordpress.com/tag/householder/' class='tag-link-3941399' title='3 topics' style='font-size: 11.157894736842pt;'>householder</a>
+<a href='https://phvuresearch.wordpress.com/tag/least-square/' class='tag-link-1190308' title='2 topics' style='font-size: 9.8947368421053pt;'>least-square</a>
+<a href='https://phvuresearch.wordpress.com/tag/markov/' class='tag-link-220377' title='5 topics' style='font-size: 13.052631578947pt;'>Markov</a>
+<a href='https://phvuresearch.wordpress.com/tag/markov-blanket/' class='tag-link-80984864' title='2 topics' style='font-size: 9.8947368421053pt;'>markov blanket</a>
+<a href='https://phvuresearch.wordpress.com/tag/maths/' class='tag-link-35184' title='4 topics' style='font-size: 12.210526315789pt;'>Maths</a>
+<a href='https://phvuresearch.wordpress.com/tag/matlab/' class='tag-link-7770' title='2 topics' style='font-size: 9.8947368421053pt;'>matlab</a>
+<a href='https://phvuresearch.wordpress.com/tag/mda/' class='tag-link-46791' title='2 topics' style='font-size: 9.8947368421053pt;'>MDA</a>
+<a href='https://phvuresearch.wordpress.com/tag/ml/' class='tag-link-323487' title='4 topics' style='font-size: 12.210526315789pt;'>ML</a>
+<a href='https://phvuresearch.wordpress.com/tag/mnist/' class='tag-link-54060710' title='2 topics' style='font-size: 9.8947368421053pt;'>MNIST</a>
+<a href='https://phvuresearch.wordpress.com/tag/motion-field/' class='tag-link-23774302' title='1 topic' style='font-size: 8pt;'>motion field</a>
+<a href='https://phvuresearch.wordpress.com/tag/multivariate/' class='tag-link-1676941' title='3 topics' style='font-size: 11.157894736842pt;'>multivariate</a>
+<a href='https://phvuresearch.wordpress.com/tag/neural-network/' class='tag-link-61428' title='3 topics' style='font-size: 11.157894736842pt;'>neural network</a>
+<a href='https://phvuresearch.wordpress.com/tag/newton/' class='tag-link-143003' title='2 topics' style='font-size: 9.8947368421053pt;'>newton</a>
+<a href='https://phvuresearch.wordpress.com/tag/ode/' class='tag-link-76914' title='2 topics' style='font-size: 9.8947368421053pt;'>ODE</a>
+<a href='https://phvuresearch.wordpress.com/tag/opencv/' class='tag-link-445048' title='1 topic' style='font-size: 8pt;'>opencv</a>
+<a href='https://phvuresearch.wordpress.com/tag/optical-flow/' class='tag-link-3934146' title='1 topic' style='font-size: 8pt;'>optical flow</a>
+<a href='https://phvuresearch.wordpress.com/tag/optic-flow/' class='tag-link-31019941' title='1 topic' style='font-size: 8pt;'>optic flow</a>
+<a href='https://phvuresearch.wordpress.com/tag/optimization/' class='tag-link-133147' title='5 topics' style='font-size: 13.052631578947pt;'>optimization</a>
+<a href='https://phvuresearch.wordpress.com/tag/orthogonal/' class='tag-link-5208453' title='2 topics' style='font-size: 9.8947368421053pt;'>orthogonal</a>
+<a href='https://phvuresearch.wordpress.com/tag/pca/' class='tag-link-209963' title='2 topics' style='font-size: 9.8947368421053pt;'>pca</a>
+<a href='https://phvuresearch.wordpress.com/tag/probability-2/' class='tag-link-36669111' title='3 topics' style='font-size: 11.157894736842pt;'>probability</a>
+<a href='https://phvuresearch.wordpress.com/tag/projector/' class='tag-link-317600' title='2 topics' style='font-size: 9.8947368421053pt;'>projector</a>
+<a href='https://phvuresearch.wordpress.com/tag/qr/' class='tag-link-247595' title='4 topics' style='font-size: 12.210526315789pt;'>QR</a>
+<a href='https://phvuresearch.wordpress.com/tag/quaternion/' class='tag-link-5506982' title='1 topic' style='font-size: 8pt;'>Quaternion</a>
+<a href='https://phvuresearch.wordpress.com/tag/runge-kutta/' class='tag-link-4287150' title='1 topic' style='font-size: 8pt;'>Runge-Kutta</a>
+<a href='https://phvuresearch.wordpress.com/tag/statistics/' class='tag-link-5849' title='4 topics' style='font-size: 12.210526315789pt;'>Statistics</a>
+<a href='https://phvuresearch.wordpress.com/tag/svd/' class='tag-link-937285' title='2 topics' style='font-size: 9.8947368421053pt;'>SVD</a>
+<a href='https://phvuresearch.wordpress.com/tag/tracking/' class='tag-link-53246' title='1 topic' style='font-size: 8pt;'>tracking</a>
+<a href='https://phvuresearch.wordpress.com/tag/vietnamese/' class='tag-link-27956' title='42 topics' style='font-size: 22pt;'>vietnamese</a></div>			</div>
+		</div>
+			</div>
+	<div class="cell cell-2">
+				<div class="widget">
+			<h2>Calendar</h2>
+			<div class="line"></div>
+			<div>
+				<table id="wp-calendar">
+	<caption>March 2013</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="Monday">M</th>
+		<th scope="col" title="Tuesday">T</th>
+		<th scope="col" title="Wednesday">W</th>
+		<th scope="col" title="Thursday">T</th>
+		<th scope="col" title="Friday">F</th>
+		<th scope="col" title="Saturday">S</th>
+		<th scope="col" title="Sunday">S</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev"><a href="https://phvuresearch.wordpress.com/2012/11/" title="View posts for November 2012">&laquo; Nov</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next" class="pad">&nbsp;</td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr>
+		<td colspan="4" class="pad">&nbsp;</td><td>1</td><td>2</td><td>3</td>
+	</tr>
+	<tr>
+		<td>4</td><td><a href="https://phvuresearch.wordpress.com/2013/03/05/" title="The Rise of Machine&nbsp;(Learning)">5</a></td><td><a href="https://phvuresearch.wordpress.com/2013/03/06/" title="How to assess the convergence of MCMC&nbsp;algorithms">6</a></td><td>7</td><td>8</td><td><a href="https://phvuresearch.wordpress.com/2013/03/09/" title="What happens if you over-train a neural&nbsp;net?">9</a></td><td>10</td>
+	</tr>
+	<tr>
+		<td>11</td><td>12</td><td id="today">13</td><td>14</td><td>15</td><td>16</td><td>17</td>
+	</tr>
+	<tr>
+		<td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td>
+	</tr>
+	<tr>
+		<td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td>
+	</tr>
+	</tbody>
+	</table>			</div>
+		</div>
+			</div>
+	<div class="cell cell-3">
+				<div class="widget">
+			<h2>Archives</h2>
+			<div class="line"></div>
+			<ul>
+					<li><a href='https://phvuresearch.wordpress.com/2013/03/' title='March 2013'>March 2013</a></li>
+	<li><a href='https://phvuresearch.wordpress.com/2012/11/' title='November 2012'>November 2012</a></li>
+	<li><a href='https://phvuresearch.wordpress.com/2012/10/' title='October 2012'>October 2012</a></li>
+	<li><a href='https://phvuresearch.wordpress.com/2012/07/' title='July 2012'>July 2012</a></li>
+	<li><a href='https://phvuresearch.wordpress.com/2012/06/' title='June 2012'>June 2012</a></li>
+	<li><a href='https://phvuresearch.wordpress.com/2012/05/' title='May 2012'>May 2012</a></li>
+	<li><a href='https://phvuresearch.wordpress.com/2012/03/' title='March 2012'>March 2012</a></li>
+	<li><a href='https://phvuresearch.wordpress.com/2012/02/' title='February 2012'>February 2012</a></li>
+	<li><a href='https://phvuresearch.wordpress.com/2012/01/' title='January 2012'>January 2012</a></li>
+	<li><a href='https://phvuresearch.wordpress.com/2011/11/' title='November 2011'>November 2011</a></li>
+	<li><a href='https://phvuresearch.wordpress.com/2011/10/' title='October 2011'>October 2011</a></li>
+	<li><a href='https://phvuresearch.wordpress.com/2011/09/' title='September 2011'>September 2011</a></li>
+	<li><a href='https://phvuresearch.wordpress.com/2011/07/' title='July 2011'>July 2011</a></li>
+	<li><a href='https://phvuresearch.wordpress.com/2011/06/' title='June 2011'>June 2011</a></li>
+	<li><a href='https://phvuresearch.wordpress.com/2011/05/' title='May 2011'>May 2011</a></li>
+	<li><a href='https://phvuresearch.wordpress.com/2011/04/' title='April 2011'>April 2011</a></li>
+	<li><a href='https://phvuresearch.wordpress.com/2011/03/' title='March 2011'>March 2011</a></li>
+	<li><a href='https://phvuresearch.wordpress.com/2011/02/' title='February 2011'>February 2011</a></li>
+	<li><a href='https://phvuresearch.wordpress.com/2010/12/' title='December 2010'>December 2010</a></li>
+	<li><a href='https://phvuresearch.wordpress.com/2010/11/' title='November 2010'>November 2010</a></li>
+	<li><a href='https://phvuresearch.wordpress.com/2010/10/' title='October 2010'>October 2010</a></li>
+	<li><a href='https://phvuresearch.wordpress.com/2010/08/' title='August 2010'>August 2010</a></li>
+	<li><a href='https://phvuresearch.wordpress.com/2010/06/' title='June 2010'>June 2010</a></li>
+	<li><a href='https://phvuresearch.wordpress.com/2010/04/' title='April 2010'>April 2010</a></li>
+	<li><a href='https://phvuresearch.wordpress.com/2010/03/' title='March 2010'>March 2010</a></li>
+	<li><a href='https://phvuresearch.wordpress.com/2010/02/' title='February 2010'>February 2010</a></li>
+	<li><a href='https://phvuresearch.wordpress.com/2009/12/' title='December 2009'>December 2009</a></li>
+			</ul>
+		</div>
+			</div>
+		<div class="cell cell-4">
+				<div class="widget">
+			<h2>Blogroll</h2>
+			<div class="line"></div>
+			<ul>
+				<li><a href="http://denis.simakov.info/weizmann/teaching.php" target="_blank">Denis Simakov&#039;s Homepage</a></li>
+<li><a href="http://www.toad.net/~jkaplan2/statistics.htm" target="_blank">Interactive Statistical Inferences</a></li>
+<li><a href="http://www.mathworks.com/matlabcentral/fileexchange/10922">MatlabBGL &#8211; Graph algorithms for MATLAB</a></li>
+<li><a href="http://papersincomputerscience.org/" title="Discussion of computer science publications" target="_blank">Papers in CS</a></li>
+<li><a href="http://statpages.org/" target="_blank">Statistical Calculations</a></li>
+<li><a href="http://www.cs.cmu.edu/afs/cs/Web/People/awm/tutorials/" title="Some really good tutorials on Statistical Data Mining" target="_blank">Statistical Data Mining Tutorials</a></li>
+<li><a href="http://vodinhphong.wordpress.com/" target="_top">Vo Dinh Phong&#039;s weblog</a></li>
+			</ul>
+		</div>
+			</div>
+		<div id="externalFooterLinks">
+		<a href="http://wordpress.com/?ref=footer" rel="generator">Blog at WordPress.com</a>. |
+		Theme: <a href="http://theme.wordpress.com/themes/under-the-influence/" title="Learn more about this theme">Under the Influence</a> by <a href="http://www.spaceperson.net" rel="designer">spaceperson</a>.	</div>
+</div><!--#footer-->
+</div><!--#page-->
+
+<script type="text/javascript">
+var _qevents = _qevents || [], wpcomQuantcastData = {"qacct":"p-18-mFEk4J448M","labels":",language.en,type.wpcom"};
+function wpcomQuantcastPixel( labels, options ) {
+	var i, defaults = wpcomQuantcastData, data = { event: 'ajax' };
+
+	labels  = labels  || '';
+	options = options || {};
+
+	if ( typeof labels != 'string' )
+		options = labels;
+
+	for ( i in defaults ) {
+		data[i] = defaults[i];
+	}
+
+	for ( i in options ) {
+		data[i] = options[i];
+	}
+
+	if ( data.labels ) {
+		data.labels += ',' + labels;
+	} else {
+		data.labels = labels;
+	}
+
+	_qevents.push( data );
+};
+(function() {var elem = document.createElement('script');elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";elem.async = true;elem.type = "text/javascript";var scpt = document.getElementsByTagName('script')[0];scpt.parentNode.insertBefore(elem, scpt);  })();
+_qevents.push( wpcomQuantcastData );
+</script>
+<noscript><div style="display: none;"><img src="//pixel.quantserve.com/pixel/p-18-mFEk4J448M.gif?labels=%2Clanguage.en%2Ctype.wpcom" height="1" width="1" alt="" /></div></noscript>
+
+<script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201311ac'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s0.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1351637563g'></script>
+<script>jQuery(document).ready(function($){ Gravatar.profile_cb = function( h, d ) { WPGroHo.syncProfileData( h, d );	}; Gravatar.my_hash = WPGroHo.my_hash; Gravatar.init( 'body', '#wp-admin-bar-my-account' ); });</script>	<div style="display:none">
+	<div class="grofile-hash-map-13c9fd2b3fc44f21488ba3a7afce16b1">
+	</div>
+	<div class="grofile-hash-map-9b0d57e6f2404267a7d31ab5f4fdce60">
+	</div>
+	<div class="grofile-hash-map-a98912c2aba21749a0b773f67aed04fb">
+	</div>
+	<div class="grofile-hash-map-13c9fd2b3fc44f21488ba3a7afce16b1">
+	</div>
+	</div>
+
+	<div id="bit" class="loggedout-follow-typekit">
+		<a class="bsub" href="javascript:void(0)"><span id='bsub-text'>Follow</span></a>
+		<div id="bitsubscribe">
+
+					<h3><label for="loggedout-follow-field">Follow &ldquo;IPhVu::iResearch&rdquo;</label></h3>
+
+			<form action="https://subscribe.wordpress.com" method="post" accept-charset="utf-8" id="loggedout-follow">
+			<p>Get every new post delivered to your Inbox.</p>
+
+			<p id="loggedout-follow-error" style="display: none;"></p>
+
+			
+			<p><input type="email" name="email" style="width: 95%; padding: 1px 2px" value="Enter your email address" onfocus='this.value=(this.value=="Enter your email address") ? "" : this.value;' onblur='this.value=(this.value=="") ? "Enter email address" : this.value;'  id="loggedout-follow-field"/></p>
+
+			<input type="hidden" name="action" value="subscribe"/>
+			<input type="hidden" name="blog_id" value="11825841"/>
+			<input type="hidden" name="source" value="https://phvuresearch.wordpress.com/tag/svd/"/>
+			<input type="hidden" name="sub-type" value="loggedout-follow"/>
+
+			<input type="hidden" id="_wpnonce" name="_wpnonce" value="7be499e5c7" /><input type="hidden" name="_wp_http_referer" value="/tag/svd/" />
+			<p id='bsub-subscribe-button'><input type="submit" value="Sign me up" /></p>
+			</form>
+					<div id='bsub-credit'><a href="http://wordpress.com/signup/?ref=lof">Powered by WordPress.com</a></div>
+		</div><!-- #bitsubscribe -->
+	</div><!-- #bit -->
+
+	<script type="text/javascript" src="http://s.skimresources.com/js/wordpress.js"></script> 
+	<script type="text/javascript">
+		var skimlinks_pub_id = "725X584219"
+		var skimlinks_sitename = 'phvuresearch.wordpress.com';
+		skimlinks();
+	</script> 		
+	
+	<script type="text/javascript">
+		WPCOM_sharing_counts = {"https:\/\/phvuresearch.wordpress.com\/2011\/07\/30\/convolution-of-separable-filters\/":362,"https:\/\/phvuresearch.wordpress.com\/2011\/04\/26\/least-squares-problem\/":302}	</script>
+<script type='text/javascript' src='https://s0.wp.com/wp-content/mu-plugins/post-flair/sharing/sharing.js?m=1355532179g'></script>
+		<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-google-plus-1' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomgoogle-plus-1', 'menubar=1,resizable=1,width=600,height=600' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-tumblr' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomtumblr', 'menubar=1,resizable=1,width=450,height=450' );
+				return false;
+			});
+		});
+		</script>
+							<script type="text/javascript">
+			jQuery(document).on('ready', function(){
+				jQuery('body').on('click', 'a.share-pinterest', function(e){
+					e.preventDefault();
+
+					// Load Pinterest Bookmarklet code
+					var s = document.createElement("script");
+					s.type = "text/javascript";
+					s.src = window.location.protocol + "//assets.pinterest.com/js/pinmarklet.js?r=" + ( Math.random() * 99999999 );
+					var x = document.getElementsByTagName("script")[0];
+					x.parentNode.insertBefore(s, x);
+
+					// Trigger Stats
+					var s = document.createElement("script");
+					s.type = "text/javascript";
+					s.src = this + ( this.toString().indexOf( '?' ) ? '&' : '?' ) + 'js_only=1';
+					var x = document.getElementsByTagName("script")[0];
+					x.parentNode.insertBefore(s, x);
+				});
+			});
+			</script>
+			<div id="sharing_email" style="display: none;">
+		<form action="/tag/svd/" method="post">
+			<label for="target_email">Send to Email Address</label>
+			<input type="text" name="target_email" id="target_email" value="" />
+
+			
+				<label for="source_name">Your Name</label>
+				<input type="text" name="source_name" id="source_name" value="" />
+
+				<label for="source_email">Your Email Address</label>
+				<input type="text" name="source_email" id="source_email" value="" />
+
+			
+			<div class="recaptcha" id="sharing_recaptcha"></div><input type="hidden" name="recaptcha_public_key" id="recaptcha_public_key" value="6LcYW8MSAAAAADBAuEH9yaPcF7lWh11Iq62ZKtoo" />
+			<img style="float: right; display: none" class="loading" src="https://s2.wp.com/wp-content/mu-plugins/post-flair/sharing/images/loading.gif" alt="loading" width="16" height="16" />
+			<input type="submit" value="Send Email" class="sharing_send" />
+			<a href="#cancel" class="sharing_cancel">Cancel</a>
+
+			<div class="errors errors-1" style="display: none;">
+				Post was not sent - check your email addresses!			</div>
+
+			<div class="errors errors-2" style="display: none;">
+				Email check failed, please try again			</div>
+
+			<div class="errors errors-3" style="display: none;">
+				Sorry, your blog cannot share posts by email.			</div>
+		</form>
+	</div>
+		<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-linkedin' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomlinkedin', 'menubar=1,resizable=1,width=580,height=450' );
+				return false;
+			});
+		});
+		</script>
+				<iframe src='https://widgets.wp.com/likes/master.html?ver=20130228#ver=20130228' id='likes-master' name='likes-master' style='display:none;'></iframe>
+		<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+		<script type="text/javascript">
+		//<![CDATA[
+			var jetpackLikesWidgetQueue = [];
+			var jetpackLikesMasterReady = false;
+
+			function JetpackLikespostMessage( message, target ) {
+				if ( "string" === typeof message ){
+					try{
+						message = JSON.parse( message );
+					}
+					catch(e) {
+						return;
+					}
+				}
+
+				pm( {
+					target: target,
+					type: 'likesMessage',
+					data: message,
+					origin: '*'					
+				} );
+			}
+
+			function JetpackLikesMessageListener( event ) {
+				if ( "undefined" == typeof event.event )
+					return;
+
+				if ( 'masterReady' == event.event ) {
+					jQuery( document ).ready( function() {
+						jetpackLikesMasterReady = true;
+
+						var stylesData = {
+								event: 'injectStyles'
+						};
+
+						if ( jQuery( 'iframe.admin-bar-likes-widget' ).length > 0 ) {
+							JetpackLikespostMessage( { event: 'adminBarEnabled' }, window.frames[ 'likes-master' ] );
+
+							stylesData.adminBarStyles = {
+								background: jQuery( '#wpadminbar .quicklinks li#wp-admin-bar-wpl-like > a' ).css( 'background' )
+							};
+						}
+
+						if ( !window.addEventListener )
+							jQuery( '#wp-admin-bar-admin-bar-likes-widget' ).hide();
+
+						stylesData.textStyles = {
+							color: jQuery( '.sd-text-color').css( 'color' ),
+							fontFamily: jQuery( '.sd-text-color' ).css( 'font-family' ),
+							fontSize: jQuery( '.sd-text-color' ).css( 'font-size' ),
+							direction: jQuery( '.sd-text-color' ).css( 'direction' ),
+							fontWeight: jQuery( '.sd-text-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-text-color' ).css( 'font-style' ),
+							textDecoration: jQuery( '.sd-text-color' ).css('text-decoration')
+						};
+
+						stylesData.linkStyles = {
+							color: jQuery( '.sd-link-color' ).css('color'),
+							fontFamily: jQuery( '.sd-link-color' ).css('font-family'),
+							fontSize: jQuery( '.sd-link-color' ).css('font-size'),
+							textDecoration: jQuery( '.sd-link-color' ).css('text-decoration'),
+							fontWeight: jQuery( '.sd-link-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-link-color' ).css( 'font-style' )
+						};
+
+						JetpackLikespostMessage( stylesData, window.frames[ 'likes-master' ] );
+
+						var requests = [];
+						jQuery( '.jetpack-likes-widget-wrapper' ).each( function( i ) {
+							var regex = /like-(post|comment)-wrapper-(\d+)-(\d+)/;
+							var match = regex.exec( this.id );
+							if ( ! match || match.length != 4 )
+								return;
+
+							var info = {
+								blog_id: match[2],
+								width:   this.width
+							};
+
+							if ( 'post' == match[1] ) {
+								info.post_id = match[3];
+							} else if ( 'comment' == match[1] ) {
+								info.comment_id = match[3];
+							}
+
+							requests.push( info );
+						});
+
+						JetpackLikespostMessage( { event: 'initialBatch', requests: requests }, window.frames['likes-master'] );
+
+						jQuery( document ).on( 'inview', 'div.jetpack-likes-widget-unloaded', function() {
+							jetpackLikesWidgetQueue.push( this.id );
+						});
+					});
+				}
+
+				if ( 'showLikeWidget' == event.event ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 10 );
+					jQuery( '#' + event.id + ' .post-likes-widget-placeholder'  ).fadeOut( 'fast', function() {
+						jQuery( '#' + event.id + ' .post-likes-widget' ).fadeIn( 'fast' );
+						JetpackLikespostMessage( { event: 'likeWidgetDisplayed', blog_id: event.blog_id, post_id: event.post_id }, window.frames['likes-master'] );
+					});
+				}
+
+				if ( 'showOtherGravatars' == event.event ) {
+					var $container = jQuery( '#likes-other-gravatars' );
+					var $list = $container.find( 'ul' );
+
+					$container.hide();
+					$list.html( '' );
+
+					$container.find( '.likes-text span' ).text( event.total );
+
+					jQuery.each( event.likers, function( i, liker ) {
+						$list.append( '<li class="' + liker.css_class + '"><a href="' + liker.profile_URL + '" class="wpl-liker" rel="nofollow" target="_parent"><img src="' + liker.avatar_URL + '" alt="' + liker.name + '" width="30" height="30" style="padding-right: 3px;" /></a></li>');
+					} );
+
+					var offset = jQuery( "[name='" + event.parent + "']" ).offset();
+
+					$container.css( 'left', offset.left + event.position.left - 10 + 'px' );
+					$container.css( 'top', offset.top + event.position.top - 33 + 'px' );
+
+					var rowLength = Math.floor( event.width / 37 );
+					var height = ( Math.ceil( event.likers.length / rowLength ) * 37 ) + 13;
+					if ( height > 204 ) {
+						height = 204;
+					}
+
+					$container.css( 'height', height + 'px' );
+					$container.css( 'width', rowLength * 37 - 7 + 'px' );
+
+					$list.css( 'width', rowLength * 37 + 'px' );
+
+					$container.fadeIn( 'slow' );
+
+					var scrollbarWidth = $list[0].offsetWidth - $list[0].clientWidth;
+					if ( scrollbarWidth > 0 ) {
+						$container.width( $container.width() + scrollbarWidth );
+						$list.width( $list.width() + scrollbarWidth );
+					}
+				}
+			}
+
+			pm.bind( 'likesMessage', function(e) { JetpackLikesMessageListener(e); } );
+
+			jQuery( document ).click( function( e ) {
+				var $container = jQuery( '#likes-other-gravatars' );
+
+				if ( $container.has( e.target ).length === 0 ) {
+					$container.fadeOut( 'slow' );
+				}
+			});
+
+			function JetpackLikesWidgetQueueHandler() {
+				var wrapperID;
+				if ( ! jetpackLikesMasterReady ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+					return;
+				}
+
+				if ( jetpackLikesWidgetQueue.length > 0 ) {
+					// We may have a widget that needs creating now
+					var found = false;
+					while( jetpackLikesWidgetQueue.length > 0 ) {
+						// Grab the first member of the queue that isn't already loading.
+						wrapperID = jetpackLikesWidgetQueue.splice( 0, 1 )[0];
+						if ( jQuery( '#' + wrapperID ).hasClass( 'jetpack-likes-widget-unloaded' ) ) {
+							found = true;
+							break;
+						}
+					}
+					if ( ! found ) {
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				} else if ( jQuery( 'div.jetpack-likes-widget-unloaded' ).length > 0 ) {
+					// Get the next unloaded widget
+					wrapperID = jQuery( 'div.jetpack-likes-widget-unloaded' ).first()[0].id;
+					if ( ! wrapperID ) {
+						// Everything is currently loaded
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				}
+
+				var $wrapper = jQuery( '#' + wrapperID );
+				$wrapper.find( 'iframe' ).remove();
+
+				$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='55px' width='100%' frameBorder='0' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+
+
+				$wrapper.removeClass( 'jetpack-likes-widget-unloaded' ).addClass( 'jetpack-likes-widget-loading' );
+
+				$wrapper.find( 'iframe' ).load( function( e ) {
+					var $iframe = jQuery( e.target );
+					$wrapper.removeClass( 'jetpack-likes-widget-loading' ).addClass( 'jetpack-likes-widget-loaded' );
+
+					JetpackLikespostMessage( { event: 'loadLikeWidget', name: $iframe.attr( 'name' ), width: $iframe.width() }, window.frames[ 'likes-master' ] );
+				});
+			}
+			setInterval( JetpackLikesWidgetQueueHandler, 250 );
+		//]]>
+		</script>
+<script type='text/javascript' src='https://s1.wp.com/_static/??/wp-content/js/devicepx.js,/wp-includes/js/jquery/jquery.masonry.min.js?m=1354656609j'></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script src="https://ssl-stats.wordpress.com/w.js?21" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({'blog':'11825841','v':'wpcom','tz':'2','user_id':'0','subd':'phvuresearch'});
+ex_go({'crypt':'UE40eW5QN0p8M2Y/RE1LVmwrVi5vQS5fVFtfdHBbPyw1VXIrU3hWLHhzVndTdktBX0ddJnpXRjVaOTd6fj1YMX4ydzR6MmRGQV0tJmwxeTZPSWdXbX5VeUlNVGFhM3BJOHlXaz9ZQ0FsP3BtPWdlZituRlpCNFl3fk9pZ09aNFVqT1EyL19yay9SRWh6citHQitMVnNqfiZNNFpJenBsQm5dfDJvUXY1bnhVSUw3VF9la0xaR3UsbSwsSXZ4fGhTb0EsbGE/aEdiK2Z2ZjEzTnhMMk9pS21SbjhLdHg4K2E3OTJPOH4xeUF0cjdSZ2p4fEwwQVB6SHlUQjRsTn5hJlNDSHl4MXRXeUQ9ZU8lJTVaMjArVzcrLVFxXTJaX1ZKQTM2MW8yUT1zPTdhYmJhX0tpTXYxU2F2Nm9+MXUxUDgzK1ktbmpxTDllaC1hNT9BMVtSUzNOVngyWE0/RnZbb0lPdFJFbkVvYjkzJXdwd3pqSVYlLz9IVlU='});
+addLoadEvent(function(){linktracker_init('11825841',0);});
+	</script>
+<noscript><img src="https://stats.wordpress.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+</body>
+</html>

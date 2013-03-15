@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+
+  <title>Class: Rake::SprocketsTask</title>
+
+  <link rel="stylesheet" href="../rdoc.css" type="text/css" media="screen" />
+
+  <script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/thickbox-compressed.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/quicksearch.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/darkfish.js" type="text/javascript" charset="utf-8"></script>
+
+</head>
+<body id="top" class="class">
+
+  <div id="metadata">
+    <div id="home-metadata">
+      <div id="home-section" class="section">
+        <h3 class="section-header">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#classes">Classes</a>
+          <a href="../index.html#methods">Methods</a>
+        </h3>
+      </div>
+    </div>
+
+    <div id="file-metadata">
+      <div id="file-list-section" class="section">
+        <h3 class="section-header">In Files</h3>
+        <div class="section-body">
+          <ul>
+          
+            <li><a href="../lib/rake/sprocketstask_rb.html?TB_iframe=true&amp;height=550&amp;width=785"
+              class="thickbox" title="lib/rake/sprocketstask.rb">lib/rake/sprocketstask.rb</a></li>
+          
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div id="class-metadata">
+      
+      <!-- Parent Class -->
+      <div id="parent-class-section" class="section">
+        <h3 class="section-header">Parent</h3>
+        
+        <p class="link">Rake::TaskLib</p>
+        
+      </div>
+      
+
+      
+
+      
+
+      
+      <!-- Method Quickref -->
+      <div id="method-list-section" class="section">
+        <h3 class="section-header">Methods</h3>
+        <ul class="link-list">
+          
+          <li><a href="#method-c-new">::new</a></li>
+          
+          <li><a href="#method-i-define">#define</a></li>
+          
+          <li><a href="#method-i-environment">#environment</a></li>
+          
+          <li><a href="#method-i-log_level">#log_level</a></li>
+          
+          <li><a href="#method-i-log_level-3D">#log_level=</a></li>
+          
+        </ul>
+      </div>
+      
+
+      
+    </div>
+
+    <div id="project-metadata">
+      
+      
+
+      <div id="classindex-section" class="section project-section">
+        <h3 class="section-header">Class/Module Index
+          <span class="search-toggle"><img src="../images/find.png"
+            height="16" width="16" alt="[+]"
+            title="show/hide quicksearch" /></span></h3>
+        <form action="#" method="get" accept-charset="utf-8" class="initially-hidden">
+        <fieldset>
+          <legend>Quicksearch</legend>
+          <input type="text" name="quicksearch" value=""
+            class="quicksearch-field" />
+        </fieldset>
+        </form>
+
+        <ul class="link-list">
+        
+          <li><a href="../Sprockets.html">Sprockets</a></li>
+        
+          <li><a href="../Sprockets/ArgumentError.html">Sprockets::ArgumentError</a></li>
+        
+          <li><a href="../Sprockets/Asset.html">Sprockets::Asset</a></li>
+        
+          <li><a href="../Sprockets/AssetAttributes.html">Sprockets::AssetAttributes</a></li>
+        
+          <li><a href="../Sprockets/Base.html">Sprockets::Base</a></li>
+        
+          <li><a href="../Sprockets/BundledAsset.html">Sprockets::BundledAsset</a></li>
+        
+          <li><a href="../Sprockets/Cache.html">Sprockets::Cache</a></li>
+        
+          <li><a href="../Sprockets/Cache/FileStore.html">Sprockets::Cache::FileStore</a></li>
+        
+          <li><a href="../Sprockets/Caching.html">Sprockets::Caching</a></li>
+        
+          <li><a href="../Sprockets/CharsetNormalizer.html">Sprockets::CharsetNormalizer</a></li>
+        
+          <li><a href="../Sprockets/CircularDependencyError.html">Sprockets::CircularDependencyError</a></li>
+        
+          <li><a href="../Sprockets/ContentTypeMismatch.html">Sprockets::ContentTypeMismatch</a></li>
+        
+          <li><a href="../Sprockets/Context.html">Sprockets::Context</a></li>
+        
+          <li><a href="../Sprockets/DirectiveProcessor.html">Sprockets::DirectiveProcessor</a></li>
+        
+          <li><a href="../Sprockets/EcoTemplate.html">Sprockets::EcoTemplate</a></li>
+        
+          <li><a href="../Sprockets/EjsTemplate.html">Sprockets::EjsTemplate</a></li>
+        
+          <li><a href="../Sprockets/EncodingError.html">Sprockets::EncodingError</a></li>
+        
+          <li><a href="../Sprockets/EngineError.html">Sprockets::EngineError</a></li>
+        
+          <li><a href="../Sprockets/Engines.html">Sprockets::Engines</a></li>
+        
+          <li><a href="../Sprockets/Environment.html">Sprockets::Environment</a></li>
+        
+          <li><a href="../Sprockets/Error.html">Sprockets::Error</a></li>
+        
+          <li><a href="../Sprockets/FileNotFound.html">Sprockets::FileNotFound</a></li>
+        
+          <li><a href="../Sprockets/FileOutsidePaths.html">Sprockets::FileOutsidePaths</a></li>
+        
+          <li><a href="../Sprockets/Index.html">Sprockets::Index</a></li>
+        
+          <li><a href="../Sprockets/JstProcessor.html">Sprockets::JstProcessor</a></li>
+        
+          <li><a href="../Sprockets/Manifest.html">Sprockets::Manifest</a></li>
+        
+          <li><a href="../Sprockets/Mime.html">Sprockets::Mime</a></li>
+        
+          <li><a href="../Sprockets/ProcessedAsset.html">Sprockets::ProcessedAsset</a></li>
+        
+          <li><a href="../Sprockets/ProcessedAsset/DependencyFile.html">Sprockets::ProcessedAsset::DependencyFile</a></li>
+        
+          <li><a href="../Sprockets/Processing.html">Sprockets::Processing</a></li>
+        
+          <li><a href="../Sprockets/Processor.html">Sprockets::Processor</a></li>
+        
+          <li><a href="../Sprockets/SafetyColons.html">Sprockets::SafetyColons</a></li>
+        
+          <li><a href="../Sprockets/Server.html">Sprockets::Server</a></li>
+        
+          <li><a href="../Sprockets/StaticAsset.html">Sprockets::StaticAsset</a></li>
+        
+          <li><a href="../Sprockets/Trail.html">Sprockets::Trail</a></li>
+        
+          <li><a href="../Sprockets/UnserializeError.html">Sprockets::UnserializeError</a></li>
+        
+          <li><a href="../Sprockets/Utils.html">Sprockets::Utils</a></li>
+        
+          <li><a href="../Rake.html">Rake</a></li>
+        
+          <li><a href="../Rake/SprocketsTask.html">Rake::SprocketsTask</a></li>
+        
+        </ul>
+        <div id="no-class-search-results" style="display: none;">No matching classes.</div>
+      </div>
+
+      
+    </div>
+  </div>
+
+  <div id="documentation">
+    <h1 class="class">Rake::SprocketsTask</h1>
+
+    <div id="description" class="description">
+      
+<p>Simple <a href="../Sprockets.html">Sprockets</a> compilation <a
+href="../Rake.html">Rake</a> task macro.</p>
+
+<pre>Rake::SprocketsTask.new do |t|
+  t.environment = Sprockets::Environment.new
+  t.output      = &quot;./public/assets&quot;
+  t.assets      = %w( application.js application.css )
+end</pre>
+
+    </div><!-- description -->
+
+    
+    
+    
+    <div id="5Buntitled-5D" class="documentation-section">
+      
+
+      
+
+      
+
+      
+      <!-- Attributes -->
+      <div id="attribute-method-details" class="method-section section">
+        <h3 class="section-header">Attributes</h3>
+
+        
+        <div id="assets-attribute-method" class="method-detail">
+          <a name="assets"></a>
+          
+          <a name="assets="></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">assets</span><span
+              class="attribute-access-type">[RW]</span>
+          </div>
+
+          <div class="method-description">
+          
+          <p>Array of asset logical paths to compile.</p>
+
+<pre>t.assets = %w( application.js jquery.js application.css )</pre>
+          
+          </div>
+        </div>
+        
+        <div id="environment-attribute-method" class="method-detail">
+          <a name="environment"></a>
+          
+          <a name="environment="></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">environment</span><span
+              class="attribute-access-type">[W]</span>
+          </div>
+
+          <div class="method-description">
+          
+          
+          
+          </div>
+        </div>
+        
+        <div id="keep-attribute-method" class="method-detail">
+          <a name="keep"></a>
+          
+          <a name="keep="></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">keep</span><span
+              class="attribute-access-type">[RW]</span>
+          </div>
+
+          <div class="method-description">
+          
+          <p>Number of old assets to keep.</p>
+          
+          </div>
+        </div>
+        
+        <div id="logger-attribute-method" class="method-detail">
+          <a name="logger"></a>
+          
+          <a name="logger="></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">logger</span><span
+              class="attribute-access-type">[RW]</span>
+          </div>
+
+          <div class="method-description">
+          
+          <p>Logger to use during rake tasks. Defaults to using stderr.</p>
+
+<pre>t.logger = Logger.new($stdout)</pre>
+          
+          </div>
+        </div>
+        
+        <div id="name-attribute-method" class="method-detail">
+          <a name="name"></a>
+          
+          <a name="name="></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">name</span><span
+              class="attribute-access-type">[RW]</span>
+          </div>
+
+          <div class="method-description">
+          
+          <p>Name of the task. Defaults to “assets”.</p>
+
+<p>The name will also be used to suffix the clean and clobber tasks,
+“clean_assets” and “clobber_assets”.</p>
+          
+          </div>
+        </div>
+        
+        <div id="output-attribute-method" class="method-detail">
+          <a name="output"></a>
+          
+          <a name="output="></a>
+          
+          <div class="method-heading attribute-method-heading">
+            <span class="method-name">output</span><span
+              class="attribute-access-type">[RW]</span>
+          </div>
+
+          <div class="method-description">
+          
+          <p>Directory to write compiled assets too. As well as the manifest file.</p>
+
+<pre>t.output = &quot;./public/assets&quot;</pre>
+          
+          </div>
+        </div>
+        
+      </div><!-- attribute-method-details -->
+      
+
+      <!-- Methods -->
+      
+      <div id="public-class-method-details" class="method-section section">
+        <h3 class="section-header">Public Class Methods</h3>
+
+      
+        <div id="new-method" class="method-detail ">
+          <a name="method-c-new"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">new</span><span
+              class="method-args">(name = :assets)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            
+            
+
+            
+            <div class="method-source-code" id="new-source">
+<pre>
+<span class="ruby-comment"># File lib/rake/sprocketstask.rb, line 79</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">name</span> = <span class="ruby-value">:assets</span>)
+  <span class="ruby-ivar">@name</span>         = <span class="ruby-identifier">name</span>
+  <span class="ruby-ivar">@environment</span>  = <span class="ruby-identifier">lambda</span> { <span class="ruby-constant">Sprockets</span><span class="ruby-operator">::</span><span class="ruby-constant">Environment</span>.<span class="ruby-identifier">new</span>(<span class="ruby-constant">Dir</span>.<span class="ruby-identifier">pwd</span>) }
+  <span class="ruby-ivar">@logger</span>       = <span class="ruby-constant">Logger</span>.<span class="ruby-identifier">new</span>(<span class="ruby-identifier">$stderr</span>)
+  <span class="ruby-ivar">@logger</span>.<span class="ruby-identifier">level</span> = <span class="ruby-constant">Logger</span><span class="ruby-operator">::</span><span class="ruby-constant">INFO</span>
+  <span class="ruby-ivar">@keep</span>         = <span class="ruby-value">2</span>
+
+  <span class="ruby-keyword">yield</span> <span class="ruby-keyword">self</span> <span class="ruby-keyword">if</span> <span class="ruby-identifier">block_given?</span>
+
+  <span class="ruby-identifier">define</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- new-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- new-method -->
+
+      
+      </div><!-- public-class-method-details -->
+    
+      <div id="public-instance-method-details" class="method-section section">
+        <h3 class="section-header">Public Instance Methods</h3>
+
+      
+        <div id="define-method" class="method-detail ">
+          <a name="method-i-define"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">define</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Define tasks</p>
+            
+
+            
+            <div class="method-source-code" id="define-source">
+<pre>
+<span class="ruby-comment"># File lib/rake/sprocketstask.rb, line 92</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">define</span>
+  <span class="ruby-identifier">desc</span> <span class="ruby-identifier">name</span> <span class="ruby-operator">==</span> <span class="ruby-value">:assets</span> <span class="ruby-operator">?</span> <span class="ruby-string">&quot;Compile assets&quot;</span> <span class="ruby-operator">:</span> <span class="ruby-node">&quot;Compile #{name} assets&quot;</span>
+  <span class="ruby-identifier">task</span> <span class="ruby-identifier">name</span> <span class="ruby-keyword">do</span>
+    <span class="ruby-identifier">with_logger</span> <span class="ruby-keyword">do</span>
+      <span class="ruby-identifier">manifest</span>.<span class="ruby-identifier">compile</span>(<span class="ruby-identifier">assets</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">desc</span> <span class="ruby-identifier">name</span> <span class="ruby-operator">==</span> <span class="ruby-value">:assets</span> <span class="ruby-operator">?</span> <span class="ruby-string">&quot;Remove all assets&quot;</span> <span class="ruby-operator">:</span> <span class="ruby-node">&quot;Remove all #{name} assets&quot;</span>
+  <span class="ruby-identifier">task</span> <span class="ruby-node">&quot;clobber_#{name}&quot;</span> <span class="ruby-keyword">do</span>
+    <span class="ruby-identifier">with_logger</span> <span class="ruby-keyword">do</span>
+      <span class="ruby-identifier">manifest</span>.<span class="ruby-identifier">clobber</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">task</span> <span class="ruby-value">:clobber</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-node">&quot;clobber_#{name}&quot;</span>]
+
+  <span class="ruby-identifier">desc</span> <span class="ruby-identifier">name</span> <span class="ruby-operator">==</span> <span class="ruby-value">:assets</span> <span class="ruby-operator">?</span> <span class="ruby-string">&quot;Clean old assets&quot;</span> <span class="ruby-operator">:</span> <span class="ruby-node">&quot;Clean old #{name} assets&quot;</span>
+  <span class="ruby-identifier">task</span> <span class="ruby-node">&quot;clean_#{name}&quot;</span> <span class="ruby-keyword">do</span>
+    <span class="ruby-identifier">with_logger</span> <span class="ruby-keyword">do</span>
+      <span class="ruby-identifier">manifest</span>.<span class="ruby-identifier">clean</span>(<span class="ruby-identifier">keep</span>)
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">task</span> <span class="ruby-value">:clean</span> =<span class="ruby-operator">&gt;</span> [<span class="ruby-node">&quot;clean_#{name}&quot;</span>]
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- define-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- define-method -->
+
+      
+        <div id="environment-method" class="method-detail ">
+          <a name="method-i-environment"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">environment</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>`Environment` instance used for finding assets.</p>
+
+<p>You’ll most likely want to reassign `environment` to your own.</p>
+
+<pre>Rake::SprocketsTask.new do |t|
+  t.environment = Foo::Assets
+end</pre>
+            
+
+            
+            <div class="method-source-code" id="environment-source">
+<pre>
+<span class="ruby-comment"># File lib/rake/sprocketstask.rb, line 31</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">environment</span>
+  <span class="ruby-keyword">if</span> <span class="ruby-operator">!</span><span class="ruby-ivar">@environment</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Sprockets</span><span class="ruby-operator">::</span><span class="ruby-constant">Base</span>) <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-ivar">@environment</span>.<span class="ruby-identifier">respond_to?</span>(<span class="ruby-value">:call</span>)
+    <span class="ruby-ivar">@environment</span> = <span class="ruby-ivar">@environment</span>.<span class="ruby-identifier">call</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-ivar">@environment</span>
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- environment-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- environment-method -->
+
+      
+        <div id="log_level-method" class="method-detail ">
+          <a name="method-i-log_level"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">log_level</span><span
+              class="method-args">()</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Returns logger level Integer.</p>
+            
+
+            
+            <div class="method-source-code" id="log_level-source">
+<pre>
+<span class="ruby-comment"># File lib/rake/sprocketstask.rb, line 62</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">log_level</span>
+  <span class="ruby-ivar">@logger</span>.<span class="ruby-identifier">level</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- log_level-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- log_level-method -->
+
+      
+        <div id="log_level-3D-method" class="method-detail ">
+          <a name="method-i-log_level-3D"></a>
+
+          
+          <div class="method-heading">
+            <span class="method-name">log_level=</span><span
+              class="method-args">(level)</span>
+            <span class="method-click-advice">click to toggle source</span>
+          </div>
+          
+
+          <div class="method-description">
+            
+            <p>Set logger level with constant or symbol.</p>
+
+<pre>t.log_level = Logger::INFO
+t.log_level = :debug</pre>
+            
+
+            
+            <div class="method-source-code" id="log_level-3D-source">
+<pre>
+<span class="ruby-comment"># File lib/rake/sprocketstask.rb, line 71</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">log_level=</span>(<span class="ruby-identifier">level</span>)
+  <span class="ruby-keyword">if</span> <span class="ruby-identifier">level</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Integer</span>)
+    <span class="ruby-ivar">@logger</span>.<span class="ruby-identifier">level</span> = <span class="ruby-identifier">level</span>
+  <span class="ruby-keyword">else</span>
+    <span class="ruby-ivar">@logger</span>.<span class="ruby-identifier">level</span> = <span class="ruby-constant">Logger</span>.<span class="ruby-identifier">const_get</span>(<span class="ruby-identifier">level</span>.<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">upcase</span>)
+  <span class="ruby-keyword">end</span>
+<span class="ruby-keyword">end</span></pre>
+            </div><!-- log_level-3D-source -->
+            
+          </div>
+
+          
+
+          
+        </div><!-- log_level-3D-method -->
+
+      
+      </div><!-- public-instance-method-details -->
+    
+    </div><!-- 5Buntitled-5D -->
+  
+
+  </div><!-- documentation -->
+
+  <div id="validator-badges">
+    <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+    <p><small>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish
+      Rdoc Generator</a> 2</small>.</p>
+  </div>
+
+</body>
+</html>
+

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+
+<title>class Excon::Response - excon-0.16.10 Documentation</title>
+
+<link type="text/css" media="screen" href="../rdoc.css" rel="stylesheet">
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../";
+</script>
+
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/navigation.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search_index.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/search.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/searcher.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/darkfish.js"></script>
+
+
+<body id="top" class="class">
+<nav id="metadata">
+  <nav id="home-section" class="section">
+  <h3 class="section-header">
+    <a href="../index.html">Home</a>
+    <a href="../table_of_contents.html#classes">Classes</a>
+    <a href="../table_of_contents.html#methods">Methods</a>
+  </h3>
+</nav>
+
+
+  <nav id="search-section" class="section project-section" class="initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <h3 class="section-header">
+      <input type="text" name="search" placeholder="Search" id="search-field"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </h3>
+  </form>
+
+  <ul id="search-results" class="initially-hidden"></ul>
+</nav>
+
+
+  <div id="file-metadata">
+    <nav id="file-list-section" class="section">
+  <h3 class="section-header">Defined In</h3>
+  <ul>
+    <li>lib/excon/response.rb
+  </ul>
+</nav>
+
+    
+  </div>
+
+  <div id="class-metadata">
+    
+    <nav id="parent-class-section" class="section">
+  <h3 class="section-header">Parent</h3>
+  
+  <p class="link">Object
+  
+</nav>
+
+    
+    <!-- Method Quickref -->
+<nav id="method-list-section" class="section">
+  <h3 class="section-header">Methods</h3>
+
+  <ul class="link-list">
+    
+    <li><a href="#method-c-new">::new</a>
+    
+    <li><a href="#method-c-parse">::parse</a>
+    
+    <li><a href="#method-i-attributes">#attributes</a>
+    
+    <li><a href="#method-i-get_header">#get_header</a>
+    
+  </ul>
+</nav>
+
+  </div>
+
+  <div id="project-metadata">
+    
+    <nav id="classindex-section" class="section project-section">
+  <h3 class="section-header">Class and Module Index</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../Excon.html">Excon</a>
+  
+    <li><a href="../Excon/Connection.html">Excon::Connection</a>
+  
+    <li><a href="../Excon/Errors.html">Excon::Errors</a>
+  
+    <li><a href="../Excon/Errors/Accepted.html">Excon::Errors::Accepted</a>
+  
+    <li><a href="../Excon/Errors/BadGateway.html">Excon::Errors::BadGateway</a>
+  
+    <li><a href="../Excon/Errors/BadRequest.html">Excon::Errors::BadRequest</a>
+  
+    <li><a href="../Excon/Errors/Conflict.html">Excon::Errors::Conflict</a>
+  
+    <li><a href="../Excon/Errors/Continue.html">Excon::Errors::Continue</a>
+  
+    <li><a href="../Excon/Errors/Created.html">Excon::Errors::Created</a>
+  
+    <li><a href="../Excon/Errors/Error.html">Excon::Errors::Error</a>
+  
+    <li><a href="../Excon/Errors/ExpectationFailed.html">Excon::Errors::ExpectationFailed</a>
+  
+    <li><a href="../Excon/Errors/Forbidden.html">Excon::Errors::Forbidden</a>
+  
+    <li><a href="../Excon/Errors/Found.html">Excon::Errors::Found</a>
+  
+    <li><a href="../Excon/Errors/GatewayTimeout.html">Excon::Errors::GatewayTimeout</a>
+  
+    <li><a href="../Excon/Errors/Gone.html">Excon::Errors::Gone</a>
+  
+    <li><a href="../Excon/Errors/HTTPStatusError.html">Excon::Errors::HTTPStatusError</a>
+  
+    <li><a href="../Excon/Errors/InternalServerError.html">Excon::Errors::InternalServerError</a>
+  
+    <li><a href="../Excon/Errors/LengthRequired.html">Excon::Errors::LengthRequired</a>
+  
+    <li><a href="../Excon/Errors/MethodNotAllowed.html">Excon::Errors::MethodNotAllowed</a>
+  
+    <li><a href="../Excon/Errors/MovedPermanently.html">Excon::Errors::MovedPermanently</a>
+  
+    <li><a href="../Excon/Errors/MultipleChoices.html">Excon::Errors::MultipleChoices</a>
+  
+    <li><a href="../Excon/Errors/NoContent.html">Excon::Errors::NoContent</a>
+  
+    <li><a href="../Excon/Errors/NonAuthoritativeInformation.html">Excon::Errors::NonAuthoritativeInformation</a>
+  
+    <li><a href="../Excon/Errors/NotAcceptable.html">Excon::Errors::NotAcceptable</a>
+  
+    <li><a href="../Excon/Errors/NotFound.html">Excon::Errors::NotFound</a>
+  
+    <li><a href="../Excon/Errors/NotImplemented.html">Excon::Errors::NotImplemented</a>
+  
+    <li><a href="../Excon/Errors/NotModified.html">Excon::Errors::NotModified</a>
+  
+    <li><a href="../Excon/Errors/OK.html">Excon::Errors::OK</a>
+  
+    <li><a href="../Excon/Errors/PartialContent.html">Excon::Errors::PartialContent</a>
+  
+    <li><a href="../Excon/Errors/PaymentRequired.html">Excon::Errors::PaymentRequired</a>
+  
+    <li><a href="../Excon/Errors/PreconditionFailed.html">Excon::Errors::PreconditionFailed</a>
+  
+    <li><a href="../Excon/Errors/ProxyAuthenticationRequired.html">Excon::Errors::ProxyAuthenticationRequired</a>
+  
+    <li><a href="../Excon/Errors/ProxyConnectionError.html">Excon::Errors::ProxyConnectionError</a>
+  
+    <li><a href="../Excon/Errors/ProxyParseError.html">Excon::Errors::ProxyParseError</a>
+  
+    <li><a href="../Excon/Errors/RequestEntityTooLarge.html">Excon::Errors::RequestEntityTooLarge</a>
+  
+    <li><a href="../Excon/Errors/RequestTimeout.html">Excon::Errors::RequestTimeout</a>
+  
+    <li><a href="../Excon/Errors/RequestURITooLong.html">Excon::Errors::RequestURITooLong</a>
+  
+    <li><a href="../Excon/Errors/RequestedRangeNotSatisfiable.html">Excon::Errors::RequestedRangeNotSatisfiable</a>
+  
+    <li><a href="../Excon/Errors/ResetContent.html">Excon::Errors::ResetContent</a>
+  
+    <li><a href="../Excon/Errors/SeeOther.html">Excon::Errors::SeeOther</a>
+  
+    <li><a href="../Excon/Errors/ServiceUnavailable.html">Excon::Errors::ServiceUnavailable</a>
+  
+    <li><a href="../Excon/Errors/SocketError.html">Excon::Errors::SocketError</a>
+  
+    <li><a href="../Excon/Errors/StubNotFound.html">Excon::Errors::StubNotFound</a>
+  
+    <li><a href="../Excon/Errors/SwitchingProtocols.html">Excon::Errors::SwitchingProtocols</a>
+  
+    <li><a href="../Excon/Errors/TemporaryRedirect.html">Excon::Errors::TemporaryRedirect</a>
+  
+    <li><a href="../Excon/Errors/Timeout.html">Excon::Errors::Timeout</a>
+  
+    <li><a href="../Excon/Errors/Unauthorized.html">Excon::Errors::Unauthorized</a>
+  
+    <li><a href="../Excon/Errors/UnprocessableEntity.html">Excon::Errors::UnprocessableEntity</a>
+  
+    <li><a href="../Excon/Errors/UnsupportedMediaType.html">Excon::Errors::UnsupportedMediaType</a>
+  
+    <li><a href="../Excon/Errors/UseProxy.html">Excon::Errors::UseProxy</a>
+  
+    <li><a href="../Excon/Response.html">Excon::Response</a>
+  
+    <li><a href="../Excon/SSLSocket.html">Excon::SSLSocket</a>
+  
+    <li><a href="../Excon/Socket.html">Excon::Socket</a>
+  
+    <li><a href="../Excon/StandardInstrumentor.html">Excon::StandardInstrumentor</a>
+  
+    <li><a href="../IO.html">IO</a>
+  
+    <li><a href="../IO/WaitReadable.html">IO::WaitReadable</a>
+  
+    <li><a href="../IO/WaitWritable.html">IO::WaitWritable</a>
+  
+  </ul>
+</nav>
+
+  </div>
+</nav>
+
+<div id="documentation">
+  <h1 class="class">class Excon::Response</h1>
+
+  <div id="description" class="description">
+    
+  </div><!-- description -->
+
+  
+  
+  
+  <section id="5Buntitled-5D" class="documentation-section">
+    
+
+    
+
+    
+
+    
+    <!-- Attributes -->
+    <section id="attribute-method-details" class="method-section section">
+      <h3 class="section-header">Attributes</h3>
+
+      
+      <div id="attribute-i-body" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">body</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-headers" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">headers</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+      <div id="attribute-i-status" class="method-detail">
+        <div class="method-heading attribute-method-heading">
+          <span class="method-name">status</span><span
+            class="attribute-access-type">[RW]</span>
+        </div>
+
+        <div class="method-description">
+        
+        
+        
+        </div>
+      </div>
+      
+    </section><!-- attribute-method-details -->
+    
+
+    <!-- Methods -->
+    
+     <section id="public-class-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Class Methods</h3>
+
+    
+      <div id="method-c-new" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">new</span><span
+            class="method-args">(attrs={})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="new-source">
+            <pre><span class="ruby-comment"># File lib/excon/response.rb, line 14</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">attrs</span>={})
+  <span class="ruby-ivar">@body</span>    = <span class="ruby-identifier">attrs</span>[<span class="ruby-value">:body</span>]    <span class="ruby-operator">||</span> <span class="ruby-string">''</span>
+  <span class="ruby-ivar">@headers</span> = <span class="ruby-identifier">attrs</span>[<span class="ruby-value">:headers</span>] <span class="ruby-operator">||</span> {}
+  <span class="ruby-ivar">@status</span>  = <span class="ruby-identifier">attrs</span>[<span class="ruby-value">:status</span>]
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- new-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- new-method -->
+
+    
+      <div id="method-c-parse" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">parse</span><span
+            class="method-args">(socket, params={})</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="parse-source">
+            <pre><span class="ruby-comment"># File lib/excon/response.rb, line 20</span>
+<span class="ruby-keyword">def</span> <span class="ruby-keyword">self</span>.<span class="ruby-identifier">parse</span>(<span class="ruby-identifier">socket</span>, <span class="ruby-identifier">params</span>={})
+  <span class="ruby-identifier">response</span> = <span class="ruby-identifier">new</span>(<span class="ruby-value">:status</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">read</span>(<span class="ruby-value">12</span>)[<span class="ruby-value">9</span>, <span class="ruby-value">11</span>].<span class="ruby-identifier">to_i</span>)
+  <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">readline</span> <span class="ruby-comment"># read the rest of the status line and CRLF</span>
+
+  <span class="ruby-keyword">until</span> ((<span class="ruby-identifier">data</span> = <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">readline</span>).<span class="ruby-identifier">chop!</span>).<span class="ruby-identifier">empty?</span>
+    <span class="ruby-identifier">key</span>, <span class="ruby-identifier">value</span> = <span class="ruby-identifier">data</span>.<span class="ruby-identifier">split</span>(<span class="ruby-regexp">/:\s*/</span>, <span class="ruby-value">2</span>)
+    <span class="ruby-identifier">response</span>.<span class="ruby-identifier">headers</span>[<span class="ruby-identifier">key</span>] = ([*<span class="ruby-identifier">response</span>.<span class="ruby-identifier">headers</span>[<span class="ruby-identifier">key</span>]] <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">value</span>).<span class="ruby-identifier">compact</span>.<span class="ruby-identifier">join</span>(<span class="ruby-string">', '</span>)
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">key</span>.<span class="ruby-identifier">casecmp</span>(<span class="ruby-string">'Content-Length'</span>) <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+      <span class="ruby-identifier">content_length</span> = <span class="ruby-identifier">value</span>.<span class="ruby-identifier">to_i</span>
+    <span class="ruby-keyword">elsif</span> (<span class="ruby-identifier">key</span>.<span class="ruby-identifier">casecmp</span>(<span class="ruby-string">'Transfer-Encoding'</span>) <span class="ruby-operator">==</span> <span class="ruby-value">0</span>) <span class="ruby-operator">&amp;&amp;</span> (<span class="ruby-identifier">value</span>.<span class="ruby-identifier">casecmp</span>(<span class="ruby-string">'chunked'</span>) <span class="ruby-operator">==</span> <span class="ruby-value">0</span>)
+      <span class="ruby-identifier">transfer_encoding_chunked</span> = <span class="ruby-keyword">true</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-keyword">unless</span> ([<span class="ruby-string">'HEAD'</span>, <span class="ruby-string">'CONNECT'</span>].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:method</span>].<span class="ruby-identifier">to_s</span>.<span class="ruby-identifier">upcase</span>)) <span class="ruby-operator">||</span> <span class="ruby-constant">NO_ENTITY</span>.<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">response</span>.<span class="ruby-identifier">status</span>)
+
+    <span class="ruby-comment"># check to see if expects was set and matched</span>
+    <span class="ruby-identifier">expected_status</span> = <span class="ruby-operator">!</span><span class="ruby-identifier">params</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:expects</span>) <span class="ruby-operator">||</span> [*<span class="ruby-identifier">params</span>[<span class="ruby-value">:expects</span>]].<span class="ruby-identifier">include?</span>(<span class="ruby-identifier">response</span>.<span class="ruby-identifier">status</span>)
+
+    <span class="ruby-comment"># if expects matched and there is a block, use it</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">expected_status</span> <span class="ruby-operator">&amp;&amp;</span> <span class="ruby-identifier">params</span>.<span class="ruby-identifier">has_key?</span>(<span class="ruby-value">:response_block</span>)
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">transfer_encoding_chunked</span>
+        <span class="ruby-comment"># 2 == &quot;/r/n&quot;.length</span>
+        <span class="ruby-keyword">while</span> (<span class="ruby-identifier">chunk_size</span> = <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">readline</span>.<span class="ruby-identifier">chop!</span>.<span class="ruby-identifier">to_i</span>(<span class="ruby-value">16</span>)) <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+          <span class="ruby-identifier">params</span>[<span class="ruby-value">:response_block</span>].<span class="ruby-identifier">call</span>(<span class="ruby-identifier">socket</span>.<span class="ruby-identifier">read</span>(<span class="ruby-identifier">chunk_size</span> <span class="ruby-operator">+</span> <span class="ruby-value">2</span>).<span class="ruby-identifier">chop!</span>, <span class="ruby-keyword">nil</span>, <span class="ruby-keyword">nil</span>)
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">read</span>(<span class="ruby-value">2</span>)
+      <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">remaining</span> = <span class="ruby-identifier">content_length</span>
+        <span class="ruby-keyword">while</span> <span class="ruby-identifier">remaining</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+          <span class="ruby-identifier">params</span>[<span class="ruby-value">:response_block</span>].<span class="ruby-identifier">call</span>(<span class="ruby-identifier">socket</span>.<span class="ruby-identifier">read</span>([<span class="ruby-identifier">params</span>[<span class="ruby-value">:chunk_size</span>], <span class="ruby-identifier">remaining</span>].<span class="ruby-identifier">min</span>), [<span class="ruby-identifier">remaining</span> <span class="ruby-operator">-</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:chunk_size</span>], <span class="ruby-value">0</span>].<span class="ruby-identifier">max</span>, <span class="ruby-identifier">content_length</span>)
+          <span class="ruby-identifier">remaining</span> <span class="ruby-operator">-=</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:chunk_size</span>]
+        <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-keyword">while</span> <span class="ruby-identifier">remaining</span> = <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">read</span>(<span class="ruby-identifier">params</span>[<span class="ruby-value">:chunk_size</span>])
+          <span class="ruby-identifier">params</span>[<span class="ruby-value">:response_block</span>].<span class="ruby-identifier">call</span>(<span class="ruby-identifier">remaining</span>, <span class="ruby-identifier">remaining</span>.<span class="ruby-identifier">length</span>, <span class="ruby-identifier">content_length</span>)
+        <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">else</span> <span class="ruby-comment"># no block or unexpected status</span>
+      <span class="ruby-keyword">if</span> <span class="ruby-identifier">transfer_encoding_chunked</span>
+        <span class="ruby-keyword">while</span> (<span class="ruby-identifier">chunk_size</span> = <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">readline</span>.<span class="ruby-identifier">chop!</span>.<span class="ruby-identifier">to_i</span>(<span class="ruby-value">16</span>)) <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+          <span class="ruby-identifier">response</span>.<span class="ruby-identifier">body</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">read</span>(<span class="ruby-identifier">chunk_size</span> <span class="ruby-operator">+</span> <span class="ruby-value">2</span>).<span class="ruby-identifier">chop!</span> <span class="ruby-comment"># 2 == &quot;/r/n&quot;.length</span>
+        <span class="ruby-keyword">end</span>
+        <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">read</span>(<span class="ruby-value">2</span>) <span class="ruby-comment"># 2 == &quot;/r/n&quot;.length</span>
+      <span class="ruby-keyword">elsif</span> <span class="ruby-identifier">remaining</span> = <span class="ruby-identifier">content_length</span>
+        <span class="ruby-keyword">while</span> <span class="ruby-identifier">remaining</span> <span class="ruby-operator">&gt;</span> <span class="ruby-value">0</span>
+          <span class="ruby-identifier">response</span>.<span class="ruby-identifier">body</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">read</span>([<span class="ruby-identifier">params</span>[<span class="ruby-value">:chunk_size</span>], <span class="ruby-identifier">remaining</span>].<span class="ruby-identifier">min</span>)
+          <span class="ruby-identifier">remaining</span> <span class="ruby-operator">-=</span> <span class="ruby-identifier">params</span>[<span class="ruby-value">:chunk_size</span>]
+        <span class="ruby-keyword">end</span>
+      <span class="ruby-keyword">else</span>
+        <span class="ruby-identifier">response</span>.<span class="ruby-identifier">body</span> <span class="ruby-operator">&lt;&lt;</span> <span class="ruby-identifier">socket</span>.<span class="ruby-identifier">read</span>
+      <span class="ruby-keyword">end</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+
+  <span class="ruby-identifier">response</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- parse-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- parse-method -->
+
+    
+    </section><!-- public-class-method-details -->
+  
+     <section id="public-instance-5Buntitled-5D-method-details" class="method-section section">
+      <h3 class="section-header">Public Instance Methods</h3>
+
+    
+      <div id="method-i-attributes" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">attributes</span><span
+            class="method-args">()</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          
+          
+
+          
+          <div class="method-source-code" id="attributes-source">
+            <pre><span class="ruby-comment"># File lib/excon/response.rb, line 6</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">attributes</span>
+  {
+    <span class="ruby-value">:body</span>     =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">body</span>,
+    <span class="ruby-value">:headers</span>  =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">headers</span>,
+    <span class="ruby-value">:status</span>   =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">status</span>
+  }
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- attributes-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- attributes-method -->
+
+    
+      <div id="method-i-get_header" class="method-detail ">
+        
+        <div class="method-heading">
+          <span class="method-name">get_header</span><span
+            class="method-args">(name)</span>
+          <span class="method-click-advice">click to toggle source</span>
+        </div>
+        
+
+        <div class="method-description">
+          
+          <p>Retrieve a specific header value. Header names are treated
+case-insensitively.</p>
+
+<pre>@param [String] name Header name</pre>
+          
+
+          
+          <div class="method-source-code" id="get_header-source">
+            <pre><span class="ruby-comment"># File lib/excon/response.rb, line 79</span>
+<span class="ruby-keyword">def</span> <span class="ruby-identifier">get_header</span>(<span class="ruby-identifier">name</span>)
+  <span class="ruby-identifier">headers</span>.<span class="ruby-identifier">each</span> <span class="ruby-keyword">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">key</span>,<span class="ruby-identifier">value</span><span class="ruby-operator">|</span>
+    <span class="ruby-keyword">if</span> <span class="ruby-identifier">key</span>.<span class="ruby-identifier">casecmp</span>(<span class="ruby-identifier">name</span>) <span class="ruby-operator">==</span> <span class="ruby-value">0</span>
+      <span class="ruby-keyword">return</span> <span class="ruby-identifier">value</span>
+    <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">end</span>
+  <span class="ruby-keyword">nil</span>
+<span class="ruby-keyword">end</span></pre>
+          </div><!-- get_header-source -->
+          
+        </div>
+
+        
+
+        
+      </div><!-- get_header-method -->
+
+    
+    </section><!-- public-instance-method-details -->
+  
+  </section><!-- 5Buntitled-5D -->
+
+</div><!-- documentation -->
+
+
+<footer id="validator-badges">
+  <p><a href="http://validator.w3.org/check/referer">[Validate]</a>
+  <p>Generated by <a href="https://github.com/rdoc/rdoc">RDoc</a> 3.12.2.
+  <p>Generated with the <a href="http://deveiate.org/projects/Darkfish-Rdoc/">Darkfish Rdoc Generator</a> 3.
+</footer>
+

@@ -1,0 +1,116 @@
+2013-03-01 14:23:26,132 - softwarecenter.ui.gtk3.app - INFO - setting up proxy 'None'
+2013-03-01 14:23:26,171 - softwarecenter.db.database - INFO - open() database: path=None use_axi=True use_agent=True
+2013-03-01 14:23:26,770 - softwarecenter.backend.reviews - WARNING - Could not get usefulness from server, no username in config file
+2013-03-01 14:23:26,786 - softwarecenter.fixme - WARNING - logs to the root logger: '('/usr/lib/python2.7/dist-packages/gi/importer.py', 51, 'find_module')'
+2013-03-01 14:23:26,786 - root - ERROR - Could not find any typelib for LaunchpadIntegration
+2013-03-01 14:23:26,919 - softwarecenter.ui.gtk3.app - INFO - show_available_packages: search_text is '', app is None.
+2013-03-01 14:23:26,922 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
+2013-03-01 14:23:32,763 - softwarecenter.ui.gtk3.views.lobbyview - WARNING - skipping exhibit for: 'u'steam'' not available
+2013-03-01 14:23:32,774 - softwarecenter.ui.gtk3.views.lobbyview - WARNING - skipping exhibit for: 'u'lordofultima'' not available
+2013-03-01 14:23:32,774 - softwarecenter.ui.gtk3.views.lobbyview - WARNING - skipping exhibit for: 'u'machinarium'' not available
+2013-03-01 14:23:32,775 - softwarecenter.ui.gtk3.views.lobbyview - WARNING - skipping exhibit for: 'u'splashtop-streamer'' not available
+2013-03-01 14:23:39,587 - softwarecenter.db.update - INFO - 'SCAApplicationParser'.make_doc: skipping region restricted app u"Bulleti d'esquerra de Calonge i Sant Antoni " (region not whitelisted)
+2013-03-01 14:23:40,033 - softwarecenter.db.update - INFO - 'SCAApplicationParser'.make_doc: skipping region restricted app u'Comentarios Web' (region not whitelisted)
+2013-03-01 14:23:40,999 - softwarecenter.db.utils - INFO - software-center-agent finished with status 0
+2013-03-01 14:23:41,000 - softwarecenter.db.database - INFO - reopen() database
+2013-03-01 14:23:41,000 - softwarecenter.db.database - INFO - open() database: path=None use_axi=True use_agent=True
+2013-03-01 14:31:40,301 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
+2013-03-01 14:37:23,307 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
+2013-03-01 14:37:34,301 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
+2013-03-07 14:32:06,009 - softwarecenter.ui.gtk3.app - INFO - setting up proxy 'None'
+2013-03-07 14:32:06,103 - softwarecenter.db.database - INFO - open() database: path=None use_axi=True use_agent=True
+2013-03-07 14:32:10,005 - softwarecenter.backend.reviews - WARNING - Could not get usefulness from server, no username in config file
+2013-03-07 14:32:10,035 - softwarecenter.fixme - WARNING - logs to the root logger: '('/usr/lib/python2.7/dist-packages/gi/importer.py', 51, 'find_module')'
+2013-03-07 14:32:10,035 - root - ERROR - Could not find any typelib for LaunchpadIntegration
+2013-03-07 14:32:10,498 - softwarecenter.ui.gtk3.app - INFO - show_available_packages: search_text is '', app is None.
+2013-03-07 14:32:10,506 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
+2013-03-07 14:32:28,440 - softwarecenter.simplefiledownloader - WARNING - url changed from 'http://software-center.ubuntu.com/site_media/exhibits/2013/03/android5image.png' to 'http://software-center.ubuntu.com/site_media/exhibits/2013/03/Steam_promo_banner.png'
+2013-03-07 14:32:32,143 - softwarecenter.db.update - INFO - 'SCAApplicationParser'.make_doc: skipping region restricted app u"Bulleti d'esquerra de Calonge i Sant Antoni " (region not whitelisted)
+2013-03-07 14:32:32,993 - softwarecenter.db.update - INFO - 'SCAApplicationParser'.make_doc: skipping region restricted app u'Swiftcrypt' (blacklisted)
+2013-03-07 14:32:33,284 - softwarecenter.db.update - INFO - 'SCAApplicationParser'.make_doc: skipping region restricted app u'Comentarios Web' (region not whitelisted)
+2013-03-07 14:32:35,366 - softwarecenter.db.utils - INFO - software-center-agent finished with status 0
+2013-03-07 14:32:35,368 - softwarecenter.db.database - INFO - reopen() database
+2013-03-07 14:32:35,369 - softwarecenter.db.database - INFO - open() database: path=None use_axi=True use_agent=True
+2013-03-07 15:24:25,808 - softwarecenter.ui.gtk3.app - INFO - setting up proxy 'None'
+2013-03-07 15:24:25,840 - softwarecenter.db.database - INFO - open() database: path=None use_axi=True use_agent=True
+2013-03-07 15:24:27,656 - softwarecenter.region - WARNING - failed to use geoclue: 'org.freedesktop.Geoclue.Error.notAvailable: Geoclue master client has no usable Address providers'
+2013-03-07 15:24:28,538 - softwarecenter.backend.reviews - WARNING - Could not get usefulness from server, no username in config file
+2013-03-07 15:24:28,564 - softwarecenter.fixme - WARNING - logs to the root logger: '('/usr/lib/python2.7/dist-packages/gi/importer.py', 51, 'find_module')'
+2013-03-07 15:24:28,563 - root - ERROR - Could not find any typelib for LaunchpadIntegration
+2013-03-07 15:24:29,046 - softwarecenter.ui.gtk3.app - INFO - show_available_packages: search_text is '', app is None.
+2013-03-07 15:24:29,055 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
+2013-03-07 15:24:33,182 - softwarecenter.backend.spawn_helper - WARNING - exit code 1 from helper for '['/usr/share/software-center/piston_generic_helper.py', '--datadir', '/usr/share/software-center/', 'RatingsAndReviewsAPI', 'review_stats', '{"days": 1}']'
+2013-03-07 15:24:33,183 - softwarecenter.backend.spawn_helper - WARNING - got error from helper: 'WARNING:__main__:503: {'status': '503', 'content-length': '1347', 'via': '1.0 proxy:3128 (squid/2.6.STABLE4)', 'x-cache': 'MISS from proxy', 'x-squid-error': 'ERR_CANNOT_FORWARD 11', 'x-cache-lookup': 'MISS from proxy:3128', 'expires': 'Thu, 07 Mar 2013 08:48:07 GMT', 'server': 'squid/2.6.STABLE4', 'connection': 'close', 'date': 'Thu, 07 Mar 2013 08:48:07 GMT', 'content-type': 'text/html'}
+'
+2013-03-07 15:24:35,585 - softwarecenter.ui.gtk3.views.lobbyview - WARNING - skipping exhibit for: 'u'steam'' not available
+2013-03-07 15:24:35,921 - softwarecenter.ui.gtk3.widgets.exhibits - WARNING - download failed: '<class 'gi._glib.GError'>', 'HTTP Error: Service Unavailable'
+2013-03-07 15:24:36,847 - softwarecenter.backend.spawn_helper - WARNING - exit code 1 from helper for '['/usr/share/software-center/piston_generic_helper.py', '--datadir', '/usr/share/software-center/', 'SoftwareCenterAgentAPI', 'available_apps', '{"lang": "en", "series": "quantal", "arch": "i386"}']'
+2013-03-07 15:24:36,848 - softwarecenter.backend.spawn_helper - WARNING - got error from helper: 'WARNING:__main__:503: {'status': '503', 'content-length': '1337', 'via': '1.0 proxy:3128 (squid/2.6.STABLE4)', 'x-cache': 'MISS from proxy', 'x-squid-error': 'ERR_CANNOT_FORWARD 11', 'x-cache-lookup': 'MISS from proxy:3128', 'expires': 'Thu, 07 Mar 2013 08:48:12 GMT', 'server': 'squid/2.6.STABLE4', 'connection': 'close', 'date': 'Thu, 07 Mar 2013 08:48:12 GMT', 'content-type': 'text/html'}
+'
+2013-03-07 15:24:36,849 - softwarecenter.db.update - WARNING - update_from_software_center_agent: error: "WARNING:__main__:503: {'status': '503', 'content-length': '1337', 'via': '1.0 proxy:3128 (squid/2.6.STABLE4)', 'x-cache': 'MISS from proxy', 'x-squid-error': 'ERR_CANNOT_FORWARD 11', 'x-cache-lookup': 'MISS from proxy:3128', 'expires': 'Thu, 07 Mar 2013 08:48:12 GMT', 'server': 'squid/2.6.STABLE4', 'connection': 'close', 'date': 'Thu, 07 Mar 2013 08:48:12 GMT', 'content-type': 'text/html'}\n"
+2013-03-07 15:24:36,903 - softwarecenter.db.utils - INFO - software-center-agent finished with status 1
+2013-03-07 15:24:57,685 - softwarecenter.ui.gtk3.widgets.exhibits - WARNING - download failed: '<class 'gi._glib.GError'>', 'HTTP Error: Service Unavailable'
+2013-03-07 15:25:53,731 - softwarecenter.backend - ERROR - error in _on_trans_finished 'Error: Failed to download package files
+Check your Internet connection.
+
+Failed to fetch http://vn.archive.ubuntu.com/ubuntu/pool/main/a/audiofile/libaudiofile1_0.3.4-1_i386.deb 503  Service Unavailable [IP: 91.189.92.200 80]
+Failed to fetch http://vn.archive.ubuntu.com/ubuntu/pool/main/e/esound/esound-common_0.2.41-10build4_all.deb 503  Service Unavailable [IP: 91.189.92.200 80]
+Failed to fetch http://vn.archive.ubuntu.com/ubuntu/pool/main/e/esound/libesd0_0.2.41-10build4_i386.deb 503  Service Unavailable [IP: 91.189.92.200 80]
+Failed to fetch http://vn.archive.ubuntu.com/ubuntu/pool/universe/l/llk-linux/llk-linux_2.3~beta1-0ubuntu5_i386.deb 503  Service Unavailable [IP: 91.189.92.200 80]
+'
+2013-03-07 15:25:56,733 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
+2013-03-07 15:25:58,633 - softwarecenter.utils - WARNING - Could not determine the installed desktop file path for app-install desktop file: '/usr/share/app-install/desktop/llk-linux:llk_linux.desktop'
+2013-03-08 09:56:47,439 - softwarecenter.ui.gtk3.app - INFO - setting up proxy 'None'
+2013-03-08 09:56:47,527 - softwarecenter.db.database - INFO - open() database: path=None use_axi=True use_agent=True
+2013-03-08 09:56:50,957 - softwarecenter.backend.reviews - WARNING - Could not get usefulness from server, no username in config file
+2013-03-08 09:56:51,042 - softwarecenter.fixme - WARNING - logs to the root logger: '('/usr/lib/python2.7/dist-packages/gi/importer.py', 51, 'find_module')'
+2013-03-08 09:56:51,042 - root - ERROR - Could not find any typelib for LaunchpadIntegration
+2013-03-08 09:56:51,635 - softwarecenter.ui.gtk3.app - INFO - show_available_packages: search_text is '', app is None.
+2013-03-08 09:56:51,651 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
+2013-03-08 09:56:59,477 - softwarecenter.ui.gtk3.views.lobbyview - WARNING - skipping exhibit for: 'u'steam'' not available
+2013-03-08 09:57:02,151 - softwarecenter.db.update - INFO - 'SCAApplicationParser'.make_doc: skipping region restricted app u'GMPlatformer' (region not whitelisted)
+2013-03-08 09:57:03,259 - softwarecenter.db.update - INFO - 'SCAApplicationParser'.make_doc: skipping region restricted app u"Bulleti d'esquerra de Calonge i Sant Antoni " (region not whitelisted)
+2013-03-08 09:57:04,141 - softwarecenter.db.update - INFO - 'SCAApplicationParser'.make_doc: skipping region restricted app u'Swiftcrypt' (blacklisted)
+2013-03-08 09:57:04,426 - softwarecenter.db.update - INFO - 'SCAApplicationParser'.make_doc: skipping region restricted app u'Comentarios Web' (region not whitelisted)
+2013-03-08 09:57:06,419 - softwarecenter.db.utils - INFO - software-center-agent finished with status 0
+2013-03-08 09:57:06,421 - softwarecenter.db.database - INFO - reopen() database
+2013-03-08 09:57:06,421 - softwarecenter.db.database - INFO - open() database: path=None use_axi=True use_agent=True
+2013-03-08 10:56:25,961 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
+2013-03-08 11:12:55,961 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
+2013-03-08 16:06:04,620 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
+2013-03-10 13:18:56,111 - softwarecenter.db.update - INFO - 'SCAApplicationParser'.make_doc: skipping region restricted app u'GMPlatformer' (region not whitelisted)
+2013-03-10 13:18:56,453 - softwarecenter.db.update - INFO - 'SCAApplicationParser'.make_doc: skipping region restricted app u"Bulleti d'esquerra de Calonge i Sant Antoni " (region not whitelisted)
+2013-03-10 13:18:56,743 - softwarecenter.db.update - INFO - 'SCAApplicationParser'.make_doc: skipping region restricted app u'Swiftcrypt' (blacklisted)
+2013-03-10 13:18:56,842 - softwarecenter.db.update - INFO - 'SCAApplicationParser'.make_doc: skipping region restricted app u'Comentarios Web' (region not whitelisted)
+2013-03-11 11:29:03,920 - softwarecenter.ui.gtk3.app - INFO - setting up proxy 'None'
+2013-03-11 11:29:04,014 - softwarecenter.db.database - INFO - open() database: path=None use_axi=True use_agent=True
+2013-03-11 11:29:07,393 - softwarecenter.backend.reviews - WARNING - Could not get usefulness from server, no username in config file
+2013-03-11 11:29:07,518 - softwarecenter.fixme - WARNING - logs to the root logger: '('/usr/lib/python2.7/dist-packages/gi/importer.py', 51, 'find_module')'
+2013-03-11 11:29:07,517 - root - ERROR - Could not find any typelib for LaunchpadIntegration
+2013-03-11 11:29:07,998 - softwarecenter.ui.gtk3.app - INFO - show_available_packages: search_text is '', app is None.
+2013-03-11 11:29:08,008 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
+2013-03-11 11:29:14,949 - softwarecenter.ui.gtk3.views.lobbyview - WARNING - skipping exhibit for: 'u'steam'' not available
+2013-03-11 11:29:35,644 - softwarecenter.db.update - INFO - 'SCAApplicationParser'.make_doc: skipping region restricted app u'GMPlatformer' (region not whitelisted)
+2013-03-11 11:29:36,597 - softwarecenter.db.update - INFO - 'SCAApplicationParser'.make_doc: skipping region restricted app u"Bulleti d'esquerra de Calonge i Sant Antoni " (region not whitelisted)
+2013-03-11 11:29:37,460 - softwarecenter.db.update - INFO - 'SCAApplicationParser'.make_doc: skipping region restricted app u'Swiftcrypt' (blacklisted)
+2013-03-11 11:29:37,730 - softwarecenter.db.update - INFO - 'SCAApplicationParser'.make_doc: skipping region restricted app u'Comentarios Web' (region not whitelisted)
+2013-03-11 11:29:39,718 - softwarecenter.db.utils - INFO - software-center-agent finished with status 0
+2013-03-11 11:29:39,719 - softwarecenter.db.database - INFO - reopen() database
+2013-03-11 11:29:39,720 - softwarecenter.db.database - INFO - open() database: path=None use_axi=True use_agent=True
+2013-03-11 11:38:17,414 - softwarecenter.ui.gtk3.app - INFO - setting up proxy 'None'
+2013-03-11 11:38:17,436 - softwarecenter.db.database - INFO - open() database: path=None use_axi=True use_agent=True
+2013-03-11 11:38:20,408 - softwarecenter.backend.reviews - WARNING - Could not get usefulness from server, no username in config file
+2013-03-11 11:38:20,424 - softwarecenter.fixme - WARNING - logs to the root logger: '('/usr/lib/python2.7/dist-packages/gi/importer.py', 51, 'find_module')'
+2013-03-11 11:38:20,423 - root - ERROR - Could not find any typelib for LaunchpadIntegration
+2013-03-11 11:38:20,752 - softwarecenter.ui.gtk3.app - INFO - show_available_packages: search_text is '', app is None.
+2013-03-11 11:38:20,760 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
+2013-03-11 11:38:25,695 - softwarecenter.ui.gtk3.views.lobbyview - WARNING - skipping exhibit for: 'u'steam'' not available
+2013-03-11 11:38:55,105 - softwarecenter.db.update - INFO - 'SCAApplicationParser'.make_doc: skipping region restricted app u'GMPlatformer' (region not whitelisted)
+2013-03-11 11:38:56,051 - softwarecenter.db.update - INFO - 'SCAApplicationParser'.make_doc: skipping region restricted app u"Bulleti d'esquerra de Calonge i Sant Antoni " (region not whitelisted)
+2013-03-11 11:38:56,884 - softwarecenter.db.update - INFO - 'SCAApplicationParser'.make_doc: skipping region restricted app u'Swiftcrypt' (blacklisted)
+2013-03-11 11:38:57,153 - softwarecenter.db.update - INFO - 'SCAApplicationParser'.make_doc: skipping region restricted app u'Comentarios Web' (region not whitelisted)
+2013-03-11 11:38:59,097 - softwarecenter.db.utils - INFO - software-center-agent finished with status 0
+2013-03-11 11:38:59,098 - softwarecenter.db.database - INFO - reopen() database
+2013-03-11 11:38:59,100 - softwarecenter.db.database - INFO - open() database: path=None use_axi=True use_agent=True
+2013-03-11 11:40:59,732 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
+2013-03-11 11:42:03,912 - softwarecenter.db.pkginfo_impl.aptcache - INFO - aptcache.open()
